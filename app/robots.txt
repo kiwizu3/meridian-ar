@@ -1,0 +1,82 @@
+User-agent: *
+
+# Block all URLs containing token parameter
+Disallow: /*token=
+
+# Block specific Firebase Storage paths
+Disallow: /v0/b/todo-app-b057b.appspot.com/o/
+Disallow: /firebasestorage.googleapis.com/
+
+# Block URLs containing specific parameters
+Disallow: /*?alt=media
+Disallow: /*&alt=media
+
+# Additional security measures
+Disallow: /*.pdf$
+Disallow: /*.mp4$
+
+# Block URLs with Transfer-Encoding : chunked pattern
+Disallow: /*Transfer-Encoding : chunked
+Disallow: /*Transfer-Encoding:chunked
+Disallow: /*Transfer-Encoding%20:%20chunked
+Disallow: /*Transfer-Encoding%3A%20chunked
+
+# Block encoded variations
+Disallow: /*Transfer%2DEncoding
+Disallow: /*Transfer%2DEncoding%20%3A%20chunked
+
+
+# Block access to Next.js static chunks
+Disallow: /_next/static/chunks/
+Disallow: /_next/static/chunks/*
+Disallow: /*/_next/static/chunks/
+
+# Block access to Next.js static media
+Disallow: /_next/static/media/
+Disallow: /_next/static/media/*
+Disallow: /*/_next/static/media/
+
+# Block access to Next.js image optimization routes
+Disallow: /_next/image*
+Disallow: /*/_next/image*
+
+# Block access to specific file patterns
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /*.png$
+Disallow: /*.jpg$
+Disallow: /*.jpeg$
+Disallow: /*.gif$
+Disallow: /*.webp$
+
+# Block potential attack vectors
+Disallow: /*?url=
+Disallow: /*&url=
+Disallow: /*%2F
+Disallow: /*%5C
+Disallow: /*..
+Disallow: /*.php$
+Disallow: /*data:
+Disallow: /*javascript:
+
+# Block access to build artifacts
+Disallow: /_next/
+Disallow: /_next/image
+Disallow: /_next/static/media/
+Disallow: /_next/static/[buildId]
+Disallow: /_next/static/development
+Disallow: /_next/static/chunks/pages
+Disallow: /_next/static/chunks/webpack
+
+# Block potential security-sensitive paths
+Disallow: /*/iframe
+Disallow: /*/frame
+Disallow: /*/embed
+Disallow: /*frame*
+Disallow: /*embed*
+
+# Allow necessary paths
+Allow: /_next/image/
+
+# Crawl delay to reduce server load (optional)
+Crawl-delay: 10

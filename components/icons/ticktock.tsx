@@ -1,0 +1,22 @@
+import { IconProps } from "@/types";
+import React from "react";
+
+function Ticktock(props:IconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="40"
+      height="40"
+      fill="none"
+      viewBox="0 0 40 40"
+      {...props}
+    >
+      <path
+        fill=""
+        d="M24.6 13.82A4.278 4.278 0 0123.54 11h-3.09v12.4a2.592 2.592 0 01-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48v-3.16c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7v-6.29a7.35 7.35 0 004.3 1.38V15.3s-1.88.09-3.24-1.48z"
+      ></path>
+    </svg>
+  );
+}
+
+export default Ticktock;

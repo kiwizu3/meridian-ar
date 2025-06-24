@@ -1,0 +1,17 @@
+@Library('arimac-shared-library') _
+
+def CONFIG = [
+				PROJECT_NAME:"lb-finance",
+                PROJECT_ID:"939",
+				BRANCH_NAME:"${env.BRANCH_NAME}", 
+                PROJECT_TYPE:"lb-finance-fe",
+				GITLAB_CONNECTION_NAME:"arimac-gitlab",
+				GITLAB_PROJECT_LOCATION:"lb-finance/2024-annual-report-web/frontend/annual-report-web",
+				GITLAB_CONTAINER_REGISTRY:"registry-gitlab.arimaclanka.com", 
+				DOCKER_IMAGE:"arimac/arimac-devops-mate:v5.0",
+				DEFAULT_VERSION:'0.1.0',
+				TARGET_ENVIRONMENT:'development',
+				DEPLOY_ON_DEMAND:'no'
+			]
+buildPipeline(CONFIG)
+

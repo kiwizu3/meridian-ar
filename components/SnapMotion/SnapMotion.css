@@ -1,0 +1,226 @@
+.snap-motion {
+  position: fixed;
+  --width: calc(300px * 0.6);
+  --height: calc(358px * 0.6);
+  --tx: calc(var(--width) / -2);
+  --ty: calc(var(--height) / -1.7);
+  width: var(--width);
+  height: var(--height);
+  transform: translateX(var(--tx)) translateY(var(--ty)) rotate(0deg) scale(1);
+  transform-origin: 50% 59%;
+  transition-property: transform, opacity, top, left;
+  transition-timing-function: ease-in-out;
+  touch-action: none;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 21;
+}
+@media (max-width: 768px) {
+.snap-motion {
+  --width: calc(300px * 0.3);
+  --height: calc(358px * 0.3);
+  display: none;
+}
+}
+/* ========================= inner elements ========================= */
+
+.snap-motion-item {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.snap-motion-inner {
+  position: relative;
+  transition-duration: inherit;
+  animation-duration: inherit;
+}
+
+
+
+.smi-left {
+  background-image: url(./assets/arrow-left.svg);
+  height: var(--height);
+  width: calc(var(--width) / 2);
+  transform-origin: 100% 59%;
+}
+
+.smi-right {
+  background-image: url(./assets/arrow-right.svg);
+  height: var(--height);
+  width: calc(var(--width) / 2);
+  left: calc(var(--width) / 2.018);
+  transform-origin: 0% 59%;
+}
+
+.smi-bottom {
+  background-image: url(./assets/arrow-bottom.svg);
+  width: var(--width);
+  height: calc(var(--height) * 0.41);
+  top: calc(var(--height) - calc(var(--height) * 0.41));
+  transform-origin: 50% 0%;
+}
+
+.smi-play {
+  background-image: url(./assets/arrow-play.svg);
+  width: var(--width);
+  height: var(--height);
+  transition-property: opacity;
+  transition-duration: inherit;
+  transform: rotate(-90deg);
+  opacity: 0;
+}
+
+
+
+/* ================= object animations : entrance ================= */
+
+[snap-direction="down"][snap-to="animate"] .snap-motion-item {
+  opacity: 0;
+}
+
+[snap-direction="down"][snap-to="animate"][snap-animate="false"] .smi-bottom {
+  animation-name: entrance-smi-bottom;
+}
+
+[snap-direction="down"][snap-to="animate"][snap-animate="false"] .smi-left {
+  animation-name: entrance-smi-left;
+}
+
+[snap-direction="down"][snap-to="animate"][snap-animate="false"] .smi-right {
+  animation-name: entrance-smi-right;
+}
+
+@keyframes entrance-smi-bottom {
+  0% {
+    opacity: 1;
+    transform: scale(0.7) rotateY(-90deg);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(0.7) rotateY(0deg) rotateZ(90deg);
+  }
+
+  80% {
+    opacity: 1;
+    transform: scale(1) rotateY(0deg) rotateZ(0deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) rotateY(0deg) rotateZ(0deg);
+  }
+}
+
+@keyframes entrance-smi-left {
+  0% {
+    opacity: 0;
+    transform: scale(1) rotateY(130deg);
+  }
+
+  39% {
+    opacity: 0;
+    transform: scale(1) rotateY(130deg);
+  }
+
+  40% {
+    opacity: 1;
+    transform: scale(1) rotateY(130deg);
+  }
+
+  80% {
+    opacity: 1;
+    transform: scale(1) rotateY(0deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) rotateY(0deg);
+  }
+}
+
+@keyframes entrance-smi-right {
+  0% {
+    opacity: 0;
+    transform: scale(1) rotateZ(20deg);
+  }
+
+  83% {
+    opacity: 0;
+    transform: scale(1) rotateZ(20deg);
+  }
+
+  85% {
+    opacity: 1;
+    transform: scale(1) rotateZ(20deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) rotateZ(0deg);
+  }
+}
+
+/* ========================= object holder ========================= */
+
+[snap-motion-type="object"] {
+  position: fixed;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  /* TODO: Remove box-shadow rule when object holder are finalized */
+  /* box-shadow: 0px 0px 0px 3px red; */
+  z-index: 20;
+}
+
+/* ================= object animations : anchors ================= */
+
+[snap-to="cover"] {
+  opacity: 0;
+}
+
+[snap-to="about"] {
+  opacity: 0;
+}
+[snap-to="about-result"] {
+  opacity: 0;
+}
+
+[snap-to="animate"] {
+  opacity: 1;
+}
+
+[snap-to="video"] {
+  opacity: 1;
+  transform: translateX(var(--tx)) translateY(var(--ty)) rotate(90deg) scale(0.5);
+}
+
+[snap-to="video"] .snap-motion-inner {
+  opacity: 0;
+}
+
+[snap-to="video"] .smi-play {
+  opacity: 1;
+}
+
+[snap-to="staff-a"] {
+  opacity: 1;
+  transform: translateX(var(--tx)) translateY(var(--ty)) rotate(-90deg) scale(1.8);
+}
+
+[snap-to="staff-b"] {
+  opacity: 1;
+  transform: translateX(var(--tx)) translateY(var(--ty)) rotate(90deg) scale(1.8);
+}
+
+[snap-to="footer"] {
+  opacity: 0;
+  transform: translateX(var(--tx)) translateY(var(--ty)) rotate(110deg) scale(0.8);
+}
