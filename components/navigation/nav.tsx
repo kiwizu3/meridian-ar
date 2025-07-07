@@ -79,7 +79,7 @@ const Nav = ({ lang, navbarItems }: NavigationProps) => {
                     setIsMenuOpen(false);
                   }}
                   href={item.url}
-                  className="font-secondary font-medium text-lg hover:text-red"
+                  className="font-secondary font-medium text-lg hover:text-themeYellow"
                 >
                   <p className="py-2">{item.title}</p>
                 </Link>

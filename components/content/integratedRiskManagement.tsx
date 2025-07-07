@@ -846,7 +846,7 @@ function IntegratedRiskManagement() {
       },
     ],
     xaxis: {
-      categories: ['2020', '2021', '2022', '2023', '2024'],
+      categories: ['2020', '2021', '2022', '2023', '2024', '2025'],
     },
     colors: ['#FFA500', '#800080'],
   };
@@ -867,7 +867,7 @@ function IntegratedRiskManagement() {
       },
     ],
     xaxis: {
-      categories: ['2020', '2021', '2022', '2023', '2024'],
+      categories: ['2020', '2021', '2022', '2023', '2024', '2025'],
     },
     colors: ['#FFA500', '#800080'],
   };
@@ -884,7 +884,7 @@ function IntegratedRiskManagement() {
       },
     ],
     xaxis: {
-      categories: ['2020', '2021', '2022', '2023', '2024'],
+      categories: ['2020', '2021', '2022', '2023', '2024', '2025'],
     },
     colors: ['#00008B'],
   };
@@ -1335,7 +1335,7 @@ function IntegratedRiskManagement() {
     dataLabels: { enabled: false },
     stroke: { curve: 'smooth' },
     xaxis: {
-      categories: ['2020', '2021', '2022', '2023', '2024'],
+      categories: ['2020', '2021', '2022', '2023', '2024', '2025'],
     },
     yaxis: {
       title: { text: 'Rs.Mn' },
@@ -1393,7 +1393,7 @@ function IntegratedRiskManagement() {
     },
     stroke: { curve: 'smooth' },
     xaxis: {
-      categories: ['2020', '2021', '2022', '2023', '2024'],
+      categories: ['2020', '2021', '2022', '2023', '2024', '2025'],
     },
     yaxis: {
       title: { text: 'No.' },

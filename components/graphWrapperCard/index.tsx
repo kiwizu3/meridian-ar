@@ -201,7 +201,7 @@ function GraphWrapperCard(props: Readonly<GraphWrapperCardProps>) {
   );
 
   return (
-    <div className="bg-blue p-6 rounded-xl lg:h-full">
+    <div className="bg-cardGreen p-6 rounded-xl lg:h-full">
       <div className="flex flex-col lg:flex-row justify-between font-black text-[1.375rem] lg:items-center">
         <h1>{title}</h1>
         <div className="flex flex-row lg:overflow-hidden overflow-x-auto items-center">

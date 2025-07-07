@@ -22,7 +22,7 @@
     width: 449px;
     height: calc(100vh - 154px);
     border-radius: 12px;
-    background-color: #0A3D5F;
+    background-color: #17634F;
     /* padding: 24px 8px 24px 24px; */
     display: none;
     opacity: 0;
@@ -43,7 +43,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background-color: #02111B;
+    background-color: #0E3A2F;
     padding: 12px;
     border-radius: 8px;
 }
@@ -112,7 +112,7 @@
 }
 .switch-wrap .switch-inner .switch.active {
     background: #ECEFF5;
-    color: #F26722;
+    color: #0E3A2F;
 }
 .switch-wrap .switch-inner .switch input {
     position: absolute;
@@ -154,8 +154,8 @@
     margin-left: unset;
     border-bottom-right-radius: 16px;
     border-bottom-left-radius: 0;
-    background-color: #D3EDFF;
-    color: #000000;
+    background-color: #BADBD2;
+    color: #2F2F20;
     margin-bottom: 0;
 }
 .chat-inner .messages .bot-chat .bot-icon {
@@ -167,7 +167,7 @@
     height: 36px;
     overflow: hidden;
     border-radius: 50%;
-    background: #B4E1FF;
+    background: #E9F3F1;
     margin-right: 6px;
 }
 .chat-inner .messages .bot-chat .bot-icon img {
@@ -178,7 +178,7 @@
 }
 .chat-inner .messages .chat-block {
     width: 329px;
-    background-color: #052235;
+    background-color: #218B6F;
     border-radius: 16px;
     padding: 16px 12px;
     border-bottom-right-radius: 0;

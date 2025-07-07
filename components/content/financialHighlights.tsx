@@ -685,7 +685,7 @@ const ChartComponent: React.FC<{ data: ChartData }> = ({ data }) => {
           <span className="text-2xl font-bold text-gray-800">
             {data.latestValue.toLocaleString()}
           </span>
-          <span className="text-sm text-gray-500 ml-2">2024</span>
+          <span className="text-sm text-gray-500 ml-2">2025</span>
         </div>
         <div
           className={`flex items-center ${data.changeDirection === 'up' ? 'text-green-500' : 'text-red-500'}`}
