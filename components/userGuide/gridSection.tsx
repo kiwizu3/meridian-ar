@@ -46,15 +46,15 @@ export default function GridSection({ dictionary }: any) {
           </div>
           <div className="grid-box-inner col-span-7  md:!pr-0 mb-7 md:mb-[348px]">
             <div className="lg:text-[2rem] text-[1.75rem] font-black leading-[48px] font-primary pr-6">
-              <SpeechText>
-                <h2>{dictionary?.accessibility_tools_title}</h2>
-              </SpeechText>
+              <SpeechText>{dictionary?.accessibility_tools_title}</SpeechText>
             </div>
             <div className="grid grid-cols-5 gap-4 md:gap-2 pb-8">
               <div className="text-wrap md:col-span-3 col-span-5">
                 <div className="text-[0.875rem] text-gary font-normal leading-[21px] pt-2 font-secondary">
                   <SpeechText>
-                    <p>{dictionary?.accessibility_tools_description}</p>
+                    <p className="whitespace-pre-line p-1.5">
+                      {dictionary?.accessibility_tools_description}
+                    </p>
                   </SpeechText>
                 </div>
               </div>

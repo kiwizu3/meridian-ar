@@ -155,6 +155,7 @@ export default function Contact({
                   <div className="text font-secondary">
                     <SpeechText>
                       <p>011 2155 473</p>
+                      <p>011 2155 504</p>
                     </SpeechText>
                   </div>
                 </div>
@@ -166,7 +167,7 @@ export default function Contact({
                   </div>
                   <div className="text font-secondary">
                     <SpeechText>
-                      <p>chamikarav@lbfinance.lk</p>
+                      <p>thusithaw@lbfinance.lk</p>
                     </SpeechText>
                   </div>
                 </div>
