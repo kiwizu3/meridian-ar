@@ -269,7 +269,7 @@ export default function Chat() {
         </button>
       </div>
       <div className="chat-wrap" data-collapse={open} ref={chatWrapRef}>
-        <div className="flex flex-row justify-end bg-[#06253A] rounded-t-xl py-2 px-4 gap-4">
+        <div className="flex flex-row justify-end bg-[#0E3A2F] rounded-t-xl py-2 px-4 gap-4">
           <Tooltip
             content={<TooltipContent />}
             placement="bottom-start"

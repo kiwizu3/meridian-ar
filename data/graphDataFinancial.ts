@@ -9,12 +9,12 @@ export const graphCategories: GraphDataCategories[] = [
 ];
 
 export const operatingResults = [
-  {
-    year: '2015',
-    netInterestMargin: '12.67',
-    interestSpread: '11.55',
-    costToIncome: '35.88',
-  },
+  // {
+  //   year: '2015',
+  //   netInterestMargin: '12.67',
+  //   interestSpread: '11.55',
+  //   costToIncome: '35.88',
+  // },
   {
     year: '2016',
     netInterestMargin: '12.17',
@@ -69,15 +69,21 @@ export const operatingResults = [
     interestSpread: '10.95',
     costToIncome: '31.13',
   },
+  {
+    year: '2025',
+    netInterestMargin: '13.7',
+    interestSpread: '10.95',
+    costToIncome: '31.13',
+  },
 ];
 
 export const financialPosition = [
-  {
-    year: '2015',
-    totalAssetsToEquity: '8.52',
-    debtToEquity: '7.15',
-    equityToDeposits: '17.45',
-  },
+  // {
+  //   year: '2015',
+  //   totalAssetsToEquity: '8.52',
+  //   debtToEquity: '7.15',
+  //   equityToDeposits: '17.45',
+  // },
   {
     year: '2016',
     totalAssetsToEquity: '8.07',
@@ -132,22 +138,28 @@ export const financialPosition = [
     debtToEquity: '3.44',
     equityToDeposits: '35.52',
   },
+  {
+    year: '2025',
+    totalAssetsToEquity: '4.63',
+    debtToEquity: '3.44',
+    equityToDeposits: '35.52',
+  },
 ];
 
 export const growth = [
-  {
-    year: '2015',
-    income: '8.51',
-    interestIncome: '7.65',
-    interestExpense: '-16.65',
-    netInterestIncome: '38.76',
-    profitBeforeTaxation: '78.33',
-    profitAfterTaxation: '62.84',
-    totalAssets: '11.06',
-    lendingPortfolio: '13.75',
-    customerDeposits: '-1.44',
-    equity: '27.72',
-  },
+  // {
+  //   year: '2015',
+  //   income: '8.51',
+  //   interestIncome: '7.65',
+  //   interestExpense: '-16.65',
+  //   netInterestIncome: '38.76',
+  //   profitBeforeTaxation: '78.33',
+  //   profitAfterTaxation: '62.84',
+  //   totalAssets: '11.06',
+  //   lendingPortfolio: '13.75',
+  //   customerDeposits: '-1.44',
+  //   equity: '27.72',
+  // },
   {
     year: '2016',
     income: '5.81',
@@ -265,26 +277,39 @@ export const growth = [
     customerDeposits: '7.72',
     equity: '14.46',
   },
+  {
+    year: '2025',
+    income: '15.14',
+    interestIncome: '15.7',
+    interestExpense: '3.71',
+    netInterestIncome: '28.69',
+    profitBeforeTaxation: '29.23',
+    profitAfterTaxation: '13.04',
+    totalAssets: '10.87',
+    lendingPortfolio: '11.09',
+    customerDeposits: '7.72',
+    equity: '14.46',
+  },
 ];
 
 export const investorInformation = [
-  {
-    year: '2015',
-    roe: '30.88',
-    roa: '3.4',
-    equityToAssets: '11.74',
-    navPerShare: '14.31',
-    eps: '3.94',
-    dps: '10',
-    dividendCover: '3.15',
-    dividendYield: '6.66',
-    dividendPayout: '31.74',
-    peRatio: '4.77',
-    pbvRatio: '1.31',
-    marketPricePerShare: '150.2',
-    marketCapitalisation: '10402',
-    interestCover: '1.56',
-  },
+  // {
+  //   year: '2015',
+  //   roe: '30.88',
+  //   roa: '3.4',
+  //   equityToAssets: '11.74',
+  //   navPerShare: '14.31',
+  //   eps: '3.94',
+  //   dps: '10',
+  //   dividendCover: '3.15',
+  //   dividendYield: '6.66',
+  //   dividendPayout: '31.74',
+  //   peRatio: '4.77',
+  //   pbvRatio: '1.31',
+  //   marketPricePerShare: '150.2',
+  //   marketCapitalisation: '10402',
+  //   interestCover: '1.56',
+  // },
   {
     year: '2016',
     roe: '40.4',
@@ -438,16 +463,33 @@ export const investorInformation = [
     marketCapitalisation: '34795',
     interestCover: '1.71',
   },
+  {
+    year: '2025',
+    roe: '23.4',
+    roa: '4.97',
+    equityToAssets: '21.58',
+    navPerShare: '78.74',
+    eps: '17.26',
+    dps: '5.75',
+    dividendCover: '3',
+    dividendYield: '9.16',
+    dividendPayout: '33.31',
+    peRatio: '3.64',
+    pbvRatio: '0.8',
+    marketPricePerShare: '62.8',
+    marketCapitalisation: '34795',
+    interestCover: '1.71',
+  },
 ];
 
 export const statutoryRatios = [
-  {
-    year: '2015',
-    ccrwar: '16.02',
-    trwcr: '19.7',
-    equityToDeposits: '17.45',
-    liquidityRatio: '17.78',
-  },
+  // {
+  //   year: '2015',
+  //   ccrwar: '16.02',
+  //   trwcr: '19.7',
+  //   equityToDeposits: '17.45',
+  //   liquidityRatio: '17.78',
+  // },
   {
     year: '2016',
     ccrwar: '16.84',
@@ -506,6 +548,13 @@ export const statutoryRatios = [
   },
   {
     year: '2024',
+    ccrwar: '31.45',
+    trwcr: '32.19',
+    equityToDeposits: '35.52',
+    liquidityRatio: '21.02',
+  },
+  {
+    year: '2025',
     ccrwar: '31.45',
     trwcr: '32.19',
     equityToDeposits: '35.52',

@@ -45,7 +45,7 @@ const DropdownMenuComponent = ({ item }: DropdownMenuComponentProps) => {
             <button
               type="button"
               aria-label="dashboard-dropdown"
-              className={`cursor-pointer focus-visible:outline-none flex gap-2 items-center font-secondary font-medium leading-[19.54px] text-base hover:text-red ${
+              className={`cursor-pointer focus-visible:outline-none flex gap-2 items-center font-secondary font-medium leading-[19.54px] text-base hover:text-themeYellow ${
                 isDropdownActive() ? 'text-themeYellow' : 'text-white'
               }`}
             >
@@ -59,7 +59,7 @@ const DropdownMenuComponent = ({ item }: DropdownMenuComponentProps) => {
                 <SpeechText>
                   <Link prefetch={false}
                     href={child.url}
-                    className={`font-secondary font-medium leading-[19.54px] text-base hover:text-red transition ease-in-out duration-300 ${isActive(child?.url) ? 'text-themeYellow' : 'text-white'}`}
+                    className={`font-secondary font-medium leading-[19.54px] text-base hover:text-themeYellow transition ease-in-out duration-300 ${isActive(child?.url) ? 'text-themeYellow' : 'text-white'}`}
                   >
                     {child.title}
                   </Link>
