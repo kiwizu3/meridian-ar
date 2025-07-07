@@ -66,21 +66,21 @@ export default function AudioTrack() {
         onValueChange={handleLanguageChange}
       >
         <Radio
-          classNames={{ control: 'bg-orange' }}
+          classNames={{ control: 'bg-themeYellow' }}
           value="en"
           className="custom-radio font-secondary mr-1 sm:mr-2 lg:mr-3 xl:mr-4"
         >
           English
         </Radio>
         <Radio
-          classNames={{ control: 'bg-orange' }}
+          classNames={{ control: 'bg-themeYellow' }}
           value="si"
           className="custom-radio font-secondary mr-1 sm:mr-2 lg:mr-3 xl:mr-4"
         >
           සිංහල
         </Radio>
         <Radio
-          classNames={{ control: 'bg-orange' }}
+          classNames={{ control: 'bg-themeYellow' }}
           value="ta"
           className="custom-radio font-secondary mr-1 sm:mr-2 lg:mr-3 xl:mr-4"
         >

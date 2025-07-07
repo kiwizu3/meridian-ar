@@ -108,7 +108,7 @@ export default function SustainabilityIntegratedReporting() {
   ];
   return (
     <div>
-      <div className="min-h-screen bg-[#0A3D5F] text-white p-8">
+      <div className="min-h-screen bg-cardGreen text-white p-8">
         <h1 className="text-3xl font-bold mb-6">
           INTEGRATED REPORTING CONTENT INDEX
         </h1>

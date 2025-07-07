@@ -13,7 +13,7 @@ import Link from 'next/link';
 export default async function Footer({ lang }: Readonly<LangTypes>) {
   const dictionary = await getDictionary(lang);
   return (
-    <div className="bg-cardBlue relative z-10">
+    <div className="bg-cardGreen relative z-10">
       <div className="py-10 container px-5 lg:px-0">
         <div className="flex flex-col gap-8">
           <div className="flex flex-col md:flex-row md:py-[28px] justify-center md:gap-14 gap-6">
@@ -63,7 +63,7 @@ export default async function Footer({ lang }: Readonly<LangTypes>) {
               <p className="font-secondary mt-5 font-normal text-sm leading-[28px] opacity-50">
                 {dictionary?.copyright_arimac}
               </p>
-              <a target="_blank" href='https://arimaclanka.com/' className="font-secondary text-orange font-medium text-sm leading-[28px]">
+              <a target="_blank" href='https://arimaclanka.com/' className="font-secondary text-themeYellow font-medium text-sm leading-[28px]">
                 {dictionary?.powered_by_arimac_lanka}
               </a>
             </div>

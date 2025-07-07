@@ -4,7 +4,7 @@ import { Html5con, MidFileSearch, Pdf, PolygonChip } from '@/components/icons';
 import ScrollingText from '@/components/sccrollText';
 import SnapMotionComponent from '@/components/SnapMotion/SnapMotion';
 import SpeechText from '@/components/SpeechText';
-import VideoSection from '@/components/VideoSection/VideoSection';
+// import VideoSection from '@/components/VideoSection/VideoSection';
 import { getDictionary } from '@/get-dictionary';
 import { Locale } from '@/i18n-config';
 import gifImage from '@/public/gif/pyramid.gif';
@@ -40,7 +40,7 @@ export default async function Home({
   const dictionary = await getDictionary(lang);
   const documentCard = [
     {
-      svg: <Pdf className="fill-white" />,
+      svg: <Pdf className="fill-[#06253A]" />,
       title: dictionary?.pdf_version,
       description: dictionary?.the_annual_report_pdf,
       viewTitle: dictionary?.view_pdf,
@@ -104,9 +104,25 @@ export default async function Home({
         className="hidden md:block"
       />
       <div className="filter-home">
-        <div className="md:h-[calc(100vh-3rem)] h-[calc(100vh-10rem)] flex w-full lg:-mt-[95px] -mt-20 relative">
+        {/* <div className="md:h-[calc(100vh-3rem)] h-[calc(100vh-10rem)] flex w-full lg:-mt-[95px] -mt-20 relative">
           <div className="absolute top-0 left-0 inset-0">
             <VideoSection />
+          </div>
+        </div> */}
+        {/* <div className="absolute lg:top-[28rem] top-[50rem] hidden md:block">
+          <a
+            aria-label="about"
+            href="#about"
+            snap-motion-type="scroll"
+            snap-motion-id="about"
+          />
+        </div> */}
+
+<div className="md:h-[calc(100vh-3rem)] h-[calc(100vh-10rem)] flex w-full lg:-mt-[95px] -mt-20 justify-center relative">
+          <div className="absolute">
+          <div className="mt-[130px] px-4">
+              <HomePageVideo />
+            </div>
           </div>
         </div>
         <div className="absolute lg:top-[28rem] top-[50rem] hidden md:block">
@@ -117,6 +133,44 @@ export default async function Home({
             snap-motion-id="about"
           />
         </div>
+
+
+        {/* <section
+          className="relative"
+          style={{
+            backgroundImage: `url(${secTwoImage.src})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'sticky',
+            backgroundAttachment: 'fixed',
+            backgroundRepeat: 'no-repeat',
+          }}
+        >
+          <a
+            aria-label="video"
+            href="#video"
+            snap-motion-type="object"
+            snap-motion-id="video"
+            className="left-[50%] bottom-[45%] hidden md:block"
+          />
+          <div className="flex flex-col items-center gap-14 container z-10 relative">
+          
+            <a
+              aria-label="video-obj"
+              href="#video-obj"
+              snap-motion-type="scroll"
+              snap-motion-id="video"
+              className={`hidden md:block absolute ${getHomeVideoPosition(lang)}`}
+            />
+            <div className="max-h-[70vh] px-4">
+              <HomePageVideo />
+            </div>
+          </div>
+          
+        </section> */}
+
+
+
+
         <section
           style={{
             backgroundImage: `url(${secTwoImage.src})`,
@@ -126,7 +180,7 @@ export default async function Home({
           className="relative pb-10 lg:pb-[93px]"
         >
           <div className="items-center gap-14 lg:px-0">
-            <div className="pt-4 flex mb-14 flex-col gap-4 lg:-mt-12 -mt-8 relative w-full bg-gradient-to-b from-[#0D1019] to-transparent">
+            <div className="pt-4 flex mb-14 flex-col gap-4 lg:-mt-12 -mt-8 relative w-full from-[#0D1019] to-transparent">
               <div className="flex-shrink-0 w-full">
                 <div className="container max-w-[1100px] relative z-20">
                   <FadeInText>
@@ -165,7 +219,7 @@ export default async function Home({
             </div>
             <div className="container mx-auto px-4">
               <FadeInText>
-                <div className="bg-cardBlue rounded-[21px] px-7 py-6">
+                <div className="bg-cardGreen rounded-[21px] px-7 py-6">
                   <SpeechText>
                     <p className="font-primary font-black text-xl lg:text-2xl text-center">
                       {dictionary?.annual_result}
@@ -279,7 +333,7 @@ export default async function Home({
                   {dictionary?.experience_the_annual_report_unfold_in_a}
                 </h1>
                 <h1
-                  className={`font-primary font-black text-5xl lg:text-[84px] lg:leading-[111px] px-5 lg:px-0 text-center bg-gradient-to-r from-red to-orange bg-clip-text text-transparent break-words ${lang === 'en' ? 'leading-[50px] pb-3' : 'py-3 leading-[66px]'}`}
+                  className={`font-primary font-black text-5xl lg:text-[84px] lg:leading-[111px] px-5 lg:px-0 text-center bg-gradient-to-r from-[#FADD9A] to-[#73B2C2] bg-clip-text text-transparent break-words ${lang === 'en' ? 'leading-[50px] pb-3' : 'py-3 leading-[66px]'}`}
                 >
                   {dictionary?.captivating_video_narrative}
                 </h1>
@@ -297,7 +351,7 @@ export default async function Home({
             </div>
           </div>
           <div className="relative -mt-[18vh] md:-mt-[52vh]">
-            <div className="bg-cardBlue h-full w-full pb-10">
+            <div className="bg-cardGreen h-full w-full pb-10">
               <div className="md:min-h-[52vh] min-h-[18vh]" />
               <div>
                 <ScrollingText text={dictionary?.captivating_video_narrative} />

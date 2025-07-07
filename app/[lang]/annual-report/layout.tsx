@@ -42,7 +42,7 @@ export default async function Layout({
           <div className="lg:col-span-1 col-span-4">
             <Sidebar lang={lang} dictionary={dictionary} />
           </div>
-          <div className="lg:col-span-3 col-span-4 bg-cardBlue lg:p-8 p-4 md:p-6 ">
+          <div className="lg:col-span-3 col-span-4 bg-themeGreen lg:p-8 p-4 md:p-6 ">
             <NextUIProvider className="relative">{children}</NextUIProvider>
           </div>
         </div>

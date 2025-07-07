@@ -141,7 +141,12 @@ body {
 
 .custom-radio {
   span {
-    @apply !border-orange hover:bg-cardBlue;
+    @apply !border-themeYellow hover:bg-transparent;
+  }
+}
+.custom-radio-yellow {
+  span {
+    @apply !border-themeYellow hover:bg-themeYellow;
   }
 }
 .custom-radio-white {

@@ -67,7 +67,7 @@ export default function CardSection(props: CardSectionProps) {
               >
                 {props?.title}
               </p>
-              <p className="bg-gradient-to-r whitespace-pre-line from-red to-orange bg-clip-text text-transparent md:leading-[10rem] leading-[4rem]">
+              <p className="bg-gradient-to-r whitespace-pre-line from-yellow to-themeGreen bg-clip-text text-transparent md:leading-[10rem] leading-[4rem]">
                 {props?.gradientTitle}
               </p>
             </SpeechText>

@@ -45,7 +45,7 @@
   font-size: 2rem;
   font-weight: 900;
   line-height: 44.8px;
-  color: #f26722;
+  color: #0E3A2F;
 }
 .user-guide-para {
   font-size: 1.125rem;
@@ -54,7 +54,7 @@
   color: #e5e5e5;
 }
 .user-guide-home-section {
-  background-color: #061b2a;
+  background-color: #467643;
   padding: 90px 0 0;
 }
 .user-guide-home-section .para {
@@ -77,7 +77,7 @@
 
 /*annual results section*/
 .annual-results-section {
-  background-color: #06253a;
+  background-color: #0E3A2F;
   margin-top: -22%;
   padding-top: 22%;
   padding-bottom: 15%;
@@ -91,14 +91,14 @@
   width: calc(50% - 24px);
   padding: 24px 16px;
   margin: 12px;
-  background: #0a3d5f;
+  background: #17634F;
   border-radius: 8px;
 }
 .annual-results-section .annual-results-box .icon {
   width: 68px;
   height: 68px;
   border-radius: 50%;
-  background: #0b324d;
+  background: #BADBD2;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -123,7 +123,7 @@
 
 /*message chairman*/
 .message-chairman-section {
-  background-color: #061b2a;
+  background-color: #467643;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -167,7 +167,7 @@
   width: calc(50% - 24px);
   margin: 12px;
   padding: 24px 16px;
-  background: #0a3d5f;
+  background: #17634F;
   border-radius: 8px;
 }
 .integrated-dashboard-section .dashboard-box-wrap .box-item .title {
@@ -217,7 +217,7 @@
 /*sustainability section*/
 .sustainability-section {
   position: relative;
-  background-color: #061b2a;
+  background-color: #467643;
   padding-top: 130px;
 }
 .sustainability-section .para {
@@ -331,7 +331,7 @@
   padding: 80px 0 120px;
 }
 .user-guild-grid-section .grid-box-inner {
-  background-color: #0a3d5f;
+  background-color: #17634F;
   padding: 24px;
   /* margin: 12px; */
   border-radius: 8px;

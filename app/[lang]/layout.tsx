@@ -67,7 +67,7 @@ export default async function RootLayout({
       </head>
       <body className={`text-white ${getFontClass(params.lang)}`}>
         <NextUIProvider>
-          <div className="filter-layout font-primary bg-darkBlue text-white">
+          <div className="filter-layout font-primary bg-themeGreen text-white">
             <Navigation lang={params.lang} />
             {children}
             <Footer lang={params.lang} />

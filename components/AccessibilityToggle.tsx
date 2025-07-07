@@ -389,7 +389,7 @@ function AccessibilityToggle({ lang }: any) {
           {accessibilityItems.map((item) => (
             <DropdownItem
               textValue={item.title}
-              className="flex-row data-[hover=true]:bg-blue filter-home bg-cardBlue text-[#F0F0F0] border-[#616161] border rounded-lg px-4 py-2 flex justify-center items-center"
+              className="flex-row data-[hover=true]:bg-blue filter-home bg-cardGreen text-[#F0F0F0] border-[#616161] border rounded-lg px-4 py-2 flex justify-center items-center"
               onClick={() => handleClick(item.key)}
               key={item.title}
             >
