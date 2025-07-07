@@ -5,14 +5,14 @@ import { AccordionProps } from '@/types';
 
 export default function CustomAccordion(props: AccordionProps) {
   const itemClasses = {
-    base: 'bg-transparent px-0 shadow-none',
+    base: 'bg-cardGreen px-0 shadow-none',
     heading: '',
     titleWrapper: '',
     title: 'font-secondary font-normal text-base leading-8 text-gray50 ',
     trigger:
-      'px-6 py-3 data-[hover=true]:bg-black capitalize data-[open=true]:bg-plainBlack rounded-none h-fit flex items-center bg-white1/10',
+      'px-6 py-3 data-[hover=true]:bg-greeen2 capitalize data-[open=true]:bg-greeen2 rounded-none h-fit flex items-center bg-white1/10',
     indicator: 'text-medium ',
-    content: 'py-4 md:py-6 lg:pt-10 lg:pb-14',
+    content: 'py-4 md:py-6 lg:pt-10 lg:pb-14 px-4',
   };
   return (
     <Accordion

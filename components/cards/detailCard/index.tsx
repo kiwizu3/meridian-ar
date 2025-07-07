@@ -58,7 +58,7 @@ export default function DetailCard(props: Readonly<DetailCardProps>) {
   }, [audioRef]);
 
   return (
-    <div className="bg-cardBlue rounded-[21px] py-6 md:pl-10 md:pr-6 px-6 flex flex-col md:flex-row gap-7 max-w-[896px] w-full md:fit-content shadow-[0_15px_10px_15px_rgba(0, 0, 0, 0.07)]">
+    <div className="bg-cardGreen rounded-[21px] py-6 md:pl-10 md:pr-6 px-6 flex flex-col md:flex-row gap-7 max-w-[896px] w-full md:fit-content shadow-[0_15px_10px_15px_rgba(0, 0, 0, 0.07)]">
       <div className="flex md:items-center justify-center">
         <Image
           src={props?.image}
@@ -94,13 +94,13 @@ export default function DetailCard(props: Readonly<DetailCardProps>) {
             >
               {fileDownload?.map((items: any) => (
                 <div className="flex gap-2 items-center" key={items?.key}>
-                  <p className="text-orange font-medium font-secondary text-sm lg:text-lg">
+                  <p className="text-themeYellow font-medium font-secondary text-sm lg:text-lg">
                     {items?.lang}
                   </p>
                   <Radio
                     value={items?.key}
-                    classNames={{ control: 'bg-orange' }}
-                    className="custom-radio"
+                    classNames={{ control: 'bg-themeYellow' }}
+                    className="custom-radio-yellow"
                     aria-label={items?.lang}
                   />
                 </div>
@@ -131,7 +131,7 @@ export default function DetailCard(props: Readonly<DetailCardProps>) {
                 key={items.key}
                 href={items.file}
                 download
-                className="bg-transparent md:gap-3 border-1 border-orange text-orange hover:border-white hover:text-white rounded-lg h-[56px] w-[125px] px-2 font-medium font-secondary text-sm lg:text-lg flex items-center justify-center"
+                className="bg-transparent md:gap-3 border-1 border-themeYellow text-themeYellow hover:border-white hover:text-white rounded-lg h-[56px] w-[125px] px-2 font-medium font-secondary text-sm lg:text-lg flex items-center justify-center"
               >
                 {items.lang}
                 <Download />

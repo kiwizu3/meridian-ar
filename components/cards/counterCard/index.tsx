@@ -36,18 +36,18 @@ export default function CounterCard(props: CounterCardProps) {
           </SpeechText>
         </div>
         <SpeechText>
-          <p className="font-secondary text-sm md:text-base lg:text-[1.125rem ] lg:leading-[17.91px] text-center font-bold">
+          <p className="font-secondary text-sm md:text-base text-gold lg:text-[1.125rem ] lg:leading-[17.91px] text-center font-bold">
             {props?.subTitle}
           </p>
         </SpeechText>
         <div className="flex flex-col gap-2">
           <SpeechText>
-            <p className="font-secondary text-base md:text-xl lg:text-2xl lg:leading-[23.88px] text-center bg-gradient-to-r from-red to-orange bg-clip-text text-transparent font-bold">
+            <p className="font-secondary text-base md:text-xl lg:text-2xl lg:leading-[23.88px] text-center text-themeYellow bg-clip-text font-bold">
               {count}
             </p>
           </SpeechText>
           <SpeechText>
-            <p className="font-secondary font-medium text-base md:text-xl lg:text-2xl lg:leading-[23.71px] text-center">
+            <p className="font-secondary text-gold font-medium text-base md:text-xl lg:text-2xl lg:leading-[23.71px] text-center">
               {props?.counterText}
             </p>
           </SpeechText>

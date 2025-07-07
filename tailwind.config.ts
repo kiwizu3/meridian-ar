@@ -35,6 +35,13 @@ module.exports = {
         lightGreen: '#8EFFA0',
         lightBlack: '#23232A',
         grayAsh: '#8B8B8B',
+        themeGreen: '#0E3A2F',
+        cardGreen: '#17634F',
+        greeen2 : '#124C3D',
+        themeYellow: '#EDB143',
+        yellow : '#DBB226 ',
+        gold: '#D9CA95',
+        
       },
     },
     fontFamily: {

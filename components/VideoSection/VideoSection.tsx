@@ -24,11 +24,11 @@ const VideoSection = () => {
         />
         <source
           key="origami-art-bg-web"
-          src="/videos/origami-art-bg.mp4"
+          src="/videos/Lion Animation_SFX_v2.mp4"
           type="video/mp4"
         />
         <track
-          src="/videos/origami-art-bg.mp4"
+          src="/videos/Lion Animation_SFX_v2.mp4"
           kind="captions"
           srcLang="en"
           label="English"
@@ -52,11 +52,11 @@ const VideoSection = () => {
         />
         <source
           key="origami-art-loop-web"
-          src="/videos/origami-art-loop.mp4"
+          src="/videos/Lion Animation_SFX_v3.mp4"
           type="video/mp4"
         />
         <track
-          src="/videos/origami-art-loop.mp4"
+          src="/videos/Lion Animation_SFX_v3.mp4"
           kind="captions"
           srcLang="en"
           label="English"
