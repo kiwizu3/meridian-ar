@@ -24,7 +24,7 @@ export default function AssuranceReport({ dictionary }: any) {
                 <p className="text-center text font-secondary whitespace-pre-line">
                   {dictionary?.independent_practitioners_assurance_report}
                   {'\n'}
-                  {dictionary?.fy_2023_24}
+                  {dictionary?.fy_2025}
                 </p>
               </SpeechText>
               <a
@@ -43,7 +43,7 @@ export default function AssuranceReport({ dictionary }: any) {
                     dictionary?.independent_practitioners_assurance_report_to_the_board
                   }
                   {'\n'}
-                  {dictionary?.fy_2023_24}
+                  {dictionary?.page_112}
                 </p>
               </SpeechText>
               <a

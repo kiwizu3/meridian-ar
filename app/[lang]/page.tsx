@@ -186,8 +186,7 @@ export default async function Home({
                   <FadeInText>
                     <SpeechText>
                       <h1 className="font-primary font-black px-3 lg:px-0 text-4xl lg:text-[4rem] lg:leading-[76.8px] text-center lg:pb-4">
-                        {dictionary?.crafting_endless_possibilities}
-                        {dictionary?.crafting_endless_possibilities_sub}
+                        {dictionary?.mosaic_of_strength}
                       </h1>
                     </SpeechText>
                   </FadeInText>
@@ -205,12 +204,12 @@ export default async function Home({
                   <FadeInText>
                     <SpeechText>
                       <p className="font-secondary whitespace-pre-line px-4 pt-4 lg:pt-0 lg:px-0 hover:text-shadow opacity-80 font-extralight text-sm lg:text-2xl leading-[33.6px] tracking-[1px] text-center">
-                        {dictionary?.crafting_description}
+                        {dictionary?.mosaic_of_strength_description}
                       </p>
                     </SpeechText>
                     <SpeechText>
                       <p className="font-secondary whitespace-pre-line px-4 pt-4 lg:pt-4 lg:px-0 hover:text-shadow opacity-80 font-extralight text-sm lg:text-2xl leading-[33.6px] tracking-[1px] text-center">
-                        {dictionary?.crafting_description_sub}
+                        {dictionary?.mosaic_of_strength_description_sub}
                       </p>
                     </SpeechText>
                   </FadeInText>
@@ -330,7 +329,7 @@ export default async function Home({
                 <h1
                   className={`font-primary font-black text-5xl whitespace-pre-line lg:text-[84px] px-5 lg:px-0 leading-[50px] lg:leading-[111px] text-center break-words ${lang === 'en' ? 'leading-[50px]' : 'leading-[66px]'}`}
                 >
-                  {dictionary?.experience_the_annual_report_unfold_in_a}
+                  {dictionary?.Discover_the_essence_of_our_Mosaic}
                 </h1>
                 <h1
                   className={`font-primary font-black text-5xl lg:text-[84px] lg:leading-[111px] px-5 lg:px-0 text-center bg-gradient-to-r from-[#FADD9A] to-[#73B2C2] bg-clip-text text-transparent break-words ${lang === 'en' ? 'leading-[50px] pb-3' : 'py-3 leading-[66px]'}`}
