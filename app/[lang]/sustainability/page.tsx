@@ -110,7 +110,7 @@ export default async function sustainability({
                   key={items?.key}
                   href={items?.file}
                   download
-                  className="bg-transparent md:gap-3 border-1 border-orange text-orange hover:border-white hover:text-white rounded-lg h-[56px] w-[125px] px-2 font-medium font-secondary text-sm lg:text-lg flex items-center justify-center"
+                  className="bg-transparent md:gap-3 border-1 border-themeYellow text-themeYellow hover:border-white hover:text-white rounded-lg h-[56px] w-[125px] px-2 font-medium font-secondary text-sm lg:text-lg flex items-center justify-center"
                 >
                   {items?.lang}
                   <Download />
@@ -123,39 +123,7 @@ export default async function sustainability({
 
       {/* 2nd person  */}
       <div className="!container relative z-10 flex flex-wrap justify-between pt-[98px] px-5 sm:px-10">
-        <div className="w-full lg:w-[35%] xl:w-[calc(100% - 723px)] mb-6 xl:mb-0 text-center lg:text-left">
-          <div className="w-[225px] h-[225px] overflow-hidden rounded-full mb-[29px] block mx-auto lg:mx-0">
-            <Image
-              src={ProfileImage2}
-              className="w-full h-full"
-              alt="Ms. Yanika Amarasekera"
-            />
-          </div>
-          <div className="text-[1.125rem] leading-[32px] sm:text-[1.5rem] sm:leading-[42px] xl:text-[2rem] xl:leading-[48px] font-black text-white">
-            <SpeechText>
-              <p>{dictionary?.yanika_amarasekera}</p>
-            </SpeechText>
-          </div>
-          <div className="text-[1rem] leading-[24px] sm:text-[1.125rem] sm:leading-[32px] xl:text-[1.625rem] xl:leading-[46.8px] font-light text-white font-secondary">
-            <SpeechText>
-              <p> {dictionary?.chairperson}</p>
-            </SpeechText>
-          </div>
-          <div className="text-[1rem] leading-[24px] sm:text-[1.125rem] sm:leading-[32px] xl:text-[1.375rem] xl:leading-[39.6px] font-light text-white font-secondary">
-            <SpeechText>
-              <p>{dictionary?.sustainability_management_committee}</p>
-            </SpeechText>
-          </div>
-          <div className="mt-5 sm:mt-7 mb-7 lg:mb-0 text-center lg:text-left">
-            <div className="text-base lg:text-[1.125rem] lg:leading-[32.4px] text-white font-secondary mb-4 font-normal">
-              <SpeechText>
-                <p>{dictionary?.listen_to_the_message}</p>
-              </SpeechText>
-            </div>
-            <AudioTrack />
-          </div>
-        </div>
-        <div className="w-full lg:w-[60%] xl:w-[723px] xl:pr-6">
+      <div className="w-full lg:w-[60%] xl:w-[723px] xl:pr-6">
           <div>
             <Image
               src={TopComma}
@@ -194,6 +162,43 @@ export default async function sustainability({
             </div>
           </div>
         </div>
+       
+        <div className="w-full lg:w-[35%] xl:w-[calc(100% - 723px)] mb-6 xl:mb-0 text-center lg:text-left">
+          <div className="w-[225px] h-[225px] overflow-hidden rounded-full mb-[29px] block mx-auto lg:mx-0">
+            <Image
+              src={ProfileImage2}
+              className="w-full h-full"
+              alt="Ms. Yanika Amarasekera"
+            />
+          </div>
+          <div className="text-[1.125rem] leading-[32px] sm:text-[1.5rem] sm:leading-[42px] xl:text-[2rem] xl:leading-[48px] font-black text-white">
+            <SpeechText>
+              <p>{dictionary?.yanika_amarasekera}</p>
+            </SpeechText>
+          </div>
+          <div className="text-[1rem] leading-[24px] sm:text-[1.125rem] sm:leading-[32px] xl:text-[1.625rem] xl:leading-[46.8px] font-light text-white font-secondary">
+            <SpeechText>
+              <p> {dictionary?.chairperson}</p>
+            </SpeechText>
+          </div>
+          <div className="text-[1rem] leading-[24px] sm:text-[1.125rem] sm:leading-[32px] xl:text-[1.375rem] xl:leading-[39.6px] font-light text-white font-secondary">
+            <SpeechText>
+              <p>{dictionary?.sustainability_management_committee}</p>
+            </SpeechText>
+          </div>
+          <div className="mt-5 sm:mt-7 mb-7 lg:mb-0 text-center lg:text-left">
+            <div className="text-base lg:text-[1.125rem] lg:leading-[32.4px] text-white font-secondary mb-4 font-normal">
+              <SpeechText>
+                <p>{dictionary?.listen_to_the_message}</p>
+              </SpeechText>
+            </div>
+            <AudioTrack />
+          </div>
+        </div>
+
+
+
+        
       </div>
 
       <ValueCreationModel dictionary={dictionary} />

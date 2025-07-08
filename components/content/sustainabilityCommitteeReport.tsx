@@ -45,7 +45,7 @@ export default function SustainabilityCommitteeReport() {
             <table className="w-full bg-white text-blue rounded-lg overflow-hidden">
               <thead>
                 <tr className="border-b-2 border-blue">
-                  <th className="p-3 text-left bg-orange-300">
+                  <th className="p-3 text-left bg-themeYellow-300">
                     Committee Member
                   </th>
                   <th className="p-3 text-left bg-blue-500 text-white">
