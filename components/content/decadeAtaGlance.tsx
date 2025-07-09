@@ -19,6 +19,7 @@ export default function DecadeGlance() {
         '13.28',
         '11.86',
         '13.70',
+        '12.22',
       ],
     },
     {
@@ -33,8 +34,9 @@ export default function DecadeGlance() {
         '10.46',
         '10.62',
         '11.98',
-        '9.15',
-        '10.95',
+        '9.19',
+        '11.05',
+        '10.35',
       ],
     },
     {
@@ -51,6 +53,7 @@ export default function DecadeGlance() {
         '29.28',
         '32.42',
         '31.13',
+        '32.58',
       ],
     },
     {
@@ -72,6 +75,7 @@ export default function DecadeGlance() {
         '4.97',
         '4.78',
         '4.63',
+        '4.70',
       ],
     },
     {
@@ -88,6 +92,7 @@ export default function DecadeGlance() {
         '3.77',
         '3.60',
         '3.44',
+        '3.53',
       ],
     },
     {
@@ -104,6 +109,7 @@ export default function DecadeGlance() {
         '37.07',
         '33.43',
         '35.52',
+        '37.02',
       ],
     },
     {
@@ -125,6 +131,7 @@ export default function DecadeGlance() {
         '28.29',
         '23.78',
         '23.40',
+        '22.77',
       ],
     },
     {
@@ -141,6 +148,7 @@ export default function DecadeGlance() {
         '5.68',
         '4.88',
         '4.97',
+        '4.88',
       ],
     },
     {
@@ -157,6 +165,7 @@ export default function DecadeGlance() {
         '20.11',
         '20.90',
         '21.58',
+        '21.28',
       ],
     },
     {
@@ -173,6 +182,7 @@ export default function DecadeGlance() {
         '59.65',
         '68.79',
         '78.74',
+        '92.53',
       ],
     },
     {
@@ -189,6 +199,7 @@ export default function DecadeGlance() {
         '15.63',
         '15.27',
         '17.26',
+        '19.50',
       ],
     },
     {
@@ -205,6 +216,7 @@ export default function DecadeGlance() {
         '5.00',
         '5.00',
         '5.75',
+        '6.50',
       ],
     },
     {
@@ -220,6 +232,7 @@ export default function DecadeGlance() {
         '1.75',
         '3.13',
         '3.05',
+        '3.00',
         '3.00',
       ],
     },
@@ -237,6 +250,7 @@ export default function DecadeGlance() {
         '8.62',
         '9.09',
         '9.16',
+        '7.51',
       ],
     },
     {
@@ -253,6 +267,7 @@ export default function DecadeGlance() {
         '31.98',
         '32.74',
         '33.31',
+        '33.33',
       ],
     },
     {
@@ -269,6 +284,7 @@ export default function DecadeGlance() {
         '3.71',
         '3.60',
         '3.64',
+        '4.44',
       ],
     },
     {
@@ -285,6 +301,7 @@ export default function DecadeGlance() {
         '0.97',
         '0.80',
         '0.80',
+        '0.93',
       ],
     },
     {
@@ -301,6 +318,7 @@ export default function DecadeGlance() {
         '58.00',
         '55.00',
         '62.80',
+        '86.50',
       ],
     },
     {
@@ -317,6 +335,7 @@ export default function DecadeGlance() {
         '32,135',
         '30,473',
         '34,795',
+        '47,926',
       ],
     },
     {
@@ -333,6 +352,7 @@ export default function DecadeGlance() {
         '2.35',
         '1.57',
         '1.71',
+        '1.98',
       ],
     },
     {
@@ -354,6 +374,7 @@ export default function DecadeGlance() {
         '1.32',
         '41.77',
         '15.14',
+        '(5.08)',
       ],
     },
     {
@@ -370,6 +391,7 @@ export default function DecadeGlance() {
         '0.19',
         '44.10',
         '15.70',
+        '(8.56)',
       ],
     },
     {
@@ -386,6 +408,7 @@ export default function DecadeGlance() {
         '(23.23)',
         '133.03',
         '3.71',
+        '(21.95)',
       ],
     },
     {
@@ -402,6 +425,7 @@ export default function DecadeGlance() {
         '17.13',
         '1.95',
         '28.69',
+        '3.19',
       ],
     },
     {
@@ -418,6 +442,7 @@ export default function DecadeGlance() {
         '27.98',
         '(1.38)',
         '29.23',
+        '7.65',
       ],
     },
     {
@@ -434,6 +459,7 @@ export default function DecadeGlance() {
         '27.33',
         '(2.33)',
         '13.04',
+        '12.99',
       ],
     },
     {
@@ -450,6 +476,7 @@ export default function DecadeGlance() {
         '16.92',
         '10.94',
         '10.87',
+        '19.15',
       ],
     },
     {
@@ -466,6 +493,7 @@ export default function DecadeGlance() {
         '17.75',
         '8.03',
         '11.09',
+        '22.61',
       ],
     },
     {
@@ -482,6 +510,7 @@ export default function DecadeGlance() {
         '3.82',
         '27.90',
         '7.72',
+        '12.78',
       ],
     },
     {
@@ -498,6 +527,7 @@ export default function DecadeGlance() {
         '17.23',
         '15.34',
         '14.46',
+        '17.51',
       ],
     },
     {

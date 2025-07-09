@@ -45,7 +45,7 @@ const DropdownWithCheckbox: React.FC<DropdownWithCheckboxProps> = ({
         label: 'text-white hover:text-white',
         popoverContent: 'bg-lightBlack financial-dashboard',
         trigger:
-          'data-[hover=true]:!bg-blue h-12 border-2 border-[#FFFFFF33] focus:!border-[#FFFFFF33]  data-[open]:!border-[#FFFFFF33] data-[selected]:!bg-[#0B466E]',
+          'data-[hover=true]:!bg-cardGreen h-12 border-2 border-[#FFFFFF33] focus:!border-[#FFFFFF33]  data-[open]:!border-[#FFFFFF33] data-[selected]:!bg-[#0B466E]',
         value: 'text-white',
       }}
       onSelectionChange={handleSelectChange}
@@ -58,7 +58,7 @@ const DropdownWithCheckbox: React.FC<DropdownWithCheckboxProps> = ({
             'text-white',
             'transition-opacity',
             'data-[hover=true]:text-white',
-            'data-[hover=true]:!bg-blue',
+            'data-[hover=true]:!bg-cardGreen',
             'data-[selectable=true]:focus:bg-blue',
             'data-[selectable=true]:focus:text-white',
             'data-[pressed=true]:opacity-70',
