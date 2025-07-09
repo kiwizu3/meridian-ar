@@ -219,7 +219,7 @@ function GraphWrapperCard(props: Readonly<GraphWrapperCardProps>) {
               classNames={{
                 popoverContent: 'bg-lightBlack inline-table',
                 trigger:
-                  'bg-transparent data-[hover=true]:!bg-blue focus:!border-[#FFFFFF33] focus-visible:!outline-none  data-[open]:!border-[#FFFFFF33] data-[selected]:!bg-[#0B466E]',
+                  'bg-transparent data-[hover=true]:!bg-cardGreen focus:!border-[#FFFFFF33] focus-visible:!outline-none  data-[open]:!border-[#FFFFFF33] data-[selected]:!bg-[#0B466E]',
                 value: '!text-white hidden ',
                 innerWrapper: 'min-w-[80px] mr-2',
               }}
@@ -230,7 +230,7 @@ function GraphWrapperCard(props: Readonly<GraphWrapperCardProps>) {
                     '!text-white',
                     'transition-opacity',
                     'data-[hover=true]:text-white',
-                    'data-[hover=true]:!bg-blue',
+                    'data-[hover=true]:!bg-cardGreen',
                     'data-[selectable=true]:focus:bg-blue',
                     'data-[selectable=true]:focus:text-white',
                     'data-[pressed=true]:opacity-70',

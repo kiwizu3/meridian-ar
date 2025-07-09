@@ -1,5 +1,5 @@
 export const graphYears = [
-  '2015',
+  // '2015',
   '2016',
   '2017',
   '2018',
@@ -9,6 +9,7 @@ export const graphYears = [
   '2022',
   '2023',
   '2024',
+  '2025',
 ];
 
 export const nonFinancialGraphYears = ['2020', '2021', '2022', '2023', '2024'];
