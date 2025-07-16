@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic';
 
 const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
 
-const chartOptions1: ApexOptions = {
+const chartOptions: ApexOptions = {
   chart: {
     type: 'bar',
   },
@@ -20,24 +20,28 @@ const chartOptions1: ApexOptions = {
   },
   xaxis: {
     categories: [
-      'Financial Performance',
-      'Cash Flows',
-      'Financial Position',
-      'Access to Finance',
+      'Governance',
+      'Strategy',
+      'Risk Management',
+      'Metrics & Targets',
+      'GHG Emissions',
+      'Scenario Analysis',
     ],
     labels: {
-      rotate: -90,
+      rotate: -45,
     },
   },
   yaxis: {
-    labels: {},
+    title: {
+      text: 'Implementation Level (%)',
+    },
   },
   grid: {
     borderColor: '#eee',
   },
   tooltip: {
     y: {
-      formatter: (val: number) => `${val}`,
+      formatter: (val: number) => `${val}%`,
     },
   },
   legend: {
@@ -50,308 +54,186 @@ const chartOptions1: ApexOptions = {
   },
 };
 
-const chartSeries1 = [
+const chartSeries = [
   {
-    name: 'Short',
-    data: [20, -20, 20, 10],
+    name: 'Current Implementation',
+    data: [85, 75, 80, 65, 70, 60],
   },
   {
-    name: 'Medium',
-    data: [40, 40, 30, 30],
-  },
-  {
-    name: 'Long',
-    data: [60, 60, 40, 50],
-  },
-];
-const chartSeries2 = [
-  {
-    name: 'Short',
-    data: [-20, -20, -20, 10],
-  },
-  {
-    name: 'Medium',
-    data: [40, 50, 40, 10],
-  },
-  {
-    name: 'Long',
-    data: [60, 70, 75, 80],
-  },
-];
-const chartSeries3 = [
-  {
-    name: 'Short',
-    data: [-10, -25, -10, 10],
-  },
-  {
-    name: 'Medium',
-    data: [30, 10, 30, 10],
-  },
-  {
-    name: 'Long',
-    data: [35, 20, 35, 20],
+    name: 'Target',
+    data: [100, 100, 100, 100, 100, 100],
   },
 ];
 
-const chartSeries4 = [
-  {
-    name: 'Short',
-    data: [20, 10, 20, 20],
-  },
-  {
-    name: 'Medium',
-    data: [40, 20, 40, 30],
-  },
-  {
-    name: 'Long',
-    data: [60, 40, 60, 40],
-  },
-];
-
-const chartSeries5 = [
-  {
-    name: 'Short',
-    data: [20, -30, 20, 20],
-  },
-  {
-    name: 'Medium',
-    data: [45, -10, 45, 30],
-  },
-  {
-    name: 'Long',
-    data: [70, 40, 68, 35],
-  },
-];
-
-const chartSeries6 = [
-  {
-    name: 'Short',
-    data: [10, -20, 10, 10],
-  },
-  {
-    name: 'Medium',
-    data: [30, 20, 30, 10],
-  },
-  {
-    name: 'Long',
-    data: [65, 40, 65, 20],
-  },
-];
-export default function SustainabilityRelatedOpportunities() {
+export default function SLFRSDisclosuresContentIndex() {
   return (
     <div className="min-h-screen bg-cardGreen text-white p-8">
       <div>
         <h1 className="text-3xl font-bold mb-6 text-white">
-          Sustainability Related Risks
+          SLFRS S1 AND S2 DISCLOSURES CONTENT INDEX
         </h1>
+
+        <div className="mb-8">
+          <h2 className="text-xl font-semibold mb-4">
+            Implementation Progress
+          </h2>
+          <div className="w-full bg-gray-200 rounded-md p-4">
+            <Chart
+              options={chartOptions}
+              series={chartSeries}
+              type="bar"
+              height={400}
+            />
+          </div>
+        </div>
+
         <div className="overflow-x-auto">
           <table className="w-full border-collapse">
             <thead>
               <tr className="bg-blue-600">
-                <th className="border border-white p-2">Risk</th>
-                <th className="border border-white p-2">Energy Management</th>
-                <th className="border border-white p-2">Employee Attrition</th>
+                <th className="border border-white p-2">Section</th>
                 <th className="border border-white p-2">
-                  Information Security
+                  SLFRS S1 & S2 Reference
                 </th>
+                <th className="border border-white p-2">
+                  Summary of Requirements
+                </th>
+                <th className="border border-white p-2">Page Reference</th>
               </tr>
             </thead>
             <tbody>
               <tr className="bg-blue-800">
-                <td className="border border-white p-2">Description</td>
+                <td className="border border-white p-2">Governance</td>
+                <td className="border border-white p-2">S1: 26-27, S2: 5-6</td>
                 <td className="border border-white p-2">
-                  High dependency on non-renewable energy sources
+                  Disclosures on governance to enable users to understand the
+                  governance processes, controls and procedures used to monitor,
+                  manage and oversee sustainability-related and climate-related
+                  risks and opportunities.
                 </td>
-                <td className="border border-white p-2">
-                  High turnover of talented staff
-                </td>
-                <td className="border border-white p-2">
-                  Potential threats or vulnerabilities that could compromise the
-                  confidentiality integrity or availability of digital assets
-                </td>
+                <td className="border border-white p-2">276-277</td>
               </tr>
               <tr>
+                <td className="border border-white p-2">Strategy</td>
+                <td className="border border-white p-2">S1: 28-42, S2: 8-23</td>
                 <td className="border border-white p-2">
-                  DMitigations and Opportunities
+                  Disclosures on how sustainability-related and climate-related
+                  risks and opportunities impact the business model, strategy,
+                  and financial planning over the short, medium, and long term,
+                  including:
+                  <ul className="list-disc pl-5 mt-2">
+                    <li>Identification of risks and opportunities</li>
+                    <li>Impact on business model and value chain</li>
+                    <li>Effects on strategy and decision-making</li>
+                    <li>
+                      Effect on financial performance, position, and cash flows
+                    </li>
+                    <li>
+                      Resilience assessment (qualitative and quantitative)
+                    </li>
+                    <li>Climate transition plan</li>
+                  </ul>
+                </td>
+                <td className="border border-white p-2">83-94</td>
+              </tr>
+              <tr className="bg-blue-800">
+                <td className="border border-white p-2">Risk Management</td>
+                <td className="border border-white p-2">
+                  S1: 43-44, S2: 24-26
                 </td>
                 <td className="border border-white p-2">
-                  25 branches use solar power in addition to the use of main
-                  grid electricity and further continue to transform branches
-                  into use of solar power.
+                  Disclose the processes used to identify, assess, prioritize,
+                  and monitor sustainability-related and climate-related risks
+                  and opportunities, including integration with the overall risk
+                  management process.
+                </td>
+                <td className="border border-white p-2">336-345</td>
+              </tr>
+              <tr>
+                <td className="border border-white p-2">Metrics and Targets</td>
+                <td className="border border-white p-2">
+                  S1: 45-53, S2: 27-28
                 </td>
                 <td className="border border-white p-2">
-                  Improving skills and developing pleasant workplace through
-                  human resources development and retaining talented human
-                  resources through productivity management
+                  Disclose the metrics and targets used to assess performance in
+                  relation to sustainability-related and climate-related risks
+                  and opportunities, including progress toward targets and level
+                  of achievement.
                 </td>
                 <td className="border border-white p-2">
-                  Governance structures were strengthened and surveillance and
-                  monitoring tools were enhanced
+                  105-111, 141, 149, 169, 183, 206, 221
                 </td>
               </tr>
               <tr className="bg-blue-800">
                 <td className="border border-white p-2">
-                  Potential Adjustment to Assets and Liabilities in 2024/25
+                  GHG Emissions & Climate Metrics
+                </td>
+                <td className="border border-white p-2">S2: 29</td>
+                <td className="border border-white p-2">
+                  Disclose Scope 1, 2, and 3 greenhouse gas (GHG) emissions,
+                  including methodologies, assumptions, and intensity ratios
+                  used. Should align with GHG Protocol.
+                </td>
+                <td className="border border-white p-2">105-111</td>
+              </tr>
+              <tr>
+                <td className="border border-white p-2">
+                  Scenario Analysis & Climate Resilience
+                </td>
+                <td className="border border-white p-2">S2: 22</td>
+                <td className="border border-white p-2">
+                  Disclose the resilience of strategy and business model to
+                  climate-related changes and uncertainties, considering defined
+                  climate-related risks and opportunities. Scenario analysis
+                  should be applied.
                 </td>
                 <td className="border border-white p-2">
-                  Slight increase in assets
-                </td>
-                <td className="border border-white p-2">
-                  No significant impact
-                </td>
-                <td className="border border-white p-2">
-                  Moderate increase in assets
+                  345 (Non-financial content)
                 </td>
               </tr>
-
-              <tr>
-                <td className="border  p-2">Related Strategy</td>
-                <td className="border  p-2">Creating Positive Impact</td>
-                <td className="border  p-2">Workforce Empowerment</td>
-                <td className="border p-2">Digital Transformation</td>
-              </tr>
-
-              <tr>
-                <td className="border  p-2">
-                  Short-term, Medium-term and Long-term Impact through Risks
-                  Mitigation and Opportunities
+              <tr className="bg-blue-800">
+                <td className="border border-white p-2">Materiality</td>
+                <td className="border border-white p-2">S1: 17-18</td>
+                <td className="border border-white p-2">
+                  Disclose material sustainability-related and climate-related
+                  risks and opportunities that could influence the assessments
+                  and decisions of primary users of financial reports.
                 </td>
-                <td className="border p-2">
-                  <div className="w-full bg-gray-200 rounded-md p-2">
-                    <Chart
-                      options={chartOptions1}
-                      series={chartSeries1}
-                      type="bar"
-                      height={400}
-                    />
-                  </div>
-                </td>
-                <td className="border p-2">
-                  <div className="w-full bg-gray-200 rounded-md p-2">
-                    <Chart
-                      options={chartOptions1}
-                      series={chartSeries2}
-                      type="bar"
-                      height={400}
-                    />
-                  </div>
-                </td>
-
-                <td className="border p-2">
-                  <div className="w-full bg-gray-200 rounded-md p-2">
-                    <Chart
-                      options={chartOptions1}
-                      series={chartSeries3}
-                      type="bar"
-                      height={400}
-                    />
-                  </div>
-                </td>
+                <td className="border border-white p-2">76</td>
               </tr>
             </tbody>
           </table>
         </div>
-      </div>
 
-      <div className="mt-6">
-        <div className="overflow-x-auto">
-          <table className="w-full border-collapse">
-            <thead>
-              <tr className="bg-blue-600">
-                <th className="border border-white p-2  w-1/3">
-                  Volatility in operating environment
-                </th>
-                <th className="border border-white p-2  w-1/3">
-                  Intense rivalry
-                </th>
-                <th className="border border-white p-2  w-1/3">
-                  Inefficient Processes
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr className="bg-blue-800">
-                <td className="border border-white p-2 w-1/3">
-                  Uncertain macroeconomic conditions have a direct impact on the
-                  performance (e.g.: Interest rates, political environment, tax
-                  impact)
-                </td>
-                <td className="border border-white p-2  w-1/3">
-                  Intense market competition among the peer financial service
-                  providers leads to loss of loyal customers
-                </td>
-                <td className="border border-white p-2  w-1/3">
-                  Increased costs due to inefficient processes
-                </td>
-              </tr>
-              <tr className="bg-blue-800">
-                <td className="border border-white p-2">
-                  Maintaining sufficient capital and liquidity buffers
-                </td>
-                <td className="border border-white p-2">
-                  Measures to safeguard the interests of its customers while
-                  ensuring customer touchpoints functioned efficiently to serve
-                  the needs of the communities it operates in
-                </td>
-                <td className="border border-white p-2">
-                  Business process re-engineering
-                </td>
-              </tr>
-              <tr className="bg-blue-800">
-                <td className="border border-white p-2">
-                  Impact is subject to severity of macroeconomic conditions
-                </td>
-                <td className="border border-white p-2">
-                  Low impact on assets and liabilities
-                </td>
-                <td className="border border-white p-2">
-                  Low impact on assets and liabilities
-                </td>
-              </tr>
+        <div className="mt-8 p-4 bg-blue-900 rounded-md">
+          <h2 className="text-xl font-semibold mb-2">Additional Notes</h2>
+          <ul className="list-disc pl-5 space-y-2">
+            <li>
+              Quantitative disclosures were not provided to be in-line with the
+              transitional provision of SLFRS S1 paragraph 34 (b), that
+              quantitative information need not be provided in the first year of
+              adoption of the Standard.
+            </li>
+            <li>
+              The Company did not receive any information after the end of the
+              reporting period, but before the date on which the
+              sustainability-related financial disclosures were authorised for
+              issue that required an update to the disclosures in respect of
+              conditions that existed at the end of the reporting period.
+            </li>
+            <li>
+              Based on the sustainability-related risks and opportunities
+              identified in accordance with SLFRS S1:35(a), the Company has not
+              identified any risks or opportunities that give rise to a
+              significant risk of a material adjustment to the carrying amounts
+              of assets or liabilities reported in the financial statements
+              within the next annual reporting period.
+            </li>
+          </ul>
+        </div>
 
-              <tr className="bg-blue-800">
-                <td className="border border-white p-2">
-                  <div className="w-full bg-gray-200 rounded-md p-2">
-                    <h3 className="text-md font-semibold text-gray-700">
-                      Financial Resilience
-                    </h3>
-                    <Chart
-                      options={chartOptions1}
-                      series={chartSeries4}
-                      type="bar"
-                      height={400}
-                    />
-                  </div>
-                </td>
-                <td className="border border-white p-2">
-                  <div className="w-full bg-gray-200 rounded-md p-2">
-                    <h3 className="text-md font-semibold text-gray-700">
-                      Customer Centricity
-                    </h3>
-                    <Chart
-                      options={chartOptions1}
-                      series={chartSeries5}
-                      type="bar"
-                      height={400}
-                    />
-                  </div>
-                </td>
-                <td className="border border-white p-2">
-                  <div className="w-full bg-gray-200 rounded-md p-2">
-                    <h3 className="text-md font-semibold text-gray-700">
-                      Business Simplification and Optimisation
-                    </h3>
-                    <Chart
-                      options={chartOptions1}
-                      series={chartSeries6}
-                      type="bar"
-                      height={400}
-                    />
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <div className="mt-6 text-right text-sm italic">
+          LB Finance PLC Integrated Annual Report 2024/25
         </div>
       </div>
     </div>

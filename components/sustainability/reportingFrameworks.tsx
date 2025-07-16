@@ -69,6 +69,111 @@ const NaturalCapital = dynamic(
   { ssr: false, suspense: true },
 );
 
+const NoPovertyPart = dynamic(
+  () => import('../content/sustainable-development/goals/NoPoverty/index'),
+  { ssr: false, suspense: true },
+);
+const ZeroHungerPart = dynamic(
+  () => import('../content/sustainable-development/goals/ZeroHunger/index'),
+  { ssr: false, suspense: true },
+);
+
+const GoodHealthWellbeingPart = dynamic(
+  () =>
+    import(
+      '../content/sustainable-development/goals/GoodHealth&Wellbeing/index'
+    ),
+  { ssr: false, suspense: true },
+);
+
+const QualityEducationPart = dynamic(
+  () =>
+    import('../content/sustainable-development/goals/QualityEducation/index'),
+  { ssr: false, suspense: true },
+);
+const GenderQualityPart = dynamic(
+  () => import('../content/sustainable-development/goals/GenderEquality/index'),
+  { ssr: false, suspense: true },
+);
+
+const CleanWaterSanitation = dynamic(
+  () =>
+    import(
+      '../content/sustainable-development/goals/CleanWater&Sanitation/index'
+    ),
+  { ssr: false, suspense: true },
+);
+
+const CleanEnergy = dynamic(
+  () => import('../content/sustainable-development/goals/CleanEnergy/index'),
+  { ssr: false, suspense: true },
+);
+
+const WorkAndEconomic = dynamic(
+  () => import('../content/sustainable-development/goals/Work&Economic/index'),
+  { ssr: false, suspense: true },
+);
+
+const IndustryInnovationInfrastructure = dynamic(
+  () =>
+    import(
+      '../content/sustainable-development/goals/Industry&Innovation&Infracture/index'
+    ),
+  { ssr: false, suspense: true },
+);
+const ReducedInequalities = dynamic(
+  () =>
+    import(
+      '../content/sustainable-development/goals/ReducedInequalities/index'
+    ),
+  { ssr: false, suspense: true },
+);
+
+const CitiesAndCommunities = dynamic(
+  () =>
+    import(
+      '../content/sustainable-development/goals/SustainableCities&Communities/index'
+    ),
+  { ssr: false, suspense: true },
+);
+
+const ConsumptionProduction = dynamic(
+  () =>
+    import(
+      '../content/sustainable-development/goals/Consumption&Production/index'
+    ),
+  { ssr: false, suspense: true },
+);
+
+const ClimateAction = dynamic(
+  () => import('../content/sustainable-development/goals/ClimateAction/index'),
+  { ssr: false, suspense: true },
+);
+
+const LifeBelowWater = dynamic(
+  () => import('../content/sustainable-development/goals/LifeBelowWater/index'),
+  { ssr: false, suspense: true },
+);
+
+const LifeOnLand = dynamic(
+  () => import('../content/sustainable-development/goals/LifeOnLand/index'),
+  { ssr: false, suspense: true },
+);
+
+const PeaceJusticeInstitutions = dynamic(
+  () =>
+    import(
+      '../content/sustainable-development/goals/PeaceJustice&StrongInstitutions/index'
+    ),
+  { ssr: false, suspense: true },
+);
+
+const PartnershipsGoals = dynamic(
+  () =>
+    import('../content/sustainable-development/goals/PartnershipsGoals/index'),
+  { ssr: false, suspense: true },
+);
+
 const SocialRelationshipCapital = dynamic(
   () =>
     import(
@@ -92,12 +197,32 @@ function ReportingFrameworks({ dictionary }: any) {
   const pageData = {
     developmentGoals: [
       {
+        img: '/images/sustainability-goals/Goal-01.svg',
+        backgroundColor: '#E5243B',
+        contentLabelPairs: [
+          {
+            content: <NoPovertyPart />,
+            label: '33-36 & 241-244',
+          },
+        ],
+      },
+      {
+        img: '/images/sustainability-goals/Goal-02.svg',
+        backgroundColor: '#DDA63A',
+        contentLabelPairs: [
+          {
+            content: <ZeroHungerPart />,
+            label: '34, 204',
+          },
+        ],
+      },
+      {
         img: '/images/good-health-icon.svg',
         backgroundColor: '#2D9A47',
         contentLabelPairs: [
           {
-            content: <SocialRelationshipCapital />,
-            label: '128-145',
+            content: <GoodHealthWellbeingPart />,
+            label: '201,203',
           },
         ],
       },
@@ -106,8 +231,8 @@ function ReportingFrameworks({ dictionary }: any) {
         backgroundColor: '#C22033',
         contentLabelPairs: [
           {
-            content: <SocialRelationshipCapital />,
-            label: '128-145',
+            content: <QualityEducationPart />,
+            label: '202,204',
           },
         ],
       },
@@ -115,7 +240,20 @@ function ReportingFrameworks({ dictionary }: any) {
         img: '/images/gender-icon.svg',
         backgroundColor: '#EF412A',
         contentLabelPairs: [
-          { content: <SocialRelationshipCapital />, label: '128-145' },
+          {
+            content: <GenderQualityPart />,
+            label: '35, 178, 200, 231',
+          },
+        ],
+      },
+      {
+        img: '/images/sustainability-goals/Goal-06.svg',
+        backgroundColor: '#26bde2',
+        contentLabelPairs: [
+          {
+            content: <CleanWaterSanitation />,
+            label: '203',
+          },
         ],
       },
       {
@@ -123,50 +261,48 @@ function ReportingFrameworks({ dictionary }: any) {
         backgroundColor: '#FDB714',
         contentLabelPairs: [
           {
-            content: <ManufacturedCapital />,
-            label: '100-105',
+            content: <CleanEnergy />,
+            label: '106, 116',
           },
-          {
-            content: <HumanCapital />,
-            label: '106-119',
-          },
+          // {
+          //   content: <ManufacturedCapital />,
+          //   label: '100-105',
+          // },
+          // {
+          //   content: <HumanCapital />,
+          //   label: '106-119',
+          // },
         ],
       },
       {
         img: '/images/economic-growth-icon.svg',
         backgroundColor: '#8F1838',
-        contentLabelPairs: [
-          { content: <FinancialCapital />, label: '84-99' },
-          { content: <ManufacturedCapital />, label: '100-105' },
-          { content: <HumanCapital />, label: '106-119' },
-          { content: <SocialRelationshipCapital />, label: '128-145' },
-          { content: <IntellectualDigitalCapital />, label: '120-127' },
-        ],
+        contentLabelPairs: [{ content: <WorkAndEconomic />, label: '181' }],
       },
       {
         img: '/images/infarstructure-icon.svg',
         backgroundColor: '#F36E24',
         contentLabelPairs: [
           {
-            content: <FinancialCapital />,
-            label: '84-99',
+            content: <IndustryInnovationInfrastructure />,
+            label: '33, 181',
           },
-          {
-            content: <ManufacturedCapital />,
-            label: '100-105',
-          },
-          {
-            content: <HumanCapital />,
-            label: '106-119',
-          },
-          {
-            content: <IntellectualDigitalCapital />,
-            label: '120-127',
-          },
-          {
-            content: <SocialRelationshipCapital />,
-            label: '128-145',
-          },
+          // {
+          //   content: <ManufacturedCapital />,
+          //   label: '100-105',
+          // },
+          // {
+          //   content: <HumanCapital />,
+          //   label: '106-119',
+          // },
+          // {
+          //   content: <IntellectualDigitalCapital />,
+          //   label: '120-127',
+          // },
+          // {
+          //   content: <SocialRelationshipCapital />,
+          //   label: '128-145',
+          // },
         ],
       },
       {
@@ -174,8 +310,8 @@ function ReportingFrameworks({ dictionary }: any) {
         backgroundColor: '#E01A83',
         contentLabelPairs: [
           {
-            content: <SocialRelationshipCapital />,
-            label: '128-145',
+            content: <ReducedInequalities />,
+            label: '35',
           },
         ],
       },
@@ -184,21 +320,21 @@ function ReportingFrameworks({ dictionary }: any) {
         backgroundColor: '#F99D25',
         contentLabelPairs: [
           {
-            content: <FinancialCapital />,
-            label: '84-99',
+            content: <CitiesAndCommunities />,
+            label: '181, 216',
           },
-          {
-            content: <ManufacturedCapital />,
-            label: '100-105',
-          },
-          {
-            content: <HumanCapital />,
-            label: '106-119',
-          },
-          {
-            content: <SocialRelationshipCapital />,
-            label: '128-145',
-          },
+          // {
+          //   content: <ManufacturedCapital />,
+          //   label: '100-105',
+          // },
+          // {
+          //   content: <HumanCapital />,
+          //   label: '106-119',
+          // },
+          // {
+          //   content: <SocialRelationshipCapital />,
+          //   label: '128-145',
+          // },
         ],
       },
       {
@@ -206,32 +342,47 @@ function ReportingFrameworks({ dictionary }: any) {
         backgroundColor: '#CD8B2A',
         contentLabelPairs: [
           {
-            content: <IntellectualDigitalCapital />,
-            label: '120-127',
+            content: <ConsumptionProduction />,
+            label: '105, 115, 219',
           },
-          {
-            content: <NaturalCapital />,
-            label: '146-154',
-          },
+          // {
+          //   content: <NaturalCapital />,
+          //   label: '146-154',
+          // },
         ],
       },
       {
         img: '/images/climate-action-icon.svg',
         backgroundColor: '#48773C',
-        contentLabelPairs: [{ content: <NaturalCapital />, label: '146-154' }],
+        contentLabelPairs: [{ content: <ClimateAction />, label: '95, 213' }],
+      },
+      {
+        img: '/images/sustainability-goals/Goal-14.svg',
+        backgroundColor: '#0a97d9',
+        contentLabelPairs: [{ content: <LifeBelowWater />, label: '217' }],
       },
       {
         img: '/images/life-land-icon.svg',
         backgroundColor: '#40AE49',
-        contentLabelPairs: [{ content: <NaturalCapital />, label: '146-154' }],
+        contentLabelPairs: [{ content: <LifeOnLand />, label: '215, 216' }],
+      },
+      {
+        img: '/images/sustainability-goals/Goal-16.svg',
+        backgroundColor: '#00689d',
+        contentLabelPairs: [
+          {
+            content: <PeaceJusticeInstitutions />,
+            label: '277, 296, 313, 335 ',
+          },
+        ],
       },
       {
         img: '/images/partnerships-goals-icon.svg',
         backgroundColor: '#1A3668',
         contentLabelPairs: [
-          { content: <FinancialCapital />, label: '84-99' },
-          { content: <IntellectualDigitalCapital />, label: '120-127' },
-          { content: <SocialRelationshipCapital />, label: '128-145' },
+          { content: <PartnershipsGoals />, label: '215 - 218' },
+          // { content: <IntellectualDigitalCapital />, label: '120-127' },
+          // { content: <SocialRelationshipCapital />, label: '128-145' },
         ],
       },
     ],

@@ -7,126 +7,126 @@ export default function SustainabilityGRI() {
     {
       id: '2-1',
       description: 'Organizational details',
-      location: '10, 11, 430',
-      link: '/sustainability/gri/10-11-430',
+      location: '5, 14,',
+      link: '/sustainability/gri/5-14',
     },
     {
       id: '2-2',
       description:
-        "Entities included in the organization's sustainability reporting",
-      location: '7',
-      link: '/sustainability/gri/7-8',
+        'Entities included in the organisations sustainability reporting',
+      location: '16',
+      link: '/sustainability/gri/16',
     },
     {
       id: '2-3',
       description: 'Reporting period, frequency and contact point',
-      location: '7, 8',
-      link: '/sustainability/gri/7-8',
+      location: '19, 22',
+      link: '/sustainability/gri/19,22',
     },
     {
       id: '2-4',
       description: 'Restatements of information',
-      location: '8',
-      link: '/sustainability/gri/7-8',
+      location: '19',
+      link: '/sustainability/gri/19,22',
     },
     {
       id: '2-5',
       description: 'External assurance',
-      location: '8',
-      link: '/sustainability/gri/7-8',
+      location: '19',
+      link: '/sustainability/gri/19,22',
     },
     {
       id: '2-6',
       description: 'Activities, value chain and other business relationships',
-      location: '18',
-      link: '/sustainability/gri/7-8',
+      location: '222,223',
+      link: '/sustainability/gri/222,223',
     },
     {
       id: '2-7',
       description: 'Employees',
-      location: '118, 119',
-      link: '/sustainability/gri/118-119',
+      location: '170, 171',
+      link: '/sustainability/gri/170-171,298',
     },
     {
       id: '2-8',
       description: 'Workers who are not employees',
-      location: '118, 119',
-      link: '/sustainability/gri/118-119',
+      location: '171',
+      link: '/sustainability/gri/170-171,298',
     },
     {
       id: '2-9',
       description: 'Governance structure and composition',
-      location: '158, 168, 169, 172',
-      link: '/sustainability/gri/158-168-169-172',
+      location: '253',
+      link: '/sustainability/gri/253',
     },
     {
       id: '2-10',
       description: 'Nomination and selection of the highest governance body',
-      location: '168',
-      link: '/sustainability/gri/158-168-169-172',
+      location: '271',
+      link: '/sustainability/gri/271',
     },
     {
       id: '2-11',
       description: 'Chair of the highest governance body',
-      location: '170',
-      link: '/sustainability/gri/169-170-171-172',
+      location: '264',
+      link: '/sustainability/gri/264',
     },
     {
       id: '2-12',
       description:
         'Role of the highest governance body in overseeing the management of impacts',
-      location: '169, 170, 171, 172',
-      link: '/sustainability/gri/169-170-171-172',
+      location: '273',
+      link: '/sustainability/gri/273,277',
     },
     {
       id: '2-13',
       description: 'Delegation of responsibility for managing impacts',
-      location: '171, 172',
-      link: '/sustainability/gri/169-170-171-172',
+      location: '273',
+      link: '/sustainability/gri/273,277',
     },
     {
       id: '2-14',
       description:
         'Role of the highest governance body in sustainability reporting',
-      location: '171, 172',
-      link: '/sustainability/gri/169-170-171-172',
+      location: '273,277',
+      link: '/sustainability/gri/273,277',
     },
     {
       id: '2-15',
       description: 'Conflicts of interest',
-      location: '175',
-      link: '/sustainability/gri/175',
+      location: '273',
+      link: '/sustainability/gri/273,277',
     },
     {
       id: '2-16',
       description: 'Communication of critical concerns',
-      location: '429',
-      link: '/sustainability/gri/429',
+      location: '273',
+      link: '/sustainability/gri/273,277',
     },
     {
       id: '2-17',
       description: 'Collective knowledge of the highest governance body',
-      location: '177',
-      link: '/sustainability/gri/177-178',
+      location: '272',
+      link: '/sustainability/gri/272',
     },
     {
       id: '2-18',
       description:
         'Evaluation of the performance of the highest governance body',
-      location: '178',
-      link: '/sustainability/gri/177-178',
+      location: '274,275',
+      link: '/sustainability/gri/274-275',
     },
     {
       id: '2-19',
       description: 'Remuneration policies',
-      location: '114',
-      link: '/sustainability/gri/114',
+      location: '275',
+      link: '/sustainability/gri/274-275',
     },
     {
       id: '2-20',
       description: 'Process to determine remuneration',
-      location: '118, 119, 144',
-      link: '/sustainability/gri/118-119-144',
+      location: '170,298',
+      link: '/sustainability/gri/170-171,298',
     },
     {
       id: '2-21',
@@ -138,50 +138,50 @@ export default function SustainabilityGRI() {
     {
       id: '2-22',
       description: 'Statement on sustainable development strategy',
-      location: '115',
-      link: '/sustainability/gri/115',
+      location: '84',
+      link: '/sustainability/gri/84',
     },
     {
       id: '2-23',
       description: 'Policy commitments',
-      location: '50, 68, 77, 117',
-      link: '/sustainability/gri/50-68-77-117',
+      location: '62, 81, 124 - 221',
+      link: '/sustainability/gri/62-63,81,124-221',
     },
     {
       id: '2-24',
       description: 'Embedding policy commitments',
-      location: '50, 117, 77, 71, 68',
-      link: '/sustainability/gri/50-117-77-71-68',
+      location: '62,81',
+      link: '/sustainability/gri/62-63,81,124-221',
     },
     {
       id: '2-25',
       description: 'Processes to remediate negative impacts',
-      location: '50, 117',
-      link: '/sustainability/gri/50-117',
+      location: '167',
+      link: '/sustainability/gri/167',
     },
     {
       id: '2-26',
       description: 'Mechanisms for seeking advice and raising concerns',
-      location: '136, 356',
-      link: '/sustainability/gri/136-356',
+      location: '197, 541 - 543',
+      link: '/sustainability/gri/197,541-543',
     },
     {
       id: '2-27',
       description: 'Compliance with laws and regulations',
-      location: '6',
-      link: '/sustainability/gri/6',
+      location: '18',
+      link: '/sustainability/gri/18',
     },
     {
       id: '2-28',
       description: 'Membership associations',
-      location: '431',
-      link: '/sustainability/gri/429',
+      location: '549',
+      link: '/sustainability/gri/549',
     },
     {
       id: '2-29',
       description: 'Approach to stakeholder engagement',
-      location: '40',
-      link: '/sustainability/gri/40',
+      location: '62,63',
+      link: '/sustainability/gri/62-63,81,124-221',
     },
     {
       id: '2-30',
@@ -195,43 +195,43 @@ export default function SustainabilityGRI() {
     {
       id: '3-1',
       description: 'Process to determine material topics',
-      location: '45',
-      link: '/sustainability/gri/45',
+      location: '74',
+      link: '/sustainability/gri/74',
     },
     {
       id: '3-2',
       description: 'List of material topics',
-      location: '45',
-      link: '/sustainability/gri/45',
+      location: '75-80',
+      link: '/sustainability/gri/75-80',
+    },
+    {
+      id: '3-3',
+      description: 'Management of material topics',
+      location: '124-221',
+      // link: '/sustainability/gri/13',
     },
   ];
 
   const economicPerformance = [
     {
-      id: '3-3',
-      description: 'Management of material topics',
-      location: '13',
-      link: '/sustainability/gri/13',
-    },
-    {
       id: '201-1',
       description: 'Direct economic value generated and distributed',
-      location: '13',
-      link: '/sustainability/gri/13',
+      location: '35, 40',
+      // link: '/sustainability/gri/13',
     },
     {
       id: '201-2',
       description:
         'Financial implications and other risks and opportunities due to climate change',
-      location: '35',
-      link: '/sustainability/gri/35',
+      location: '341-344',
+      // link: '/sustainability/gri/35',
     },
     {
       id: '201-3',
       description:
         'Defined benefit plan obligations and other retirement plans',
-      location: '114',
-      link: '/sustainability/gri/114',
+      location: '158',
+      // link: '/sustainability/gri/114',
     },
     {
       id: '201-4',
@@ -244,290 +244,293 @@ export default function SustainabilityGRI() {
 
   const marketPresence = [
     {
-      id: '3-3',
-      description: 'Management of material topics',
-      location: '114',
-      link: '/sustainability/gri/114',
+      id: '202-1',
+      description:
+        'Ratios of standard entry level wage by gender compared to local minimum wage',
+      location: '',
+      explanation:
+        'LBF pays above minimum wages as stipulated by law or applicable collective agreements (There is no gender differences). According to legislation to be presented in Parliament of Sri Lanka, the national minimum monthly wage for all workers in any industry or service will be Rs. 10,000/- while the national minimum daily wage of a worker will be Rs. 400/-',
+      link: null,
+    },
+    {
+      id: '202-2',
+      description:
+        'Proportion of senior management hired from the local community',
+      location: '',
+      explanation: 'Locally hired',
+      link: null,
     },
   ];
 
-  const sections = [
+  type SectionItem = {
+    id: string;
+    description: string;
+    location: string;
+    explanation?: string;
+    link?: string | null;
+  };
+
+  type Section = {
+    title: string;
+    standard: string;
+    items: SectionItem[];
+  };
+
+  const sections: Section[] = [
     {
-      title: 'Market Presence',
-      standard: 'GRI 202: Market Presence 201-6',
+      title: 'Indirect Economic Impacts',
+      standard: 'GRI 203 Indirect Economic Impacts 2016',
       items: [
         {
-          id: '202-1',
-          description:
-            'Ratios of standard entry level wage by gender compared to local minimum wage',
-          location: '',
-          link: null,
-          explanation:
-            'LBF pays above minimum wages as stipulated by law or applicable collective agreements (There is no gender differences). According to legislation to be presented in Parliament of Sri Lanka, the national minimum monthly wage for all workers in any industry or service will be Rs. 10,000/- while the national minimum daily wage of a worker will be Rs. 400/-. 114',
-        },
-        {
-          id: '202-2',
-          description:
-            'Proportion of senior management hired from the local community',
-          location: '',
-          link: null,
-          explanation: 'Locally hired',
-        },
-      ],
-    },
-    {
-      title: 'Indirect economic impacts',
-      standard: 'GRI 3: Material Topics 202-1',
-      items: [
-        {
-          id: '3-3',
-          description: 'Management of material topics',
-          location: '13',
-          link: '/sustainability/gri/13',
+          id: '203-2',
+          description: 'Significant indirect economic impacts',
+          location: '33-36',
+          // link: '/sustainability/gri/33-36',
         },
       ],
     },
     {
       title: 'Anti-corruption',
-      standard: 'GRI 3: Material Topics 202-1\nGRI 205: Anti-corruption 201-6',
+      standard: 'GRI 205 Anti-Corruption 2016',
       items: [
-        {
-          id: '3-3',
-          description: 'Management of material topics',
-          location: '355',
-          link: '/sustainability/gri/355',
-        },
         {
           id: '205-1',
           description: 'Operations assessed for risks related to corruption',
-          location: '355',
-          link: '/sustainability/gri/355',
+          location: '541-543',
+          // link: '/sustainability/gri/541-543',
         },
         {
           id: '205-2',
           description:
             'Communication and training about anti-corruption policies and procedures',
-          location: '355',
-          link: '/sustainability/gri/355',
+          location: '541-543',
+          // link: '/sustainability/gri/541-543',
         },
         {
           id: '205-3',
           description: 'Confirmed incidents of corruption and actions taken',
           location: '',
-          link: null,
           explanation: 'No incident was reported',
+          link: null,
         },
       ],
     },
     {
       title: 'Anti-competitive behavior',
-      standard:
-        'GRI 3: Material Topics 202-1\nGRI 206: Anti-competitive Behavior 201-6',
+      standard: 'GRI 206 Anti-competitive Behavior 2016',
       items: [
-        {
-          id: '3-3',
-          description: 'Management of material topics',
-          location: '131',
-          link: '/sustainability/gri/131',
-        },
         {
           id: '206-1',
           description:
             'Legal actions for anti-competitive behavior, anti-trust, and monopoly practices',
           location: '',
-          link: null,
           explanation: 'No incident was reported',
+          link: null,
         },
       ],
     },
     {
-      title: 'Emissions',
-      standard: 'GRI 3: Material Topics 202-1\nGRI 305: Emissions 201-6',
+      title: 'Tax',
+      standard: 'GRI 207 Tax 2019',
       items: [
         {
-          id: '3-3',
-          description: 'Management of material topics',
-          location: '152',
-          link: '/sustainability/gri/152',
+          id: '207-1',
+          description: 'Approach to tax',
+          location: '380-381, 432',
+          // link: '/sustainability/gri/380-381-432',
         },
+        {
+          id: '207-2',
+          description: 'Tax governance, control, and risk management',
+          location: '380-381',
+          // link: '/sustainability/gri/380-381',
+        },
+        {
+          id: '207-3',
+          description:
+            'Stakeholder engagement and management of concerns related to tax',
+          location: '380-381, 432',
+          // link: '/sustainability/gri/380-381-432',
+        },
+        {
+          id: '207-4',
+          description: 'Country-by-country reporting',
+          location: '363',
+          // link: '/sustainability/gri/363',
+        },
+      ],
+    },
+    {
+      title: 'ENVIRONMENT',
+      standard: 'GRI 305 Emissions 2016',
+      items: [
         {
           id: '305-1',
           description: 'Direct (Scope 1) GHG emissions',
-          location: '152',
-          link: '/sustainability/gri/152',
+          location: '110',
+          // link: '/sustainability/gri/110',
         },
         {
           id: '305-2',
           description: 'Energy indirect (Scope 2) GHG emissions',
-          location: '152',
-          link: '/sustainability/gri/152',
+          location: '110',
+          // link: '/sustainability/gri/110',
         },
         {
           id: '305-3',
           description: 'Other indirect (Scope 3) GHG emissions',
-          location: '152',
-          link: '/sustainability/gri/152',
+          location: '110',
+          // link: '/sustainability/gri/110',
         },
         {
           id: '305-4',
           description: 'GHG emissions intensity',
-          location: '151',
-          link: '/sustainability/gri/151',
-        },
-        {
-          id: '305-5',
-          description: 'Reduction of GHG emissions',
-          location: '151',
-          link: '/sustainability/gri/151',
+          location: '40, 109',
+          // link: '/sustainability/gri/40-109',
         },
         {
           id: '305-6',
           description: 'Emissions of ozone-depleting substances (ODS)',
           location: '',
-          link: null,
           explanation: 'N/A',
+          link: null,
         },
         {
           id: '305-7',
           description:
             'Nitrogen oxides (NOx), sulfur oxides (SOx), and other significant air emissions',
-          location: '152, 429',
-          link: '/sustainability/gri/152-429',
+          location: '111',
+          // link: '/sustainability/gri/111',
         },
       ],
     },
     {
-      title: 'Employment',
-      standard: 'GRI 3: Material Topics 202-1\nGRI 401: Employment 201-6',
+      title: 'Social',
+      standard: 'GRI 401 Employment 2016',
       items: [
-        {
-          id: '3-3',
-          description: 'Management of material topics',
-          location: '108',
-          link: '/sustainability/gri/108',
-        },
         {
           id: '401-1',
           description: 'New employee hires and employee turnover',
-          location: '118',
-          link: '/sustainability/gri/118',
+          location: '170',
+          // link: '/sustainability/gri/170',
         },
         {
           id: '401-2',
           description:
             'Benefits provided to full-time employees that are not provided to temporary or part-time employees',
-          location: '114, 118',
-          link: '/sustainability/gri/114-118',
+          location: '159',
+          // link: '/sustainability/gri/159',
         },
         {
           id: '401-3',
           description: 'Parental leave',
-          location: '116',
-          link: '/sustainability/gri/116',
+          location: '160',
+          // link: '/sustainability/gri/160',
+        },
+      ],
+    },
+    {
+      title: 'Occupational Health and Safety',
+      standard: 'GRI 403 Occupational Health and Safety 2018',
+      items: [
+        {
+          id: '403-1',
+          description: 'Occupational health and safety management system',
+          location: '161',
+          // link: '/sustainability/gri/161',
         },
       ],
     },
     {
       title: 'Training and Education',
-      standard:
-        'GRI 3: Material Topics 202-1\nGRI 404: Training and Education 201-6',
+      standard: 'GRI 404 Training and Education 2016',
       items: [
-        {
-          id: '3-3',
-          description: 'Management of material topics',
-          location: '119',
-          link: '/sustainability/gri/119',
-        },
         {
           id: '404-1',
           description: 'Average hours of training per year per employee',
-          location: '119',
-          link: '/sustainability/gri/119',
+          location: '171',
+          // link: '/sustainability/gri/171',
         },
         {
           id: '404-2',
           description:
-            'Programs for upgrading employee skills and transition assistance programs',
-          location: '117, 119',
-          link: '/sustainability/gri/117-119',
+            'Programmes for upgrading employee skills and transition assistance programmes',
+          location: '171',
+          // link: '/sustainability/gri/171',
         },
         {
           id: '404-3',
           description:
             'Percentage of employees receiving regular performance and career development reviews',
-          location: '116',
-          link: '/sustainability/gri/116',
+          location: '157',
+          // link: '/sustainability/gri/157',
         },
       ],
     },
     {
-      title: 'Diversity and equal opportunity',
-      standard:
-        'GRI 3: Material Topics 202-1\nGRI 405: Diversity and Equal Opportunity 201-6',
+      title: 'Diversity and Equal Opportunity',
+      standard: 'GRI 405 Diversity and Equal Opportunity 2016',
       items: [
-        {
-          id: '3-3',
-          description: 'Management of material topics',
-          location: '115',
-          link: '/sustainability/gri/115',
-        },
         {
           id: '405-1',
           description: 'Diversity of governance bodies and employees',
-          location: '115, 118, 119, 168, 389',
-          link: '/sustainability/gri/115-118-119-168-389',
+          location: '171',
+          // link: '/sustainability/gri/171',
         },
         {
           id: '405-2',
           description: 'Ratio of basic salary and remuneration of women to men',
-          location: '114, 118, 119',
-          link: '/sustainability/gri/114-118-119',
+          location: '160, 170',
+          // link: '/sustainability/gri/160-170',
         },
       ],
     },
     {
-      title: 'Local communities',
-      standard:
-        'GRI 3: Material Topics 202-1\nGRI 413: Local Communities 201-6',
+      title: 'Non-discrimination',
+      standard: 'GRI 406 Non-discrimination 2016',
       items: [
         {
-          id: '3-3',
-          description: 'Management of material topics',
-          location: '130',
-          link: '/sustainability/gri/130',
+          id: '406-1',
+          description:
+            'Incidents of discrimination and corrective actions taken',
+          location: '',
+          explanation: 'No incident was reported',
+          link: null,
         },
+      ],
+    },
+    {
+      title: 'Local Communities',
+      standard: 'GRI 413 Local Communities 2016',
+      items: [
         {
           id: '413-1',
           description:
-            'Operations with local community engagement, impact assessments, and development programs',
-          location: '41, 139, 152',
-          link: '/sustainability/gri/41-139-152',
+            'Operations with local community engagement, impact assessments, and development programmes',
+          location: '200-204, 214-219',
+          // link: '/sustainability/gri/200-204-214-219',
         },
         {
           id: '413-2',
           description:
             'Operations with significant actual and potential negative impacts on local communities',
-          location: '139',
-          link: '/sustainability/gri/139',
+          location: '',
+          explanation: 'No incident was reported',
+          link: null,
         },
       ],
     },
     {
-      title: 'Customer privacy',
-      standard: 'GRI 3: Material Topics 202-1\nGRI 418: Customer Privacy 201-6',
+      title: 'Customer Privacy',
+      standard: 'GRI 418 Customer Privacy 2016',
       items: [
-        {
-          id: '3-3',
-          description: 'Management of material topics',
-          location: '131',
-          link: '/sustainability/gri/131',
-        },
         {
           id: '418-1',
           description:
             'Substantiated complaints concerning breaches of customer privacy and losses of customer data',
-          location: '135',
-          link: '/sustainability/gri/135',
+          location: '',
+          explanation: 'No incident was reported',
+          link: null,
         },
       ],
     },
@@ -564,7 +567,7 @@ export default function SustainabilityGRI() {
               </tr>
               <tr className="bg-blue-700">
                 <td rowSpan={31} className="border border-white p-2">
-                  GRI 2: General Disclosures 202-1
+                  GRI 2: General Disclosures 2021
                 </td>
                 <td colSpan={3} className="border border-white p-2"></td>
               </tr>
@@ -591,10 +594,9 @@ export default function SustainabilityGRI() {
                 </td>
               </tr>
               <tr className="bg-blue-700">
-                <td rowSpan={3} className="border border-white p-2">
-                  GRI 3: Material Topics 202-1
+                <td rowSpan={4} className="border border-white p-2">
+                  GRI 3 Material Topics 2021
                 </td>
-                <td colSpan={3} className="border border-white p-2"></td>
               </tr>
               {materialTopics.map((item) => (
                 <tr key={item.id} className="bg-blue-700">
@@ -613,14 +615,12 @@ export default function SustainabilityGRI() {
               ))}
               <tr className="bg-blue-800">
                 <td colSpan={4} className="border border-white p-2 font-bold">
-                  Economic performance
+                  ECONOMIC PERFORMANCE
                 </td>
               </tr>
               <tr className="bg-blue-700">
-                <td rowSpan={6} className="border border-white p-2">
-                  GRI 3: Material Topics 202-1
-                  <br />
-                  GRI 201: Economic Performance 201-6
+                <td rowSpan={5} className="border border-white p-2">
+                  GRI 201 Economic Performance 2016
                 </td>
                 <td colSpan={3} className="border border-white p-2"></td>
               </tr>
@@ -629,11 +629,13 @@ export default function SustainabilityGRI() {
                   <td className="border border-white p-2">
                     {item.id} {item.description}
                   </td>
-                  {item.link ? (
-                    <a href={item.link}>{item.location}</a>
-                  ) : (
-                    <span>{item.location}</span>
-                  )}
+                  <td className="border border-white p-2">
+                    {item.link ? (
+                      <a href={item.link}>{item.location}</a>
+                    ) : (
+                      <span>{item.location}</span>
+                    )}
+                  </td>
                   <td className="border border-white p-2">
                     {item.explanation}
                   </td>
@@ -641,12 +643,12 @@ export default function SustainabilityGRI() {
               ))}
               <tr className="bg-blue-800">
                 <td colSpan={4} className="border border-white p-2 font-bold">
-                  Market presence
+                  MARKET PRESENCE
                 </td>
               </tr>
               <tr className="bg-blue-700">
-                <td rowSpan={2} className="border border-white p-2">
-                  GRI 3: Material Topics 202-1
+                <td rowSpan={3} className="border border-white p-2">
+                  GRI 202 Market Presence 2016
                 </td>
                 <td colSpan={3} className="border border-white p-2"></td>
               </tr>
@@ -655,12 +657,16 @@ export default function SustainabilityGRI() {
                   <td className="border border-white p-2">
                     {item.id} {item.description}
                   </td>
-                  {item.link ? (
-                    <a href={item.link}>{item.location}</a>
-                  ) : (
-                    <span>{item.location}</span>
-                  )}
-                  <td className="border border-white p-2"></td>
+                  <td className="border border-white p-2">
+                    {item.link ? (
+                      <a href={item.link}>{item.location}</a>
+                    ) : (
+                      <span>{item.location}</span>
+                    )}
+                  </td>
+                  <td className="border border-white p-2">
+                    {item.explanation}
+                  </td>
                 </tr>
               ))}
             </tbody>
@@ -704,16 +710,18 @@ export default function SustainabilityGRI() {
                     </td>
                     <td colSpan={3} className="border border-white p-2"></td>
                   </tr>
-                  {section.items.map((item, itemIndex) => (
+                  {section.items.map((item: SectionItem, itemIndex: number) => (
                     <tr key={itemIndex} className="bg-blue-700">
                       <td className="border border-white p-2">
                         {item.id} {item.description}
                       </td>
-                      {item.link ? (
-                        <a href={item.link}>{item.location}</a>
-                      ) : (
-                        <span>{item.location}</span>
-                      )}
+                      <td className="border border-white p-2">
+                        {item.link ? (
+                          <a href={item.link}>{item.location}</a>
+                        ) : (
+                          <span>{item.location}</span>
+                        )}
+                      </td>
                       <td className="border border-white p-2">
                         {item.explanation}
                       </td>
