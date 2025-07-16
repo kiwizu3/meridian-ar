@@ -10,8 +10,8 @@ import { Locale } from '@/i18n-config';
 import BottomComma from '@/public/images/bottom-comma.png';
 import bgImage from '@/public/images/Clippath.png';
 import TopComma from '@/public/images/top-comma.png';
-import ProfileImage from '@/public/images/yanika-amarasekera.png';
-import ProfileImage2 from '@/public/images/Niroshan-Udage_1.jpg';
+import ProfileImage from '@/public/images/yanika_amarasekera.png';
+import ProfileImage2 from '@/public/images/niroshan_udage.png';
 import Image from 'next/image';
 
 export default async function sustainability({
@@ -168,12 +168,12 @@ export default async function sustainability({
             <Image
               src={ProfileImage2}
               className="w-full h-full"
-              alt="Ms. Yanika Amarasekera"
+              alt="Mr. Niroshan Udage"
             />
           </div>
           <div className="text-[1.125rem] leading-[32px] sm:text-[1.5rem] sm:leading-[42px] xl:text-[2rem] xl:leading-[48px] font-black text-white">
             <SpeechText>
-              <p>{dictionary?.yanika_amarasekera}</p>
+              <p>{dictionary?.niroshan_udage}</p>
             </SpeechText>
           </div>
           <div className="text-[1rem] leading-[24px] sm:text-[1.125rem] sm:leading-[32px] xl:text-[1.625rem] xl:leading-[46.8px] font-light text-white font-secondary">
