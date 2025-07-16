@@ -123,7 +123,7 @@ export default async function sustainability({
 
       {/* 2nd person  */}
       <div className="!container relative z-10 flex flex-wrap justify-between pt-[98px] px-5 sm:px-10">
-      <div className="w-full lg:w-[60%] xl:w-[723px] xl:pr-6">
+        <div className="w-full lg:w-[60%] xl:w-[723px] xl:pr-6">
           <div>
             <Image
               src={TopComma}
@@ -162,7 +162,7 @@ export default async function sustainability({
             </div>
           </div>
         </div>
-       
+
         <div className="w-full lg:w-[35%] xl:w-[calc(100% - 723px)] mb-6 xl:mb-0 text-center lg:text-left">
           <div className="w-[225px] h-[225px] overflow-hidden rounded-full mb-[29px] block mx-auto lg:mx-0">
             <Image
@@ -195,10 +195,6 @@ export default async function sustainability({
             <AudioTrack />
           </div>
         </div>
-
-
-
-        
       </div>
 
       <ValueCreationModel dictionary={dictionary} />

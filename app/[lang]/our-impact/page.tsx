@@ -10,7 +10,7 @@ import bgSec2 from '@/public/images/our-impact-s2-bg.png';
 import bgSec3 from '@/public/images/our-impact-s3-bg.png';
 import bgSec4 from '@/public/images/our-impact-s4-bg.png';
 import bgSec5 from '@/public/images/our-impact-s5-bg.png';
-import bgSec6 from '@/public/images/our-impact-s6-bg.png';
+// import bgSec6 from '@/public/images/our-impact-s6-bg.png';
 import bgSec7 from '@/public/images/our-impact-s7-bg.png';
 import Image from 'next/image';
 

@@ -12,7 +12,7 @@ export default function SustainabilitySASB() {
             'Number of account holders whose information is used for secondary purposes 1',
           category: 'Quantitative',
           unitOfMeasure: 'Number',
-          code: 'FN-CF-220a.1',
+          code: 'FN-CF-220a.1 ',
           disclosure: 'No such incidents were reported',
         },
         {
@@ -33,7 +33,7 @@ export default function SustainabilitySASB() {
             'Number of data breaches, percentage that are personal data breaches, (3) number of account holders affected 3',
           category: 'Quantitative',
           unitOfMeasure: 'Number, Percentage (%)',
-          code: 'FN-CF-230a.1',
+          code: 'FN-CF-230a.1 ',
           disclosure: 'No such incidents were reported',
         },
         {
@@ -50,7 +50,7 @@ export default function SustainabilitySASB() {
           category: 'Discussion and Analysis',
           unitOfMeasure: 'n/a',
           code: 'FN-CF-230a.3',
-          disclosure: 'Intellectual Capital Page 125',
+          disclosure: 'Intellectual Capital Page 179-180',
         },
       ],
     },
@@ -67,6 +67,14 @@ export default function SustainabilitySASB() {
         },
         {
           metric:
+            'In the dynamic world of LBF, a vibrant performance-based culture fuels the drive for excellence. Here, marketing officers navigate their roles with clear, ambitious targets, both individually tailored and collectively embraced by their teams. Each goal set is a beacon guiding their efforts, promising lucrative incentives for those who reach the summit. This system transforms targets into motivational milestones, sparking a competitive yet collaborative spirit. However, the stakes are high—missing a target means the incentive remains an unclaimed reward, a constant reminder of the relentless pursuit of success that defines LBF’s ethos.',
+          category: '',
+          unitOfMeasure: '',
+          code: '',
+          disclosure: '',
+        },
+        {
+          metric:
             'Approval rate for (1) credit and (2) pre- paid products for applicants 5',
           category: 'Quantitative',
           unitOfMeasure: 'Percentage (%)',
@@ -75,7 +83,7 @@ export default function SustainabilitySASB() {
         },
         {
           metric:
-            'Average fees from add-on products, average APR of credit products, average age of credit products, average number of credit accounts, and (5) average annual fees for pre-paid products',
+            'Average fees from add-on products\n, average APR of credit products\n, average age of credit products\n, average number of credit accounts, and (5) average\n annual fees for pre-paid products',
           category: 'Quantitative',
           unitOfMeasure:
             'Presentation currency, Percentage (%), Months, Number',
@@ -106,7 +114,8 @@ export default function SustainabilitySASB() {
     <div>
       <div className="min-h-screen bg-cardGreen text-white p-8">
         <h1 className="text-3xl font-bold mb-6">
-          SASB STANDARD - CONSUMER FINANCE
+          DISCLOSURES RELATING TO SUSTAINABILITY ACCOUNTING STANDARD BOARD
+          (SASB) FOR CONSUMER FINANCE
         </h1>
 
         <div className="overflow-x-auto">

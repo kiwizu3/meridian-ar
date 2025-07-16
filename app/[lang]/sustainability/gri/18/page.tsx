@@ -1,137 +1,215 @@
-interface ProductProps {
-  title: string;
-  description: string;
-}
+export default function AboutTheReport() {
+  // Content data structure
+  interface ContentItem {
+    type: string;
+    title?: string;
+    text?: string | string[];
+    items?: {
+      title: string;
+      content: string;
+    }[];
+    chart?: {
+      image: any;
+      alt: string;
+      caption?: string;
+    };
+    columns?: {
+      title: string;
+      content: string;
+      chart?: {
+        image: any;
+        alt: string;
+        caption?: string;
+      };
+    }[];
+    list?: {
+      title?: string;
+      items: string[];
+    };
+    links?: {
+      title: string;
+      url: string;
+    }[];
+  }
 
-function Product({ title, description }: ProductProps) {
-  return (
-    <div className="mb-4 text-black">
-      <h3 className="text-lg font-semibold text-blue-700 mb-1">{title}</h3>
-      <p className="text-sm">{description}</p>
-    </div>
-  );
-}
-
-export default function GRIReporting3() {
-  const loanLogo = [
-    { key: '1', link: '/images/annual-report/lbleasing.png' },
-    { key: '2', link: '/images/annual-report/goldloan.png' },
-    { key: '3', link: '/images/annual-report/powerdraft.png' },
-    { key: '4', link: '/images/annual-report/vehicleloan.png' },
-    { key: '5', link: '/images/annual-report/3wlleasing.png' },
-    { key: '6', link: '/images/annual-report/personalloans.png' },
-    { key: '7', link: '/images/annual-report/cimpersonallogo.png' },
-    { key: '8', link: '/images/annual-report/mulgala.png' },
-    { key: '9', link: '/images/annual-report/powerplus.png' },
-    { key: '10', link: '/images/annual-report/cimbusinesslogo.png' },
-  ];
-  const depositLogo = [
-    { key: '1', link: '/images/annual-report/yasaisuru.png' },
-    { key: '2', link: '/images/annual-report/littlehero.png' },
-    { key: '3', link: '/images/annual-report/lbsavings.png' },
-    { key: '4', link: '/images/annual-report/lbsim.png' },
+  // Main content
+  const content: ContentItem[] = [
+    {
+      type: 'header',
+      title: 'ABOUT THE REPORT',
+    },
+    {
+      type: 'section',
+      title: 'Integrated Reporting',
+      list: {
+        items: [
+          'The International Integrated Reporting Framework of the International Integrated Reporting Council (IIRC)',
+          "A Preparer's Guide to Integrated Reporting issued by the Institute of Chartered Accountants of Sri Lanka (CA Sri Lanka)",
+        ],
+      },
+    },
+    {
+      type: 'section',
+      title: 'ESG and Sustainability Reporting',
+      list: {
+        items: [
+          'Global Reporting Initiative (GRI) Standards - In Accordance with the GRI Standards, issued by Global Sustainability Standards Board',
+          'Guideline on Environmental, Social and Governance (ESG) Reporting issued by the Colombo Stock Exchange (CSE)',
+          'United Nations Sustainable Development Goals (SDGs)',
+          '10 Principles of United Nations Global Compact',
+          'SLFRS Sustainability Disclosure Standards S1 & S2',
+          'Consumer Finance Standard issued by the Sustainability Accounting Standards Board (SASB)',
+          'Disclosure on Gender Parity Reporting issued by CA Sri Lanka',
+        ],
+      },
+    },
+    {
+      type: 'section',
+      title: 'Climate-related Disclosures',
+      list: {
+        items: [
+          'ISO 14064-1:2018 Organisation Level for Quantification and Reporting of Greenhouse Gas (GHG) Emissions and Removals',
+        ],
+      },
+    },
+    {
+      type: 'section',
+      title: 'Financial Reporting',
+      list: {
+        items: [
+          'Sri Lanka Accounting Standards comprising Sri Lanka Financial Reporting Standards (SLFRSs) and Sri Lanka Accounting Standards (LKASs) issued by CA Sri Lanka',
+          'Companies Act No. 07 of 2007',
+          'Finance Business Act No. 42 of 2011',
+          'Listing Rules of the Colombo Stock Exchange (CSE)',
+        ],
+      },
+    },
+    {
+      type: 'section',
+      title: 'Corporate Governance Practices',
+      list: {
+        items: [
+          'Listing Rules of the Colombo Stock Exchange (CSE), including the revised Section 9 which was issued in August 2023',
+          'Companies Act No. 07 of 2007 and amendments thereto',
+          'Corporate Governance Direction No. 5 of 2021 issued by the Central Bank of Sri Lanka',
+          'Code of Best Practice for Corporate Governance 2023 issued by CA Sri Lanka',
+          'Directions issued under Finance Business Act No. 42 of 2011',
+        ],
+      },
+    },
+    {
+      type: 'section',
+      title: 'Reference Links',
+      links: [
+        {
+          title: 'The International <IR> Framework',
+          url: 'https://www.ifrs.org',
+        },
+        {
+          title: 'Global Reporting Initiative (GRI) Standards',
+          url: 'https://www.globalreporting.org',
+        },
+        {
+          title: 'The Institute of Chartered Accountants of Sri Lanka',
+          url: 'https://www.casrilanka.com',
+        },
+        {
+          title: 'UN Sustainable Development Goals',
+          url: 'https://www.sdgs.un.org/goals',
+        },
+        { title: 'Central Bank of Sri Lanka', url: 'https://www.cbsl.gov.lk' },
+        {
+          title: 'Sustainability Accounting Standards Board',
+          url: 'https://www.sasb.ifrs.org',
+        },
+        {
+          title: 'UN Global Compact Network Sri Lanka',
+          url: 'https://www.unglobalcompact.org',
+        },
+        { title: 'Colombo Stock Exchange', url: 'https://www.cse.lk' },
+        {
+          title: 'International Financial Reporting Standards (IFRS)',
+          url: 'https://www.ifrs.org',
+        },
+      ],
+    },
+    {
+      type: 'section',
+      title: 'How We Ensure the Integrity of Our Report',
+    },
+    {
+      type: 'section',
+      text: [
+        'The Board ensures the integrity of the Integrated Report through our integrated reporting process with various approvals and sign-offs by the Board. It also relies on assurance frameworks, overseen by the Audit Committee to assess and assure various aspects of our business operations and reporting. These assurances are provided by Management and the Board through rigorous internal reporting governed by the risk management framework, internal audit and independent external audit service providers.',
+      ],
+    },
   ];
 
   return (
     <div className="py-24 container px-5 lg:px-0">
-      <div className="bg-[#0A3D5F] lg:p-8 p-4 md:p-6">
+      <div className="bg-[#0A3D5F] lg:p-8 p-4 md:p-6 rounded-lg">
         <div className="px-4 md:pl-0 md:pr-2 custom-scrollbar h-[654px] overflow-auto flex flex-col">
-          <div className="mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <div className="bg-[#FFF8DC] rounded-lg p-4 h-fit">
-                <div className="flex items-center mb-2">
-                  <div className="bg-black rounded-full p-2 mr-2">
-                    <svg
-                      className="w-6 h-6 text-white"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
+          <div className="bg-[#fcf7ef] rounded-lg p-6">
+            {content.map((item, index) => (
+              <div key={index} className="mb-8 last:mb-0">
+                {/* Header Section */}
+                {item.type === 'header' && (
+                  <div>
+                    <h1 className="text-2xl font-bold mb-2 text-[#0A3D5F]">
+                      {item.title}
+                    </h1>
                   </div>
-                  <h2 className="text-xl font-bold text-black">DEPOSIT</h2>
-                </div>
-                <p className="text-sm mb-4 text-black">
-                  Total deposit base Rs. 122.80 Bn
-                </p>
-                <Product
-                  title="Fixed Deposit"
-                  description="Fixed deposits yield the highest return on investment with an array of attractive benefits including promotional campaigns."
-                />
-                <Product
-                  title="Savings Deposit"
-                  description="LBF has the second largest savings deposit base in the NBFI sector, offering different products under the savings deposit category"
-                />
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                  {depositLogo?.map((item: any) => (
-                    <img src={item?.link} alt="loan logo" key={item} />
-                  ))}
-                </div>
-              </div>
+                )}
 
-              <div className="bg-[#FFF8DC] rounded-lg p-4 h-fit">
-                <div className="flex items-center mb-2">
-                  <div className="bg-black rounded-full p-2 mr-2">
-                    <svg
-                      className="w-6 h-6 text-white"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"
-                      />
-                    </svg>
-                  </div>
-                  <h2 className="text-xl font-bold text-black">
-                    LOANS AND RECEIVABLES
-                  </h2>
-                </div>
-                <p className="text-sm mb-4 text-black">
-                  Lending portfolio Rs. 161.29 Bn
-                </p>
-                <Product
-                  title="Auto Finance"
-                  description="Flexible financial solutions provided by convenient leasing, vehicle loan and power draft services."
-                />
-                <Product
-                  title="Gold Loans"
-                  description="Provide best value for gold at competitive interest rates for business and urgent cash requirements."
-                />
-                <Product
-                  title="Mortgage Loans"
-                  description="Convenient and flexible financing with longer tenors of repayment to build/ own your dream house."
-                />
-                <Product
-                  title="Pension Loans"
-                  description="Uniquely designed product to suit various requirements for upgrading lifestyles."
-                />
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                  {loanLogo?.map((item: any) => (
-                    <img src={item?.link} alt="loan logo" key={item} />
-                  ))}
-                </div>
-              </div>
-            </div>
+                {/* Section with Text */}
+                {item.type === 'section' && (
+                  <>
+                    {item.title && (
+                      <h2 className="text-xl font-bold mb-4 text-[#F3A847] border-b border-[#F3A847] pb-1">
+                        {item.title}
+                      </h2>
+                    )}
+                    {Array.isArray(item.text)
+                      ? item.text.map((paragraph, i) => (
+                          <p key={i} className="text-sm text-black mb-3">
+                            {paragraph}
+                          </p>
+                        ))
+                      : null}
 
-            <div className="relative  rounded-lg p-6">
-              <img
-                src="/images/annual-report/origamiCar.png"
-                alt="Financial products illustration"
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </div>
+                    {/* List Section */}
+                    {item.list && (
+                      <div className="mb-6">
+                        <ul className="list-disc pl-5 text-sm text-black">
+                          {item.list.items.map((listItem, i) => (
+                            <li key={i} className="mb-2">
+                              {listItem}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {/* Links Section */}
+                    {item.links && (
+                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+                        {item.links.map((link, i) => (
+                          <a
+                            key={i}
+                            href={link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-[#0A3D5F] hover:text-[#F3A847] underline text-sm"
+                          >
+                            {link.title}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </div>

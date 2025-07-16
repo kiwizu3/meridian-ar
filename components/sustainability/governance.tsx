@@ -33,7 +33,7 @@ export default function Governance({ dictionary }: any) {
             </div>
             <div className="governance-item font-secondary capitalize">
               <SpeechText>
-                <p>{dictionary?.senior_manager_digital}</p>
+                <p>{dictionary?.senior_manager_corporate_sustain}</p>
               </SpeechText>
             </div>
             <div className="governance-item font-secondary capitalize">
