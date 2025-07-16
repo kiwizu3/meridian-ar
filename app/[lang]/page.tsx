@@ -21,9 +21,12 @@ import Image from 'next/image';
 const HomePageVideo = dynamic(() => import('@/components/HomePageVideo'), {
   ssr: false,
 });
-const HomePageMainVideo = dynamic(() => import('@/components/HomePageMainVideo'), {
-  ssr: false,
-});
+const HomePageMainVideo = dynamic(
+  () => import('@/components/HomePageMainVideo'),
+  {
+    ssr: false,
+  },
+);
 const DocumentCard = dynamic(() => import('@/components/cards/documentCard'), {
   ssr: false,
 });
@@ -121,9 +124,9 @@ export default async function Home({
           />
         </div> */}
 
-<div className="md:h-[calc(100vh-3rem)] h-[calc(100vh-10rem)] flex w-full lg:-mt-[95px] -mt-20 justify-center relative">
+        <div className="md:h-[calc(100vh-3rem)] h-[calc(100vh-10rem)] flex w-full lg:-mt-[95px] -mt-20 justify-center relative rounded-2xl">
           <div className="absolute">
-          <div className="mt-[130px] px-4">
+            <div className="mt-[130px] px-4">
               <HomePageMainVideo />
             </div>
           </div>
@@ -136,7 +139,6 @@ export default async function Home({
             snap-motion-id="about"
           />
         </div>
-
 
         {/* <section
           className="relative"
@@ -170,9 +172,6 @@ export default async function Home({
           </div>
           
         </section> */}
-
-
-
 
         <section
           style={{

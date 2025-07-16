@@ -74,9 +74,9 @@ const BackgroundMusic = () => {
         {isPlaying ? <ScreenReader size={20} /> : <Muted size={20} />}
       </button>
       <audio loop ref={audioRef} autoPlay>
-        <source src="/music/dancing-on-air.mp3" type="audio/mpeg" />
+        <source src="/music/LB_lion_music.WAV" type="audio/mpeg" />
         <track
-          src="/music/dancing-on-air.mp3"
+          src="/music/LB_lion_music.WAV"
           kind="captions"
           srcLang="en"
           label="English"
