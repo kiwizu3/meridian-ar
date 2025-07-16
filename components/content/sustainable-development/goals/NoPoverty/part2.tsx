@@ -1,20 +1,25 @@
 'use client';
 
 import Image from 'next/image';
+import DigitalAccessImage from '@/public/images/sustainability-goals/lb-cim-app-transaction-value.jpg';
+import TaxPaidImage from '@/public/images/sustainability-goals/tax-paid-to-goverment.jpg';
+import TaxIcon from '@/public/images/sustainability-goals/tax-icon.jpg';
 
 export default function NoPovertyPart2() {
   return (
     <div>
       <div className="bg-[#5d8de8] rounded-lg p-6 my-8">
         <div className="flex items-center mb-4">
-          <h2 className="text-2xl font-semibold">DIGITAL ACCESS</h2>
+          <h1 className="text-4xl font-bold text-white">
+            BUILDING SOCIO-ECONOMIC PROSPERITY
+          </h1>
         </div>
 
         <div className="grid grid-cols-1 gap-6">
           <div>
-            <h3 className="font-semibold mb-2">
-              Breaking Barriers with Innovation
-            </h3>
+            <h2 className="text-black text-2xl font-semibold py-5">
+              DIGITAL ACCESS: Breaking Barriers with Innovation
+            </h2>
             <p>
               From digital financing to AI-driven lending, we are at the
               forefront of next-generation digitalised financial services,
@@ -31,22 +36,19 @@ export default function NoPovertyPart2() {
             </p>
           </div>
         </div>
-        <div className="relative h-64 md:h-96 mx-[-2rem] mt-3">
+        <div className="my-10">
           <Image
-            src="/placeholder-digital-access.jpg"
+            src={DigitalAccessImage}
             alt="Digital Access"
             className="rounded-lg"
-            width={800}
-            height={500}
-            style={{ height: '100%', objectFit: 'cover' }}
+            width={425}
+            height={450}
           />
         </div>
-      </div>
-      <div className="bg-[#5d8de8] text-black p-8">
         <div className="w-full">
           <div className="bg-[#7ba1eb] rounded-lg p-6 mb-8">
             <div className="flex items-center mb-4">
-              <h2 className="text-2xl font-semibold">
+              <h2 className="text-black text-2xl font-semibold py-5">
                 STRENGTHENING THE ECONOMY
               </h2>
             </div>
@@ -70,28 +72,28 @@ export default function NoPovertyPart2() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 mb-8">
-            <div className="bg-[#7ba1eb] rounded-lg p-6">
-              <h3 className="text-xl font-semibold mb-4">
+            <div className="bg-[#7ba1eb] rounded-l-lg p-6">
+              <h3 className="text-black text-xl font-semibold mb-4">
                 Tax Paid to the Government
               </h3>
-              <div className="relative h-64">
+              <div>
                 <Image
-                  src="/placeholder-tax-chart.jpg"
+                  src={TaxPaidImage}
                   alt="Tax Chart"
                   className="rounded-lg"
-                  fill
-                  style={{ objectFit: 'cover' }}
+                  width={405}
+                  height={295}
                 />
               </div>
             </div>
-            <div className="bg-[#7ba1eb] rounded-lg">
-              <div className="relative h-64">
+            <div className="bg-[#7ba1eb] rounded-r-lg p-6">
+              <div>
                 <Image
-                  src="/placeholder-transaction-chart.jpg"
+                  src={TaxIcon}
                   alt="Transaction Chart"
                   className="rounded-lg"
-                  fill
-                  style={{ objectFit: 'cover' }}
+                  width={405}
+                  height={295}
                 />
               </div>
             </div>

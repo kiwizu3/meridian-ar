@@ -1,8 +1,8 @@
 'use client';
 
 import Image from 'next/image';
-import provincialdistribution from '@/public/images/sustainability-goals/provincial-distribution.jpeg';
-import provincialdistributionDeposits from '@/public/images/sustainability-goals/Provincial-Distribution-Loans.jpg';
+import provincialdistribution from '@/public/images/sustainability-goals/provincial-distribution.jpg';
+import provincialdistributionDeposits from '@/public/images/sustainability-goals/Provincial-Distribution-Deposits.jpg';
 import provincialdistributionLoans from '@/public/images/sustainability-goals/Provincial-Distribution-Loans.jpg';
 
 export default function NoPovertyPart1() {
@@ -42,8 +42,8 @@ export default function NoPovertyPart1() {
             </div>
             <div className="flex rounded-lg p-6">
               <div className="border-r-1 border-gray-300 pr-6 mr-6">
-                <h2 className="font-semibold mb-2 text-cardBlue]">
-                  EXPANDING ECONOMIC HORIZONS
+                <h2 className="text-2xl font-semibold mb-2 text-cardBlue]">
+                  1. EXPANDING ECONOMIC HORIZONS
                 </h2>
                 <p>
                   A thriving economy is built on equal access to financial
@@ -67,44 +67,33 @@ export default function NoPovertyPart1() {
               </div>
             </div>
             <div>
-              <div className="flex items-center mb-4">
-                <h2 className="text-2xl font-semibold">
-                  Provincial Distribution Of Branches
-                </h2>
-              </div>
-              <div className="flex relative w-full h-[800px]">
-                <Image
-                  src={provincialdistribution}
-                  alt="Provincial Distribution"
-                  className="rounded-lg object-cover"
-                  fill
-                />
-              </div>
-              <div className="flex gap-6">
+              <div>
                 <div>
-                  <div className="border-1 border-gray-300 p-4 rounded-lg">
-                    <h1>Provincial Distribution of Loans</h1>
-                  </div>
-                  <div className="flex relative w-full h-[500px]">
-                    <Image
-                      src={provincialdistributionLoans}
-                      alt="Provincial Distribution Loans"
-                      className="rounded-lg object-cover"
-                      fill
-                    />
-                  </div>
+                  <Image
+                    src={provincialdistribution}
+                    alt="Provincial Distribution"
+                  />
                 </div>
-                <div>
-                  <div className="border-1 border-gray-300 p-4 rounded-lg">
-                    <h1>Provincial Distribution of Deposits</h1>
+                <div className="flex gap-6 py-5">
+                  <div>
+                    <div>
+                      <Image
+                        src={provincialdistributionLoans}
+                        alt="Provincial Distribution Loans"
+                        width={405}
+                        height={295}
+                      />
+                    </div>
                   </div>
-                  <div className="flex relative w-full h-[500px]">
-                    <Image
-                      src={provincialdistributionDeposits}
-                      alt="Provincial Distribution Deposits"
-                      className="rounded-lg object-cover"
-                      fill
-                    />
+                  <div>
+                    <div>
+                      <Image
+                        src={provincialdistributionDeposits}
+                        alt="Provincial Distribution Deposits"
+                        width={405}
+                        height={295}
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
