@@ -26,18 +26,21 @@ export default function ValueCreationModel({ dictionary }: any) {
           </SpeechText>
         </div>
 
-        <div className="relative grid grid-cols-2 grid-rows-2 gap-6 p-8">
+        <div className="relative grid grid-cols-1 md:grid-cols-2 gap-6 ">
           {/* Top-left box */}
           <motion.div
             initial={{ y: '-20px', opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 1.8, ease: 'linear' }}
+            className="bg-[#17634F] rounded-2xl flex flex-col justify-between w-full min-h-[330px] p-10"
           >
-            <div className="text-box font-secondary w-[558px] h-[330px] bg-[#17634F] py-3 px-6 rounded-2xl">
+            <div>
               <div className="text-lg font-medium my-5">
                 <SpeechText>
-                  <p>{dictionary?.financial_stability}</p>
+                  <p className="whitespace-pre-line">
+                    {dictionary?.financial_stability}
+                  </p>
                 </SpeechText>
               </div>
               <div className="para">
@@ -49,23 +52,26 @@ export default function ValueCreationModel({ dictionary }: any) {
           </motion.div>
           {/* <div className="flex-section"> */}
 
-          {/* Bottom-left box */}
-          <div className="left-box w-[558px] h-[330px] bg-[#17634F] py-3 px-6 rounded-2xl">
+          {/* top-right box */}
+          <div>
             <motion.div
               initial={{ x: '-20px', opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 2, ease: 'linear' }}
+              className="bg-[#17634F] rounded-2xl flex flex-col justify-between w-full min-h-[330px] p-10"
             >
               <div className="text-box font-secondary">
                 <div className="text-lg font-medium my-5">
                   <SpeechText>
-                    <p>{dictionary?.inclusive_growth}</p>
+                    <p className="whitespace-pre-line">
+                      {dictionary?.work_place}
+                    </p>
                   </SpeechText>
                 </div>
                 <div className="para">
                   <SpeechText>
-                    <p>{dictionary?.inclusive_growth_impacts_on}</p>
+                    <p>{dictionary?.we_seek_to_create_a_great_workplace}</p>
                   </SpeechText>
                 </div>
               </div>
@@ -89,25 +95,26 @@ export default function ValueCreationModel({ dictionary }: any) {
             </motion.div>
           </div>
 
-          {/* Top-right box */}
-          <div className="right-box w-[558px] h-[330px] bg-[#17634F] py-3 px-6 rounded-2xl">
+          {/* Bottom-left box */}
+          <div>
             <motion.div
               initial={{ x: '20px', opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 2.2 }}
+              className="bg-[#17634F] rounded-2xl flex flex-col justify-between w-full min-h-[330px] p-8"
             >
               <div className="text-box font-secondary">
                 <div className="text-lg font-medium my-5">
                   <SpeechText>
                     <p className="whitespace-pre-line">
-                      {dictionary?.work_place}
+                      {dictionary?.inclusive_growth}
                     </p>
                   </SpeechText>
                 </div>
                 <div className="para">
                   <SpeechText>
-                    <p>{dictionary?.we_seek_to_create_a_great_workplace}</p>
+                    <p>{dictionary?.inclusive_growth_impacts_on}</p>
                   </SpeechText>
                 </div>
               </div>
@@ -121,11 +128,14 @@ export default function ValueCreationModel({ dictionary }: any) {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0 }}
+            className="bg-[#17634F] rounded-2xl flex flex-col justify-between w-full min-h-[330px] p-5"
           >
-            <div className="text-box font-secondary w-[558px] h-[330px] bg-[#17634F] py-3 px-6 rounded-2xl">
+            <div>
               <div className="text-lg font-medium my-5">
                 <SpeechText>
-                  <p>{dictionary?.positive_environmental_impact}</p>
+                  <p className="whitespace-pre-line">
+                    {dictionary?.positive_environmental_impact}
+                  </p>
                 </SpeechText>
               </div>
               <div className="para">
