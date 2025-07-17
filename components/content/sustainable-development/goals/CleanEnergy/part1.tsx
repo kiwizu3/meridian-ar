@@ -14,16 +14,44 @@ import {
 
 export default function CleanEnergyPart1() {
   return (
-    <div className="space-y-6">
-      <h2 className="text-2xl font-bold">
+    <div className="bg-cardGreen max-w-4xl mx-auto py-8 px-4 my-5">
+      <h1 className="text-4xl font-bold my-3">
         LBF's Ongoing Actions on Energy Management
-      </h2>
+      </h1>
 
       <Card>
-        <CardBody className="space-y-6">
+        <CardBody className="bg-[#3C8D79] p-4 ">
+          <h2 className="text-black text-2xl font-semibold py-5">
+            LBF’s Ongoing Actions on Energy Management
+          </h2>
           <div>
             <h3 className="text-xl font-semibold mb-4">Reduce Consumption</h3>
+            <h4 className="font-medium">Actions Taken</h4>
             <ul className="list-disc pl-6 space-y-2">
+              <li>
+                Employing high-tech, energy-efficient equipment across all
+                operations
+              </li>
+              <li>
+                Installing solar water heating systems to reduce electricity
+                consumption
+              </li>
+              <li>
+                Utilising energy-efficient lighting for all signage and interior
+                spaces
+              </li>
+              <li>
+                Optimising HVAC (Heating, Ventilation, and Air Conditioning)
+                systems using proven energy reduction methodologies
+              </li>
+              <li>
+                Implementing electronic data collection and analysis tools to
+                track energy consumption and identify areas for improvement
+              </li>
+              <li>
+                Conducting energy audits and periodic assessments to ensure
+                continuous improvement
+              </li>
               <li>Maximising the use of natural light in all facilities</li>
               <li>
                 Promoting green building concepts in new construction and
@@ -43,6 +71,10 @@ export default function CleanEnergyPart1() {
               <li>
                 Launching e-mail and social media campaigns to highlight the
                 benefits of energy conservation
+              </li>
+              <li>
+                Conducting energy audits and periodic assessments to ensure
+                continuous improvement
               </li>
             </ul>
           </div>

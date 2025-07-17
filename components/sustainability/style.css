@@ -21,7 +21,12 @@ body {
   color: #e5e5e5;
 }
 .gradient-text {
-  background: linear-gradient(134deg, #DBB226 53.78%, #5B7537 88.29%, #268B71 94.48%);
+  background: linear-gradient(
+    134deg,
+    #dbb226 53.78%,
+    #5b7537 88.29%,
+    #268b71 94.48%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -47,7 +52,7 @@ body {
 .feature-circle .text-box {
   display: block;
   margin: 0 auto;
-  background: #17634F;
+  background: #17634f;
   border-radius: 16px;
   padding: 12px 24px;
   width: 392px;
@@ -102,7 +107,7 @@ body {
   border-radius: 16px;
   padding: 24px;
   width: 100%;
-  background: #17634F;
+  background: #17634f;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -110,7 +115,7 @@ body {
   margin-bottom: 64px;
 }
 .governance-section .governance-item.director {
-  background: #4DA28C;
+  background: #4da28c;
   color: #000000;
   font-weight: 500;
 }
@@ -151,7 +156,7 @@ body {
   padding: 12px 24px;
   border: none;
   margin: 0;
-  background-color: #17634F;
+  background-color: #17634f;
 }
 .reporting-accordion {
   margin-top: 80px;
@@ -167,7 +172,7 @@ body {
   margin-bottom: 12px;
 }
 .reporting-accordion .accordion-item h2 button[aria-expanded='true'] {
-  background-color: #124C3D;
+  background-color: #124c3d;
 }
 .reporting-accordion-content {
   padding: 32px 0;
@@ -246,8 +251,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  color: #EDB143;
-  border: 1px solid #EDB143;
+  color: #edb143;
+  border: 1px solid #edb143;
   border-radius: 8px;
   padding: 6px 12px;
   height: 48px;
@@ -257,7 +262,7 @@ body {
 }
 .custom-radio .text-foreground {
   /* color: #f26722; */
-  color: #EDB143;
+  color: #edb143;
   font-size: 1.125rem;
   font-weight: 500;
 }
@@ -265,7 +270,7 @@ body {
 /*dialog*/
 
 .sus-modal {
-  background: #0a3d5f;
+  background: #17634f;
 }
 .sus-modal button[aria-label='Close'] {
   width: 30px;
@@ -342,7 +347,7 @@ body {
 }
 
 .sus-modal .modal-body button.tab-item[aria-selected='true'] .text-default-500 {
-  color: #f26722;
+  color: #eaeaea;
   border-bottom: 3px solid #f26722;
 }
 
@@ -419,7 +424,8 @@ body {
     .modal-body
     button.tab-item[aria-selected='true']
     .text-default-500 {
-    border-bottom: 2px solid #f26722;
+    border-bottom: 2px solid #eaeaea;
+    /* sd goals popup's -underline the page number's color */
   }
 }
 @media (max-width: 1023.98px) {

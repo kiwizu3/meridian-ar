@@ -1,6 +1,10 @@
 'use client';
 
 import Image from 'next/image';
+import ForeignTransactionChart from '@/public/images/sustainability-goals/foreign-exchange-transactions.jpg';
+import WesternUnionTransactionChart from '@/public/images/sustainability-goals/western-union-transactions.jpg';
+import CSRProjects from '@/public/images/sustainability-goals/No.-of-CSR-projects.jpg';
+import CSRProjectsInvestments from '@/public/images/sustainability-goals/Investment-in-CSR-projects.jpg';
 
 export default function NoPovertyPart4() {
   return (
@@ -13,27 +17,35 @@ export default function NoPovertyPart4() {
                 5 FOREIGN CURRENCY EXCHANGE
               </h2>
               <p>
-                LBF leverages its position as a principal agent for Western
-                Union Money Transfer systems, to increase the volume of foreign
-                currency inflows to the country.
+                LBF supports the development of provincial economies via its
+                island-wide branch network. In line with efforts to provide
+                equal access to all Sri Lankans, our most recent branch
+                expansion strategy has focused on reaching out to customers in
+                the North and East regions of Sri Lanka.
               </p>
               <div className="grid grid-cols-1 gap-4 mt-4">
-                <div className="relative h-48">
+                <div>
+                  <h3 className="text-center text-xl rounded-lg border border-amber-300 p-1 mb-1">
+                    Foreign Exchange Transactions
+                  </h3>
                   <Image
-                    src="/placeholder-forex-chart.jpg"
+                    src={ForeignTransactionChart}
                     alt="Forex Chart"
                     className="rounded-lg"
-                    fill
-                    style={{ objectFit: 'cover' }}
+                    width={405}
+                    height={295}
                   />
                 </div>
-                <div className="relative h-48">
+                <div>
+                  <h3 className="text-center text-xl rounded-lg border border-amber-300 p-1 mb-1">
+                    Western Union Transactions
+                  </h3>
                   <Image
-                    src="/placeholder-western-union-chart.jpg"
+                    src={WesternUnionTransactionChart}
                     alt="Western Union Chart"
                     className="rounded-lg"
-                    fill
-                    style={{ objectFit: 'cover' }}
+                    width={405}
+                    height={295}
                   />
                 </div>
               </div>
@@ -48,17 +60,8 @@ export default function NoPovertyPart4() {
                 island-wide branch network. In line with efforts to provide
                 equal access to all Sri Lankans, our most recent branch
                 expansion strategy has focused on reaching out to customers in
-                the North and East regions.
+                the North and East regions of Sri Lanka.
               </p>
-              <div className="relative h-64 mt-4">
-                <Image
-                  src="/placeholder-rural-dev.jpg"
-                  alt="Rural Development"
-                  className="rounded-lg"
-                  fill
-                  style={{ objectFit: 'cover' }}
-                />
-              </div>
             </div>
           </div>
 
@@ -70,25 +73,28 @@ export default function NoPovertyPart4() {
               Our commitment extends beyond financial contributions to uplifting
               communities through impactful social development programmes. Our
               strategic CSR initiatives focus on education, healthcare,
-              financial literacy, and environmental sustainability.
+              financial literacy, and environmental sustainability, ensuring our
+              growth benefits society as a whole.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-              <div className="relative h-48">
+              <div>
+                <h3 className="text-center text-xl rounded-lg border border-amber-300 p-1 mb-1">
+                  No. of CSR Projects
+                </h3>
                 <Image
-                  src="/placeholder-csr-projects.jpg"
+                  src={CSRProjects}
                   alt="CSR Projects"
                   className="rounded-lg"
-                  fill
-                  style={{ objectFit: 'cover' }}
                 />
               </div>
-              <div className="relative h-48">
+              <div>
+                <h3 className="text-center text-xl rounded-lg border border-amber-300 p-1 mb-1">
+                  Investment in CSR Projects
+                </h3>
                 <Image
-                  src="/placeholder-csr-investment.jpg"
+                  src={CSRProjectsInvestments}
                   alt="CSR Investment"
                   className="rounded-lg"
-                  fill
-                  style={{ objectFit: 'cover' }}
                 />
               </div>
             </div>

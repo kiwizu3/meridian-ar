@@ -35,24 +35,43 @@ export default function NoPovertyPart6() {
                 <tbody>
                   <tr>
                     <td className="p-2 border-b">
-                      Aligning loan products with cultivation seasons for key
-                      crops and animal husbandry needs
+                      Aligning loan products, disbursement timing, and repayment
+                      schedules precisely with the three distinct cultivation
+                      seasons for key local crops (paddy, sesame, peanut, beans)
+                      and the specific needs of animal husbandry clients, while
+                      exploring related opportunities including peanut value
+                      chain financing
                     </td>
                     <td className="p-2 border-b">
-                      Expanding product suite beyond agriculture to align with
-                      clients' goals
+                      We are expanding our product suite beyond core agriculture
+                      to align with clients’ expressed goals by offering
+                      targeted loans for small traders and financing
+                      businessrelated equipment. At the same time, we provide
+                      opportunities to earn income through our voluntary savings
+                      product.
                     </td>
                     <td className="p-2 border-b">
-                      Designing operations to serve and empower the predominant
-                      (95%) female client base
+                      Designing all aspects of operations (products, service
+                      delivery, communication, and staff training) to
+                      effectively serve and empower the predominant (95%+)
+                      female client base, utilising their networks and measuring
+                      impact holistically, including women’s economic
+                      empowerment.
                     </td>
                     <td className="p-2 border-b">
-                      Capitalising on favourable regulatory environment and
-                      limited foreign competition
+                      Capitalising on the favourable regulatory environment and
+                      limited foreign competition by marketing local expertise.
+                      Implementing distinct strategies for agricultural versus
+                      commercial (Yangon) regions including deposit focus where
+                      licensed, and pursuing systematic branch expansion in
+                      highpotential areas.
                     </td>
                     <td className="p-2 border-b">
-                      Optimising resources and operations to align with
-                      agricultural seasonality
+                      Optimising resources and operations (staffing, cash flow)
+                      to align them with agricultural seasonality, applying
+                      proven, NPL management techniques across the entire
+                      portfolio, and investing in appropriate technology to
+                      enhance efficiency and reach, particularly in rural areas.
                     </td>
                   </tr>
                 </tbody>
@@ -68,10 +87,16 @@ export default function NoPovertyPart6() {
               <div>
                 <h3 className="text-xl font-semibold mb-2">Yangon Region</h3>
                 <p>
-                  As Myanmar's primary commercial city, Yangon presents
-                  significant opportunity for deposit mobilisation and loan
-                  granting. We are one of only 38 microfinance institutions
-                  licensed to accept voluntary savings.
+                  As Myanmar’s primary commercial city, the Yangon Region
+                  presents a significant opportunity for deposit mobilisation
+                  and loan granting. Its dense population, active trade hubs,
+                  and relatively higher financial literacy make it an ideal
+                  environment for expanding both savings and credit products. We
+                  are one of only 38 microfinance institutions, out of 182
+                  operating nationally, licensed to accept voluntary savings.
+                  Capitalising on this license and the region’s commercial
+                  nature, our focus will be on deposit-taking activities,
+                  supported by the planned opening of new branches in here.
                 </p>
               </div>
               <div>
@@ -79,10 +104,12 @@ export default function NoPovertyPart6() {
                   Ayeyarwady Region
                 </h3>
                 <p>
-                  Our current operations encompass five branches with
-                  exceptional portfolio quality (NPL ratio of 0%). Based on this
-                  strong performance and the region's high agricultural
-                  potential, we are opening additional branches.
+                  Our current operations in the Ayeyarwady Region encompass five
+                  branches, which have demonstrated exceptional portfolio
+                  quality with an NPL ratio of 0%. Based on this strong
+                  performance and the region’s high agricultural potential, we
+                  are proceeding with plans to open few additional branches in
+                  this region.
                 </p>
               </div>
               <div>
@@ -90,24 +117,18 @@ export default function NoPovertyPart6() {
                   Tanintharyi Region
                 </h3>
                 <p>
-                  Received regulatory approval to establish new branches
-                  focusing on local agricultural sector with tailored financing
-                  for crops like Areca nuts and rubber, plus financing for
-                  three-wheel vehicles.
+                  In addition to the above regions, we have received regulatory
+                  approval to establish new branches in the Tanintharyi Region,
+                  marking a strategic step in our regional expansion. Our
+                  initial operational focus will center on the local
+                  agricultural sector, with tailored financing for farmers
+                  engaged in the cultivation of Areca nuts, rubber, and other
+                  regionally significant crops. We will also offer financing
+                  options for the purchase of three-wheel vehicles, which are
+                  widely used for both transport and agricultural purposes.
                 </p>
               </div>
             </div>
-          </div>
-
-          <div className="relative h-64 md:h-96 mx-[-2rem] mt-3">
-            <Image
-              src="/placeholder-regional-expansion.jpg"
-              alt="Regional Expansion"
-              className="rounded-lg"
-              width={800}
-              height={500}
-              style={{ height: '100%', objectFit: 'cover' }}
-            />
           </div>
         </div>
       </div>

@@ -3,17 +3,24 @@
 export default function ZeroHungerPart2() {
   return (
     <div>
-      <div className="bg-[#5d8de8] text-black p-8">
+      <div className="bg-[#4DA28C] text-black p-8">
         <div className="w-full">
-          <div className="bg-[#7ba1eb] rounded-lg p-6 mb-8">
-            <h2 className="text-2xl font-semibold mb-6">
-              EDUCATION FOR DEVELOPMENT
-            </h2>
+          <div className="bg-[#3C8D79] rounded-lg p-6 mb-8">
+            <div className="flex items-center mb-8">
+              <h1 className="text-4xl font-bold text-white">
+                CULTIVATING SOCIAL AND RELATIONSHIP CAPITAL
+              </h1>
+            </div>
+            <div className="flex items-center mb-4">
+              <h2 className="text-2xl font-semibold">
+                Education for development
+              </h2>
+            </div>
 
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
-                  <tr className="bg-[#5d8de8]">
+                  <tr className="bg-[#4DA28C]">
                     <th className="p-3 text-left">Project</th>
                     <th className="p-3 text-left">Description</th>
                     <th className="p-3 text-left">Beneficiaries</th>
@@ -22,7 +29,7 @@ export default function ZeroHungerPart2() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-[#5d8de8]">
+                  <tr className="border-b border-[#4DA28C]">
                     <td className="p-3">Tutoring Fee for Blind School</td>
                     <td className="p-3">
                       Launched an initiative in partnership with the Blind
@@ -35,15 +42,15 @@ export default function ZeroHungerPart2() {
                     <td className="p-3">110,000</td>
                     <td className="p-3">10</td>
                   </tr>
-                  <tr className="border-b border-[#5d8de8]">
+                  <tr className="border-b border-[#4DA28C]">
                     <td className="p-3">World Children's Day Celebration</td>
                     <td className="p-3">
-                      Celebrated World Children's Day by organising the 'LB
-                      Thirasara Daruwo' initiative, featuring various
+                      Celebrated World Children’s Day by organising the ‘LB
+                      Thirasara Daruwo’ initiative, featuring various
                       competitions (e.g., creative writing, innovative
                       solutions, upcycling crafts, speech, photography, digital
                       art) to inspire creativity and environmental awareness
-                      among children.
+                      among children
                     </td>
                     <td className="p-3">112 school children</td>
                     <td className="p-3">1,200,000</td>
@@ -54,13 +61,13 @@ export default function ZeroHungerPart2() {
             </div>
           </div>
 
-          <div className="bg-[#7ba1eb] rounded-lg p-6 mb-8">
+          <div className="bg-[#3C8D79] rounded-lg p-6 mb-8">
             <h2 className="text-2xl font-semibold mb-6">BUILD PARTNERSHIPS</h2>
 
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
-                  <tr className="bg-[#5d8de8]">
+                  <tr className="bg-[#4DA28C]">
                     <th className="p-3 text-left">Project</th>
                     <th className="p-3 text-left">Description</th>
                     <th className="p-3 text-left">Beneficiaries</th>
@@ -69,7 +76,7 @@ export default function ZeroHungerPart2() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-[#5d8de8]">
+                  <tr className="border-b border-[#4DA28C]">
                     <td className="p-3">SME Workshop</td>
                     <td className="p-3">
                       In collaboration with NEDA, LBF conducted SME workshops in
@@ -93,13 +100,13 @@ export default function ZeroHungerPart2() {
             </div>
           </div>
 
-          <div className="bg-[#7ba1eb] rounded-lg p-6 mb-8">
+          <div className="bg-[#3C8D79] rounded-lg p-6 mb-8">
             <h2 className="text-2xl font-semibold mb-6">TRANSFORMATIVE CSR</h2>
 
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
-                  <tr className="bg-[#5d8de8]">
+                  <tr className="bg-[#4DA28C]">
                     <th className="p-3 text-left">Project</th>
                     <th className="p-3 text-left">Description</th>
                     <th className="p-3 text-left">Beneficiaries</th>
@@ -108,7 +115,7 @@ export default function ZeroHungerPart2() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-[#5d8de8]">
+                  <tr className="border-b border-[#4DA28C]">
                     <td className="p-3">Cyber security awareness</td>
                     <td className="p-3">
                       In the digital age, customers are increasingly exposed to
@@ -136,7 +143,7 @@ export default function ZeroHungerPart2() {
             </div>
           </div>
 
-          <div className="bg-[#7ba1eb] rounded-lg p-6">
+          <div className="bg-[#3C8D79] rounded-lg p-6">
             <h2 className="text-2xl font-semibold mb-4">FOSTERING CULTURE</h2>
             <p>
               We develop video contents focused on sharing positive perspectives

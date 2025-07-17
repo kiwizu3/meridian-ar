@@ -2,25 +2,18 @@ import Image from 'next/image';
 
 export default function GoodHealthWellbeingPart1() {
   return (
-    <div className="max-w-4xl mx-auto py-8 px-4">
+    <div className="bg-[#4DA28C] max-w-4xl mx-auto py-8 px-4">
       <h1 className="text-3xl font-bold text-center mb-8">
         Good Health & Wellbeing Initiatives
       </h1>
 
-      <div className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">
-          Drug Abuse Prevention Programme
-        </h2>
-        <div className="flex flex-col md:flex-row gap-6 mb-6">
-          <div className="md:w-1/3">
-            <Image
-              src="/placeholder-drug-prevention.jpg"
-              alt="Drug Prevention Programme"
-              width={400}
-              height={300}
-              className="rounded-lg"
-            />
-          </div>
+      <div>
+        <div className="flex items-center mb-4">
+          <h2 className="text-2xl font-semibold text-black">
+            Drug Abuse Prevention Programme
+          </h2>
+        </div>
+        <div className="mb-6 bg-[#3C8D79] rounded-lg p-5">
           <div className="md:w-2/3">
             <h3 className="text-xl font-medium mb-2">What we did in past</h3>
             <p className="mb-4">
@@ -50,7 +43,7 @@ export default function GoodHealthWellbeingPart1() {
           </div>
         </div>
 
-        <div className="bg-blue-50 p-6 rounded-lg mb-6">
+        <div className="bg-[#3C8D79] p-6 rounded-lg mb-6">
           <h3 className="text-xl font-medium mb-2">
             Expected Benefits and Impact
           </h3>
@@ -74,46 +67,39 @@ export default function GoodHealthWellbeingPart1() {
           </ul>
         </div>
 
-        <div className="italic text-gray-600 mb-6">
+        <div className="italic text-black text-xl mb-6">
           "LBF is proud to support the Drug Abuse Prevention Programme as part
           of our commitment to fostering healthier communities. By investing in
           awareness and education, we aim to create a positive social impact
           beyond our financial services."
         </div>
 
-        <h3 className="text-xl font-medium mb-2">Future Road Map</h3>
-        <p>
+        <h3 className="text-xl font-medium mb-2 text-black">Future Road Map</h3>
+        <p className="p-2">
           Going forward, we will continue our efforts through these awareness
           sessions and the rehabilitation center to tackle substance abuse in
           the country.
         </p>
       </div>
 
-      <div className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">
+      <div className="my-7 bg-[#4DA28C]">
+        <h2 className="text-2xl font-semibold text-black">
           Blood Donation Programmes
         </h2>
-        <div className="flex flex-col md:flex-row gap-6 mb-6">
-          <div className="md:w-1/3">
-            <Image
-              src="/placeholder-blood-donation.jpg"
-              alt="Blood Donation Programme"
-              width={400}
-              height={300}
-              className="rounded-lg"
-            />
-          </div>
+        <div className="mb-6 bg-[#3C8D79] rounded-lg p-5">
           <div className="md:w-2/3">
             <h3 className="text-xl font-medium mb-2">What we did in past</h3>
             <p className="mb-4">
               Over the past several years, LB has been actively engaged in blood
               donation drives, contributing to the saving of thousands of lives.
+              This ongoing effort reflects LB’s deep commitment to humanitarian
+              causes and its role in supporting public health initiatives
             </p>
 
             <h3 className="text-xl font-medium mb-2">Partnership</h3>
             <p className="mb-4">National Blood Centre</p>
 
-            <h3 className="text-xl font-medium mb-2">Current Year Activity</h3>
+            <h3 className="text-xl font-medium mb-2">Current Year</h3>
             <p className="mb-2">
               During 2024/25 LBF conducted two blood donation campaigns, one at
               the head office and the other one at Kekirawa branch in
@@ -127,12 +113,35 @@ export default function GoodHealthWellbeingPart1() {
           </div>
         </div>
 
-        <div className="italic text-gray-600 mb-6">
+        <div className="bg-[#3C8D79] p-6 rounded-lg mb-6">
+          <h3 className="text-xl font-medium mb-2">
+            Expected Benefits and Impact
+          </h3>
+          <ul className="list-disc pl-5 space-y-2">
+            <li>Builds stronger connections with local communities.</li>
+            <li>Promotes a culture of compassion and volunteerism.</li>
+            <li>Supports healthcare systems during emergencies.</li>
+            <li>Encourages collective social responsibility.</li>
+            <li>Fosters unity and inclusivity across society.</li>
+            <li>
+              Enhances LB’s image as a caring, socially responsible
+              organisation.
+            </li>
+          </ul>
+        </div>
+
+        <div className="italic text-black text-xl mb-6">
           "LBF actively supports Blood Donation Programmes as a key part of our
           commitment to social responsibility and community wellbeing. Through
           these initiatives, we strive to save lives and promote a culture of
           giving within and beyond our organisation."
         </div>
+
+        <h3 className="text-xl font-medium mb-2 text-black">Future Road Map</h3>
+        <p className="p-2">
+          Going forward, we will continue our blood donation drives and
+          awareness sessions to strengthen community health and save more lives.
+        </p>
       </div>
     </div>
   );
