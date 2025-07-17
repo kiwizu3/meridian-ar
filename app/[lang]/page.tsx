@@ -110,6 +110,7 @@ export default async function Home({
         className="hidden md:block"
       />
       <div className="filter-home">
+    
         {/* <div className="md:h-[calc(100vh-3rem)] h-[calc(100vh-10rem)] flex w-full lg:-mt-[95px] -mt-20 relative">
           <div className="absolute top-0 left-0 inset-0">
             <VideoSection />
