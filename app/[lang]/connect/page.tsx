@@ -99,204 +99,209 @@ export default function Contact({
           <SpeechText>
             <h1 className="connect-heading">{dictionary?.connect}</h1>
           </SpeechText>
-          <div className="connect-news-wrap">
-            <div className="connect-news-inner">
-              <div className="heading">
-                <iframe
-                  title="LB Finance Facebook Page"
-                  className="w-full h-[1283px]"
-                  src="https://embedsocial.com/api/pro_hashtag/2607080a6706e9f67a8480050e2e0797dca8f77f"
-                />
+          <div className="grid grid-cols-3 gap-10">
+            <div className="connect-news-wrap">
+              <div className="connect-news-inner">
+                <div className="heading">
+                  <iframe
+                    title="LB Finance Facebook Page"
+                    className="w-full h-[1283px]"
+                    src="https://embedsocial.com/api/pro_hashtag/2607080a6706e9f67a8480050e2e0797dca8f77f"
+                  />
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="contact-wrap" id="contact-wrap">
-            <div className="detail-wrap pr-0 md:pr-0 lg:pr-6 xl:pr-7">
-              <SpeechText>
-                <p className="heading mb-2">{dictionary?.contact_us}</p>
-              </SpeechText>
-
-              <div className="para font-secondary">
+            <div
+              className="flex flex-col col-span-2 contact-wrap"
+              id="contact-wrap"
+            >
+              <div className="detail-wrap pr-0 md:pr-0 lg:pr-6 xl:pr-7">
                 <SpeechText>
-                  <p>{dictionary?.please_contact_us}</p>
+                  <p className="heading mb-2">{dictionary?.contact_us}</p>
                 </SpeechText>
-              </div>
 
-              <div className="address-wrap">
-                <div className="address-block">
-                  <div className="title font-secondary">
-                    <SpeechText>
-                      <p>{dictionary?.address}</p>
-                    </SpeechText>
-                  </div>
-                  <div className="text font-secondary">
-                    <SpeechText>
-                      <p className="whitespace-pre-line">
-                        {dictionary?.manager}
-                        {'\n'}
-                        {dictionary?.lb_finance_plc}
-                        {'\n'}
-                        {dictionary?.corporate_office}
-                        {'\n'}
-                        {dictionary?.no_20_dharmapala_mawatha}
-                        {'\n'}
-                        {dictionary?.colombo_03}
-                      </p>
-                    </SpeechText>
-                  </div>
+                <div className="para font-secondary">
+                  <SpeechText>
+                    <p>{dictionary?.please_contact_us}</p>
+                  </SpeechText>
                 </div>
-                <div className="address-block">
-                  <div className="title font-secondary">
-                    <SpeechText>
-                      <p>{dictionary?.contact_number}</p>
-                    </SpeechText>
+
+                <div className="address-wrap">
+                  <div className="address-block">
+                    <div className="title font-secondary">
+                      <SpeechText>
+                        <p>{dictionary?.address}</p>
+                      </SpeechText>
+                    </div>
+                    <div className="text font-secondary">
+                      <SpeechText>
+                        <p className="whitespace-pre-line">
+                          {dictionary?.manager}
+                          {'\n'}
+                          {dictionary?.lb_finance_plc}
+                          {'\n'}
+                          {dictionary?.corporate_office}
+                          {'\n'}
+                          {dictionary?.no_20_dharmapala_mawatha}
+                          {'\n'}
+                          {dictionary?.colombo_03}
+                        </p>
+                      </SpeechText>
+                    </div>
                   </div>
-                  <div className="text font-secondary">
-                    <SpeechText>
-                      <p>011 2155 473</p>
-                      <p>011 2155 504</p>
-                    </SpeechText>
+                  <div className="address-block">
+                    <div className="title font-secondary">
+                      <SpeechText>
+                        <p>{dictionary?.contact_number}</p>
+                      </SpeechText>
+                    </div>
+                    <div className="text font-secondary">
+                      <SpeechText>
+                        <p>011 2155 473</p>
+                        <p>011 2155 504</p>
+                      </SpeechText>
+                    </div>
                   </div>
-                </div>
-                <div className="address-block">
-                  <div className="title font-secondary">
-                    <SpeechText>
-                      <p>{dictionary?.email}</p>
-                    </SpeechText>
-                  </div>
-                  <div className="text font-secondary">
-                    <SpeechText>
-                      <p>thusithaw@lbfinance.lk</p>
-                    </SpeechText>
+                  <div className="address-block">
+                    <div className="title font-secondary">
+                      <SpeechText>
+                        <p>{dictionary?.email}</p>
+                      </SpeechText>
+                    </div>
+                    <div className="text font-secondary">
+                      <SpeechText>
+                        <p>thusithaw@lbfinance.lk</p>
+                      </SpeechText>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="form-wrap">
-              <form>
-                <div className="form-inner">
-                  <div className="heading mb-6">
-                    <SpeechText>
-                      <p>{dictionary?.send_us_a_message}</p>
-                    </SpeechText>
+              <div className="form-wrap">
+                <form>
+                  <div className="form-inner">
+                    <div className="heading mb-6">
+                      <SpeechText>
+                        <p>{dictionary?.send_us_a_message}</p>
+                      </SpeechText>
+                    </div>
+                    <div className="mb-6">
+                      <Input
+                        type="text"
+                        className="contact-input font-secondary"
+                        classNames={{
+                          label: [
+                            'group-data-[filled-within=true]:text-white',
+                            'group-data-[focus=true]:text-blue',
+                          ],
+                          input: [
+                            'group-data-[filled-within=true]:!text-white',
+                            'group-data-[focus=true]:!text-blue',
+                          ],
+                        }}
+                        label={dictionary?.first_name}
+                        onChange={(e) => setFirstName(e.target.value)}
+                        value={firstName}
+                        isRequired
+                        isInvalid={validateName(firstName)}
+                        errorMessage="Please enter a valid name"
+                      />
+                    </div>
+                    <div className="mb-6">
+                      <Input
+                        type="text"
+                        className="contact-input font-secondary"
+                        label={dictionary?.last_name}
+                        onChange={(e) => setLastName(e.target.value)}
+                        value={lastName}
+                        isRequired
+                        isInvalid={validateName(lastName)}
+                        errorMessage="Please enter a valid name"
+                        classNames={{
+                          label: [
+                            'group-data-[filled-within=true]:text-white',
+                            'group-data-[focus=true]:text-blue',
+                          ],
+                          input: [
+                            'group-data-[filled-within=true]:!text-white',
+                            'group-data-[focus=true]:!text-blue',
+                          ],
+                        }}
+                      />
+                    </div>
+                    <div className="mb-6">
+                      <Input
+                        type="email"
+                        className="contact-input font-secondary"
+                        label={dictionary?.email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        value={email}
+                        isRequired
+                        isInvalid={validateEmail(email)}
+                        errorMessage="Please enter a valid email"
+                        classNames={{
+                          label: [
+                            'group-data-[filled-within=true]:text-white',
+                            'group-data-[focus=true]:text-blue',
+                          ],
+                          input: [
+                            'group-data-[filled-within=true]:!text-white',
+                            'group-data-[focus=true]:!text-blue',
+                          ],
+                        }}
+                      />
+                    </div>
+                    <div className="mb-6">
+                      <Input
+                        type="number"
+                        className="contact-input font-secondary"
+                        label={dictionary?.contact}
+                        onChange={(e) => setContact(e.target.value)}
+                        value={contact}
+                        isRequired
+                        isInvalid={validatePhone(contact)}
+                        errorMessage="Please enter a valid phone number"
+                        classNames={{
+                          label: [
+                            'group-data-[filled-within=true]:text-white',
+                            'group-data-[focus=true]:text-blue',
+                          ],
+                          input: [
+                            'group-data-[filled-within=true]:!text-white',
+                            'group-data-[focus=true]:!text-blue',
+                          ],
+                        }}
+                      />
+                    </div>
+                    <div className="mb-6">
+                      <Textarea
+                        className="contact-input font-secondary"
+                        label={dictionary?.message}
+                        onChange={(e) => setMessage(e.target.value)}
+                        value={message}
+                        isRequired
+                        classNames={{
+                          label: [
+                            'group-data-[filled-within=true]:text-white',
+                            'group-data-[focus=true]:text-blue',
+                          ],
+                          input: [
+                            'group-data-[filled-within=true]:!text-white',
+                            'group-data-[focus=true]:!text-blue',
+                          ],
+                        }}
+                      />
+                    </div>
+                    <button
+                      type="button"
+                      className="submit-btn font-secondary"
+                      onClick={() => handleSubmit()}
+                    >
+                      {dictionary?.submit}
+                    </button>
                   </div>
-                  <div className="mb-6">
-                    <Input
-                      type="text"
-                      className="contact-input font-secondary"
-                      classNames={{
-                        label: [
-                          'group-data-[filled-within=true]:text-white',
-                          'group-data-[focus=true]:text-blue',
-                        ],
-                        input: [
-                          'group-data-[filled-within=true]:!text-white',
-                          'group-data-[focus=true]:!text-blue',
-                        ],
-                      }}
-                      label={dictionary?.first_name}
-                      onChange={(e) => setFirstName(e.target.value)}
-                      value={firstName}
-                      isRequired
-                      isInvalid={validateName(firstName)}
-                      errorMessage="Please enter a valid name"
-                    />
-                  </div>
-                  <div className="mb-6">
-                    <Input
-                      type="text"
-                      className="contact-input font-secondary"
-                      label={dictionary?.last_name}
-                      onChange={(e) => setLastName(e.target.value)}
-                      value={lastName}
-                      isRequired
-                      isInvalid={validateName(lastName)}
-                      errorMessage="Please enter a valid name"
-                      classNames={{
-                        label: [
-                          'group-data-[filled-within=true]:text-white',
-                          'group-data-[focus=true]:text-blue',
-                        ],
-                        input: [
-                          'group-data-[filled-within=true]:!text-white',
-                          'group-data-[focus=true]:!text-blue',
-                        ],
-                      }}
-                    />
-                  </div>
-                  <div className="mb-6">
-                    <Input
-                      type="email"
-                      className="contact-input font-secondary"
-                      label={dictionary?.email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      value={email}
-                      isRequired
-                      isInvalid={validateEmail(email)}
-                      errorMessage="Please enter a valid email"
-                      classNames={{
-                        label: [
-                          'group-data-[filled-within=true]:text-white',
-                          'group-data-[focus=true]:text-blue',
-                        ],
-                        input: [
-                          'group-data-[filled-within=true]:!text-white',
-                          'group-data-[focus=true]:!text-blue',
-                        ],
-                      }}
-                    />
-                  </div>
-                  <div className="mb-6">
-                    <Input
-                      type="number"
-                      className="contact-input font-secondary"
-                      label={dictionary?.contact}
-                      onChange={(e) => setContact(e.target.value)}
-                      value={contact}
-                      isRequired
-                      isInvalid={validatePhone(contact)}
-                      errorMessage="Please enter a valid phone number"
-                      classNames={{
-                        label: [
-                          'group-data-[filled-within=true]:text-white',
-                          'group-data-[focus=true]:text-blue',
-                        ],
-                        input: [
-                          'group-data-[filled-within=true]:!text-white',
-                          'group-data-[focus=true]:!text-blue',
-                        ],
-                      }}
-                    />
-                  </div>
-                  <div className="mb-6">
-                    <Textarea
-                      className="contact-input font-secondary"
-                      label={dictionary?.message}
-                      onChange={(e) => setMessage(e.target.value)}
-                      value={message}
-                      isRequired
-                      classNames={{
-                        label: [
-                          'group-data-[filled-within=true]:text-white',
-                          'group-data-[focus=true]:text-blue',
-                        ],
-                        input: [
-                          'group-data-[filled-within=true]:!text-white',
-                          'group-data-[focus=true]:!text-blue',
-                        ],
-                      }}
-                    />
-                  </div>
-                  <button
-                    type="button"
-                    className="submit-btn font-secondary"
-                    onClick={() => handleSubmit()}
-                  >
-                    {dictionary?.submit}
-                  </button>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
         </div>
