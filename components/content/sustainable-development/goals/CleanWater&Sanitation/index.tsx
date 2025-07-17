@@ -4,9 +4,9 @@ import { Spinner } from '@nextui-org/react';
 import dynamic from 'next/dynamic';
 import { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
-import CleanWaterSanitation from '../GoodHealth&Wellbeing/part2';
+import CleanWaterSanitationPart1 from '../GoodHealth&Wellbeing/part2';
 
-export default function ZeroHunger() {
+export default function CleanWaterSanitation() {
   const { ref, inView } = useInView({
     threshold: 0,
   });
@@ -21,7 +21,7 @@ export default function ZeroHunger() {
 
   return (
     <div>
-      <CleanWaterSanitation />
+      <CleanWaterSanitationPart1 />
       <div className="py-7 flex justify-center" ref={ref}>
         {value < 1 && <Spinner />}
       </div>

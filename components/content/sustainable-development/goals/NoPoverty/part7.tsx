@@ -16,33 +16,53 @@ export default function NoPovertyPart7() {
                   <li>Reputation and trustworthiness</li>
                   <li>Strong community engagement</li>
                   <li>Diverse financial products</li>
-                  <li>Extensive network across four regions</li>
+                  <li>Extensive network across four regions of the country</li>
                 </ul>
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">Opportunities</h3>
                 <ul className="list-disc list-inside">
-                  <li>Market expansion in rural areas</li>
+                  <li>
+                    Market expansion, especially in under-served rural areas
+                  </li>
                   <li>Implement digital financial services</li>
-                  <li>Collaborate with local NGOs</li>
-                  <li>Government policies support MFIs</li>
+                  <li>
+                    Opportunity to collaborate with local NGOs and community
+                    organisations
+                  </li>
+                  <li>
+                    Government policies encourage financial inclusion and
+                    support microfinance institutions
+                  </li>
                 </ul>
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">Aspirations</h3>
                 <ul className="list-disc list-inside">
-                  <li>Leading microfinance provider in Myanmar</li>
-                  <li>Customised loan products</li>
-                  <li>Benchmark in social responsibility</li>
-                  <li>Digital-first microfinance provider</li>
+                  <li>
+                    Become the leading microfinance service provider in Myanma
+                  </li>
+                  <li>
+                    Develop customised loan products for diverse community needs
+                  </li>
+                  <li>
+                    Set a benchmark in social responsibility, especially in
+                    areas such as women’s economic empowerment and financial
+                    literacy.
+                  </li>
+                  <li>Become a digital-first microfinance provider</li>
                 </ul>
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">Results</h3>
                 <ul className="list-disc list-inside">
-                  <li>25 branches by 2025/26</li>
-                  <li>50,000 customers target</li>
-                  <li>Top-10 microfinance ranking</li>
+                  <li>
+                    Increase number of branches to 25 by the end of 2025/26
+                  </li>
+                  <li>
+                    Target 50,000 customers and a top-10 microfinance ranking
+                    within next three financial years
+                  </li>
                 </ul>
               </div>
             </div>
@@ -58,8 +78,13 @@ export default function NoPovertyPart7() {
                   Environmental Sustainability
                 </h3>
                 <ul className="list-disc list-inside">
-                  <li>Encourage digital channels for loan repayment</li>
-                  <li>Reduce paper usage in business processes</li>
+                  <li>
+                    Encourage customers to use digital channels for loan
+                    repayment
+                  </li>
+                  <li>
+                    Actions taken to reduce paper usage in the business process{' '}
+                  </li>
                 </ul>
               </div>
               <div>
@@ -69,7 +94,12 @@ export default function NoPovertyPart7() {
                 <ul className="list-disc list-inside">
                   <li>Supporting women empowerment</li>
                   <li>Supporting agriculture and trading</li>
-                  <li>Improving health, education, and economic resilience</li>
+                  <li>
+                    Our financial products directly address improving health,
+                    living conditions, educational access, economic resilience,
+                    and future opportunities, empowering individuals and
+                    families to build better, more secure lives
+                  </li>
                 </ul>
               </div>
               <div>
@@ -77,23 +107,22 @@ export default function NoPovertyPart7() {
                   Governance and Compliance
                 </h3>
                 <ul className="list-disc list-inside">
-                  <li>Compliance with Finance and Regulatory Department</li>
-                  <li>Regular reporting to Central Bank of Myanmar</li>
-                  <li>Comprehensive Credit Policy</li>
+                  <li>
+                    In compliance with the requirements of Finance and
+                    Regulatory Department that comes under Ministry of Planning
+                    and Finance, Myanmar
+                  </li>
+                  <li>
+                    Report regularly to the Central Bank of Myanmar on
+                    anti-money laundering and terrorist financing
+                  </li>
+                  <li>
+                    Follow a comprehensive Credit Policy in the loan granting
+                    process
+                  </li>
                 </ul>
               </div>
             </div>
-          </div>
-
-          <div className="relative h-64 md:h-96 mx-[-2rem] mt-3">
-            <Image
-              src="/placeholder-esg.jpg"
-              alt="ESG Impact"
-              className="rounded-lg"
-              width={800}
-              height={500}
-              style={{ height: '100%', objectFit: 'cover' }}
-            />
           </div>
         </div>
       </div>

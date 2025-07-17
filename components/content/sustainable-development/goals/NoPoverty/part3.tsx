@@ -1,41 +1,86 @@
 'use client';
 
 import Image from 'next/image';
+import EmploymentOppurnuties from '@/public/images/sustainability-goals/employment-oppurnuties.jpg';
 
 export default function NoPovertyPart3() {
   return (
     <div>
-      <div className="bg-[#5d8de8] text-black p-8">
+      <div className="bg-[#4DA28C] text-black p-8">
         <div className="w-full">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            <div className="bg-[#7ba1eb] rounded-lg p-6">
-              <h2 className="text-2xl font-semibold mb-2 text-cardBlue]">
-                2. JOB CREATION
-              </h2>
-              <h3 className="text-xl font-semibold my-4">
-                From Employment to Empowerment
-              </h3>
-              <p>
-                We empower entrepreneurs to build businesses and create jobs.
-                Our commitment to economic growth extends far beyond our own
-                Company, impacting communities across Sri Lanka.
-              </p>
-              <div className="relative h-48 mt-4">
-                <Image
-                  src="/placeholder-job-chart.jpg"
-                  alt="Job Creation Chart"
-                  className="rounded-lg"
-                  fill
-                  style={{ objectFit: 'cover' }}
-                />
+          <div className="grid grid-cols-2 auto-rows-auto gap-6 mb-8">
+            <div className="flex flex-col gap-5 md:col-span-1">
+              <div className="bg-[#3C8D79] rounded-lg p-6">
+                <h2 className="text-2xl font-semibold mb-2 text-cardBlue]">
+                  2. JOB CREATION
+                </h2>
+                <h3 className="text-xl font-semibold my-4">
+                  From Employment to Empowerment
+                </h3>
+                <p>
+                  We empower entrepreneurs to build businesses and create jobs.
+                  Our commitment to economic growth extends far beyond our own
+                  Company, impacting communities across Sri Lanka.
+                </p>
+                <div>
+                  <div className="border-black rounded-xl p-1">
+                    <h3>New Employment Opportunities</h3>
+                  </div>
+                  <div>
+                    <Image
+                      src={EmploymentOppurnuties}
+                      alt="Job Creation Chart"
+                      className="rounded-lg"
+                      // fill
+                      // style={{ objectFit: 'cover' }}
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-[#3C8D79] rounded-lg p-6">
+                <h2 className="text-2xl font-semibold mb-4">
+                  4. EMPOWERING WOMEN
+                </h2>
+                <p>
+                  Financial independence is a key driver of social progress, and
+                  we are leading the charge in empowering women entrepreneurs
+                  and professionals. Our targeted programmes provide customised
+                  financial support, mentorship, and networking opportunities,
+                  empowering women-owned businesses to thrive and achieve
+                  significant growth.
+                </p>
+                <div className="grid grid-cols-2 gap-4 mt-4 text-center">
+                  <div>
+                    <h3 className="text-2xl font-bold">Rs. 84 Bn</h3>
+                    <p>Gold Loans to women entrepreneurs</p>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold">2,090</h3>
+                    <p>Woman Representational workforce</p>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold">Rs. 374 Mn</h3>
+                    <p>
+                      LB CIM Business and Personal Loans disbursed to women
+                      entrepreneurs
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold">10,289</h3>
+                    <p>
+                      Number of vehicle financing facilities granted to women
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className="bg-[#7ba1eb] rounded-lg p-6  row-span-3">
+            <div className="md:col-span-1 auto-rows-auto bg-[#3C8D79] rounded-lg p-6">
               <h2 className="text-2xl font-semibold mb-4">
                 3. ECONOMIC VALUE CREATION
               </h2>
-              <h3 className="text-xl font-semibold my-4">
+              <h3 className="text-xl font-semibold mb-2">
                 Economic Value Creation
               </h3>
               <p>
@@ -52,18 +97,18 @@ export default function NoPovertyPart3() {
                 beyond financial transactions, ensuring long-term prosperity for
                 shareholders, employees, and customers.
               </p>
-              <div className="relative h-48 mt-4">
-                <h3 className="text-xl font-semibold my-8">
+              <div>
+                <h3 className="text-xl font-semibold mb-2">
                   Economic Value Added (EVA)
                 </h3>
                 <table className="min-w-full border border-gray-300">
                   <thead>
                     <tr>
-                      <th className="border px-4 py-2">
+                      <th className="border px-4 py-1">
                         For the year ended 31st March
                       </th>
-                      <th className="border px-4 py-2">2024/25 Rs. million</th>
-                      <th className="border px-4 py-2">2023/24 Rs. million</th>
+                      <th className="border px-4 py-1">2024/25 Rs. million</th>
+                      <th className="border px-4 py-1">2023/24 Rs. million</th>
                     </tr>
                     <tr>
                       <td className="border px-4 py-1" colSpan={3}>
@@ -131,35 +176,61 @@ export default function NoPovertyPart3() {
                   </thead>
                 </table>
               </div>
-            </div>
-
-            <div className="bg-[#7ba1eb] rounded-lg p-6">
-              <h2 className="text-2xl font-semibold mb-4">
-                4. EMPOWERING WOMEN
-              </h2>
-              <p>
-                Financial independence is a key driver of social progress, and
-                we are leading the charge in empowering women entrepreneurs and
-                professionals. Our targeted programmes provide customised
-                financial support, mentorship, and networking opportunities.
-              </p>
-              <div className="grid grid-cols-2 gap-4 mt-4 text-center">
-                <div>
-                  <h3 className="text-xl font-bold">Rs. 84 Bn</h3>
-                  <p>Gold Loans to women entrepreneurs</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold">2,090</h3>
-                  <p>Representational workforce</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold">Rs. 374 Mn</h3>
-                  <p>Business/Personal Loans</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold">10,289</h3>
-                  <p>Vehicle financing facilities</p>
-                </div>
+              <div className="my-5">
+                <h3 className="text-xl font-semibold mb-2">
+                  Market Value Added (MVA)
+                </h3>
+                <table className="min-w-full border border-gray-300">
+                  <thead>
+                    <tr>
+                      <th className="border px-4 py-1">
+                        For the year ended 31st March
+                      </th>
+                      <th className="border px-4 py-1">2024/25 Rs. million</th>
+                      <th className="border px-4 py-1">2023/24 Rs. million</th>
+                    </tr>
+                    <tr>
+                      <td colSpan={3} className="border px-4 py-1">
+                        Market capitalisation
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="border px-4 py-1">
+                        Market value of equity
+                      </td>
+                      <td className="border px-4 py-1"> 47,925.94</td>
+                      <td className="border px-4 py-1">34,794.79</td>
+                    </tr>
+                    <tr>
+                      <td colSpan={3} className="border px-4 py-1">
+                        Less: Equity owners' funds
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="border px-4 py-1">
+                        Total equity owners' funds
+                      </td>
+                      <td className="border px-4 py-1">51,266.00</td>
+                      <td className="border px-4 py-1">43,626.07 </td>
+                    </tr>
+                    <tr>
+                      <td className="border px-4 py-1">
+                        Market value added/(destroyed)
+                      </td>
+                      <td className="border px-4 py-1">(3,340.06)</td>
+                      <td className="border px-4 py-1"> (8,831.28)</td>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+              <div>
+                <p>
+                  By expanding financial access and providing crucial skills
+                  development, we are empowering women to become economic
+                  powerhouses, creating a ripple effect of job creation,
+                  stability, and transformative economic change across
+                  communities
+                </p>
               </div>
             </div>
           </div>

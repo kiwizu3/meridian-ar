@@ -4,7 +4,7 @@ import { Spinner } from '@nextui-org/react';
 import dynamic from 'next/dynamic';
 import { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
-import ZeroHungerPart1 from './part1';
+import ZeroHungerPart1 from '../NoPoverty/part2';
 
 const ZeroHungerPart2 = dynamic(() => import('./part2'), {
   ssr: false,

@@ -2,14 +2,13 @@ import Image from 'next/image';
 
 export default function GoodHealthWellbeingPart2() {
   return (
-    <div className="max-w-4xl mx-auto py-8 px-4 text-black">
-      <h2 className="text-2xl font-semibold mb-6">
-        Community Well-being Initiatives
-      </h2>
-
-      <div className="overflow-x-auto mb-12">
-        <table className="min-w-full bg-white border border-gray-200">
-          <thead className="bg-gray-50">
+    <div className="max-w-4xl mx-auto">
+      <div className="overflow-x-auto mb-12 bg-[#4DA28C] p-6">
+        <h2 className="text-2xl font-semibold mb-6 text-black">
+          Community Well-being Initiatives
+        </h2>
+        <table className="min-w-full bg-[#3C8D79] border border-gray-200">
+          <thead className="bg-[#3C8D79]">
             <tr>
               <th className="px-4 py-2 border">Project</th>
               <th className="px-4 py-2 border">Description</th>
@@ -91,13 +90,13 @@ export default function GoodHealthWellbeingPart2() {
         </table>
       </div>
 
-      <h2 className="text-2xl font-semibold mb-6">
-        Employee Well-being Initiatives
-      </h2>
+      <div className="overflow-x-auto bg-[#4DA28C] p-6">
+        <h2 className="text-2xl font-semibold mb-6">
+          Employee Well-being Initiatives
+        </h2>
 
-      <div className="overflow-x-auto">
-        <table className="min-w-full bg-white border border-gray-200">
-          <thead className="bg-gray-50">
+        <table className="min-w-full bg-[#3C8D79] border border-gray-200">
+          <thead className="bg-[#3C8D79]">
             <tr>
               <th className="px-4 py-2 border">Project</th>
               <th className="px-4 py-2 border">Description</th>
