@@ -3,7 +3,7 @@
 import React from 'react';
 
 export default function SustainabilityGRI() {
-  const disclosures = [
+  const disclosures: SectionItem[] = [
     {
       id: '2-1',
       description: 'Organizational details',
@@ -191,7 +191,7 @@ export default function SustainabilityGRI() {
     },
   ];
 
-  const materialTopics = [
+  const materialTopics: SectionItem[] = [
     {
       id: '3-1',
       description: 'Process to determine material topics',
@@ -212,7 +212,7 @@ export default function SustainabilityGRI() {
     },
   ];
 
-  const economicPerformance = [
+  const economicPerformance: SectionItem[] = [
     {
       id: '201-1',
       description: 'Direct economic value generated and distributed',
@@ -242,7 +242,7 @@ export default function SustainabilityGRI() {
     },
   ];
 
-  const marketPresence = [
+  const marketPresence: SectionItem[] = [
     {
       id: '202-1',
       description:
