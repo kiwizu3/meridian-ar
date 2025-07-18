@@ -18,7 +18,7 @@ export default function ReportHeaderSection() {
             <button type="button" className="bg-[#0E3A2F] text-white font-semibold transition-colors rounded-[8px] opacity-100 p-[12px_16px] download-button">
               Download Report
             </button>
-            <Link href="/generate-report">
+            <Link href="/report/generate-report">
               <button type="button" className="bg-transparent border-2 border-white text-white font-semibold transition-colors rounded-[8px] opacity-100 p-[12px_16px] generate-button">
                 Generate Report
               </button>
