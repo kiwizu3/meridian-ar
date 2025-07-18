@@ -3,7 +3,6 @@
 import { useRef, useState } from 'react';
 
 export default function HomePageMainVideo() {
-
   const firstVideoRef = useRef<HTMLVideoElement | null>(null);
   const secondVideoRef = useRef<HTMLVideoElement | null>(null);
   const [playSecond, setPlaySecond] = useState(false);
@@ -15,7 +14,7 @@ export default function HomePageMainVideo() {
 
   return (
     <div>
-        {/* <video
+      {/* <video
           ref={firstVideoRef}
           src="/videos/LB_lion_animation_v4_intro_SFX.mp4"
           autoPlay
