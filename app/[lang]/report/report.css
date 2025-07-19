@@ -62,12 +62,12 @@ a {
   text-decoration: none;
 }
 
-/* Custom CSS Classes for Report Page */
-.header-section {
-  background-image: url('/images/report/journey page.png');
+section {
+  height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: transparent;
 }
 
 .main-content-container {
@@ -157,10 +157,7 @@ a {
   justify-content: center;
   width: 100%;
   height: 100%;
-  text-align: center;
-}
-
-.lion-paw-offset {
+  background-color: transparent;
   margin-left: -40px;
 }
 
