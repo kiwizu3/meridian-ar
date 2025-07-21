@@ -1,28 +1,55 @@
 'use client';
-import React from 'react';
+
+import React, { useState, useCallback } from 'react';
 import Image from 'next/image';
-// import dynamic from 'next/dynamic';
 import LionPawCircle from './LionPawCircle';
 import DownloadPDFButton from './DownloadPDFButton';
 
-// import PopUpModel from './PopUpModel';
-// import SustainabilityStrategy from './content/SustainabilityStrategy';
+import PopUpModel from './PopUpModel';
 
-// Replace them with the actual content
-// const tabItems = [
-//   {
-//     contentLabelPairs: [
-//       { label: 'Sustainability Strategy', content: <SustainabilityStrategy /> },
-//     ],
-//   },
-// ];
+import SustainabilityStrategy from './content/section2/ApproachStrategy';
+import ChairmansRemarks from './content/section2/ChairmansRemarks';
+import CreatingBusinessModel from './content/section2/CreatingBusinessModel';
+import IntegratedStakeholder from './content/section2/IntegratedStakeholder';
+import MaterialityDetermination from './content/section2/MaterialityDetermination';
+import StrategicJourney from './content/section2/StrategicJourney';
 
 export default function AmplifyingSection() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [tabs, setTabs] = useState<
+    { id: number; label: string; content: React.ReactElement }[]
+  >([]);
+
+  const onOpenChange = useCallback(() => setIsOpen((prev) => !prev), []);
+
+  const handleOpenModal = (label: string, content: React.ReactElement) => {
+    console.log('Opening modal with:', { label, content }); // Add this
+    setTabs([{ id: 1, label, content }]);
+    setIsOpen(true);
+  };
+
+  const items = [
+    { label: 'Approaching to Strategy', content: <SustainabilityStrategy /> },
+    { label: 'Chairman’s Remarks', content: <ChairmansRemarks /> },
+    {
+      label: 'Materiality Determination Process',
+      content: <MaterialityDetermination />,
+    },
+    { label: 'Strategic Journey', content: <StrategicJourney /> },
+    {
+      label: 'Our value creating business model',
+      content: <CreatingBusinessModel />,
+    },
+    {
+      label: 'Integrated Stakeholder Engagement Process',
+      content: <IntegratedStakeholder />,
+    },
+  ];
   return (
     <div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-14 px-20">
-        <div className="">
-          <div className="">
+        <div>
+          <div>
             <Image
               src="/images/report/amplifying.png"
               alt="Ampifying Logo"
@@ -30,7 +57,7 @@ export default function AmplifyingSection() {
               height={152}
             />
           </div>
-          <div className="">
+          <div>
             <div>
               <Image
                 src="/images/report/Mosaic_art_08.png"
@@ -61,7 +88,22 @@ export default function AmplifyingSection() {
             </p>
           </div>
           <div>
-            <div className="flex py-2 pr-10">
+            {items.map((item, idx) => (
+              <div
+                className="flex py-2 pr-10"
+                key={idx}
+                onClick={() => handleOpenModal(item.label, item.content)}
+              >
+                <div>
+                  <LionPawCircle />
+                </div>
+                <div className="cursor-pointer content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg hover:opacity-90 transition">
+                  <span>{item.label}</span>
+                </div>
+              </div>
+            ))}
+
+            {/* <div className="flex py-2 pr-10">
               <div>
                 <LionPawCircle />
               </div>
@@ -113,12 +155,13 @@ export default function AmplifyingSection() {
               <div className="content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg">
                 <span>Integrated Stakeholder Engagement Process</span>
               </div>
-            </div>
+            </div> */}
             {/* Delete the above 6 divs when the content is ready */}
-
-            <div>
-              <DownloadPDFButton />
-            </div>
+            {/* Mount reusable modal */}
+          </div>
+          <PopUpModel isOpen={isOpen} onOpenChange={onOpenChange} tabs={tabs} />
+          <div>
+            <DownloadPDFButton />
           </div>
         </div>
       </div>

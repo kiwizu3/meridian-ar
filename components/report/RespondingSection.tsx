@@ -1,9 +1,49 @@
-import React from 'react';
+'use client';
+
+import React, { useState, useCallback } from 'react';
 import Image from 'next/image';
 import LionPawCircle from './LionPawCircle';
 import DownloadPDFButton from './DownloadPDFButton';
+import PopUpModel from './PopUpModel';
+
+// Import your content components
+import CamelsModel from './content/section4/CamelsModel';
+import BranchNetwork from './content/section4/BranchNetwork';
+import HRDashboard from './content/section4/HRDashboard';
+import TechnologyInvestments from './content/section4/TechnologyInvestments';
+import CustomerRelationship from './content/section4/CustomerRelationship';
+import ESGPolicy from './content/section4/ESGPolicy';
+import BusinessReview from './content/section4/BusinessReview';
 
 export default function RespondingSection() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [tabs, setTabs] = useState<
+    { id: number; label: string; content: React.ReactElement }[]
+  >([]);
+
+  const onOpenChange = useCallback(() => setIsOpen((prev) => !prev), []);
+
+  const handleOpenModal = (label: string, content: React.ReactElement) => {
+    setTabs([{ id: 1, label, content }]);
+    setIsOpen(true);
+  };
+
+  const items = [
+    { label: 'CAMELS Model', content: <CamelsModel /> },
+    { label: 'Branch Network', content: <BranchNetwork /> },
+    { label: 'HR Dashboard', content: <HRDashboard /> },
+    {
+      label: 'Leveraging Our Technology Investments',
+      content: <TechnologyInvestments />,
+    },
+    {
+      label: 'Customer Relationship Management',
+      content: <CustomerRelationship />,
+    },
+    { label: 'ESG Policy', content: <ESGPolicy /> },
+    { label: 'Business Review', content: <BusinessReview /> },
+  ];
+
   return (
     <div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-14 px-20">
@@ -27,70 +67,35 @@ export default function RespondingSection() {
           </div>
           <div className="flex flex-col gap-5 lg:flex-row">
             <div className="flex flex-col gap-2">
-              <div className="flex">
-                <div>
-                  <LionPawCircle />
+              {items.slice(0, 4).map((item, idx) => (
+                <div className="flex" key={idx}>
+                  <div>
+                    <LionPawCircle />
+                  </div>
+                  <div
+                    className="cursor-pointer content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg hover:opacity-90 transition"
+                    onClick={() => handleOpenModal(item.label, item.content)}
+                  >
+                    <span>{item.label}</span>
+                  </div>
                 </div>
-                <div className="content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg">
-                  <span>CAMELS Model</span>
-                </div>
-              </div>
-
-              <div className="flex">
-                <div>
-                  <LionPawCircle />
-                </div>
-                <div className="content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg">
-                  <span>Branch Network</span>
-                </div>
-              </div>
-
-              <div className="flex">
-                <div>
-                  <LionPawCircle />
-                </div>
-                <div className="content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg">
-                  <span>HR Dashboard</span>
-                </div>
-              </div>
-
-              <div className="flex">
-                <div>
-                  <LionPawCircle />
-                </div>
-                <div className="content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg">
-                  <span>Leveraging Our Technology Investments</span>
-                </div>
-              </div>
+              ))}
             </div>
 
             <div className="flex flex-col gap-2">
-              <div className="flex ">
-                <div>
-                  <LionPawCircle />
+              {items.slice(4).map((item, idx) => (
+                <div className="flex" key={idx}>
+                  <div>
+                    <LionPawCircle />
+                  </div>
+                  <div
+                    className="cursor-pointer content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg hover:opacity-90 transition"
+                    onClick={() => handleOpenModal(item.label, item.content)}
+                  >
+                    <span>{item.label}</span>
+                  </div>
                 </div>
-                <div className="content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg">
-                  <span>Customer Relationship Management</span>
-                </div>
-              </div>
-
-              <div className="flex">
-                <div>
-                  <LionPawCircle />
-                </div>
-                <div className="content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg">
-                  <span>ESG Policy</span>
-                </div>
-              </div>
-
-              <div className="flex">
-                <div>
-                  <LionPawCircle />
-                </div>
-                <div className="content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg">
-                  <span>Business Review</span>
-                </div>
-              </div>
+              ))}
 
               <div className="pl-8 py-5">
                 <DownloadPDFButton />
@@ -120,6 +125,9 @@ export default function RespondingSection() {
           </div>
         </div>
       </div>
+
+      {/* Popup Modal */}
+      <PopUpModel isOpen={isOpen} onOpenChange={onOpenChange} tabs={tabs} />
     </div>
   );
 }

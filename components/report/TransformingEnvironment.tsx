@@ -1,9 +1,42 @@
-import React from 'react';
+'use client';
+
+import React, { useState, useCallback } from 'react';
 import Image from 'next/image';
-import DownloadPDFButton from './DownloadPDFButton';
 import LionPawCircle from './LionPawCircle';
+import DownloadPDFButton from './DownloadPDFButton';
+import PopUpModel from './PopUpModel';
+
+// Import your content components
+import SustainabilityStrategy from './content/section3/SustainabilityStrategy';
+import GreenhouseGasVerification from './content/section3/GreenhouseGasVerification';
+import ContributingToUNSDGs from './content/section3/ContributingToUNSDGs';
+import IndependenceAssurance from './content/section3/IndependenceAssurance';
+import SustainabilityJourney from './content/section3/SustainabilityJourney';
 
 export default function TransformingEnvironment() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [tabs, setTabs] = useState<
+    { id: number; label: string; content: React.ReactElement }[]
+  >([]);
+
+  const onOpenChange = useCallback(() => setIsOpen((prev) => !prev), []);
+
+  const handleOpenModal = (label: string, content: React.ReactElement) => {
+    setTabs([{ id: 1, label, content }]);
+    setIsOpen(true);
+  };
+
+  const items = [
+    { label: 'Sustainability Strategy', content: <SustainabilityStrategy /> },
+    {
+      label: 'Greenhouse Gas Verification Opinion',
+      content: <GreenhouseGasVerification />,
+    },
+    { label: 'Contributing to UN SDGs', content: <ContributingToUNSDGs /> },
+    { label: 'Independence Assurance', content: <IndependenceAssurance /> },
+    { label: 'Sustainability Journey', content: <SustainabilityJourney /> },
+  ];
+
   return (
     <div className="bg-cardGreen">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-14 px-20">
@@ -38,7 +71,7 @@ export default function TransformingEnvironment() {
             <p className="mt-8">
               As a responsible corporate citizen, LBF integrates ESG principles
               into both governance and operations, with a focus on minimising
-              its carbon footprint. LBF’s structured approach to sustainability
+              its carbon footprint. LBF's structured approach to sustainability
               promotes inclusive financial services that are accessible,
               affordable, and relevant to stakeholders while helping the nation
               build resilience.
@@ -47,63 +80,28 @@ export default function TransformingEnvironment() {
 
           <div>
             <div className="flex justify-start lg:flex flex-col px-24 gap-2">
-              <div className="flex">
-                <div>
-                  <LionPawCircle />
+              {items.map((item, idx) => (
+                <div
+                  className="flex"
+                  key={idx}
+                  onClick={() => handleOpenModal(item.label, item.content)}
+                >
+                  <div>
+                    <LionPawCircle />
+                  </div>
+                  <div className="cursor-pointer content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg hover:opacity-90 transition">
+                    <span>{item.label}</span>
+                  </div>
                 </div>
-                <div className="content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg">
-                  <span>Sustainability Strategy</span>
-                </div>
-              </div>
-
-              <div className="flex">
-                <div>
-                  <LionPawCircle />
-                </div>
-                <div className="content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg">
-                  <span>Greenhouse Gas Verification Opinion</span>
-                </div>
-              </div>
-
-              <div className="flex">
-                <div>
-                  <LionPawCircle />
-                </div>
-                <div className="content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg">
-                  <span>Contributing to UN SDGs</span>
-                </div>
-              </div>
-
-              <div className="flex">
-                <div>
-                  <LionPawCircle />
-                </div>
-                <div className="content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg">
-                  <span>Independence Assurance</span>
-                </div>
-              </div>
-
-              <div className="flex">
-                <div>
-                  <LionPawCircle />
-                </div>
-                <div className="content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg">
-                  <span>Sustainability Journey</span>
-                </div>
-              </div>
+              ))}
             </div>
 
-            {/* Delete the above 5 divs when the content is ready */}
-            {/* {tabItems.map((item, index) => (
-              <div className="flex p-5 cursor-pointer" key={index} onClick={() => setActiveItemIndex(index)}>
-                <div>
-                  <LionPawCircle />
-                </div>
-                <div className="content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg">
-                  <span>{item.contentLabelPairs?.[0].label}</span>
-                </div>
-              </div>
-            ))} */}
+            <PopUpModel
+              isOpen={isOpen}
+              onOpenChange={onOpenChange}
+              tabs={tabs}
+            />
+
             <div>
               <DownloadPDFButton />
             </div>

@@ -1,23 +1,44 @@
 'use client';
-import React from 'react';
+
+import React, { useState, useCallback } from 'react';
 import Image from 'next/image';
-// import dynamic from 'next/dynamic';
 import LionPawCircle from './LionPawCircle';
 import DownloadPDFButton from './DownloadPDFButton';
+import PopUpModel from './PopUpModel';
 
-// import PopUpModel from './PopUpModel';
-// import SustainabilityStrategy from './content/SustainabilityStrategy';
-
-// Replace them with the actual content
-// const tabItems = [
-//   {
-//     contentLabelPairs: [
-//       { label: 'Sustainability Strategy', content: <SustainabilityStrategy /> },
-//     ],
-//   },
-// ];
+// Import your content components
+import ShareTradingInfo from './content/section7/ShareTradingInfo';
+import ShareholdingDistribution from './content/section7/ShareholdingDistribution';
+import LargestShareholders from './content/section7/LargestShareholders';
 
 export default function EnvisioningSection() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [tabs, setTabs] = useState<
+    { id: number; label: string; content: React.ReactElement }[]
+  >([]);
+
+  const onOpenChange = useCallback(() => setIsOpen((prev) => !prev), []);
+
+  const handleOpenModal = (label: string, content: React.ReactElement) => {
+    setTabs([{ id: 1, label, content }]);
+    setIsOpen(true);
+  };
+
+  const items = [
+    {
+      label: 'Share Trading Information and Market Capitalization',
+      content: <ShareTradingInfo />,
+    },
+    {
+      label: 'Distribution of Shareholding',
+      content: <ShareholdingDistribution />,
+    },
+    {
+      label: 'Largest Shareholders of the Company',
+      content: <LargestShareholders />,
+    },
+  ];
+
   return (
     <div className="bg-cardGreen">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-14 px-20">
@@ -60,33 +81,20 @@ export default function EnvisioningSection() {
             </p>
           </div>
           <div>
-            <div className="flex py-2 pr-10">
-              <div>
-                <LionPawCircle />
+            {items.map((item, idx) => (
+              <div
+                className="flex py-2 pr-10"
+                key={idx}
+                onClick={() => handleOpenModal(item.label, item.content)}
+              >
+                <div>
+                  <LionPawCircle />
+                </div>
+                <div className="cursor-pointer content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg hover:opacity-90 transition">
+                  <span>{item.label}</span>
+                </div>
               </div>
-              <div className="content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg">
-                <span>Share Trading Information and Market Capitalization</span>
-              </div>
-            </div>
-
-            <div className="flex py-2 pr-10">
-              <div>
-                <LionPawCircle />
-              </div>
-              <div className="content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg">
-                <span>Distribution of Shareholding</span>
-              </div>
-            </div>
-
-            <div className="flex py-2 pr-10">
-              <div>
-                <LionPawCircle />
-              </div>
-              <div className="content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg">
-                <span>Largest Shareholders of the Company</span>
-              </div>
-            </div>
-            {/* Delete the above 6 divs when the content is ready */}
+            ))}
 
             <div>
               <DownloadPDFButton />
@@ -94,6 +102,9 @@ export default function EnvisioningSection() {
           </div>
         </div>
       </div>
+
+      {/* Popup Modal */}
+      <PopUpModel isOpen={isOpen} onOpenChange={onOpenChange} tabs={tabs} />
     </div>
   );
 }
