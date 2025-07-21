@@ -9,7 +9,7 @@ import PopUpModel from './PopUpModel';
 // Import your content components
 import ShareTradingInfo from './content/section7/ShareTradingInfo';
 import ShareholdingDistribution from './content/section7/ShareholdingDistribution';
-import LargestShareholders from './content/section7/LargestShareholders';
+import LargestShareholders from './content/section7/ShareholdingDistribution';
 
 export default function EnvisioningSection() {
   const [isOpen, setIsOpen] = useState(false);
