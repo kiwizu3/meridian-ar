@@ -3,7 +3,10 @@ import Image from 'next/image';
 
 export default function ReportHeaderSection() {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-orange-200 to-yellow-100 overflow-hidden bg-[url('/images/report/journey-page.png')]">
+    <section
+      className="relative min-h-screen bg-gradient-to-br from-orange-200 to-yellow-100 overflow-hidden"
+      style={{ backgroundImage: "url('/images/report/journey-page.png')" }}
+    >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-10 z-0" />
 
