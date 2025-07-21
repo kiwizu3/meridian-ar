@@ -37,7 +37,7 @@ export default function EstablishingSection() {
 
   return (
     <div className="bg-cardGreen">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-14 px-20">
+      <div className="container grid grid-cols-1 lg:grid-cols-2 gap-10 py-14 px-6">
         <div className="order-last md:order-first lg:order-first grid grid-cols-1 gap-12">
           <div className="bg-[#467643] p-6 rounded-lg text-lg font-normal shadow-lg">
             <p>
@@ -56,7 +56,7 @@ export default function EstablishingSection() {
               assesses, and mitigates risks across all operations.
             </p>
           </div>
-          <div className="flex flex-col gap-5 lg:flex-row">
+          <div className="flex flex-col gap-5 xl:flex-row">
             <div className="flex flex-col gap-2">
               {items.map((item, idx) => (
                 <div className="flex" key={idx}>

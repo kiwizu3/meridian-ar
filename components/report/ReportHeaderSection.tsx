@@ -11,7 +11,7 @@ export default function ReportHeaderSection() {
       <div className="absolute inset-0 bg-black bg-opacity-10 z-0" />
 
       {/* Main Content */}
-      <div className="relative z-10 flex flex-col items-start justify-center h-full max-w-6xl mx-auto px-6 sm:px-10 py-16">
+      <div className="relative z-10 flex flex-col items-start justify-center h-full container mx-auto px-6 sm:px-10 py-16">
         {/* Logo */}
         <div className="mb-6">
           <Image

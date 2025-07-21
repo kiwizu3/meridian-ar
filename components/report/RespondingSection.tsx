@@ -46,7 +46,7 @@ export default function RespondingSection() {
 
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-14 px-20">
+      <div className="container grid grid-cols-1 lg:grid-cols-2 gap-10 py-14 px-6">
         <div className="order-last md:order-first lg:order-first grid grid-cols-1 gap-12">
           <div className="bg-[#467643] p-6 rounded-lg text-lg font-normal">
             <p>
@@ -65,7 +65,7 @@ export default function RespondingSection() {
               financial inclusion and expansion
             </p>
           </div>
-          <div className="flex flex-col gap-5 lg:flex-row">
+          <div className="flex flex-col gap-2 xl:gap-5 xl:flex-row">
             <div className="flex flex-col gap-2">
               {items.slice(0, 4).map((item, idx) => (
                 <div className="flex" key={idx}>

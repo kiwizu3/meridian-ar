@@ -39,7 +39,7 @@ export default function TransformingEnvironment() {
 
   return (
     <div className="bg-cardGreen">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-14 px-20">
+      <div className="container grid grid-cols-1 lg:grid-cols-2 gap-10 py-14 px-6">
         <div className="">
           <div className="bg-[#FFFFFFCC] w-fit rounded-md">
             <Image
@@ -79,7 +79,7 @@ export default function TransformingEnvironment() {
           </div>
 
           <div>
-            <div className="flex justify-start lg:flex flex-col px-24 gap-2">
+            <div className="flex justify-start lg:flex flex-col xl:px-24 gap-2">
               {items.map((item, idx) => (
                 <div
                   className="flex"
