@@ -47,7 +47,7 @@ export default function AmplifyingSection() {
   ];
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-14 px-20">
+      <div className="container grid grid-cols-1 lg:grid-cols-2 gap-10 py-14 px-6">
         <div>
           <div>
             <Image
@@ -90,7 +90,7 @@ export default function AmplifyingSection() {
           <div>
             {items.map((item, idx) => (
               <div
-                className="flex py-2 pr-10"
+                className="flex py-2 pr-0 md:pr-0 lg:pr-10"
                 key={idx}
                 onClick={() => handleOpenModal(item.label, item.content)}
               >

@@ -18,17 +18,17 @@ const VideoSection = () => {
       >
         <source
           key="origami-art-bg-mobile"
-          src="/videos/LB lion_animation_Loop.mp4.mp4"
+          src="/videos/LB_lion_animation_v4_intro_SFX.mp4"
           type="video/mp4"
           media="(max-width: 767px)"
         />
         <source
           key="origami-art-bg-web"
-          src="/videos/LB lion_animation_Loop.mp4.mp4"
+          src="/videos/LB_lion_animation_v4_intro_SFX.mp4"
           type="video/mp4"
         />
         <track
-          src="/videos/LB lion_animation_Loop.mp4.mp4"
+          src="/videos/LB_lion_animation_v4_intro_SFX.mp4"
           kind="captions"
           srcLang="en"
           label="English"

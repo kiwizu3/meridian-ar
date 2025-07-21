@@ -41,7 +41,7 @@ export default function EnvisioningSection() {
 
   return (
     <div className="bg-cardGreen">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-14 px-20">
+      <div className="container grid grid-cols-1 lg:grid-cols-2 gap-10 py-14 px-6">
         <div className="">
           <div className="">
             <Image
@@ -83,7 +83,7 @@ export default function EnvisioningSection() {
           <div>
             {items.map((item, idx) => (
               <div
-                className="flex py-2 pr-10"
+                className="flex py-2 pr-0 md:pr-0 lg:pr-10"
                 key={idx}
                 onClick={() => handleOpenModal(item.label, item.content)}
               >
