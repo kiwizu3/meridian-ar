@@ -1,23 +1,45 @@
 'use client';
-import React from 'react';
+
+import React, { useState, useCallback } from 'react';
 import Image from 'next/image';
-// import dynamic from 'next/dynamic';
 import LionPawCircle from './LionPawCircle';
 import DownloadPDFButton from './DownloadPDFButton';
+import PopUpModel from './PopUpModel';
 
-// import PopUpModel from './PopUpModel';
-// import SustainabilityStrategy from './content/SustainabilityStrategy';
-
-// Replace them with the actual content
-// const tabItems = [
-//   {
-//     contentLabelPairs: [
-//       { label: 'Sustainability Strategy', content: <SustainabilityStrategy /> },
-//     ],
-//   },
-// ];
+// Import your content components
+import IndependentAuditorsReport from './content/section6/IndependentAuditorsReport';
+import IncomeStatement from './content/section6/IncomeStatement';
+import FinancialCalendar from './content/section6/FinancialCalendar';
+import FinanceStatementHighlights from './content/section6/FinanceStatementHighlights';
+import BalanceSheet from './content/section6/BalanceSheet';
 
 export default function LeadingSection() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [tabs, setTabs] = useState<
+    { id: number; label: string; content: React.ReactElement }[]
+  >([]);
+
+  const onOpenChange = useCallback(() => setIsOpen((prev) => !prev), []);
+
+  const handleOpenModal = (label: string, content: React.ReactElement) => {
+    setTabs([{ id: 1, label, content }]);
+    setIsOpen(true);
+  };
+
+  const items = [
+    {
+      label: 'Independent Auditors Report',
+      content: <IndependentAuditorsReport />,
+    },
+    { label: 'Income Statement', content: <IncomeStatement /> },
+    { label: 'Financial Calendar', content: <FinancialCalendar /> },
+    {
+      label: 'Finance Statement Highlights',
+      content: <FinanceStatementHighlights />,
+    },
+    { label: 'Balance Sheet', content: <BalanceSheet /> },
+  ];
+
   return (
     <div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-14 px-20">
@@ -53,56 +75,25 @@ export default function LeadingSection() {
               including deposits, loans, value-added services, and digital
               financial solutions, LBF remained resilient and adaptive in a
               fast-changing environment. As the highest taxpayer among Sri
-              Lanka’s NBFIs, the Company continues to support national economic
+              Lanka's NBFIs, the Company continues to support national economic
               progress through sustainable value creation.
             </p>
           </div>
           <div>
-            <div className="flex py-2 pr-10">
-              <div>
-                <LionPawCircle />
+            {items.map((item, idx) => (
+              <div
+                className="flex py-2 pr-10"
+                key={idx}
+                onClick={() => handleOpenModal(item.label, item.content)}
+              >
+                <div>
+                  <LionPawCircle />
+                </div>
+                <div className="cursor-pointer content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg hover:opacity-90 transition">
+                  <span>{item.label}</span>
+                </div>
               </div>
-              <div className="content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg">
-                <span>Independent Auditors Report</span>
-              </div>
-            </div>
-
-            <div className="flex py-2 pr-10">
-              <div>
-                <LionPawCircle />
-              </div>
-              <div className="content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg">
-                <span>Income Statement</span>
-              </div>
-            </div>
-
-            <div className="flex py-2 pr-10">
-              <div>
-                <LionPawCircle />
-              </div>
-              <div className="content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg">
-                <span>Financial Calender</span>
-              </div>
-            </div>
-
-            <div className="flex py-2 pr-10">
-              <div>
-                <LionPawCircle />
-              </div>
-              <div className="content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg">
-                <span>Finance Statement Highlights</span>
-              </div>
-            </div>
-
-            <div className="flex py-2 pr-10">
-              <div>
-                <LionPawCircle />
-              </div>
-              <div className="content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg">
-                <span>Balance Sheet</span>
-              </div>
-            </div>
-            {/* Delete the above 6 divs when the content is ready */}
+            ))}
 
             <div>
               <DownloadPDFButton />
@@ -110,6 +101,9 @@ export default function LeadingSection() {
           </div>
         </div>
       </div>
+
+      {/* Popup Modal */}
+      <PopUpModel isOpen={isOpen} onOpenChange={onOpenChange} tabs={tabs} />
     </div>
   );
 }

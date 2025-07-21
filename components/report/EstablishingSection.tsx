@@ -1,9 +1,40 @@
-import React from 'react';
+'use client';
+
+import React, { useState, useCallback } from 'react';
 import Image from 'next/image';
 import LionPawCircle from './LionPawCircle';
 import DownloadPDFButton from './DownloadPDFButton';
+import PopUpModel from './PopUpModel';
+
+// Import your content components
+import BoardComposition from './content/section5/BoardComposition';
+import GovernanceStructure from './content/section5/GovernanceStructure';
+import GovernanceHighlights from './content/section5/GovernanceHighlights';
+import GovernanceProcesses from './content/section5/GovernanceProcesses';
 
 export default function EstablishingSection() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [tabs, setTabs] = useState<
+    { id: number; label: string; content: React.ReactElement }[]
+  >([]);
+
+  const onOpenChange = useCallback(() => setIsOpen((prev) => !prev), []);
+
+  const handleOpenModal = (label: string, content: React.ReactElement) => {
+    setTabs([{ id: 1, label, content }]);
+    setIsOpen(true);
+  };
+
+  const items = [
+    { label: 'Composition of the Board', content: <BoardComposition /> },
+    { label: 'Governance Structure', content: <GovernanceStructure /> },
+    {
+      label: 'Corporate Governance Highlights',
+      content: <GovernanceHighlights />,
+    },
+    { label: 'Governance Processes', content: <GovernanceProcesses /> },
+  ];
+
   return (
     <div className="bg-cardGreen">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-14 px-20">
@@ -14,7 +45,7 @@ export default function EstablishingSection() {
               accountability, and ethical leadership. Its governance framework
               ensures regulatory compliance, strategic oversight, and alignment
               with stakeholder expectations to drive sustainable value creation.
-              Equally, risk management is a core component of LBF’s business
+              Equally, risk management is a core component of LBF's business
               strategy, promoting stability while enabling responsible growth.
             </p>
             <p className="mt-4">
@@ -27,41 +58,19 @@ export default function EstablishingSection() {
           </div>
           <div className="flex flex-col gap-5 lg:flex-row">
             <div className="flex flex-col gap-2">
-              <div className="flex">
-                <div>
-                  <LionPawCircle />
+              {items.map((item, idx) => (
+                <div className="flex" key={idx}>
+                  <div>
+                    <LionPawCircle />
+                  </div>
+                  <div
+                    className="cursor-pointer content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg hover:opacity-90 transition"
+                    onClick={() => handleOpenModal(item.label, item.content)}
+                  >
+                    <span>{item.label}</span>
+                  </div>
                 </div>
-                <div className="content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg">
-                  <span>Composition of the Board</span>
-                </div>
-              </div>
-
-              <div className="flex">
-                <div>
-                  <LionPawCircle />
-                </div>
-                <div className="content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg">
-                  <span>Goverance Structure</span>
-                </div>
-              </div>
-
-              <div className="flex">
-                <div>
-                  <LionPawCircle />
-                </div>
-                <div className="content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg">
-                  <span>Cooperate Governance Highlights</span>
-                </div>
-              </div>
-
-              <div className="flex">
-                <div>
-                  <LionPawCircle />
-                </div>
-                <div className="content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg">
-                  <span>Governance Processes</span>
-                </div>
-              </div>
+              ))}
             </div>
 
             <div className="pl-8 py-5">
@@ -92,6 +101,9 @@ export default function EstablishingSection() {
           </div>
         </div>
       </div>
+
+      {/* Popup Modal */}
+      <PopUpModel isOpen={isOpen} onOpenChange={onOpenChange} tabs={tabs} />
     </div>
   );
 }
