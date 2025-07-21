@@ -14,11 +14,14 @@ import {
 
 export default function CleanEnergyPart2() {
   return (
-    <div className="space-y-6">
-      <h2 className="text-2xl font-bold">Responsible Products and Services</h2>
-
+    <div className="bg-themeGreen max-w-4xl mx-auto py-8 px-4 my-5">
+      <h1 className="text-4xl font-bold">Responsible Products and Services</h1>
+      <p>
+        We recognise the potential environmental impact of our core business
+        activities and strive to ensure a positive outcome
+      </p>
       <Card>
-        <CardBody className="space-y-6">
+        <CardBody className="bg-cardGreen p-4">
           <div>
             <h3 className="text-xl font-semibold mb-4">8.1 Green Leasing</h3>
             <p>
@@ -27,7 +30,7 @@ export default function CleanEnergyPart2() {
               emissions compared to traditional gasoline or diesel vehicles.
             </p>
 
-            <div className="mt-4 grid md:grid-cols-2 gap-6">
+            <div className="mt-4 grid grid-cols-1">
               <Table aria-label="Green financing facilities">
                 <TableHeader>
                   <TableColumn>YEAR</TableColumn>
@@ -62,20 +65,6 @@ export default function CleanEnergyPart2() {
                   </TableRow>
                 </TableBody>
               </Table>
-
-              <div>
-                <Image
-                  src="/placeholder-electric-vehicles.jpg"
-                  alt="Electric Vehicles"
-                  width={400}
-                  height={300}
-                  className="rounded-lg"
-                />
-                <p className="mt-2 text-center font-medium">
-                  DRIVE CLEAN, SAVE GREEN WITH LB FINANCE ELECTRIC VEHICLE
-                  LEASING
-                </p>
-              </div>
             </div>
           </div>
 
@@ -92,7 +81,7 @@ export default function CleanEnergyPart2() {
               solar adoption accessible and hassle-free.
             </p>
 
-            <div className="mt-4 grid md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 mt-4">
               <Table aria-label="Solar financing facilities">
                 <TableHeader>
                   <TableColumn>YEAR</TableColumn>
@@ -109,14 +98,6 @@ export default function CleanEnergyPart2() {
                   </TableRow>
                 </TableBody>
               </Table>
-
-              <Image
-                src="/placeholder-solar-loan.jpg"
-                alt="Solar Loan Scheme"
-                width={400}
-                height={300}
-                className="rounded-lg"
-              />
             </div>
           </div>
 
@@ -131,7 +112,7 @@ export default function CleanEnergyPart2() {
               ensuring a seamless and sustainable lending experience.
             </p>
 
-            <div className="mt-4 grid md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 mt-4">
               <Table aria-label="GM loans disbursed">
                 <TableHeader>
                   <TableColumn>YEAR</TableColumn>
@@ -146,14 +127,6 @@ export default function CleanEnergyPart2() {
                   </TableRow>
                 </TableBody>
               </Table>
-
-              <Image
-                src="/placeholder-digital-lending.jpg"
-                alt="Digital Lending"
-                width={400}
-                height={300}
-                className="rounded-lg"
-              />
             </div>
           </div>
         </CardBody>

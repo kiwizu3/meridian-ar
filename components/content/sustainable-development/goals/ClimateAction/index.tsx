@@ -6,13 +6,10 @@ import { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import ClimateActionPart1 from './Part1';
 
-const ClimateActionPart2 = dynamic(
-  () => import('../GoodHealth&Wellbeing/part2'),
-  {
-    ssr: false,
-    suspense: true,
-  },
-);
+const ClimateActionPart2 = dynamic(() => import('./Part2'), {
+  ssr: false,
+  suspense: true,
+});
 
 export default function ClimateAction() {
   const { ref, inView } = useInView({

@@ -8,125 +8,125 @@ export default function SustainabilityGRI() {
       id: '2-1',
       description: 'Organizational details',
       location: '5, 14,',
-      link: '/sustainability/gri/5-14',
+      // link: '/sustainability/gri/5-14',
     },
     {
       id: '2-2',
       description:
         'Entities included in the organisations sustainability reporting',
       location: '16',
-      link: '/sustainability/gri/16',
+      // link: '/sustainability/gri/16',
     },
     {
       id: '2-3',
       description: 'Reporting period, frequency and contact point',
       location: '19, 22',
-      link: '/sustainability/gri/19,22',
+      // link: '/sustainability/gri/19,22',
     },
     {
       id: '2-4',
       description: 'Restatements of information',
       location: '19',
-      link: '/sustainability/gri/19,22',
+      // link: '/sustainability/gri/19,22',
     },
     {
       id: '2-5',
       description: 'External assurance',
       location: '19',
-      link: '/sustainability/gri/19,22',
+      // link: '/sustainability/gri/19,22',
     },
     {
       id: '2-6',
       description: 'Activities, value chain and other business relationships',
       location: '222,223',
-      link: '/sustainability/gri/222,223',
+      // link: '/sustainability/gri/222,223',
     },
     {
       id: '2-7',
       description: 'Employees',
       location: '170, 171',
-      link: '/sustainability/gri/170-171,298',
+      // link: '/sustainability/gri/170-171,298',
     },
     {
       id: '2-8',
       description: 'Workers who are not employees',
       location: '171',
-      link: '/sustainability/gri/170-171,298',
+      // link: '/sustainability/gri/170-171,298',
     },
     {
       id: '2-9',
       description: 'Governance structure and composition',
       location: '253',
-      link: '/sustainability/gri/253',
+      // link: '/sustainability/gri/253',
     },
     {
       id: '2-10',
       description: 'Nomination and selection of the highest governance body',
       location: '271',
-      link: '/sustainability/gri/271',
+      // link: '/sustainability/gri/271',
     },
     {
       id: '2-11',
       description: 'Chair of the highest governance body',
       location: '264',
-      link: '/sustainability/gri/264',
+      // link: '/sustainability/gri/264',
     },
     {
       id: '2-12',
       description:
         'Role of the highest governance body in overseeing the management of impacts',
       location: '273',
-      link: '/sustainability/gri/273,277',
+      // link: '/sustainability/gri/273,277',
     },
     {
       id: '2-13',
       description: 'Delegation of responsibility for managing impacts',
       location: '273',
-      link: '/sustainability/gri/273,277',
+      // link: '/sustainability/gri/273,277',
     },
     {
       id: '2-14',
       description:
         'Role of the highest governance body in sustainability reporting',
       location: '273,277',
-      link: '/sustainability/gri/273,277',
+      // link: '/sustainability/gri/273,277',
     },
     {
       id: '2-15',
       description: 'Conflicts of interest',
       location: '273',
-      link: '/sustainability/gri/273,277',
+      // link: '/sustainability/gri/273,277',
     },
     {
       id: '2-16',
       description: 'Communication of critical concerns',
       location: '273',
-      link: '/sustainability/gri/273,277',
+      // link: '/sustainability/gri/273,277',
     },
     {
       id: '2-17',
       description: 'Collective knowledge of the highest governance body',
       location: '272',
-      link: '/sustainability/gri/272',
+      // link: '/sustainability/gri/272',
     },
     {
       id: '2-18',
       description:
         'Evaluation of the performance of the highest governance body',
       location: '274,275',
-      link: '/sustainability/gri/274-275',
+      // link: '/sustainability/gri/274-275',
     },
     {
       id: '2-19',
       description: 'Remuneration policies',
       location: '275',
-      link: '/sustainability/gri/274-275',
+      // link: '/sustainability/gri/274-275',
     },
     {
       id: '2-20',
       description: 'Process to determine remuneration',
       location: '170,298',
-      link: '/sustainability/gri/170-171,298',
+      // link: '/sustainability/gri/170-171,298',
     },
     {
       id: '2-21',
@@ -139,49 +139,49 @@ export default function SustainabilityGRI() {
       id: '2-22',
       description: 'Statement on sustainable development strategy',
       location: '84',
-      link: '/sustainability/gri/84',
+      // link: '/sustainability/gri/84',
     },
     {
       id: '2-23',
       description: 'Policy commitments',
       location: '62, 81, 124 - 221',
-      link: '/sustainability/gri/62-63,81,124-221',
+      // link: '/sustainability/gri/62-63,81,124-221',
     },
     {
       id: '2-24',
       description: 'Embedding policy commitments',
       location: '62,81',
-      link: '/sustainability/gri/62-63,81,124-221',
+      // link: '/sustainability/gri/62-63,81,124-221',
     },
     {
       id: '2-25',
       description: 'Processes to remediate negative impacts',
       location: '167',
-      link: '/sustainability/gri/167',
+      // link: '/sustainability/gri/167',
     },
     {
       id: '2-26',
       description: 'Mechanisms for seeking advice and raising concerns',
       location: '197, 541 - 543',
-      link: '/sustainability/gri/197,541-543',
+      // link: '/sustainability/gri/197,541-543',
     },
     {
       id: '2-27',
       description: 'Compliance with laws and regulations',
       location: '18',
-      link: '/sustainability/gri/18',
+      // link: '/sustainability/gri/18',
     },
     {
       id: '2-28',
       description: 'Membership associations',
       location: '549',
-      link: '/sustainability/gri/549',
+      // link: '/sustainability/gri/549',
     },
     {
       id: '2-29',
       description: 'Approach to stakeholder engagement',
       location: '62,63',
-      link: '/sustainability/gri/62-63,81,124-221',
+      // link: '/sustainability/gri/62-63,81,124-221',
     },
     {
       id: '2-30',
@@ -196,13 +196,13 @@ export default function SustainabilityGRI() {
       id: '3-1',
       description: 'Process to determine material topics',
       location: '74',
-      link: '/sustainability/gri/74',
+      // link: '/sustainability/gri/74',
     },
     {
       id: '3-2',
       description: 'List of material topics',
       location: '75-80',
-      link: '/sustainability/gri/75-80',
+      // link: '/sustainability/gri/75-80',
     },
     {
       id: '3-3',
@@ -675,7 +675,7 @@ export default function SustainabilityGRI() {
       </div>
 
       <div
-        className="min-h-screen bg-[#0A3D5F] text-white p-8"
+        className="min-h-screen bg-cardGreen text-white p-8"
         style={{ marginTop: '48px' }}
       >
         <div className="overflow-x-auto">

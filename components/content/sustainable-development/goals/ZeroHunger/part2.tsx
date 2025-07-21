@@ -3,9 +3,9 @@
 export default function ZeroHungerPart2() {
   return (
     <div>
-      <div className="bg-[#4DA28C] text-black p-8">
+      <div className="bg-themeGreen text-black p-8">
         <div className="w-full">
-          <div className="bg-[#3C8D79] rounded-lg p-6 mb-8">
+          <div className="bg-cardGreen rounded-lg p-6 mb-8">
             <div className="flex items-center mb-8">
               <h1 className="text-4xl font-bold text-white">
                 CULTIVATING SOCIAL AND RELATIONSHIP CAPITAL
@@ -18,9 +18,9 @@ export default function ZeroHungerPart2() {
             </div>
 
             <div className="overflow-x-auto">
-              <table className="w-full">
+              <table className="w-full bg-[#4DA28C]">
                 <thead>
-                  <tr className="bg-[#4DA28C]">
+                  <tr>
                     <th className="p-3 text-left">Project</th>
                     <th className="p-3 text-left">Description</th>
                     <th className="p-3 text-left">Beneficiaries</th>
@@ -61,13 +61,13 @@ export default function ZeroHungerPart2() {
             </div>
           </div>
 
-          <div className="bg-[#3C8D79] rounded-lg p-6 mb-8">
+          <div className="bg-cardGreen rounded-lg p-6 mb-8">
             <h2 className="text-2xl font-semibold mb-6">BUILD PARTNERSHIPS</h2>
 
             <div className="overflow-x-auto">
-              <table className="w-full">
+              <table className="w-full bg-[#4DA28C]">
                 <thead>
-                  <tr className="bg-[#4DA28C]">
+                  <tr className="">
                     <th className="p-3 text-left">Project</th>
                     <th className="p-3 text-left">Description</th>
                     <th className="p-3 text-left">Beneficiaries</th>

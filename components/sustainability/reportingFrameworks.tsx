@@ -277,7 +277,9 @@ function ReportingFrameworks({ dictionary }: any) {
       {
         img: '/images/economic-growth-icon.svg',
         backgroundColor: '#8F1838',
-        contentLabelPairs: [{ content: <WorkAndEconomic />, label: '181' }],
+        contentLabelPairs: [
+          { content: <WorkAndEconomic />, label: '181, 204' },
+        ],
       },
       {
         img: '/images/infarstructure-icon.svg',

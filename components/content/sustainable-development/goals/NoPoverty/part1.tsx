@@ -8,7 +8,7 @@ import provincialdistributionLoans from '@/public/images/sustainability-goals/Pr
 export default function NoPovertyPart1() {
   return (
     <div>
-      <div className="bg-[#5d8de8] text-black p-8">
+      <div className="bg-themeGreen text-black p-8">
         <div className="w-full">
           <div className="flex items-center mb-8">
             <h1 className="text-4xl font-bold text-white">
@@ -16,7 +16,7 @@ export default function NoPovertyPart1() {
             </h1>
           </div>
 
-          <div className="bg-[#7ba1eb] rounded-lg p-6 mb-8">
+          <div className="bg-cardGreen rounded-lg p-6 mb-8">
             <div className="flex items-center mb-4">
               <h2 className="text-2xl font-semibold">
                 REDEFINING GROWTH, EMPOWERING COMMUNITIES, TRANSFORMING LIVES
