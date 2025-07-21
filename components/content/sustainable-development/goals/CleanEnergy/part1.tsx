@@ -14,17 +14,14 @@ import {
 
 export default function CleanEnergyPart1() {
   return (
-    <div className="bg-cardGreen max-w-4xl mx-auto py-8 px-4 my-5">
+    <div className="bg-themeGreen max-w-4xl mx-auto py-8 px-4 my-5">
       <h1 className="text-4xl font-bold my-3">
         LBF's Ongoing Actions on Energy Management
       </h1>
 
       <Card>
-        <CardBody className="bg-[#3C8D79] p-4 ">
-          <h2 className="text-black text-2xl font-semibold py-5">
-            LBF’s Ongoing Actions on Energy Management
-          </h2>
-          <div>
+        <CardBody className="bg-cardGreen p-4 ">
+          <div className="mb-4">
             <h3 className="text-xl font-semibold mb-4">Reduce Consumption</h3>
             <h4 className="font-medium">Actions Taken</h4>
             <ul className="list-disc pl-6 space-y-2">
@@ -63,7 +60,7 @@ export default function CleanEnergyPart1() {
             </ul>
           </div>
 
-          <div>
+          <div className="mb-4">
             <h3 className="text-xl font-semibold mb-4">Awareness</h3>
             <h4 className="font-medium">Actions Taken</h4>
             <ul className="list-disc pl-6 space-y-2 mt-2">
@@ -79,8 +76,10 @@ export default function CleanEnergyPart1() {
             </ul>
           </div>
 
-          <div>
-            <h3 className="text-xl font-semibold mb-4">Employee Engagement</h3>
+          <div className="mb-4">
+            <h3 className="text-xl font-semibold mb-4">
+              Employee engagement policies and procedures
+            </h3>
             <h4 className="font-medium">Actions Taken</h4>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li>
@@ -98,27 +97,15 @@ export default function CleanEnergyPart1() {
             </ul>
           </div>
 
-          <div>
+          <div className="mb-4">
             <h3 className="text-xl font-semibold mb-4">Refuse</h3>
             <h4 className="font-medium">Actions Taken</h4>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li>Avoiding unnecessary power usage</li>
-              <li>
-                Optimising HVAC systems using proven energy reduction
-                methodologies
-              </li>
-              <li>
-                Implementing electronic data collection and analysis tools to
-                track energy consumption
-              </li>
-              <li>
-                Conducting energy audits and periodic assessments to ensure
-                continuous improvement
-              </li>
             </ul>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 mb-4">
             <div>
               <h3 className="text-xl font-semibold mb-4">Energy Audit</h3>
               <p>
@@ -135,18 +122,9 @@ export default function CleanEnergyPart1() {
                 and energy-efficient operation.
               </p>
             </div>
-            <div>
-              <Image
-                src="/placeholder-energy-audit.jpg"
-                alt="Energy Audit"
-                width={500}
-                height={300}
-                className="rounded-lg"
-              />
-            </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 mt-6">
+          <div className="grid grid-cols-1 mb-4">
             <div>
               <h3 className="text-xl font-semibold mb-4">
                 Our Renewable Energy Imperative
@@ -161,15 +139,6 @@ export default function CleanEnergyPart1() {
                 additional branches with solar PV systems, bringing the total to
                 40 branches now operating with rooftop solar technology.
               </p>
-            </div>
-            <div>
-              <Image
-                src="/placeholder-solar-panels.jpg"
-                alt="Solar Panels"
-                width={500}
-                height={300}
-                className="rounded-lg"
-              />
             </div>
           </div>
 

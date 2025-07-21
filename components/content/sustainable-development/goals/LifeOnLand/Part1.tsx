@@ -2,14 +2,14 @@ import Image from 'next/image';
 
 export default function LifeOnLandPart1() {
   return (
-    <div className="max-w-4xl mx-auto py-8 px-4">
-      <h2 className="text-2xl font-semibold mb-6">
-        3.1 ENVIRONMENT FOCUSED CSR PROJECTS
-      </h2>
+    <div className="bg-themeGreen p-5 mb-10">
+      <h1 className="text-4xl font-bold mb-6">
+        ENVIRONMENT FOCUSED CSR PROJECTS
+      </h1>
 
-      <div className="mb-8">
+      <div className="bg-cardGreen p-4 rounded-lg mb-10">
         <p className="mb-6">
-          LBF's environment-focused CSR projects are not just initiatives; they
+          LBF’s environment-focused CSR projects are not just initiatives; they
           represent a strategic, stage-by-stage roadmap. With each stage, we
           activate new lines of environmental protection activities, building
           upon the previous one. This roadmap reflects our commitment to
@@ -21,7 +21,6 @@ export default function LifeOnLandPart1() {
           <h3 className="text-xl font-medium mb-4">
             A look back at the progress
           </h3>
-
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div>
               <h4 className="font-medium mb-2">Thuru Wawamu</h4>
@@ -30,20 +29,11 @@ export default function LifeOnLandPart1() {
                 2018, has successfully cultivated 38,316 trees.
               </p>
             </div>
-            <div>
-              <Image
-                src="/placeholder-tree-planting.jpg"
-                alt="Tree Planting"
-                width={400}
-                height={300}
-                className="rounded-lg"
-              />
-            </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div>
-              <h4 className="font-medium mb-2">LB Blood Big school</h4>
+              <h4 className="font-medium mb-2">LB ThiraSara Piya Satahan</h4>
               <p>
                 To celebrate the opening of our new branches, we launched a tree
                 planting initiative, marking the start of our programme to
@@ -64,15 +54,6 @@ export default function LifeOnLandPart1() {
                   <p>50</p>
                 </div>
               </div>
-            </div>
-            <div>
-              <Image
-                src="/placeholder-school-planting.jpg"
-                alt="School Planting"
-                width={400}
-                height={300}
-                className="rounded-lg"
-              />
             </div>
           </div>
         </div>
@@ -121,15 +102,6 @@ export default function LifeOnLandPart1() {
                   <p>10</p>
                 </div>
               </div>
-            </div>
-            <div>
-              <Image
-                src="/placeholder-mangrove.jpg"
-                alt="Mangrove Restoration"
-                width={400}
-                height={300}
-                className="rounded-lg"
-              />
             </div>
           </div>
 

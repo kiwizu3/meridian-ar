@@ -5,20 +5,20 @@ import Image from 'next/image';
 export default function CitiesAndCommunitiesPart2() {
   return (
     <div>
-      <div className="bg-[#5d8de8] text-black p-8">
+      <div className="bg-themeGreen text-black p-8">
+        <div className="flex items-center mb-4">
+          <h1 className="text-4xl font-bold text-white">
+            NURTURING NATURAL CAPITAL
+          </h1>
+        </div>
         <div className="w-full">
-          <div className="bg-[#7ba1eb] rounded-lg p-6 mb-8">
-            <div className="flex items-center mb-4">
-              <h2 className="text-2xl font-semibold">
-                NURTURING NATURAL CAPITAL
-              </h2>
-            </div>
+          <div className="bg-cardGreen rounded-lg p-6 mb-8">
             <div className="grid grid-cols-1 gap-6">
               <div>
                 <h3 className="text-xl font-semibold mb-4">
                   Restoration of degraded patches of Yagirala forest reserve
                 </h3>
-                <p>
+                <p className="text-white">
                   With 45% of its plant species endemic to Sri Lanka, the
                   Yagirala forest reserve is a treasure trove of biodiversity.
                   Recognising its importance, we are investing in the future of
@@ -30,32 +30,26 @@ export default function CitiesAndCommunitiesPart2() {
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-                  <div className="bg-white rounded-lg p-4">
+                  <div className="bg-[#4DA28C] rounded-lg p-4">
                     <h4 className="font-semibold mb-2">Partnership</h4>
                     <p>
                       Center for Sustainability of the University of Sri
                       Jayewardenepura.
                     </p>
                   </div>
-                  <div className="bg-white rounded-lg p-4 text-center">
-                    <h4 className="font-semibold mb-2">Investment</h4>
-                    <p className="text-xl font-bold">Rs. 392,700</p>
-                  </div>
-                  <div className="bg-white rounded-lg p-4 text-center">
-                    <h4 className="font-semibold mb-2">Team engagement</h4>
-                    <p className="text-xl font-bold">05</p>
-                  </div>
-                </div>
-
-                <div className="mt-6">
-                  <div className="relative h-64 w-full">
-                    <Image
-                      src="/placeholder-forest-restoration.jpg"
-                      alt="Yagirala Forest Restoration"
-                      className="rounded-lg"
-                      fill
-                      style={{ objectFit: 'cover' }}
-                    />
+                  <div className="bg-[#4DA28C] rounded-lg p-4 text-center col-span-2 flex justify-evenly">
+                    <div>
+                      <h4 className="font-semibold mb-2">Investment</h4>
+                      <p className="text-xl font-bold">Rs. 392,700</p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-2">Team engagement</h4>
+                      <p className="text-xl font-bold">05</p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-2">Man hours</h4>
+                      <p className="text-xl font-bold">10</p>
+                    </div>
                   </div>
                 </div>
 
@@ -63,7 +57,7 @@ export default function CitiesAndCommunitiesPart2() {
                   <h4 className="font-semibold mb-2">
                     Expected benefits and impact
                   </h4>
-                  <ul className="list-disc pl-6">
+                  <ul className="list-disc pl-6 text-white">
                     <li className="mb-2">
                       Restore degraded forest areas with native species to
                       facilitate forest rehabilitation
@@ -81,13 +75,13 @@ export default function CitiesAndCommunitiesPart2() {
             </div>
           </div>
 
-          <div className="bg-[#7ba1eb] rounded-lg p-6 mb-8">
+          <div className="bg-cardGreen rounded-lg p-6 mb-8">
             <div className="flex items-center mb-4">
               <h2 className="text-2xl font-semibold">URBAN TREE PLANTING</h2>
             </div>
             <div className="grid grid-cols-1 gap-6">
               <div>
-                <p>
+                <p className="text-white">
                   The trees planted at selected urban locations and centers in
                   the towns were carefully maintained throughout the year,
                   reinforcing our ongoing commitment to urban greening and
@@ -95,29 +89,17 @@ export default function CitiesAndCommunitiesPart2() {
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-                  <div className="bg-white rounded-lg p-4">
+                  <div className="bg-[#4DA28C] rounded-lg p-4">
                     <h4 className="font-semibold mb-2">Maintained by</h4>
                     <p>Hemsandu Marketing</p>
                   </div>
-                  <div className="bg-white rounded-lg p-4 text-center">
+                  <div className="bg-[#4DA28C] rounded-lg p-4 text-center">
                     <h4 className="font-semibold mb-2">Investment</h4>
                     <p className="text-xl font-bold">Rs. 15,750,000</p>
                   </div>
-                  <div className="bg-white rounded-lg p-4 text-center">
+                  <div className="bg-[#4DA28C] rounded-lg p-4 text-center">
                     <h4 className="font-semibold mb-2">Man hours</h4>
                     <p className="text-xl font-bold">25</p>
-                  </div>
-                </div>
-
-                <div className="mt-6">
-                  <div className="relative h-64 w-full">
-                    <Image
-                      src="/placeholder-urban-trees.jpg"
-                      alt="Urban Tree Planting"
-                      className="rounded-lg"
-                      fill
-                      style={{ objectFit: 'cover' }}
-                    />
                   </div>
                 </div>
 
@@ -125,7 +107,7 @@ export default function CitiesAndCommunitiesPart2() {
                   <h4 className="font-semibold mb-2">
                     Expected benefits and impact
                   </h4>
-                  <ul className="list-disc pl-6">
+                  <ul className="list-disc pl-6 text-white">
                     <li className="mb-2">
                       Lower urban temperatures through shade
                     </li>
@@ -142,13 +124,13 @@ export default function CitiesAndCommunitiesPart2() {
             </div>
           </div>
 
-          <div className="bg-[#7ba1eb] rounded-lg p-6">
+          <div className="bg-cardGreen rounded-lg p-6">
             <div className="flex items-center mb-4">
               <h2 className="text-2xl font-semibold">FUTURE ROAD MAP</h2>
             </div>
             <div className="grid grid-cols-1 gap-6">
               <div>
-                <p>
+                <p className="text-white">
                   Moving forward, we will integrate tree planting as a core
                   sustainability initiative across all branches, encouraging
                   employees and customers to actively participate in
@@ -157,17 +139,6 @@ export default function CitiesAndCommunitiesPart2() {
                   projects, fostering environmental stewardship from a young
                   age.
                 </p>
-                <div className="mt-6">
-                  <div className="relative h-64 w-full">
-                    <Image
-                      src="/placeholder-future-plan.jpg"
-                      alt="Future Roadmap"
-                      className="rounded-lg"
-                      fill
-                      style={{ objectFit: 'cover' }}
-                    />
-                  </div>
-                </div>
               </div>
             </div>
           </div>

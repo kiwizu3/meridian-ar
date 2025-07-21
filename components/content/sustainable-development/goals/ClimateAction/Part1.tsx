@@ -4,13 +4,13 @@ import { Card, CardBody, Image } from '@nextui-org/react';
 
 export default function ClimateActionPart1() {
   return (
-    <div className="space-y-6">
-      <h2 className="text-2xl font-bold">
-        7. CLIMATE CHANGE MITIGATION: BEYOND BUSINESS OPERATIONS
-      </h2>
+    <div className="bg-themeGreen p-5 mb-10">
+      <h1 className="text-4xl font-bold mb-4">
+        CLIMATE CHANGE MITIGATION: BEYOND BUSINESS OPERATIONS
+      </h1>
 
-      <Card>
-        <CardBody>
+      <div className="bg-cardGreen p-4 rounded-lg mb-5">
+        <div>
           <p>
             In an effort to raise awareness about climate change and its impact
             on local communities, we conducted a comprehensive climate
@@ -21,69 +21,49 @@ export default function ClimateActionPart1() {
             with knowledge on how to mitigate and adapt to its effects.
           </p>
 
-          <div className="mt-6">
-            <h4 className="font-medium">Programme Details</h4>
-            <p>
+          <div>
+            <p className="mb-5">
               The programme focused on two schools in the Kalutara District, one
               of the most climate-vulnerable regions in the Western Province.
-              Yatagampitya Kanishta Vidyala and Vivekananda Primary School, with
-              a combined total of 150 students, were the primary participants.
+              Yatagampitiya Kanishta Vidyala and Vivekananda Primary School,
+              with a combined total of 150 students, were the primary
+              participants. During the sessions, we covered critical topics such
+              as climate change awareness, survival strategies in the face of
+              extreme weather events, and practical actions to take during
+              floods and landslides, which are common occurrences in these
+              areas.
             </p>
-
-            <div className="mt-4 grid md:grid-cols-2 gap-6">
-              <div>
-                <h5 className="font-medium">Topics Covered:</h5>
-                <ul className="list-disc pl-6 space-y-2 mt-2">
-                  <li>Climate change awareness</li>
-                  <li>Survival strategies in extreme weather events</li>
-                  <li>Practical actions during floods and landslides</li>
-                </ul>
-              </div>
-              <div>
-                <Image
-                  src="/placeholder-school-program.jpg"
-                  alt="School Climate Programme"
-                  width={400}
-                  height={300}
-                  className="rounded-lg"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-6">
-            <h4 className="font-medium">Collaboration</h4>
-            <p>
+            <p className="mb-5">
               In collaboration with the Red Cross and relevant local officials,
               we delivered two educational sessions, engaging students with
               practical knowledge on how to act during emergencies. These
               sessions were well-received, and the students were encouraged to
               apply what they learned to protect themselves and their
-              communities.
+              communities
             </p>
-          </div>
-
-          <div className="mt-6">
-            <h4 className="font-medium">Future Plans</h4>
-            <ul className="list-disc pl-6 space-y-2 mt-2">
-              <li>
-                At Yatagampitya Kanishta Vidyala: Develop sanitation facilities
-                crucial during emergencies
-              </li>
-              <li>
-                At Vivekananda Primary School: Install direction boards for
-                emergency guidance
-              </li>
-            </ul>
-            <p className="mt-4">
+            <p className="mb-5">
+              Building on this effort, we are committed to taking further steps
+              to improve the preparedness of these schools for future
+              climate-related challenges
+            </p>
+            <p className="mb-5">
+              At Yatagampitiya Kanishta Vidyala, we are planning to develop
+              sanitation facilities that will be crucial during emergencies,
+              ensuring that students and staff have access to proper hygiene.
+              Additionally, at Vivekananda Primary School, we aim to install
+              direction boards that will guide the community on how to act in
+              emergency situations, helping them navigate floods and other
+              crises effectively.
+            </p>
+            <p className="mb-5">
               Through these initiatives, we are not only raising awareness about
               climate change, but also implementing tangible solutions that can
               help mitigate its effects and prepare future generations to face
               the challenges of a changing climate.
             </p>
           </div>
-        </CardBody>
-      </Card>
+        </div>
+      </div>
     </div>
   );
 }
