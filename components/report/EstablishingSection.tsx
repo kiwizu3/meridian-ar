@@ -38,8 +38,8 @@ export default function EstablishingSection() {
   return (
     <div className="bg-cardGreen">
       <div className="container grid grid-cols-1 lg:grid-cols-2 gap-10 py-14 px-6">
-        <div className="order-last md:order-first lg:order-first grid grid-cols-1 gap-12">
-          <div className="bg-[#467643] p-6 rounded-lg text-lg font-normal shadow-lg">
+        <div className="order-last  lg:order-first grid grid-cols-1 gap-6">
+          <div className="bg-reportGreen p-6 rounded-lg text-lg font-normal shadow-lg">
             <p>
               LBF upholds strong corporate governance, built on transparency,
               accountability, and ethical leadership. Its governance framework
@@ -64,7 +64,7 @@ export default function EstablishingSection() {
                     <LionPawCircle />
                   </div>
                   <div
-                    className="cursor-pointer content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg hover:opacity-90 transition"
+                    className="cursor-pointer content-center labal-gradient w-full p-3 rounded-lg hover:opacity-90 transition"
                     onClick={() => handleOpenModal(item.label, item.content)}
                   >
                     <span>{item.label}</span>
@@ -81,11 +81,11 @@ export default function EstablishingSection() {
         <div>
           <div className="flex justify-end">
             <Image
-              src="/images/report/breaker_9.png"
+              src="/images/report/Establishing-our-strength.svg"
               alt="Ampifying Logo"
               width={428}
               height={132}
-              className="bg-[#FFFFFFCC] rounded-md"
+            
             />
           </div>
           <div className="">

@@ -47,8 +47,8 @@ export default function RespondingSection() {
   return (
     <div>
       <div className="container grid grid-cols-1 lg:grid-cols-2 gap-10 py-14 px-6">
-        <div className="order-last md:order-first lg:order-first grid grid-cols-1 gap-12">
-          <div className="bg-[#467643] p-6 rounded-lg text-lg font-normal">
+        <div className="order-last lg:order-first grid grid-cols-1 gap-6">
+          <div className="bg-reportGreen p-6 rounded-lg text-lg font-normal">
             <p>
               LBF drives sustainable value creation across six capitals. Strong
               financial capital supports robust performance, manufactured
@@ -73,7 +73,7 @@ export default function RespondingSection() {
                     <LionPawCircle />
                   </div>
                   <div
-                    className="cursor-pointer content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg hover:opacity-90 transition"
+                    className="cursor-pointer content-center labal-gradient w-full p-3 rounded-lg hover:opacity-90 transition"
                     onClick={() => handleOpenModal(item.label, item.content)}
                   >
                     <span>{item.label}</span>
@@ -89,7 +89,7 @@ export default function RespondingSection() {
                     <LionPawCircle />
                   </div>
                   <div
-                    className="cursor-pointer content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg hover:opacity-90 transition"
+                    className="cursor-pointer content-center labal-gradient w-full p-3 rounded-lg hover:opacity-90 transition"
                     onClick={() => handleOpenModal(item.label, item.content)}
                   >
                     <span>{item.label}</span>
@@ -106,7 +106,7 @@ export default function RespondingSection() {
         <div>
           <div className="flex justify-end">
             <Image
-              src="/images/report/breaker_4.png"
+              src="/images/report/Responding-with-agility.svg"
               alt="Ampifying Logo"
               width={335}
               height={117}

@@ -37,6 +37,7 @@ module.exports = {
         grayAsh: '#8B8B8B',
         themeGreen: '#0E3A2F',
         cardGreen: '#17634F',
+        reportGreen: '#467643',
         greeen2 : '#124C3D',
         themeYellow: '#EDB143',
         yellow : '#DBB226 ',

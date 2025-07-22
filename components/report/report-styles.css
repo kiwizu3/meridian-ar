@@ -48,9 +48,11 @@
 
 .download-pdf-text {
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #EDB143;
   font-size: 16px;
-  font-weight: 500;
-  color: #D6A300;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 /* ReportGenerator Component Styles */
