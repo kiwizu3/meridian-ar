@@ -45,11 +45,11 @@ export default function EnvisioningSection() {
         <div className="">
           <div className="">
             <Image
-              src="/images/report/Breaker 8 (1).png"
+              src="/images/report/Envisioning-the-future.svg"
               alt="Ampifying Logo"
               width={335}
               height={117}
-              className="bg-[#FFFFFFCC] rounded-md"
+           
             />
           </div>
           <div className="">
@@ -64,8 +64,8 @@ export default function EnvisioningSection() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-12">
-          <div className="bg-[#467643] p-6 rounded-lg text-lg font-normal">
+        <div className="grid grid-cols-1 gap-6">
+          <div className="bg-reportGreen p-6 rounded-lg text-lg font-normal">
             <p>
               As we reach the end of our Integrated Annual Report 2024/25, we
               invite readers to explore the full breadth of insights, data, and
@@ -90,7 +90,7 @@ export default function EnvisioningSection() {
                 <div>
                   <LionPawCircle />
                 </div>
-                <div className="cursor-pointer content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg hover:opacity-90 transition">
+                <div className="cursor-pointer content-center labal-gradient w-full p-3 rounded-lg hover:opacity-90 transition">
                   <span>{item.label}</span>
                 </div>
               </div>

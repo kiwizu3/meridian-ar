@@ -40,9 +40,10 @@ export default function ConqueringSection() {
 
   return (
     <div className="bg-cardGreen">
-      <div className="container grid grid-cols-1 lg:grid-cols-2 gap-10 py-14 px-6">
-        <div className="order-last md:order-first lg:order-first grid grid-cols-1 gap-12">
-          <div className="bg-[#467643] p-6 rounded-lg text-lg font-normal shadow-lg">
+      <div className="container grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 gap-10 py-14 px-6">
+
+        <div className="col-span-2 order-last lg:order-first xl:order-first grid grid-cols-1 lg:col-span-1 xl:col-span-2 gap-6">
+          <div className="bg-reportGreen p-6 rounded-lg text-lg font-normal shadow-lg">
             <p className="mt-4">
               With a legacy spanning over 54 years in Sri Lanka’s financial
               services sector, LB Finance PLC (LBF) is a leading Non-Banking
@@ -51,7 +52,7 @@ export default function ConqueringSection() {
               financial strength and stability.
             </p>
           </div>
-          <div className="flex flex-col gap-2 lg:gap-5 lg:flex-row">
+          <div className="grid grid-cols-2 gap-2 lg:gap-5 lg:flex-row">
             <div className="flex flex-col gap-2">
               {items.slice(0, 3).map((item, idx) => (
                 <div className="flex" key={idx}>
@@ -59,7 +60,7 @@ export default function ConqueringSection() {
                     <LionPawCircle />
                   </div>
                   <div
-                    className="cursor-pointer content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg hover:opacity-90 transition"
+                    className="cursor-pointer content-center labal-gradient w-full p-3 rounded-lg hover:opacity-90 transition"
                     onClick={() => handleOpenModal(item.label, item.content)}
                   >
                     <span>{item.label}</span>
@@ -75,7 +76,7 @@ export default function ConqueringSection() {
                     <LionPawCircle />
                   </div>
                   <div
-                    className="cursor-pointer content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg hover:opacity-90 transition"
+                    className="cursor-pointer content-center labal-gradient w-full p-3 rounded-lg hover:opacity-90 transition"
                     onClick={() => handleOpenModal(item.label, item.content)}
                   >
                     <span>{item.label}</span>
@@ -89,10 +90,11 @@ export default function ConqueringSection() {
             </div>
           </div>
         </div>
-        <div>
+
+        <div className='col-span-2 lg:col-span-1 xl:col-span-2'>
           <div className="flex justify-end">
             <Image
-              src="/images/report/conquering.png"
+              src="/images/report/Conquering-with-courage.svg"
               alt="Ampifying Logo"
               width={347}
               height={108}
@@ -103,12 +105,13 @@ export default function ConqueringSection() {
               <Image
                 src="/images/report/mosaic_art_3.png"
                 alt="Lion Logo"
-                width={793}
-                height={657}
+                width={694}
+                height={557}
               />
             </div>
           </div>
         </div>
+
       </div>
 
       {/* Popup Modal */}

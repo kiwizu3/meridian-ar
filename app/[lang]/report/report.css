@@ -174,3 +174,7 @@ section {
 .mosaic-lion {
   max-width: 1150px;
 }
+
+.labal-gradient{
+  background: linear-gradient(153deg, rgba(118, 164, 98, 0.50) 0%, rgba(151, 188, 128, 0.50) 100%);
+}

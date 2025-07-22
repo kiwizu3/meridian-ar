@@ -41,9 +41,9 @@ export default function TransformingEnvironment() {
     <div className="bg-cardGreen">
       <div className="container grid grid-cols-1 lg:grid-cols-2 gap-10 py-14 px-6">
         <div className="">
-          <div className="bg-[#FFFFFFCC] w-fit rounded-md">
+          <div>
             <Image
-              src="/images/report/Breaker 8.png"
+              src="/images/report/Sustainability-Report.svg"
               alt="Transforming The Environment"
               width={421}
               height={103}
@@ -61,8 +61,8 @@ export default function TransformingEnvironment() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-12 z-10">
-          <div className="bg-[#467643] p-6 rounded-lg text-lg font-normal">
+        <div className="grid grid-cols-1 gap-6 z-10">
+          <div className="bg-reportGreen p-6 rounded-lg text-lg font-normal">
             <p>
               LBF is committed to sustainability through a structured and
               responsible approach that encompasses the strategic pillars of the
@@ -89,11 +89,16 @@ export default function TransformingEnvironment() {
                   <div>
                     <LionPawCircle />
                   </div>
-                  <div className="cursor-pointer content-center bg-gradient-to-r from-[#76A462] to-[#97BC80] w-full p-3 rounded-lg hover:opacity-90 transition">
+                  <div className="cursor-pointer content-center labal-gradient w-full p-3 rounded-lg hover:opacity-90 transition">
                     <span>{item.label}</span>
                   </div>
                 </div>
               ))}
+
+<div>
+              <DownloadPDFButton />
+            </div>
+            
             </div>
 
             <PopUpModel
@@ -102,9 +107,7 @@ export default function TransformingEnvironment() {
               tabs={tabs}
             />
 
-            <div>
-              <DownloadPDFButton />
-            </div>
+           
           </div>
         </div>
       </div>
