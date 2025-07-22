@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function LifeBelowWaterPart1() {
   return (
-    <div className="bg-themeGreen p-5 mb-10">
+    <div className="bg-themeGreen p-5 my-10">
       <div className="mb-12">
         <h1 className="text-4xl font-bold mb-4">
           Beach Caretakers for Sustainable Beaches
