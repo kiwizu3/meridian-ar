@@ -22,17 +22,14 @@ export default function LifeOnLandPart1() {
             A look back at the progress
           </h3>
           <div className="grid md:grid-cols-2 gap-6 mb-6">
-            <div>
+            <div className="bg-[#4DA28C] p-4 rounded-lg">
               <h4 className="font-medium mb-2">Thuru Wawamu</h4>
               <p>
                 As of March 31, 2025, the Thuru Wawamu project, launched in
                 2018, has successfully cultivated 38,316 trees.
               </p>
             </div>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
-            <div>
+            <div className="bg-[#4DA28C] p-4 rounded-lg">
               <h4 className="font-medium mb-2">LB ThiraSara Piya Satahan</h4>
               <p>
                 To celebrate the opening of our new branches, we launched a tree
@@ -40,7 +37,7 @@ export default function LifeOnLandPart1() {
                 offset the carbon footprint of new branch openings and
                 contribute to a greener future.
               </p>
-              <div className="grid grid-cols-3 gap-4 mt-4">
+              <div className="grid grid-cols-1 gap-4 mt-4">
                 <div>
                   <h5 className="font-medium">Investment</h5>
                   <p>Rs. 36,800</p>
@@ -64,7 +61,7 @@ export default function LifeOnLandPart1() {
             forest
           </h3>
 
-          <div className="grid md:grid-cols-2 gap-6 mb-6">
+          <div className="grid grid-cols-1 gap-6 mb-6">
             <div>
               <p>
                 Recognising the critical role of mangroves in carbon
@@ -75,31 +72,31 @@ export default function LifeOnLandPart1() {
                 the Ittepana mangrove forest, with a Memorandum of Understanding
                 (MoU) signed on 25 March 2025.
               </p>
-
-              <div className="mt-4">
-                <h4 className="font-medium mb-2">Partnership</h4>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+              <div className="bg-[#4DA28C] rounded-lg p-4">
+                <h4 className="font-semibold mb-2">Partnership</h4>
                 <p>
                   Center for Sustainability of the University of Sri
-                  Jayewardenepura
+                  Jayewardenepura.
                 </p>
               </div>
-
-              <div className="grid grid-cols-4 gap-4 mt-4">
+              <div className="bg-[#4DA28C] rounded-lg p-4 text-center col-span-2 flex justify-evenly">
                 <div>
-                  <h5 className="font-medium">Investment</h5>
-                  <p>Rs. 376,250</p>
+                  <h4 className="font-semibold mb-2">Investment</h4>
+                  <p className="text-xl font-bold">Rs. 376,250</p>
                 </div>
                 <div>
-                  <h5 className="font-medium">Team engagement</h5>
-                  <p>05</p>
+                  <h4 className="font-semibold mb-2">Team engagement</h4>
+                  <p className="text-xl font-bold">05</p>
                 </div>
                 <div>
-                  <h5 className="font-medium">Beneficiaries</h5>
-                  <p>Many</p>
+                  <h4 className="font-semibold mb-2">Man hours</h4>
+                  <p className="text-xl font-bold">10</p>
                 </div>
                 <div>
-                  <h5 className="font-medium">Man hours</h5>
-                  <p>10</p>
+                  <h4 className="font-semibold mb-2">Beneficiaries</h4>
+                  <p className="text-xl font-bold">Many</p>
                 </div>
               </div>
             </div>

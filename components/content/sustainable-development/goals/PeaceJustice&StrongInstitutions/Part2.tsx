@@ -2,72 +2,64 @@ import Image from 'next/image';
 
 export default function RiskManagementPart2() {
   return (
-    <div className="max-w-4xl mx-auto py-8 px-4">
-      <h2 className="text-2xl font-semibold mb-6">
+    <div className="bg-themeGreen p-5 mb-10">
+      <h1 className="text-4xl font-bold mb-6">
         BOARD INTEGRATED RISK MANAGEMENT COMMITTEE REPORT
-      </h2>
+      </h1>
 
       <div className="mb-8">
         <div className="grid md:grid-cols-2 gap-6 mb-6">
-          <div>
+          <div className="bg-[#4DA28C] p-4 rounded-lg">
             <h3 className="text-xl font-medium mb-4">
               IT and Information Security Risk
             </h3>
             <ul className="list-disc pl-5 space-y-2">
               <li>
-                Reviewed progress on implementation of technology security
-                controls
+                Reviewed progress on the implementation of technology security
+                controls in line with Regulatory Direction No. 1 of 2022
               </li>
               <li>
-                Monitored progress for compliance with Personal Data Protection
-                Act
+                Monitored progress and recommended actions to strengthen
+                controls in preparation for compliance with the proposed
+                Personal Data Protection Act No. 9 of 2022
               </li>
-              <li>Reviewed critical system availability reports</li>
+              <li>
+                Reviewed critical system availability reports to ensure IT
+                service continuity and operational resilience
+              </li>
             </ul>
           </div>
-          <div>
-            <Image
-              src="/placeholder-it-security.jpg"
-              alt="IT Security"
-              width={400}
-              height={300}
-              className="rounded-lg"
-            />
+          <div className="bg-[#4DA28C] p-4 rounded-lg">
+            <h3 className="text-xl font-medium mb-4">Capital Adequacy</h3>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>
+                Reviewed Internal Capital Adequacy Assessment Process (ICAAP)
+                report
+              </li>
+              <li>Reviewed stress testing results</li>
+            </ul>
           </div>
-        </div>
-
-        <div className="mb-6">
-          <h3 className="text-xl font-medium mb-4">Capital Adequacy</h3>
-          <ul className="list-disc pl-5 space-y-2">
-            <li>
-              Reviewed Internal Capital Adequacy Assessment Process (ICAAP)
-              report
-            </li>
-            <li>Reviewed stress testing results</li>
-          </ul>
-        </div>
-
-        <div className="mb-6">
-          <h3 className="text-xl font-medium mb-4">
-            Other Risk Related Activities
-          </h3>
-          <ul className="list-disc pl-5 space-y-2">
-            <li>Assessed effectiveness of Management-level Committees</li>
-            <li>Reviewed risk exposures of the Company's subsidiary</li>
-            <li>Reviewed the risk register</li>
-            <li>Reviewed risk assessments of new products</li>
-            <li>Reviewed risk management framework for models</li>
-          </ul>
-        </div>
-
-        <div className="mb-6">
-          <h3 className="text-xl font-medium mb-4">Compliance Function</h3>
-          <ul className="list-disc pl-5 space-y-2">
-            <li>Monitored implementation of new rules and regulations</li>
-            <li>Conducted monthly reviews of compliance checklist</li>
-            <li>Reviewed AML/CFT reports quarterly</li>
-            <li>Reviewed annual ML/TF risk assessment</li>
-          </ul>
+          <div className=" bg-[#4DA28C] p-4 rounded-lg">
+            <h3 className="text-xl font-medium mb-4">
+              Other Risk Related Activities
+            </h3>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Assessed effectiveness of Management-level Committees</li>
+              <li>Reviewed risk exposures of the Company's subsidiary</li>
+              <li>Reviewed the risk register</li>
+              <li>Reviewed risk assessments of new products</li>
+              <li>Reviewed risk management framework for models</li>
+            </ul>
+          </div>
+          <div className="bg-[#4DA28C] p-4 rounded-lg">
+            <h3 className="text-xl font-medium mb-4">Compliance Function</h3>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Monitored implementation of new rules and regulations</li>
+              <li>Conducted monthly reviews of compliance checklist</li>
+              <li>Reviewed AML/CFT reports quarterly</li>
+              <li>Reviewed annual ML/TF risk assessment</li>
+            </ul>
+          </div>
         </div>
 
         <div className="bg-blue-50 p-6 rounded-lg">
