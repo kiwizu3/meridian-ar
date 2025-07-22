@@ -21,14 +21,15 @@ const ModalBodyContentWrapper = dynamic(() => import('./modalBodyContent'), {
 
 function ModalDialog({ isOpen, onOpenChange, tabs }: Readonly<Props>) {
   return (
+    
     <Modal
       isOpen={isOpen}
       onOpenChange={onOpenChange}
       size="5xl"
-      className="sus-modal"
+      className="sus-modal h-[80vh]"
     >
-      <ModalContent className="modal-content">
-        <ModalBody className="modal-body">
+      <ModalContent className="modal-content modal-height">
+        <ModalBody className="modal-body bg-themeGreen">
           <h1 className="modal-heading"></h1>
           <div className="tab-wrap">
             <Tabs aria-label="Dynamic tabs" items={tabs} className="tab-inner">
@@ -51,6 +52,8 @@ function ModalDialog({ isOpen, onOpenChange, tabs }: Readonly<Props>) {
       </ModalContent>
     </Modal>
   );
+
+ 
 }
 
 export default memo(ModalDialog);
