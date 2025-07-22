@@ -20,7 +20,7 @@ export default function ValueCreationModel({ dictionary }: any) {
             </p>
           </SpeechText>
         </div>
-        <div className="sus-para text-center font-secondary">
+        <div className="sus-para text-center font-secondary pb-16 md:pb-10 lg:pb-12 xl:pb-20">
           <SpeechText>
             <p>{dictionary?.lb_finance_continues_its_journey}</p>
           </SpeechText>
