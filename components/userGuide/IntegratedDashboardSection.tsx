@@ -51,7 +51,7 @@ export default function IntegratedDashboardSection({ dictionary }: any) {
             </div>
           </div>
           <div className="flex justify-center">
-            <div className="mt-14 rounded-2xl border border-orange p-3 flex gap-4 w-fit max-w-[640px] items-center">
+            <div className="mt-14 rounded-2xl border border-themeYellow p-3 flex gap-4 w-fit max-w-[640px] items-center">
               <div className="p-3 bg-[#0B324D] rounded-full flex justify-center items-center">
                 <InformationIcon />
               </div>

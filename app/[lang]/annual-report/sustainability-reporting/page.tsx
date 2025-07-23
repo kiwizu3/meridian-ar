@@ -17,7 +17,9 @@ const page = () => {
       content: (
         <div className="flex flex-col gap-6">
           <DownloadButton
-            url={'/pdf/annual-report/section-3/our-commitment-to-sustainability.pdf'}
+            url={
+              '/pdf/annual-report/section-3/our-commitment-to-sustainability.pdf'
+            }
             downloadText={'our-commitment-to-sustainability'}
           />
           <OurCommitmentSustainability />
@@ -30,7 +32,9 @@ const page = () => {
       content: (
         <div className="flex flex-col gap-6">
           <DownloadButton
-            url={'/pdf/annual-report/section-3/sustainability-strategy-with-measureable-targets.pdf'}
+            url={
+              '/pdf/annual-report/section-3/sustainability-strategy-with-measureable-targets.pdf'
+            }
             downloadText={'sustainability-strategy-with-measureable-targets'}
           />
           <SustainabilityStrategyMeasurableTargets />
@@ -43,7 +47,9 @@ const page = () => {
       content: (
         <div className="flex flex-col gap-6">
           <DownloadButton
-            url={'/pdf/annual-report/section-3/sustainability-related-risks-and-opportunity.pdf'}
+            url={
+              '/pdf/annual-report/section-3/sustainability-related-risks-and-opportunity.pdf'
+            }
             downloadText={'sustainability-related-risks-and-opportunity'}
           />
           <SustainabilityRelatedOpportunities />
@@ -56,7 +62,9 @@ const page = () => {
       content: (
         <div className="flex flex-col gap-6">
           <DownloadButton
-            url={'/pdf/annual-report/section-3/our-contribution-towards-sustainability.pdf'}
+            url={
+              '/pdf/annual-report/section-3/our-contribution-towards-sustainability.pdf'
+            }
             downloadText={'our-contribution-towards-sustainability'}
           />
           <ContributionTowardsSustainability />
@@ -70,8 +78,12 @@ const page = () => {
       content: (
         <div className="flex flex-col gap-6">
           <DownloadButton
-            url={'/pdf/annual-report/section-3/independtant-practioners-assurance-report-on-sustainability-reporting.pdf'}
-            downloadText={'independtant-practioners-assurance-report-on-sustainability-reporting'}
+            url={
+              '/pdf/annual-report/section-3/independtant-practioners-assurance-report-on-sustainability-reporting.pdf'
+            }
+            downloadText={
+              'independtant-practioners-assurance-report-on-sustainability-reporting'
+            }
           />
           <IndependentAssuranceReport />
         </div>
@@ -84,8 +96,12 @@ const page = () => {
       content: (
         <div className="flex flex-col gap-6">
           <DownloadButton
-            url={'/pdf/annual-report/section-3/independtant-practioners-assurance-report-on-integrated-reporting.pdf'}
-            downloadText={'independtant-practioners-assurance-report-on-integrated-reporting'}
+            url={
+              '/pdf/annual-report/section-3/independtant-practioners-assurance-report-on-integrated-reporting.pdf'
+            }
+            downloadText={
+              'independtant-practioners-assurance-report-on-integrated-reporting'
+            }
           />
           <IndependentAssuranceReportOnIntegratedReporting />
         </div>

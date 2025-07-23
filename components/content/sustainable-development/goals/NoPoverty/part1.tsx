@@ -23,7 +23,7 @@ export default function NoPovertyPart1() {
               </h2>
             </div>
             <div className="grid grid-cols-1 gap-6">
-              <div className="bg-amber-300 rounded-lg p-6">
+              <div className="bg-amber-100 rounded-lg p-6">
                 <p>
                   For over 54 years, LBF has been a driving force in Sri Lanka’s
                   economic and social progress. We have fostered job creation,
@@ -54,7 +54,7 @@ export default function NoPovertyPart1() {
                 </p>
               </div>
               <div>
-                <h3 className="text-yellow font-semibold">
+                <h3 className=" font-semibold">
                   Financial Inclusiveness Through Branch Expansion
                 </h3>
                 <p>

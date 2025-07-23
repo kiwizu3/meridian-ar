@@ -8,7 +8,7 @@ import TaxIcon from '@/public/images/sustainability-goals/tax-icon.jpg';
 export default function NoPovertyPart2() {
   return (
     <div>
-      <div className="bg-[#5d8de8] rounded-lg p-6 my-8">
+      <div className="bg-cardGreen rounded-lg p-6 my-8">
         <div className="flex items-center mb-4">
           <h1 className="text-4xl font-bold text-white">
             BUILDING SOCIO-ECONOMIC PROSPERITY
@@ -46,9 +46,9 @@ export default function NoPovertyPart2() {
           />
         </div>
         <div className="w-full">
-          <div className="bg-[#7ba1eb] rounded-lg p-6 mb-8">
+          <div className="bg-themeGreen rounded-lg p-6 mb-8">
             <div className="flex items-center mb-4">
-              <h2 className="text-black text-2xl font-semibold py-5">
+              <h2 className="text-white text-2xl font-semibold py-5">
                 STRENGTHENING THE ECONOMY
               </h2>
             </div>
@@ -72,8 +72,8 @@ export default function NoPovertyPart2() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 mb-8">
-            <div className="bg-[#7ba1eb] rounded-l-lg p-6">
-              <h3 className="text-black text-xl font-semibold mb-4">
+            <div className="bg-themeGreen rounded-l-lg p-6">
+              <h3 className="text-white text-xl font-semibold mb-4">
                 Tax Paid to the Government
               </h3>
               <div>
@@ -86,7 +86,7 @@ export default function NoPovertyPart2() {
                 />
               </div>
             </div>
-            <div className="bg-[#7ba1eb] rounded-r-lg p-6">
+            <div className="bg-themeGreen rounded-r-lg p-6">
               <div>
                 <Image
                   src={TaxIcon}
