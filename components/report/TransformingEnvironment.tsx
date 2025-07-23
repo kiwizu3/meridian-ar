@@ -3,7 +3,7 @@
 import React, { useState, useCallback } from 'react';
 import Image from 'next/image';
 import LionPawCircle from './LionPawCircle';
-import DownloadPDFButton from './DownloadPDFButton';
+// import DownloadPDFButton from './DownloadPDFButton';
 import PopUpModel from './PopUpModel';
 
 // Import your content components
@@ -95,10 +95,28 @@ export default function TransformingEnvironment() {
                 </div>
               ))}
 
-<div>
+              <div>
+                <a
+                  href="/images/report/pdf/transforming_the_environment.pdf"
+                  download
+                >
+                  <button className="download-pdf-button">
+                    <span className="download-pdf-text">Download PDF</span>
+                    <span className="download-pdf-icon-wrapper">
+                      <span className="download-pdf-icon">
+                        <img
+                          src="/images/report/ant-design_file-pdf-filled.png"
+                          alt="PDF Icon"
+                        />
+                      </span>
+                    </span>
+                  </button>
+                </a>
+              </div>
+
+              {/* <div>
               <DownloadPDFButton />
-            </div>
-            
+            </div> */}
             </div>
 
             <PopUpModel
@@ -106,8 +124,6 @@ export default function TransformingEnvironment() {
               onOpenChange={onOpenChange}
               tabs={tabs}
             />
-
-           
           </div>
         </div>
       </div>

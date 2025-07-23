@@ -356,13 +356,13 @@ body {
 
 /* Handle */
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #f26722;
+  background: #009D73;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #f26750;
+  background: #009D73;
 }
 
 .speaker-icon-center,

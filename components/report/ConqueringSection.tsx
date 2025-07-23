@@ -3,7 +3,7 @@
 import React, { useState, useCallback } from 'react';
 import Image from 'next/image';
 import LionPawCircle from './LionPawCircle';
-import DownloadPDFButton from './DownloadPDFButton';
+// import DownloadPDFButton from './DownloadPDFButton';
 import PopUpModel from './PopUpModel';
 
 // Import your content components
@@ -41,7 +41,6 @@ export default function ConqueringSection() {
   return (
     <div className="bg-cardGreen">
       <div className="container grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 gap-10 py-14 px-6">
-
         <div className="col-span-2 order-last lg:order-first xl:order-first grid grid-cols-1 lg:col-span-1 xl:col-span-2 gap-6">
           <div className="bg-reportGreen p-6 rounded-lg text-lg font-normal shadow-lg">
             <p className="mt-4">
@@ -85,13 +84,32 @@ export default function ConqueringSection() {
               ))}
 
               <div className="pl-8 py-5">
-                <DownloadPDFButton />
+                <a
+                  href="/images/report/pdf/conquering_with_courage.pdf"
+                  download
+                >
+                  <button className="download-pdf-button">
+                    <span className="download-pdf-text">Download PDF</span>
+                    <span className="download-pdf-icon-wrapper">
+                      <span className="download-pdf-icon">
+                        <img
+                          src="/images/report/ant-design_file-pdf-filled.png"
+                          alt="PDF Icon"
+                        />
+                      </span>
+                    </span>
+                  </button>
+                </a>
               </div>
+
+              {/* <div className="pl-8 py-5">
+                <DownloadPDFButton />
+              </div> */}
             </div>
           </div>
         </div>
 
-        <div className='col-span-2 lg:col-span-1 xl:col-span-2'>
+        <div className="col-span-2 lg:col-span-1 xl:col-span-2">
           <div className="flex justify-end">
             <Image
               src="/images/report/Conquering-with-courage.svg"
@@ -111,7 +129,6 @@ export default function ConqueringSection() {
             </div>
           </div>
         </div>
-
       </div>
 
       {/* Popup Modal */}

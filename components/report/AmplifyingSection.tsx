@@ -3,7 +3,7 @@
 import React, { useState, useCallback } from 'react';
 import Image from 'next/image';
 import LionPawCircle from './LionPawCircle';
-import DownloadPDFButton from './DownloadPDFButton';
+// import DownloadPDFButton from './DownloadPDFButton';
 
 import PopUpModel from './PopUpModel';
 
@@ -160,9 +160,26 @@ export default function AmplifyingSection() {
             {/* Mount reusable modal */}
           </div>
           <PopUpModel isOpen={isOpen} onOpenChange={onOpenChange} tabs={tabs} />
+
           <div>
-            <DownloadPDFButton />
+            <a href="/images/report/pdf/amplifying_our_reach.pdf" download>
+              <button className="download-pdf-button">
+                <span className="download-pdf-text">Download PDF</span>
+                <span className="download-pdf-icon-wrapper">
+                  <span className="download-pdf-icon">
+                    <img
+                      src="/images/report/ant-design_file-pdf-filled.png"
+                      alt="PDF Icon"
+                    />
+                  </span>
+                </span>
+              </button>
+            </a>
           </div>
+
+          {/* <div>
+            <DownloadPDFButton />
+          </div> */}
         </div>
       </div>
     </div>

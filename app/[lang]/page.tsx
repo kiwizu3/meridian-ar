@@ -9,8 +9,8 @@ import { getDictionary } from '@/get-dictionary';
 import { Locale } from '@/i18n-config';
 import gifImage from '@/public/gif/pyramid.gif';
 import secTwoImage from '@/public/images/Clippath.png';
-import avatar from '@/public/images/gard prasanna.png';
-import avatar2 from '@/public/images/sumithAvatar.png';
+import avatar from '@/public/images/gard_prasanna.png';
+import avatar2 from '@/public/images/sumith_Avatar.png';
 import {
   getAnnualResultTopPotion,
   getHomeVideoPosition,
@@ -57,7 +57,7 @@ export default async function Home({
       title: dictionary?.flip_book,
       description: dictionary?.the_annual_report_flip,
       viewTitle: dictionary?.view_flip,
-      link: 'https://lbfinance.wp.arimac.digital/',
+      link: 'https://lbfinance.arimac.tech/',
     },
   ];
 
@@ -180,7 +180,7 @@ export default async function Home({
             backgroundSize: 'cover',
             backgroundPosition: 'bottom',
           }}
-          className="relative pb-10 lg:pb-[93px]"
+          className="relative pb-10 lg:pb-[93px] lg:pt-10 pt-6"
         >
           <div className="items-center gap-14 lg:px-0">
             <div className="pt-4 flex mb-14 flex-col gap-4 lg:-mt-12 -mt-8 relative w-full from-[#0D1019] to-transparent">

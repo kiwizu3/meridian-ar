@@ -32,12 +32,21 @@ export default function ReportHeaderSection() {
 
         {/* Buttons */}
         <div className="mt-10 flex flex-col sm:flex-row gap-4">
-          <button
+          <a href="https://lbfinance.arimac.tech/LB_AR_2024_25_Web.pdf" download>
+            <button
+              type="button"
+              className="bg-themeGreen border-2 border-themeGreen text-white font-semibold rounded-lg px-6 py-3 transition hover:bg-cardGreen hover:border-cardGreen"
+            >
+              Download Report
+            </button>
+          </a>
+          
+          {/* <button
             type="button"
             className="bg-[#0E3A2F] text-white font-semibold rounded-lg px-6 py-3 transition hover:bg-[#145244]"
           >
             Download Report
-          </button>
+          </button> */}
           <Link href="/report/generate-report">
             <button
               type="button"
