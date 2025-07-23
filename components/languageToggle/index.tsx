@@ -56,7 +56,7 @@ export default function LanguageToggle() {
             type="button"
             aria-label="lang-dropdown"
             aria-labelledby="lang-dropdown"
-            className="flex items-center focus-visible:outline-none gap-2 cursor-pointer uppercase text-sm lg:text-base font-semibold leading-[16.94px] font-inter hover:text-red"
+            className="flex items-center focus-visible:outline-none gap-2 cursor-pointer uppercase text-sm lg:text-base font-semibold leading-[16.94px] font-inter hover:text-themeYellow"
           >
             {{ en: 'EN', sn: 'සිං', tm: 'தமி' }[selected as Locale] || 'EN'}
             <Chevron width={24} height={24} />
@@ -69,7 +69,7 @@ export default function LanguageToggle() {
         >
           {i18n.locales.map((item) => (
             <DropdownItem textValue={item} key={item}>
-              <p className="hover:text-red items-center uppercase transition ease-in-out duration-300 text-sm lg:text-base">
+              <p className="hover:text-themeYellow items-center uppercase transition ease-in-out duration-300 text-sm lg:text-base">
                 {getLocaleName(item)}
               </p>
             </DropdownItem>
