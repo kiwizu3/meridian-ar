@@ -7,7 +7,7 @@ import SpeechText from '@/components/SpeechText';
 // import VideoSection from '@/components/VideoSection/VideoSection';
 import { getDictionary } from '@/get-dictionary';
 import { Locale } from '@/i18n-config';
-import gifImage from '@/public/gif/pyramid.gif';
+// import gifImage from '@/public/gif/pyramid.gif';
 import secTwoImage from '@/public/images/Clippath.png';
 import avatar from '@/public/images/gard_prasanna.png';
 import avatar2 from '@/public/images/sumith_Avatar.png';
@@ -36,6 +36,12 @@ const DetailCard = dynamic(() => import('@/components/cards/detailCard'), {
 const HTMLVersion = dynamic(() => import('@/components/HTMLVersion'), {
   ssr: false,
 });
+// const FadeInRight = dynamic(() => import('@/components/FadeInRight'), {
+//   ssr: false,
+// });
+// const FadeInLeft = dynamic(() => import('@/components/FadeInLeft'), {
+//   ssr: false,
+// });
 
 export default async function Home({
   params = { lang: 'en' },
@@ -124,7 +130,7 @@ export default async function Home({
           />
         </div> */}
 
-        <div className="md:h-[calc(100vh-3rem)] h-[calc(100vh-10rem)] flex w-full lg:-mt-[95px] -mt-20 justify-center relative rounded-2xl">
+        <div className="h-[calc(100vh-43rem)] md:h-[calc(100vh-30rem)] lg:h-[calc(100vh-23rem)] xl:h-[calc(100vh-6rem)] 2xl:h-[calc(100vh-3rem)]  flex w-full lg:-mt-[95px] -mt-20 justify-center relative rounded-2xl">
           <div className="absolute">
             <div className="mt-[130px] px-4">
               <HomePageMainVideo />
@@ -179,7 +185,7 @@ export default async function Home({
             backgroundSize: 'cover',
             backgroundPosition: 'bottom',
           }}
-          className="relative pb-10 lg:pb-[93px] lg:pt-10 pt-6"
+          className="relative pb-10 lg:pb-[93px] pt-6 md:pt-10 lg:pt-24"
         >
           <div className="items-center gap-14 lg:px-0">
             <div className="pt-4 flex mb-14 flex-col gap-4 lg:-mt-12 -mt-8 relative w-full from-[#0D1019] to-transparent">
@@ -256,7 +262,7 @@ export default async function Home({
                     aria-label="animate"
                     href="#animate"
                     snap-motion-type="scroll"
-                    snap-motion-id="animate"
+                  
                     className="hidden md:block"
                   />
                 </div>
@@ -300,9 +306,14 @@ export default async function Home({
               </div>
             </div>
             <div className="lg:max-w-[252px] max-w-sm h-auto mt-56" />
-            <img
+            {/* <img
               className="max-w-[200px] h-auto mt-48 md:hidden block"
               src={gifImage.src}
+              alt="Polygon GIF"
+            /> */}
+            <img
+              className="max-w-[350px] h-auto relative top-[36px]"
+              src="/images/lion-pow.gif"
               alt="Polygon GIF"
             />
           </div>
@@ -365,17 +376,17 @@ export default async function Home({
           aria-label="staff-a"
           href="#staff-a"
           snap-motion-type="scroll"
-          snap-motion-id="staff-a"
+       
           className="hidden md:block"
         />
-        <section className="relative">
-          <a
-            aria-label="staff"
-            href="#staff"
-            snap-motion-type="object"
-            snap-motion-id="staff-a"
-            className="right-[8%] bottom-[50%] hidden md:block"
-          />
+        <section className="relative overflow-hidden">
+        {/* <FadeInRight> */}
+            <img
+              src="/images/lion-pow.png"
+              className="absolute w-[500px] right-[0] top-[10vw]"
+              alt="lion img"
+            />
+          {/* </FadeInRight> */}
           <div className="relative z-10 flex flex-col gap-14 container px-5 lg:px-0 items-center xl:items-start lg:pb-[100px] pt-8 lg:pt-[173px]">
             <DetailCard
               image={avatar}
@@ -396,18 +407,19 @@ export default async function Home({
           aria-label="staff-b"
           href="#staff-b"
           snap-motion-type="scroll"
-          snap-motion-id="staff-b"
+         
           className="hidden md:block"
         />
         <section className="relative pb-8 md:pb-0 md:pt-[100px]">
-          <a
-            aria-label="staff-b-obj"
-            href="#staff-b-obj"
-            snap-motion-type="object"
-            snap-motion-id="staff-b"
-            className="left-[8%] bottom-[68%] hidden md:block"
-          />
-          <div className="relative">
+         
+          <div className="relative overflow-hidden">
+          {/* <FadeInLeft> */}
+              <img
+                src="/images/lion-pow.png"
+                className="absolute w-[500px] left-[0] top-[2vw]"
+                alt="lion img"
+              />
+            {/* </FadeInLeft> */}
             <div className="relative z-10 flex flex-col items-center xl:items-end gap-14 container px-5 lg:px-0 py-8 lg:py-0">
               <DetailCard
                 image={avatar2}
@@ -436,7 +448,7 @@ export default async function Home({
             aria-label="footer-b-obj"
             href="#footer-b-obj"
             snap-motion-type="object"
-            snap-motion-id="footer"
+          
             className="left-[50%] top-[0%] hidden md:block"
           />
         </section>
@@ -444,7 +456,7 @@ export default async function Home({
           aria-label="footer-obj"
           href="#footer-obj"
           snap-motion-type="scroll"
-          snap-motion-id="footer"
+         
           className="hidden md:block"
         />
       </div>
