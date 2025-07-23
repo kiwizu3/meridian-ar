@@ -21,7 +21,7 @@ export default async function Footer({ lang }: Readonly<LangTypes>) {
               prefetch={false}
               href={'https://www.lbfinance.com/about'}
               target="_blank"
-              className="font-primary font-black lg:text-lg text-base hover:text-red transition ease-in-out duration-300"
+              className="font-primary font-black lg:text-lg text-base hover:text-themeYellow transition ease-in-out duration-300"
             >
               {dictionary?.about_us}
             </Link>
@@ -29,14 +29,14 @@ export default async function Footer({ lang }: Readonly<LangTypes>) {
               prefetch={false}
               href={'https://www.lbfinance.com/investor-relations'}
               target="_blank"
-              className="font-primary font-black lg:text-lg text-base hover:text-red transition ease-in-out duration-300"
+              className="font-primary font-black lg:text-lg text-base hover:text-themeYellow transition ease-in-out duration-300"
             >
               {dictionary?.investor_relations}
             </Link>
             <Link
               prefetch={false}
               href={`/${lang}/connect?section=contact-us`}
-              className="font-primary font-black lg:text-lg text-base hover:text-red transition ease-in-out duration-300"
+              className="font-primary font-black lg:text-lg text-base hover:text-themeYellow transition ease-in-out duration-300"
             >
               {dictionary?.contact_us}
             </Link>
@@ -48,14 +48,14 @@ export default async function Footer({ lang }: Readonly<LangTypes>) {
                 <Link
                   prefetch={false}
                   href={`/${lang}/terms-of-use`}
-                  className="font-primary text-base leading-8 font-black hover:text-red transition ease-in-out duration-300"
+                  className="font-primary text-base leading-8 font-black hover:text-themeYellow transition ease-in-out duration-300"
                 >
                   {dictionary?.terms_of_use}
                 </Link>
                 <Link
                   prefetch={false}
                   href={`/${lang}/privacy-policy`}
-                  className="font-primary text-base leading-8 font-black hover:text-red transition ease-in-out duration-300"
+                  className="font-primary text-base leading-8 font-black hover:text-themeYellow transition ease-in-out duration-300"
                 >
                   {dictionary?.privacy_policy}
                 </Link>
@@ -63,7 +63,11 @@ export default async function Footer({ lang }: Readonly<LangTypes>) {
               <p className="font-secondary mt-5 font-normal text-sm leading-[28px] opacity-50">
                 {dictionary?.copyright_arimac}
               </p>
-              <a target="_blank" href='https://arimaclanka.com/' className="font-secondary text-themeYellow font-medium text-sm leading-[28px]">
+              <a
+                target="_blank"
+                href="https://arimaclanka.com/"
+                className="font-secondary text-themeYellow font-medium text-sm leading-[28px]"
+              >
                 {dictionary?.powered_by_arimac_lanka}
               </a>
             </div>
@@ -73,42 +77,42 @@ export default async function Footer({ lang }: Readonly<LangTypes>) {
                 target="_blank"
                 aria-label="fb"
               >
-                <Facebook className="fill-white hover:fill-red transition ease-in-out duration-300" />
+                <Facebook className="fill-white hover:fill-themeYellow transition ease-in-out duration-300" />
               </a>
               <a
                 href="https://www.instagram.com/lbfinanceplc/"
                 target="_blank"
                 aria-label="instagram"
               >
-                <Instagram className="fill-white hover:fill-red transition ease-in-out duration-300" />
+                <Instagram className="fill-white hover:fill-themeYellow transition ease-in-out duration-300" />
               </a>
               <a
                 href="https://www.linkedin.com/company/lb-finance-plc/"
                 target="_blank"
                 aria-label="linkedIn"
               >
-                <Linkedin className="fill-white hover:fill-red transition ease-in-out duration-300" />
+                <Linkedin className="fill-white hover:fill-themeYellow transition ease-in-out duration-300" />
               </a>
               <a
                 href="https://x.com/lbfinanceplc"
                 target="_blank"
                 aria-label="twitter"
               >
-                <Twitter className="fill-white hover:fill-red transition ease-in-out duration-300" />
+                <Twitter className="fill-white hover:fill-themeYellow transition ease-in-out duration-300" />
               </a>
               <a
                 href="https://www.tiktok.com/@lbfinanceplcofficial"
                 target="_blank"
                 aria-label="tik-tok"
               >
-                <Ticktock className="fill-white hover:fill-red transition ease-in-out duration-300" />
+                <Ticktock className="fill-white hover:fill-themeYellow transition ease-in-out duration-300" />
               </a>
               <a
                 href="https://www.youtube.com/@LBTVOne"
                 target="_blank"
                 aria-label="youtube"
               >
-                <Youtube className="fill-white hover:fill-red transition ease-in-out duration-300" />
+                <Youtube className="fill-white hover:fill-themeYellow transition ease-in-out duration-300" />
               </a>
             </div>
           </div>

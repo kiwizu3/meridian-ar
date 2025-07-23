@@ -375,7 +375,7 @@ function AccessibilityToggle({ lang }: any) {
             type="button"
             className="text-white opacity-100 focus:outline-none"
           >
-            <AccessibilityIcon className="fill-white hover:fill-red transition ease-in-out duration-300" />
+            <AccessibilityIcon className="fill-white hover:fill-themeYellow transition ease-in-out duration-300" />
           </button>
         </DropdownTrigger>
         <DropdownMenu
@@ -389,7 +389,7 @@ function AccessibilityToggle({ lang }: any) {
           {accessibilityItems.map((item) => (
             <DropdownItem
               textValue={item.title}
-              className="flex-row data-[hover=true]:bg-blue filter-home bg-cardGreen text-[#F0F0F0] border-[#616161] border rounded-lg px-4 py-2 flex justify-center items-center"
+              className="flex-row data-[hover=true]:bg-themeGreen filter-home bg-cardGreen text-[#F0F0F0] border-[#616161] border rounded-lg px-4 py-2 flex justify-center items-center"
               onClick={() => handleClick(item.key)}
               key={item.title}
             >

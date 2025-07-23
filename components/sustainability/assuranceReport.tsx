@@ -28,8 +28,8 @@ export default function AssuranceReport({ dictionary }: any) {
                 </p>
               </SpeechText>
               <a
-                href="/pdf/Independent-auditors-reports-(page-63-64).pdf"
-                download="Independent auditors reports (page 63-64)"
+                href="/pdf/Independent-auditors-reports-(page-540).pdf"
+                download="Independent-auditors-reports-(page-540)"
                 className="sus-btn font-secondary w-max"
               >
                 <span>{dictionary?.download_pdf}</span>
@@ -47,8 +47,8 @@ export default function AssuranceReport({ dictionary }: any) {
                 </p>
               </SpeechText>
               <a
-                href="/pdf/Independent-auditors-reports-(page-65-66).pdf"
-                download="Independent auditors reports (page 65-66)"
+                href="/pdf/Independent-auditors-reports-(page-112-114).pdf"
+                download="Independent-auditors-reports-(page-112-114)"
                 className="sus-btn font-secondary w-max"
               >
                 <span>{dictionary?.download_pdf}</span>
