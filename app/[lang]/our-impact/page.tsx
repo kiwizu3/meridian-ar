@@ -6,12 +6,13 @@ import SpeechText from '@/components/SpeechText';
 import { getDictionary } from '@/get-dictionary';
 import { Locale } from '@/i18n-config';
 import bgImage from '@/public/images/Clippath.png';
-import bgSec2 from '@/public/images/our-impact-s2-bg.png';
-import bgSec3 from '@/public/images/our-impact-s3-bg.png';
-import bgSec4 from '@/public/images/our-impact-s4-bg.png';
-import bgSec5 from '@/public/images/our-impact-s5-bg.png';
+import bgSec2 from '@/public/images/our-impact/our-impact-new-bg1.png';
+// import bgSec2 from '@/public/images/our-impact-s2-bg.png';
+import bgSec3 from '@/public/images/our-impact/our-impact-new-bg2.png'; 
+import bgSec4 from '@/public/images/our-impact/our-impact-new-bg3.png'; 
+import bgSec5 from '@/public/images/our-impact/our-impact-new-bg4.png';
 // import bgSec6 from '@/public/images/our-impact-s6-bg.png';
-import bgSec7 from '@/public/images/our-impact-s7-bg.png';
+import bgSec7 from '@/public/images/our-impact/our-impact-new-bg6.png';
 import Image from 'next/image';
 
 export default async function OurImpact({

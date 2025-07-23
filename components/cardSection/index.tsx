@@ -102,10 +102,12 @@ export default function CardSection(props: CardSectionProps) {
           <Image
             src={props.bgImage as string}
             alt={'bg-image'}
-            className="relative z-0"
+            className="relative z-0 opacity-10"
           />
-          <div className="z-10 h-[133px] w-full bg-gradient-to-b from-[#06253A] to-transparent absolute top-0 right-0 " />
-          <div className="z-10 h-[133px] w-full bg-gradient-to-b from-transparent to-[#06253A] absolute bottom-0 right-0 " />
+          <div className="z-10 h-[133px] w-full absolute top-0 right-0 " />
+          <div className="z-10 h-[133px] w-full absolute bottom-0 right-0 " />
+          {/* <div className="z-10 h-[133px] w-full bg-gradient-to-b from-[#06253A] to-transparent absolute top-0 right-0 " />
+          <div className="z-10 h-[133px] w-full bg-gradient-to-b from-transparent to-[#06253A] absolute bottom-0 right-0 " /> */}
         </div>
       </motion.div>
     </div>
