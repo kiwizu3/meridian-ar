@@ -31,12 +31,12 @@ export default function Chat() {
   const [messages, setMessages] = useState<ChatMessageType[]>([]);
   const [singleMessage, setSingleMessage] = useState<string>('');
   const [sessionId, setSessionId] = useState<string>('');
-  const [graphSessionId, setGraphSessionId] = useState<string>('');
   const hasRun = useRef(false);
   const chatEndRef = useRef<HTMLDivElement>(null); // Ref to scroll to the bottom
   const [isExpanded, setIsExpanded] = useState<string | null>(null);
   const [playingId, setPlayingId] = useState<string | null>(null); // Track which audio is playing
   const [openModalId, setOpenModalId] = useState<string | null>(null); // Track which modal is open
+
 
   // Toggle play state
   const togglePlay = useCallback((id: string) => {
@@ -72,7 +72,7 @@ export default function Chat() {
 
     const startSession = async () => {
       try {
-        const response = await fetch(`${process.env.BASE_URL}/start_session`, {
+        const response = await fetch("http://75.119.134.134:3008/start_session", {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -89,31 +89,9 @@ export default function Chat() {
       }
     };
 
-    const graphStartSession = async () => {
-      try {
-        const response = await fetch(
-          `${process.env.BASE_URL_GRAPH}/start_chart_session`,
-          {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              Authorization: `Basic ${credentials}`,
-            },
-          },
-        );
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        const data = await response.json();
-        setGraphSessionId(data.session_id);
-      } catch (error) {
-        console.error('Error fetching session:', error);
-      }
-    };
-
     startSession();
-    graphStartSession();
-  }, [open]);
+
+  }, [open, selectedOption]);
 
   const handleSend = (message: string) => {
     const messageId = generateUniqueId();
@@ -127,17 +105,14 @@ export default function Chat() {
         answer: '',
         chatType: selectedOption,
         voice:
-          selectedOption === 'Info'
-            ? `${process.env.BASE_URL}/chat/generate_audio/${sessionId}`
-            : `${process.env.BASE_URL_GRAPH}/chart/generate_audio/${graphSessionId}`,
+        selectedOption === 'Info'
+            ? `http://75.119.134.134:3008/chat/generate_audio/${sessionId}`
+            : `http://75.119.134.134:3008/chart/generate_audio/${sessionId}`,
+
       }, // Add chatType
     ]);
 
-    if (selectedOption === 'Info') {
-      getChatResponse(sessionId, message, messageId);
-    } else {
-      getChatResponse(graphSessionId, message, messageId);
-    }
+    getChatResponse(sessionId, message, messageId);
     setSingleMessage('');
   };
 
@@ -148,7 +123,7 @@ export default function Chat() {
   ) => {
     try {
       if (selectedOption === 'Info') {
-        const response = await fetch(`${process.env.BASE_URL}/chat`, {
+        const response = await fetch("http://75.119.134.134:3008/chat", {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -171,7 +146,7 @@ export default function Chat() {
           ),
         );
       } else {
-        const response = await fetch(`${process.env.BASE_URL_GRAPH}/chart`, {
+        const response = await fetch("http://75.119.134.134:3008/chart", {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -269,7 +244,7 @@ export default function Chat() {
         </button>
       </div>
       <div className="chat-wrap" data-collapse={open} ref={chatWrapRef}>
-        <div className="flex flex-row justify-end bg-[#0E3A2F] rounded-t-xl py-2 px-4 gap-4">
+        <div className="flex flex-row justify-end bg-[#124c3d] rounded-t-xl py-2 px-4 gap-4">
           <Tooltip
             content={<TooltipContent />}
             placement="bottom-start"
@@ -395,7 +370,7 @@ export default function Chat() {
                             <CloseIcon className="fill-white hover:fill-black" />
                           }
                           classNames={{
-                            base: 'bg-[#0b466e] w-[95%] h-[90%] !mb-[40px]',
+                            base: 'bg-[#124c3d] w-[95%] h-[90%] !mb-[40px]',
                             closeButton:
                               'right-2 top-2 w-12 h-12 hover:bg-white/10',
                           }}
@@ -450,7 +425,7 @@ export default function Chat() {
                         <div>
                           {index === messages?.length - 1 && (
                             <CustomAudioPlayer
-                              src={`${process.env.BASE_URL_GRAPH}/chart/generate_audio/${graphSessionId}`}
+                              src={`http://75.119.134.134:3008/chart/generate_audio/${sessionId}`}
                               isPlaying={playingId === item.id} // Check if this audio is playing
                               togglePlay={() => togglePlay(item.id)} // Toggle this audio's play state
                             />
