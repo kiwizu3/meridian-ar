@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function BranchNetwork() {
   return (
@@ -6,8 +7,13 @@ export default function BranchNetwork() {
       <h1 className="text-4xl font-bold">BRANCH NETWORK</h1>
       <div className="bg-greeen2 p-3 rounded-lg mb-8">
         <div>
-          <div className="bg-gray-200 p-4 rounded-lg h-64 flex items-center justify-center">
-            <p className="text-center">Branch Network Image Placeholder</p>
+          <div className="flex justify-center">
+            <Image
+              src="/images/report/content/branch-network.png"
+              alt="BRANCH NETWORK IMAGE"
+              width={580}
+              height={630}
+            />
           </div>
         </div>
       </div>

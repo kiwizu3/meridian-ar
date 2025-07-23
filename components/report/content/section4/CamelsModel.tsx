@@ -45,10 +45,18 @@ export default function CamelsModel() {
               </ul>
             </div>
             <div>
-              <div className="bg-gray-200 p-4 rounded-lg h-64 flex items-center justify-center">
-                <p className="text-center">
-                  Capital Adequacy Ratio Chart Placeholder
-                </p>
+              <div>
+                <div>
+                  <h3 className="text-center">Capital Adequacy Ratio Chart</h3>
+                </div>
+                <div className="flex justify-center">
+                  <Image
+                    src="/images/report/content/Capital Adequacy Ratio.png"
+                    alt="Capital Adequacy Ratio Chart"
+                    width={260}
+                    height={270}
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -86,10 +94,18 @@ export default function CamelsModel() {
               </ul>
             </div>
             <div>
-              <div className="bg-gray-200 p-4 rounded-lg h-64 flex items-center justify-center">
-                <p className="text-center">
-                  Gross and Net NPL Ratio Chart Placeholder
-                </p>
+              <div>
+                <div>
+                  <p className="text-center">Gross and Net NPL Ratio Chart</p>
+                </div>
+                <div className="flex justify-center">
+                  <Image
+                    src="/images/report/content/Gross and Net NPL Ratio.png"
+                    alt="Gross and Net NPL Ratio Chart Placeholder"
+                    width={260}
+                    height={270}
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -128,10 +144,18 @@ export default function CamelsModel() {
               </ul>
             </div>
             <div>
-              <div className="bg-gray-200 p-4 rounded-lg h-64 flex items-center justify-center">
-                <p className="text-center">
-                  Cost to Income Ratio Chart Placeholder
-                </p>
+              <div>
+                <div>
+                  <p className="text-center">Cost to Income Ratio Chart</p>
+                </div>
+                <div className="flex justify-center">
+                  <Image
+                    src="/images/report/content/Cost to Income Ratio.png"
+                    alt="Cost to Income Ratio Chart Placeholder"
+                    width={260}
+                    height={270}
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -167,10 +191,18 @@ export default function CamelsModel() {
               </ul>
             </div>
             <div>
-              <div className="bg-gray-200 p-4 rounded-lg h-64 flex items-center justify-center">
-                <p className="text-center">
-                  Return on Equity Chart Placeholder
-                </p>
+              <div>
+                <div>
+                  <p className="text-center">Return on Equity Chart</p>
+                </div>
+                <div className="flex justify-center">
+                  <Image
+                    src="/images/report/content/Return on Equity.png"
+                    alt="Return on Equity Chart Placeholder"
+                    width={260}
+                    height={270}
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -209,8 +241,18 @@ export default function CamelsModel() {
               </ul>
             </div>
             <div>
-              <div className="bg-gray-200 p-4 rounded-lg h-64 flex items-center justify-center">
-                <p className="text-center">Liquidity Ratio Chart Placeholder</p>
+              <div>
+                <div>
+                  <p className="text-center">Liquidity Ratio Chart</p>
+                </div>
+                <div className="flex justify-center">
+                  <Image
+                    src="/images/report/content/Liqudity Ratio.png"
+                    alt="Liquidity Ratio Chart"
+                    width={260}
+                    height={270}
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -250,10 +292,18 @@ export default function CamelsModel() {
               </ul>
             </div>
             <div>
-              <div className="bg-gray-200 p-4 rounded-lg h-64 flex items-center justify-center">
-                <p className="text-center">
-                  Sensitivity of PAT Chart Placeholder
-                </p>
+              <div>
+                <div>
+                  <p className="text-center">Sensitivity of PAT Chart</p>
+                </div>
+                <div className="flex justify-center">
+                  <Image
+                    src="/images/report/content/Sensitivity of PAT.png"
+                    alt="Sensitivity of PAT Chart"
+                    width={260}
+                    height={270}
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -264,12 +314,6 @@ export default function CamelsModel() {
               align with stakeholder interests and maximise shareholder value.
             </p>
           </div>
-        </div>
-
-        {/* Footer */}
-        <div className="flex justify-between text-sm">
-          <p>126 LB Finance PLC Integrated Annual Report 2024/25</p>
-          <p>127 LB Finance PLC Integrated Annual Report 2024/25</p>
         </div>
       </div>
     </div>

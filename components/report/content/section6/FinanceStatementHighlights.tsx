@@ -8,102 +8,93 @@ export default function FinancialStatementHighlights() {
         <h1 className="text-4xl font-bold mb-2">
           Financial Statement Highlights
         </h1>
+        <div>
+          <h2 className="text-2xl font-semibold">Operating Results</h2>
+          {/* Operating Results */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Income */}
+            <div className="bg-gray-50 p-4 rounded-lg">
+              <h3 className="text-black font-bold mb-2">Income</h3>
+              <div className="flex items-center justify-center">
+                <Image
+                  src="/images/report/content/income.png"
+                  alt="Income chart"
+                  width={400}
+                  height={200}
+                />
+              </div>
+            </div>
 
-        {/* Operating Results */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Income */}
-          <div className="bg-gray-50 p-4 rounded-lg">
-            <h3 className="font-bold mb-2">Income</h3>
-            <div className="h-48 bg-gray-200 flex items-center justify-center">
-              <Image
-                src="/placeholder-income.png"
-                alt="Income chart"
-                width={400}
-                height={200}
-                className="w-full h-auto"
-              />
+            {/* Net Interest Income */}
+            <div className="bg-gray-50 p-4 rounded-lg">
+              <h3 className="text-black font-bold mb-2">Net Interest Income</h3>
+              <div className="flex items-center justify-center">
+                <Image
+                  src="/images/report/content/net-interest-income.png"
+                  alt="Net Interest Income chart"
+                  width={400}
+                  height={200}
+                />
+              </div>
             </div>
-            <div className="mt-2 flex justify-between">
-              <span>2025: Rs. 46.73 Bn</span>
-              <span>2024: Rs. 49.23 Bn</span>
-            </div>
-          </div>
 
-          {/* Net Interest Income */}
-          <div className="bg-gray-50 p-4 rounded-lg">
-            <h3 className="font-bold mb-2">Net Interest Income</h3>
-            <div className="h-48 bg-gray-200 flex items-center justify-center">
-              <Image
-                src="/placeholder-net-interest.png"
-                alt="Net Interest Income chart"
-                width={400}
-                height={200}
-                className="w-full h-auto"
-              />
+            {/* Profit before Taxation (PBT) */}
+            <div className="bg-gray-50 p-4 rounded-lg">
+              <h3 className="text-black font-bold mb-2">
+                Profit before Taxation (PBT)
+              </h3>
+              <div className="flex items-center justify-center">
+                <Image
+                  src="/images/report/content/Profit before Taxation (PBT).png"
+                  alt="PBT chart"
+                  width={400}
+                  height={200}
+                />
+              </div>
             </div>
-          </div>
 
-          {/* Profit before Taxation (PBT) */}
-          <div className="bg-gray-50 p-4 rounded-lg">
-            <h3 className="font-bold mb-2">Profit before Taxation (PBT)</h3>
-            <div className="h-48 bg-gray-200 flex items-center justify-center">
-              <Image
-                src="/placeholder-pbt.png"
-                alt="PBT chart"
-                width={400}
-                height={200}
-                className="w-full h-auto"
-              />
+            {/* Profit After Taxation (PAT) */}
+            <div className="bg-gray-50 p-4 rounded-lg">
+              <h3 className="text-black font-bold mb-2">
+                Profit After Taxation (PBT)
+              </h3>
+              <div className="flex items-center justify-center">
+                <Image
+                  src="/images/report/content/Profit after Taxation (PAT).png"
+                  alt="PAT chart"
+                  width={400}
+                  height={200}
+                />
+              </div>
             </div>
-            <div className="mt-2 flex justify-between">
-              <span>2025: Rs. 16.34 Bn</span>
-              <span>2024: Rs. 15.18 Bn</span>
-            </div>
-          </div>
 
-          {/* Cost to Income (CI Ratio) */}
-          <div className="bg-gray-50 p-4 rounded-lg">
-            <h3 className="font-bold mb-2">Cost to Income (CI Ratio)</h3>
-            <div className="h-48 bg-gray-200 flex items-center justify-center">
-              <Image
-                src="/placeholder-ci-ratio.png"
-                alt="CI Ratio chart"
-                width={400}
-                height={200}
-                className="w-full h-auto"
-              />
+            {/* Cost to Income (CI Ratio) */}
+            <div className="bg-gray-50 p-4 rounded-lg">
+              <h3 className="text-black font-bold mb-2">
+                Cost to Income (CI Ratio)
+              </h3>
+              <div className="flex items-center justify-center">
+                <Image
+                  src="/images/report/content/Cost to Income (CI Ratio).png"
+                  alt="CI Ratio chart"
+                  width={400}
+                  height={200}
+                />
+              </div>
             </div>
-            <div className="mt-2 flex justify-between">
-              <span>2025: Rs. 10.81 Bn</span>
-              <span>2024: Rs. 9.56 Bn</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Dividend Payout vs Retained Profits */}
-        <div className="bg-gray-50 p-4 rounded-lg">
-          <h3 className="font-bold mb-2">
-            Dividend Payout vs Retained Profits
-          </h3>
-          <div className="h-48 bg-gray-200 flex items-center justify-center">
-            <Image
-              src="/placeholder-dividend.png"
-              alt="Dividend chart"
-              width={600}
-              height={200}
-              className="w-full h-auto"
-            />
-          </div>
-          <div className="mt-2 grid grid-cols-2 gap-4">
-            <div>
-              <p>Dividend Payout Ratio</p>
-              <p>2025: 33.33%</p>
-              <p>2024: 33.31%</p>
-            </div>
-            <div>
-              <p>Retained Profits</p>
-              <p>2025: 32.58%</p>
-              <p>2024: 31.13%</p>
+            {/* Dividend Payout vs Retained Profits */}
+            <div className="bg-gray-50 p-4 rounded-lg">
+              <h3 className="text-black font-bold mb-2">
+                Dividend Payout vs Retained Profits
+              </h3>
+              <div className="flex items-center justify-center">
+                <Image
+                  src="/images/report/content/Dividend Payout vs Retained Profits.png"
+                  alt="Dividend chart"
+                  width={400}
+                  height={200}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -115,7 +106,7 @@ export default function FinancialStatementHighlights() {
             <h3 className="font-bold mb-2">Gross Profit Margin*</h3>
             <div className="h-48 bg-gray-200 flex items-center justify-center">
               <Image
-                src="/placeholder-gross-margin.png"
+                src="/images/report/content/placeholder-gross-margin.png"
                 alt="Gross Profit Margin chart"
                 width={300}
                 height={200}
@@ -136,7 +127,7 @@ export default function FinancialStatementHighlights() {
             <h3 className="font-bold mb-2">Operating Profit Margin*</h3>
             <div className="h-48 bg-gray-200 flex items-center justify-center">
               <Image
-                src="/placeholder-operating-margin.png"
+                src="/images/report/content/.png"
                 alt="Operating Profit Margin chart"
                 width={300}
                 height={200}
@@ -157,7 +148,7 @@ export default function FinancialStatementHighlights() {
             <h3 className="font-bold mb-2">Net Profit Margin*</h3>
             <div className="h-48 bg-gray-200 flex items-center justify-center">
               <Image
-                src="/placeholder-net-margin.png"
+                src="/images/report/content/.png"
                 alt="Net Profit Margin chart"
                 width={300}
                 height={200}
@@ -181,7 +172,7 @@ export default function FinancialStatementHighlights() {
             </h3>
             <div className="h-48 bg-gray-200 flex items-center justify-center">
               <Image
-                src="/placeholder-ebit.png"
+                src="/images/report/content/.png"
                 alt="EBIT chart"
                 width={300}
                 height={200}
@@ -199,7 +190,7 @@ export default function FinancialStatementHighlights() {
             <h3 className="font-bold mb-2">Return on Equity (ROE)</h3>
             <div className="h-48 bg-gray-200 flex items-center justify-center">
               <Image
-                src="/placeholder-roe.png"
+                src="/images/report/content/.png"
                 alt="ROE chart"
                 width={300}
                 height={200}
@@ -217,7 +208,7 @@ export default function FinancialStatementHighlights() {
             <h3 className="font-bold mb-2">Return on Assets (ROA)</h3>
             <div className="h-48 bg-gray-200 flex items-center justify-center">
               <Image
-                src="/placeholder-roa.png"
+                src="/images/report/content/.png"
                 alt="ROA chart"
                 width={300}
                 height={200}
@@ -238,7 +229,7 @@ export default function FinancialStatementHighlights() {
             <h3 className="font-bold mb-2">Earnings per Share (EPS)</h3>
             <div className="h-48 bg-gray-200 flex items-center justify-center">
               <Image
-                src="/placeholder-eps.png"
+                src="/images/report/content/.png"
                 alt="EPS chart"
                 width={200}
                 height={200}
@@ -256,7 +247,7 @@ export default function FinancialStatementHighlights() {
             <h3 className="font-bold mb-2">Price Earnings Ratio</h3>
             <div className="h-48 bg-gray-200 flex items-center justify-center">
               <Image
-                src="/placeholder-pe.png"
+                src="/images/report/content/.png"
                 alt="PE Ratio chart"
                 width={200}
                 height={200}
@@ -274,7 +265,7 @@ export default function FinancialStatementHighlights() {
             <h3 className="font-bold mb-2">Market Capitalisation</h3>
             <div className="h-48 bg-gray-200 flex items-center justify-center">
               <Image
-                src="/placeholder-market-cap.png"
+                src="/images/report/content/.png"
                 alt="Market Cap chart"
                 width={200}
                 height={200}
@@ -292,7 +283,7 @@ export default function FinancialStatementHighlights() {
             <h3 className="font-bold mb-2">Net Asset Value per Share</h3>
             <div className="h-48 bg-gray-200 flex items-center justify-center">
               <Image
-                src="/placeholder-nav.png"
+                src="/images/report/content/.png"
                 alt="NAV chart"
                 width={200}
                 height={200}
@@ -311,7 +302,7 @@ export default function FinancialStatementHighlights() {
           <h3 className="font-bold mb-2">Market Price per Share</h3>
           <div className="h-48 bg-gray-200 flex items-center justify-center">
             <Image
-              src="/placeholder-market-price.png"
+              src="/images/report/content/.png"
               alt="Market Price chart"
               width={600}
               height={200}
@@ -332,7 +323,7 @@ export default function FinancialStatementHighlights() {
             <h3 className="font-bold mb-2">Debt to Equity Ratio</h3>
             <div className="h-48 bg-gray-200 flex items-center justify-center">
               <Image
-                src="/placeholder-debt-equity.png"
+                src="/images/report/content/.png"
                 alt="Debt to Equity chart"
                 width={300}
                 height={200}
@@ -350,7 +341,7 @@ export default function FinancialStatementHighlights() {
             <h3 className="font-bold mb-2">Interest Cover</h3>
             <div className="h-48 bg-gray-200 flex items-center justify-center">
               <Image
-                src="/placeholder-interest-cover.png"
+                src="/images/report/content/.png"
                 alt="Interest Cover chart"
                 width={300}
                 height={200}
@@ -364,7 +355,7 @@ export default function FinancialStatementHighlights() {
             <h3 className="font-bold mb-2">Equity Assets Ratio</h3>
             <div className="h-48 bg-gray-200 flex items-center justify-center">
               <Image
-                src="/placeholder-equity-assets.png"
+                src="/images/report/content/.png"
                 alt="Equity Assets Ratio chart"
                 width={300}
                 height={200}
@@ -385,7 +376,7 @@ export default function FinancialStatementHighlights() {
             <h3 className="font-bold mb-2">Quick Asset Ratio</h3>
             <div className="h-48 bg-gray-200 flex items-center justify-center">
               <Image
-                src="/placeholder-quick-ratio.png"
+                src="/images/report/content/.png"
                 alt="Quick Asset Ratio chart"
                 width={300}
                 height={200}
@@ -403,7 +394,7 @@ export default function FinancialStatementHighlights() {
             <h3 className="font-bold mb-2">Liquidity Ratio</h3>
             <div className="h-48 bg-gray-200 flex items-center justify-center">
               <Image
-                src="/placeholder-liquidity-ratio.png"
+                src="/images/report/content/.png"
                 alt="Liquidity Ratio chart"
                 width={300}
                 height={200}
@@ -417,7 +408,7 @@ export default function FinancialStatementHighlights() {
             <h3 className="font-bold mb-2">Total Liquidity Reserves</h3>
             <div className="h-48 bg-gray-200 flex items-center justify-center">
               <Image
-                src="/placeholder-liquidity-reserves.png"
+                src="/images/report/content/.png"
                 alt="Liquidity Reserves chart"
                 width={300}
                 height={200}

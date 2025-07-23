@@ -9,888 +9,461 @@ export default function IncomeStatement() {
       <div className="space-y-8">
         {/* Income Statement Table */}
         <div>
-          <h2 className="text-2xl font-semibold mb-4 border-b border-[#F3A847] pb-1">
-            Year ended 31 March
-          </h2>
+          <div className="mb-8">
+            <div className="overflow-x-auto">
+              <table className="min-w-full border border-gray-300">
+                <thead>
+                  <tr className="bg-[#0A3D5F] text-white">
+                    <th
+                      className="border border-gray-300 p-2 text-left"
+                      rowSpan={2}
+                    >
+                      Year ended 31 March
+                    </th>
+                    <th
+                      className="border border-gray-300 p-2 text-left"
+                      rowSpan={2}
+                    >
+                      Note
+                    </th>
+                    <th
+                      className="border border-gray-300 p-2 text-left"
+                      rowSpan={2}
+                    >
+                      Page No.
+                    </th>
+                    <th
+                      className="border border-gray-300 p-2 text-center"
+                      colSpan={3}
+                    >
+                      Company
+                    </th>
+                    <th
+                      className="border border-gray-300 p-2 text-center"
+                      colSpan={3}
+                    >
+                      Group
+                    </th>
+                  </tr>
+                  <tr className="bg-[#0A3D5F] text-white">
+                    <th className="border border-gray-300 p-2">
+                      2025 Rs. '000
+                    </th>
+                    <th className="border border-gray-300 p-2">
+                      2024 Rs. '000
+                    </th>
+                    <th className="border border-gray-300 p-2">Change %</th>
+                    <th className="border border-gray-300 p-2">
+                      2025 Rs. '000
+                    </th>
+                    <th className="border border-gray-300 p-2">
+                      2024 Rs. '000
+                    </th>
+                    <th className="border border-gray-300 p-2">Change %</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border border-gray-300 p-2 font-semibold">
+                      Income
+                    </td>
+                    <td className="border border-gray-300 p-2">2.1</td>
+                    <td className="border border-gray-300 p-2">370</td>
+                    <td className="border border-gray-300 p-2">46,730,955</td>
+                    <td className="border border-gray-300 p-2">49,230,095</td>
+                    <td className="border border-gray-300 p-2">(5)</td>
+                    <td className="border border-gray-300 p-2">47,156,260</td>
+                    <td className="border border-gray-300 p-2">49,635,771</td>
+                    <td className="border border-gray-300 p-2">(5)</td>
+                  </tr>
+                  <tr>
+                    <td className="p-2 pl-4">Interest Income</td>
+                    <td className="border border-gray-300 p-2">2.1.2</td>
+                    <td className="border border-gray-300 p-2">370</td>
+                    <td className="border border-gray-300 p-2">41,815,458</td>
+                    <td className="border border-gray-300 p-2">45,729,853</td>
+                    <td className="border border-gray-300 p-2">(9)</td>
+                    <td className="border border-gray-300 p-2">42,201,896</td>
+                    <td className="border border-gray-300 p-2">46,102,501</td>
+                    <td className="border border-gray-300 p-2">(8)</td>
+                  </tr>
+                  <tr>
+                    <td className="p-2 pl-4">Less: Interest Expenses</td>
+                    <td className="border border-gray-300 p-2">2.1.5</td>
+                    <td className="border border-gray-300 p-2">371</td>
+                    <td className="border border-gray-300 p-2">16,687,381</td>
+                    <td className="border border-gray-300 p-2">21,379,499</td>
+                    <td className="border border-gray-300 p-2">(22)</td>
+                    <td className="border border-gray-300 p-2">16,783,707</td>
+                    <td className="border border-gray-300 p-2">21,460,631</td>
+                    <td className="border border-gray-300 p-2">(22)</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 p-2 font-semibold">
+                      Net Interest Income
+                    </td>
+                    <td className="border border-gray-300 p-2">2.1.1</td>
+                    <td className="border border-gray-300 p-2">370</td>
+                    <td className="border border-gray-300 p-2">25,128,077</td>
+                    <td className="border border-gray-300 p-2">24,350,354</td>
+                    <td className="border border-gray-300 p-2">3</td>
+                    <td className="border border-gray-300 p-2">25,418,189</td>
+                    <td className="border border-gray-300 p-2">24,641,870</td>
+                    <td className="border border-gray-300 p-2">3</td>
+                  </tr>
+                  <tr>
+                    <td className="p-2 pl-4">Fee and Commission Income</td>
+                    <td className="border border-gray-300 p-2">2.2</td>
+                    <td className="border border-gray-300 p-2">372</td>
+                    <td className="border border-gray-300 p-2">4,604,441</td>
+                    <td className="border border-gray-300 p-2">3,186,422</td>
+                    <td className="border border-gray-300 p-2">45</td>
+                    <td className="border border-gray-300 p-2">4,642,914</td>
+                    <td className="border border-gray-300 p-2">3,217,460</td>
+                    <td className="border border-gray-300 p-2">44</td>
+                  </tr>
+                  {/* Continue with remaining rows in the same pattern */}
+                  <tr>
+                    <td className="p-2 pl-4">Net Trading Income</td>
+                    <td className="border border-gray-300 p-2">2.3</td>
+                    <td className="border border-gray-300 p-2">372</td>
+                    <td className="border border-gray-300 p-2">101,101</td>
+                    <td className="border border-gray-300 p-2">141,629</td>
+                    <td className="border border-gray-300 p-2">(29)</td>
+                    <td className="border border-gray-300 p-2">101,101</td>
+                    <td className="border border-gray-300 p-2">141,629</td>
+                    <td className="border border-gray-300 p-2">(29)</td>
+                  </tr>
+                  <tr>
+                    <td className="p-2 pl-4">Other Operating Income</td>
+                    <td className="border border-gray-300 p-2">2.4</td>
+                    <td className="border border-gray-300 p-2">373</td>
+                    <td className="border border-gray-300 p-2">209,955</td>
+                    <td className="border border-gray-300 p-2">172,191</td>
+                    <td className="border border-gray-300 p-2">22</td>
+                    <td className="border border-gray-300 p-2">210,349</td>
+                    <td className="border border-gray-300 p-2">174,181</td>
+                    <td className="border border-gray-300 p-2">21</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 p-2 font-semibold">
+                      Total Operating Income
+                    </td>
+                    <td className="border border-gray-300 p-2">2.1</td>
+                    <td className="border border-gray-300 p-2">370</td>
+                    <td className="border border-gray-300 p-2"> 30,043,574 </td>
+                    <td className="border border-gray-300 p-2">27,850,596</td>
+                    <td className="border border-gray-300 p-2">8</td>
+                    <td className="border border-gray-300 p-2">30,372,553</td>
+                    <td className="border border-gray-300 p-2">28,175,140</td>
+                    <td className="border border-gray-300 p-2">8</td>
+                  </tr>
+                  <tr>
+                    <td className="p-2 pl-4">
+                      Less: Impairment Charges/(Reversals)
+                    </td>
+                    <td className="border border-gray-300 p-2">2.5</td>
+                    <td className="border border-gray-300 p-2">373</td>
+                    <td className="border border-gray-300 p-2">(256,236)</td>
+                    <td className="border border-gray-300 p-2">373,236</td>
+                    <td className="border border-gray-300 p-2">({'>'}100)</td>
+                    <td className="border border-gray-300 p-2">(261,031)</td>
+                    <td className="border border-gray-300 p-2"> 270,093</td>
+                    <td className="border border-gray-300 p-2">({'>'}100)</td>
+                  </tr>
 
-          <div className="overflow-x-auto">
-            <table className="min-w-full bg-cardGreen rounded-lg">
-              <thead>
-                <tr className="border-b border-[#F3A847]">
-                  <th className="text-left py-3 px-4"></th>
-                  <th className="text-left py-3 px-4">Note</th>
-                  <th className="text-left py-3 px-4">Page No.</th>
-                  <th className="text-left py-3 px-4">Company</th>
-                  <th className="text-left py-3 px-4">Group</th>
-                </tr>
-                <tr className="border-b border-gray-200">
-                  <th className="text-left py-3 px-4"></th>
-                  <th className="text-left py-3 px-4"></th>
-                  <th className="text-left py-3 px-4"></th>
-                  <th className="text-left py-3 px-4">
-                    <div>2025 Rs. '000</div>
-                    <div>2024 Rs. '000</div>
-                    <div>Change %</div>
-                  </th>
-                  <th className="text-left py-3 px-4">
-                    <div>2025 Rs. '000</div>
-                    <div>2024 Rs. '000</div>
-                    <div>Change %</div>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {/* Income */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 font-semibold">Income</td>
-                  <td className="py-3 px-4">2.1</td>
-                  <td className="py-3 px-4">370</td>
-                  <td className="py-3 px-4">
-                    <div>46,730,955</div>
-                    <div>49,230,095</div>
-                    <div>(5)</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>47,156,260</div>
-                    <div>49,635,771</div>
-                    <div>(5)</div>
-                  </td>
-                </tr>
+                  <tr>
+                    <td className="border border-gray-300 p-2 font-semibold">
+                      Net Operating Income
+                    </td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2">30,299,810</td>
+                    <td className="border border-gray-300 p-2">27,477,360</td>
+                    <td className="border border-gray-300 p-2">10</td>
+                    <td className="border border-gray-300 p-2">30,633,584</td>
+                    <td className="border border-gray-300 p-2">27,905,047</td>
+                    <td className="border border-gray-300 p-2">10</td>
+                  </tr>
+                  {/* Continue with all remaining financial data rows */}
+                  <tr>
+                    <td className="border border-gray-300 p-2 font-semibold">
+                      Less: Operating Expenses
+                    </td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                  </tr>
+                  <tr>
+                    <td className="p-2 pl-4">Personnel Expenses</td>
+                    <td className="border border-gray-300 p-2">2.6</td>
+                    <td className="border border-gray-300 p-2">377</td>
+                    <td className="border border-gray-300 p-2">5,146,257 </td>
+                    <td className="border border-gray-300 p-2">4,376,475</td>
+                    <td className="border border-gray-300 p-2">18</td>
+                    <td className="border border-gray-300 p-2">5,267,903 </td>
+                    <td className="border border-gray-300 p-2">4,503,482 </td>
+                    <td className="border border-gray-300 p-2">17</td>
+                  </tr>
+                  <tr>
+                    <td className="p-2 pl-4">
+                      Depreciation of Property, Plant and Equipment
+                    </td>
+                    <td className="border border-gray-300 p-2">2.7.1</td>
+                    <td className="border border-gray-300 p-2">378</td>
+                    <td className="border border-gray-300 p-2">979,953</td>
+                    <td className="border border-gray-300 p-2">866,348</td>
+                    <td className="border border-gray-300 p-2">13</td>
+                    <td className="border border-gray-300 p-2">987,173</td>
+                    <td className="border border-gray-300 p-2">882,572</td>
+                    <td className="border border-gray-300 p-2">12</td>
+                  </tr>
+                  <tr>
+                    <td className="p-2 pl-4">
+                      Amortisation of Intangible Assets
+                    </td>
+                    <td className="border border-gray-300 p-2">2.7.2</td>
+                    <td className="border border-gray-300 p-2">378</td>
+                    <td className="border border-gray-300 p-2">13,128 </td>
+                    <td className="border border-gray-300 p-2">8,414</td>
+                    <td className="border border-gray-300 p-2">56</td>
+                    <td className="border border-gray-300 p-2">14,355 </td>
+                    <td className="border border-gray-300 p-2">11,189</td>
+                    <td className="border border-gray-300 p-2">28</td>
+                  </tr>
+                  <tr>
+                    <td className="p-2 pl-4">Other Operating Expenses</td>
+                    <td className="border border-gray-300 p-2">2.8</td>
+                    <td className="border border-gray-300 p-2">379</td>
+                    <td className="border border-gray-300 p-2">3,649,089</td>
+                    <td className="border border-gray-300 p-2">3,418,294</td>
+                    <td className="border border-gray-300 p-2">7</td>
+                    <td className="border border-gray-300 p-2">3,768,235</td>
+                    <td className="border border-gray-300 p-2">3,543,136</td>
+                    <td className="border border-gray-300 p-2">6</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 p-2 font-semibold">
+                      Total Operating Expenses
+                    </td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2">9,788,427</td>
+                    <td className="border border-gray-300 p-2">8,669,531</td>
+                    <td className="border border-gray-300 p-2">13</td>
+                    <td className="border border-gray-300 p-2">10,037,666</td>
+                    <td className="border border-gray-300 p-2">8,940,379</td>
+                    <td className="border border-gray-300 p-2">12</td>
+                  </tr>
 
-                {/* Interest Income */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 font-semibold">Interest Income</td>
-                  <td className="py-3 px-4">2.1.2</td>
-                  <td className="py-3 px-4">370</td>
-                  <td className="py-3 px-4">
-                    <div>41,815,458</div>
-                    <div>45,729,853</div>
-                    <div>(9)</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>42,201,896</div>
-                    <div>46,102,501</div>
-                    <div>(8)</div>
-                  </td>
-                </tr>
+                  {/* Operating Profit before Tax */}
+                  <tr>
+                    <td className="border border-gray-300 p-2 font-semibold">
+                      Operating Profit before Tax on Financial Services
+                    </td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2">20,511,383</td>
+                    <td className="border border-gray-300 p-2">18,807,829</td>
+                    <td className="border border-gray-300 p-2">9</td>
+                    <td className="border border-gray-300 p-2">20,595,918</td>
+                    <td className="border border-gray-300 p-2">18,964,668</td>
+                    <td className="border border-gray-300 p-2">9</td>
+                  </tr>
 
-                {/* Less: Interest Expenses */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 font-semibold">
-                    Less: Interest Expenses
-                  </td>
-                  <td className="py-3 px-4">2.1.5</td>
-                  <td className="py-3 px-4">371</td>
-                  <td className="py-3 px-4">
-                    <div>16,687,381</div>
-                    <div>21,379,499</div>
-                    <div>(22)</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>16,783,707</div>
-                    <div>21,460,631</div>
-                    <div>(22)</div>
-                  </td>
-                </tr>
+                  {/* Tax on Financial Services */}
+                  <tr>
+                    <td className="p-2 pl-4">
+                      Less: Tax on Financial Services
+                    </td>
+                    <td className="border border-gray-300 p-2">2.9</td>
+                    <td className="border border-gray-300 p-2">379</td>
+                    <td className="border border-gray-300 p-2">4,169,710</td>
+                    <td className="border border-gray-300 p-2">3,627,622</td>
+                    <td className="border border-gray-300 p-2">15</td>
+                    <td className="border border-gray-300 p-2">4,183,241</td>
+                    <td className="border border-gray-300 p-2">3,630,243</td>
+                    <td className="border border-gray-300 p-2">15</td>
+                  </tr>
 
-                {/* Net Interest Income */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 font-semibold">
-                    Net Interest Income
-                  </td>
-                  <td className="py-3 px-4">2.1.1</td>
-                  <td className="py-3 px-4">370</td>
-                  <td className="py-3 px-4">
-                    <div>25,128,077</div>
-                    <div>24,350,354</div>
-                    <div>3</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>25,418,189</div>
-                    <div>24,641,870</div>
-                    <div>3</div>
-                  </td>
-                </tr>
+                  {/* Profit before Taxation */}
+                  <tr>
+                    <td className="border border-gray-300 p-2 font-semibold">
+                      Profit before Taxation
+                    </td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2">16,341,673</td>
+                    <td className="border border-gray-300 p-2">15,180,207</td>
+                    <td className="border border-gray-300 p-2">8</td>
+                    <td className="border border-gray-300 p-2">16,412,677</td>
+                    <td className="border border-gray-300 p-2">15,334,425</td>
+                    <td className="border border-gray-300 p-2">7</td>
+                  </tr>
 
-                {/* Fee and Commission Income */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 font-semibold">
-                    Fee and Commission Income
-                  </td>
-                  <td className="py-3 px-4">2.2</td>
-                  <td className="py-3 px-4">372</td>
-                  <td className="py-3 px-4">
-                    <div>4,604,441</div>
-                    <div>3,186,422</div>
-                    <div>45</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>4,642,914</div>
-                    <div>3,217,460</div>
-                    <div>44</div>
-                  </td>
-                </tr>
+                  {/* Income Tax Expense */}
+                  <tr>
+                    <td className="p-2 pl-4">Less: Income Tax Expense</td>
+                    <td className="border border-gray-300 p-2">2.10.1 (a)</td>
+                    <td className="border border-gray-300 p-2">380</td>
+                    <td className="border border-gray-300 p-2">5,536,039</td>
+                    <td className="border border-gray-300 p-2">5,616,569</td>
+                    <td className="border border-gray-300 p-2">(1)</td>
+                    <td className="border border-gray-300 p-2">5,550,743</td>
+                    <td className="border border-gray-300 p-2">5,627,414</td>
+                    <td className="border border-gray-300 p-2">(1)</td>
+                  </tr>
 
-                {/* Net Trading Income */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 font-semibold">
-                    Net Trading Income
-                  </td>
-                  <td className="py-3 px-4">2.3</td>
-                  <td className="py-3 px-4">372</td>
-                  <td className="py-3 px-4">
-                    <div>101,101</div>
-                    <div>141,629</div>
-                    <div>(29)</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>101,101</div>
-                    <div>141,629</div>
-                    <div>(29)</div>
-                  </td>
-                </tr>
+                  {/* Profit for the Year */}
+                  <tr>
+                    <td className="border border-gray-300 p-2 font-semibold">
+                      Profit for the Year
+                    </td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2">10,805,634</td>
+                    <td className="border border-gray-300 p-2">9,563,638</td>
+                    <td className="border border-gray-300 p-2">13</td>
+                    <td className="border border-gray-300 p-2">10,861,934</td>
+                    <td className="border border-gray-300 p-2">9,707,011</td>
+                    <td className="border border-gray-300 p-2">12</td>
+                  </tr>
 
-                {/* Other Operating Income */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 font-semibold">
-                    Other Operating Income
-                  </td>
-                  <td className="py-3 px-4">2.4</td>
-                  <td className="py-3 px-4">373</td>
-                  <td className="py-3 px-4">
-                    <div>209,955</div>
-                    <div>172,191</div>
-                    <div>22</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>210,349</div>
-                    <div>174,181</div>
-                    <div>21</div>
-                  </td>
-                </tr>
+                  {/* Profit Attributable to */}
+                  <tr>
+                    <td className="border border-gray-300 p-2 font-semibold pl-4">
+                      Profit Attributable to:
+                    </td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                  </tr>
 
-                {/* Total Operating Income */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 font-semibold">
-                    Total Operating Income
-                  </td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4">
-                    <div>30,043,574</div>
-                    <div>27,850,596</div>
-                    <div>8</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>30,372,553</div>
-                    <div>28,175,140</div>
-                    <div>8</div>
-                  </td>
-                </tr>
+                  {/* Equity Holders */}
+                  <tr>
+                    <td className="p-2 pl-8">Equity Holders of the Company</td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2">10,805,634</td>
+                    <td className="border border-gray-300 p-2">9,563,638</td>
+                    <td className="border border-gray-300 p-2">13</td>
+                    <td className="border border-gray-300 p-2">10,860,002</td>
+                    <td className="border border-gray-300 p-2">9,713,917</td>
+                    <td className="border border-gray-300 p-2">12</td>
+                  </tr>
 
-                {/* Less: Impairment Charges/(Reversals) */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 font-semibold">
-                    Less: Impairment Charges/(Reversals)
-                  </td>
-                  <td className="py-3 px-4">2.5</td>
-                  <td className="py-3 px-4">373</td>
-                  <td className="py-3 px-4">
-                    <div>(256,236)</div>
-                    <div>373,236</div>
-                    <div>(&gt;100)</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>(261,031)</div>
-                    <div>270,093</div>
-                    <div>(&gt;100)</div>
-                  </td>
-                </tr>
+                  {/* Non-Controlling Interest */}
+                  <tr>
+                    <td className="p-2 pl-8">Non-Controlling Interest</td>
+                    <td className="border border-gray-300 p-2">2.37</td>
+                    <td className="border border-gray-300 p-2">444</td>
+                    <td className="border border-gray-300 p-2">-</td>
+                    <td className="border border-gray-300 p-2">-</td>
+                    <td className="border border-gray-300 p-2">-</td>
+                    <td className="border border-gray-300 p-2">1,932</td>
+                    <td className="border border-gray-300 p-2">(6,906)</td>
+                    <td className="border border-gray-300 p-2">{'>'}100</td>
+                  </tr>
 
-                {/* Net Operating Income */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 font-semibold">
-                    Net Operating Income
-                  </td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4">
-                    <div>30,299,810</div>
-                    <div>27,477,360</div>
-                    <div>10</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>30,633,584</div>
-                    <div>27,905,047</div>
-                    <div>10</div>
-                  </td>
-                </tr>
+                  {/* Profit for the Year (duplicate) */}
+                  <tr>
+                    <td className="border border-gray-300 p-2 font-semibold">
+                      Profit for the Year
+                    </td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2">10,805,634</td>
+                    <td className="border border-gray-300 p-2">9,563,638</td>
+                    <td className="border border-gray-300 p-2">13</td>
+                    <td className="border border-gray-300 p-2">10,861,934</td>
+                    <td className="border border-gray-300 p-2">9,707,011</td>
+                    <td className="border border-gray-300 p-2">12</td>
+                  </tr>
 
-                {/* Less: Operating Expenses */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 font-semibold">
-                    Less: Operating Expenses
-                  </td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                </tr>
+                  {/* Earnings per Share */}
+                  <tr>
+                    <td className="p-2 pl-4">Earnings per Share:</td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                  </tr>
+                  <tr>
+                    <td className="p-2 pl-8">Basic/Diluted (Rs.)</td>
+                    <td className="border border-gray-300 p-2">2.11.1</td>
+                    <td className="border border-gray-300 p-2">382</td>
+                    <td className="border border-gray-300 p-2">19.50</td>
+                    <td className="border border-gray-300 p-2">17.26</td>
+                    <td className="border border-gray-300 p-2">13</td>
+                    <td className="border border-gray-300 p-2">19.60</td>
+                    <td className="border border-gray-300 p-2">17.53</td>
+                    <td className="border border-gray-300 p-2">12</td>
+                  </tr>
 
-                {/* Personnel Expenses */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 pl-8">Personnel Expenses</td>
-                  <td className="py-3 px-4">2.6</td>
-                  <td className="py-3 px-4">377</td>
-                  <td className="py-3 px-4">
-                    <div>5,146,257</div>
-                    <div>4,376,475</div>
-                    <div>18</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>5,267,903</div>
-                    <div>4,503,482</div>
-                    <div>17</div>
-                  </td>
-                </tr>
-
-                {/* Depreciation */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 pl-8">
-                    Depreciation of Property, Plant and Equipment
-                  </td>
-                  <td className="py-3 px-4">2.7.1</td>
-                  <td className="py-3 px-4">378</td>
-                  <td className="py-3 px-4">
-                    <div>979,953</div>
-                    <div>866,348</div>
-                    <div>13</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>987,173</div>
-                    <div>882,572</div>
-                    <div>12</div>
-                  </td>
-                </tr>
-
-                {/* Amortisation */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 pl-8">
-                    Amortisation of Intangible Assets
-                  </td>
-                  <td className="py-3 px-4">2.7.2</td>
-                  <td className="py-3 px-4">378</td>
-                  <td className="py-3 px-4">
-                    <div>13,128</div>
-                    <div>8,414</div>
-                    <div>56</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>14,355</div>
-                    <div>11,189</div>
-                    <div>28</div>
-                  </td>
-                </tr>
-
-                {/* Other Operating Expenses */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 pl-8">Other Operating Expenses</td>
-                  <td className="py-3 px-4">2.8</td>
-                  <td className="py-3 px-4">379</td>
-                  <td className="py-3 px-4">
-                    <div>3,649,089</div>
-                    <div>3,418,294</div>
-                    <div>7</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>3,768,235</div>
-                    <div>3,543,136</div>
-                    <div>6</div>
-                  </td>
-                </tr>
-
-                {/* Total Operating Expenses */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 font-semibold">
-                    Total Operating Expenses
-                  </td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4">
-                    <div>9,788,427</div>
-                    <div>8,669,531</div>
-                    <div>13</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>10,037,666</div>
-                    <div>8,940,379</div>
-                    <div>12</div>
-                  </td>
-                </tr>
-
-                {/* Operating Profit before Tax */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 font-semibold">
-                    Operating Profit before Tax on Financial Services
-                  </td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4">
-                    <div>20,511,383</div>
-                    <div>18,807,829</div>
-                    <div>9</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>20,595,918</div>
-                    <div>18,964,668</div>
-                    <div>9</div>
-                  </td>
-                </tr>
-
-                {/* Less: Tax on Financial Services */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 font-semibold">
-                    Less: Tax on Financial Services
-                  </td>
-                  <td className="py-3 px-4">2.9</td>
-                  <td className="py-3 px-4">379</td>
-                  <td className="py-3 px-4">
-                    <div>4,169,710</div>
-                    <div>3,627,622</div>
-                    <div>15</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>4,183,241</div>
-                    <div>3,630,243</div>
-                    <div>15</div>
-                  </td>
-                </tr>
-
-                {/* Profit before Taxation */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 font-semibold">
-                    Profit before Taxation
-                  </td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4">
-                    <div>16,341,673</div>
-                    <div>15,180,207</div>
-                    <div>8</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>16,412,677</div>
-                    <div>15,334,425</div>
-                    <div>7</div>
-                  </td>
-                </tr>
-
-                {/* Less: Income Tax Expense */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 font-semibold">
-                    Less: Income Tax Expense
-                  </td>
-                  <td className="py-3 px-4">2.10.1 (a)</td>
-                  <td className="py-3 px-4">380</td>
-                  <td className="py-3 px-4">
-                    <div>5,536,039</div>
-                    <div>5,616,569</div>
-                    <div>(1)</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>5,550,743</div>
-                    <div>5,627,414</div>
-                    <div>(1)</div>
-                  </td>
-                </tr>
-
-                {/* Profit for the Year */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 font-semibold">
-                    Profit for the Year
-                  </td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4">
-                    <div>10,805,634</div>
-                    <div>9,563,638</div>
-                    <div>13</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>10,861,934</div>
-                    <div>9,707,011</div>
-                    <div>12</div>
-                  </td>
-                </tr>
-
-                {/* Profit Attributable To */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 pl-8">
-                    Profit Attributable to: Equity Holders of the Company
-                  </td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4">
-                    <div>10,805,634</div>
-                    <div>9,563,638</div>
-                    <div>13</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>10,860,002</div>
-                    <div>9,713,917</div>
-                    <div>12</div>
-                  </td>
-                </tr>
-
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 pl-8">Non-Controlling Interest</td>
-                  <td className="py-3 px-4">2.37</td>
-                  <td className="py-3 px-4">444</td>
-                  <td className="py-3 px-4">
-                    <div>-</div>
-                    <div>-</div>
-                    <div>-</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>1,932</div>
-                    <div>(6,906)</div>
-                    <div>&gt;100</div>
-                  </td>
-                </tr>
-
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 font-semibold">
-                    Profit for the Year
-                  </td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4">
-                    <div>10,805,634</div>
-                    <div>9,563,638</div>
-                    <div>13</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>10,861,934</div>
-                    <div>9,707,011</div>
-                    <div>12</div>
-                  </td>
-                </tr>
-
-                {/* Earnings per Share */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 font-semibold">
-                    Earnings per Share: Basic/Diluted (Rs.)
-                  </td>
-                  <td className="py-3 px-4">2.11.1</td>
-                  <td className="py-3 px-4">382</td>
-                  <td className="py-3 px-4">
-                    <div>19.50</div>
-                    <div>17.26</div>
-                    <div>13</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>19.60</div>
-                    <div>17.53</div>
-                    <div>12</div>
-                  </td>
-                </tr>
-
-                {/* Dividend per Share */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 font-semibold">
-                    Dividend per Share (Rs.)
-                  </td>
-                  <td className="py-3 px-4">2.12</td>
-                  <td className="py-3 px-4">382</td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                </tr>
-
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 pl-8">
-                    Dividend per Share : Gross (Rs.)
-                  </td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4">
-                    <div>6.50*</div>
-                    <div>5.75</div>
-                    <div>13</div>
-                  </td>
-                  <td className="py-3 px-4"></td>
-                </tr>
-
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 pl-8">
-                    Dividend per Share : Net (Rs.)
-                  </td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4">
-                    <div>5.53*</div>
-                    <div>4.89</div>
-                    <div>13</div>
-                  </td>
-                  <td className="py-3 px-4"></td>
-                </tr>
-              </tbody>
-            </table>
+                  {/* Dividend per Share */}
+                  <tr>
+                    <td className="p-2 pl-4">Dividend per Share (Rs.)</td>
+                    <td className="border border-gray-300 p-2">2.12</td>
+                    <td className="border border-gray-300 p-2">382</td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                  </tr>
+                  <tr>
+                    <td className="p-2 pl-8">
+                      Dividend per Share : Gross (Rs.)
+                    </td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2">6.50*</td>
+                    <td className="border border-gray-300 p-2">5.75</td>
+                    <td className="border border-gray-300 p-2">13</td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                  </tr>
+                  <tr>
+                    <td className="p-2 pl-8">Dividend per Share : Net (Rs.)</td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2">5.53*</td>
+                    <td className="border border-gray-300 p-2">4.89</td>
+                    <td className="border border-gray-300 p-2">13</td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                    <td className="border border-gray-300 p-2"></td>
+                  </tr>
+                  {/* Add all other rows following the same pattern */}
+                </tbody>
+              </table>
+              <div className="mt-2 text-sm italic">
+                *Dividend per share is calculated based on the interim dividend
+                paid and the proposed final dividend which is to be approved at
+                the Annual General Meeting.
+              </div>
+              <div className="mt-1 text-sm">
+                Accounting Policies and Notes from pages 363 to 478 form an
+                integral part of these Financial Statements.
+              </div>
+            </div>
           </div>
-
-          <div className="bg-cardGreen p-4 rounded-lg mt-4">
-            <p className="text-sm italic">
-              *Dividend per share is calculated based on the interim dividend
-              paid and the proposed final dividend which is to be approved at
-              the Annual General Meeting.
-            </p>
-            <p className="mt-2">
-              Accounting Policies and Notes from pages 363 to 478 form an
-              integral part of these Financial Statements.
-            </p>
-          </div>
-        </div>
-
-        {/* Comprehensive Income Statement */}
-        <div>
-          <h2 className="text-2xl font-semibold mb-4 border-b border-[#F3A847] pb-1">
-            Statement of Profit or Loss and Comprehensive Income
-          </h2>
-
-          <div className="overflow-x-auto">
-            <table className="min-w-full bg-cardGreen rounded-lg">
-              <thead>
-                <tr className="border-b border-[#F3A847]">
-                  <th className="text-left py-3 px-4"></th>
-                  <th className="text-left py-3 px-4">Note</th>
-                  <th className="text-left py-3 px-4">Page No.</th>
-                  <th className="text-left py-3 px-4">
-                    <div>Company</div>
-                    <div>2025 Rs. '000</div>
-                    <div>2024 Rs. '000</div>
-                    <div>Change %</div>
-                  </th>
-                  <th className="text-left py-3 px-4">
-                    <div>Group</div>
-                    <div>2025 Rs. '000</div>
-                    <div>2024 Rs. '000</div>
-                    <div>Change %</div>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {/* Profit for the Year */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 font-semibold">
-                    Profit for the Year
-                  </td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4">
-                    <div>10,805,634</div>
-                    <div>9,563,638</div>
-                    <div>13</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>10,861,934</div>
-                    <div>9,707,011</div>
-                    <div>12</div>
-                  </td>
-                </tr>
-
-                {/* Other Comprehensive Income */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 font-semibold">
-                    Other Comprehensive Income that will be Reclassified to
-                    Income Statement
-                  </td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                </tr>
-
-                {/* Gains/(Losses) */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 pl-8">
-                    Gains/(Losses) from Translating the Financial Statements of
-                    the Foreign Operations
-                  </td>
-                  <td className="py-3 px-4">2,35.3</td>
-                  <td className="py-3 px-4">443</td>
-                  <td className="py-3 px-4">
-                    <div>-</div>
-                    <div>-</div>
-                    <div>-</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>(13,210)</div>
-                    <div>(73,048)</div>
-                    <div>(82)</div>
-                  </td>
-                </tr>
-
-                {/* Deferred Tax */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 pl-8">
-                    Less: Deferred Tax Charge/(Reversal) on above Items
-                  </td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4">
-                    <div>-</div>
-                    <div>-</div>
-                    <div>-</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>-</div>
-                    <div>-</div>
-                    <div>-</div>
-                  </td>
-                </tr>
-
-                {/* Net Other Comprehensive Income */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 pl-8">
-                    Net Other Comprehensive Income that will be Reclassified to
-                    Income Statement
-                  </td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4">
-                    <div>-</div>
-                    <div>-</div>
-                    <div>-</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>(13,210)</div>
-                    <div>(73,048)</div>
-                    <div>(82)</div>
-                  </td>
-                </tr>
-
-                {/* Other Comprehensive Income that will never be reclassified */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 font-semibold">
-                    Other Comprehensive Income that will never be Reclassified
-                    to Income Statement
-                  </td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                </tr>
-
-                {/* Net Gains/(Losses) */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 pl-8">
-                    Net Gains/(Losses) on Investment in Equity Instruments -
-                    Fair Value Through Other Comprehensive Income
-                  </td>
-                  <td className="py-3 px-4">2,35.2</td>
-                  <td className="py-3 px-4">443</td>
-                  <td className="py-3 px-4">
-                    <div>8,649</div>
-                    <div>1,199</div>
-                    <div>&gt;100</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>8,649</div>
-                    <div>1,199</div>
-                    <div>&gt;100</div>
-                  </td>
-                </tr>
-
-                {/* Actuarial Gains/(Losses) */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 pl-8">
-                    Actuarial Gains/(Losses) on Defined Benefit Plans
-                  </td>
-                  <td className="py-3 px-4">2,33.3</td>
-                  <td className="py-3 px-4">441</td>
-                  <td className="py-3 px-4">
-                    <div>16,392</div>
-                    <div>(53,706)</div>
-                    <div>&gt;100</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>16,392</div>
-                    <div>(54,333)</div>
-                    <div>&gt;100</div>
-                  </td>
-                </tr>
-
-                {/* Deferred Tax Charge */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 pl-8">
-                    Less: Deferred Tax Charge/(Reversal) on Actuarial Gains and
-                    Losses
-                  </td>
-                  <td className="py-3 px-4">2,10.1 (b)</td>
-                  <td className="py-3 px-4">380</td>
-                  <td className="py-3 px-4">
-                    <div>4,917</div>
-                    <div>(16,112)</div>
-                    <div>&gt;100</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>4,917</div>
-                    <div>(16,112)</div>
-                    <div>&gt;100</div>
-                  </td>
-                </tr>
-
-                {/* Net Actuarial Gains/(Losses) */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 pl-8">
-                    Net Actuarial Gains/(Losses) on Defined Benefit Plans
-                  </td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4">
-                    <div>11,475</div>
-                    <div>(37,594)</div>
-                    <div>&gt;100</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>11,475</div>
-                    <div>(38,221)</div>
-                    <div>&gt;100</div>
-                  </td>
-                </tr>
-
-                {/* Net Other Comprehensive Income */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 pl-8">
-                    Net Other Comprehensive Income that will never be
-                    Reclassified to Income Statement
-                  </td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4">
-                    <div>20,124</div>
-                    <div>(36,395)</div>
-                    <div>&gt;100</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>20,124</div>
-                    <div>(37,022)</div>
-                    <div>&gt;100</div>
-                  </td>
-                </tr>
-
-                {/* Other Comprehensive Income for the Year */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 font-semibold">
-                    Other Comprehensive Income for the Year, Net of Tax
-                  </td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4">
-                    <div>20,124</div>
-                    <div>(36,395)</div>
-                    <div>&gt;100</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>6,914</div>
-                    <div>(110,070)</div>
-                    <div>&gt;100</div>
-                  </td>
-                </tr>
-
-                {/* Total Comprehensive Income */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 font-semibold">
-                    Total Comprehensive Income for the Year, Net of Tax
-                  </td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4">
-                    <div>10,825,758</div>
-                    <div>9,527,243</div>
-                    <div>14</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>10,868,848</div>
-                    <div>9,596,941</div>
-                    <div>13</div>
-                  </td>
-                </tr>
-
-                {/* Attributable To */}
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 pl-8">Attributable to:</td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                </tr>
-
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 pl-12">
-                    Equity Holders of the Company
-                  </td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4">
-                    <div>10,825,758</div>
-                    <div>9,527,243</div>
-                    <div>14</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>10,866,916</div>
-                    <div>9,604,068</div>
-                    <div>13</div>
-                  </td>
-                </tr>
-
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 pl-12">Non-Controlling Interest</td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4">
-                    <div>-</div>
-                    <div>-</div>
-                    <div>-</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>1,932</div>
-                    <div>(7,127)</div>
-                    <div>&gt;100</div>
-                  </td>
-                </tr>
-
-                <tr className="border-b border-gray-200">
-                  <td className="py-3 px-4 font-semibold">
-                    Total Comprehensive Income for the Year, Net of Tax
-                  </td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4"></td>
-                  <td className="py-3 px-4">
-                    <div>10,825,758</div>
-                    <div>9,527,243</div>
-                    <div>14</div>
-                  </td>
-                  <td className="py-3 px-4">
-                    <div>10,868,848</div>
-                    <div>9,596,941</div>
-                    <div>13</div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="bg-cardGreen p-4 rounded-lg mt-4">
-            <p>
-              Accounting Policies and Notes from pages 363 to 478 form an
-              integral part of these Financial Statements.
-            </p>
-          </div>
-        </div>
-
-        {/* Page Reference */}
-        <div className="bg-cardGreen p-4 rounded-lg text-center">
-          <p>LB Finance PLC Integrated Annual Report 2024/25 356</p>
         </div>
       </div>
     </div>

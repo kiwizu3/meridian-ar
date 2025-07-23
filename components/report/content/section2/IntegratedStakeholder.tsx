@@ -7,6 +7,27 @@ export default function IntegratedStakeholder() {
       <h1 className="text-4xl font-bold mb-4">STAKEHOLDER ENGAGEMENT</h1>
 
       <div className="space-y-8">
+        <div className="">
+          <Image
+            src="/images/report/content/Six-Step-approach-to-stakeholder-engagement.png"
+            alt="Six Step approach to stakeholder engagement"
+            width={1000}
+            height={600}
+          />
+        </div>
+        <div>
+          <h2 className="text-xl font-semibold mb-3 border-b border-[#F3A847] pb-1">
+            Our Stakeholder Engagement Initiatives Seek to:
+          </h2>
+          <ul className="list-disc pl-6">
+            <li>Proactively unlock growth</li>
+            <li>Respond to stakeholder issues</li>
+            <li>Demonstrate good governance</li>
+            <li>
+              Display leadership and foresight as a good corporate citizen
+            </li>
+          </ul>
+        </div>
         {/* Engagement Objectives & Stakeholder Identification */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Engagement Objectives */}

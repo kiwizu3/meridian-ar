@@ -7,7 +7,17 @@ export default function IndependenceAssurance() {
       <h1 className="text-4xl font-bold mb-4">INDEPENDENCE ASSURANCE</h1>
 
       <div className="bg-greeen2 p-3 rounded-lg mb-8">
-        <div className="bg-cardGreen p-4 rounded-lg mb-6">
+        <div className="text-right">
+          <p className="font-bold">Deloitte Partners</p>
+          <p>100 Colombo 2</p>
+          <p>Braybrooke Place</p>
+          <p>Sri Lanka</p>
+          <p className="mt-4">Tel: +94 11 771 9700</p>
+          <p>+94 11 771 9838</p>
+          <p>Fax: +94 11 230 7237</p>
+          <p>www.deloitte.com </p>
+        </div>
+        <div className="bg-cardGreen p-4 rounded-lg my-6">
           <h2 className="text-2xl font-semibold mb-4">
             INDEPENDENT ASSURANCE REPORT TO THE BOARD OF THE DIRECTORS OF LB
             FINANCE PLC
@@ -109,16 +119,7 @@ export default function IndependenceAssurance() {
               control, and the procedures performed in response to the assessed
               risks.
             </p>
-          </div>
-        </div>
-
-        {/* Procedures Performed */}
-        <div className="mb-6">
-          <h2 className="text-2xl font-semibold mb-4 border-b border-[#F3A847] pb-1">
-            PROCEDURES PERFORMED
-          </h2>
-          <div className="bg-cardGreen p-4 rounded-lg">
-            <p>
+            <p className="mt-4">
               The procedures we performed were based on our professional
               judgment and were included:
             </p>
@@ -210,11 +211,10 @@ export default function IndependenceAssurance() {
             </p>
           </div>
           <div className="mt-4 text-sm">
-            <p>Deloitte Partners</p>
-            <p>100 Colombo 2</p>
-            <p>Braybrooke Place</p>
-            <p>Sri Lanka</p>
-            <p>Tel: +94 11 771 97</p>
+            <p>
+              Regd. Office: P.O. Box 918, 100 Braybrooke Place, Colombo 02, Sri
+              Lanka. Reg. No.: w/4179
+            </p>
           </div>
         </div>
       </div>
