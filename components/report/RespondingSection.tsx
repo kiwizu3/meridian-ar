@@ -3,7 +3,7 @@
 import React, { useState, useCallback } from 'react';
 import Image from 'next/image';
 import LionPawCircle from './LionPawCircle';
-import DownloadPDFButton from './DownloadPDFButton';
+// import DownloadPDFButton from './DownloadPDFButton';
 import PopUpModel from './PopUpModel';
 
 // Import your content components
@@ -98,8 +98,27 @@ export default function RespondingSection() {
               ))}
 
               <div className="pl-8 py-5">
-                <DownloadPDFButton />
+                <a
+                  href="/images/report/pdf/responding_with_agility.pdf"
+                  download
+                >
+                  <button className="download-pdf-button">
+                    <span className="download-pdf-text">Download PDF</span>
+                    <span className="download-pdf-icon-wrapper">
+                      <span className="download-pdf-icon">
+                        <img
+                          src="/images/report/ant-design_file-pdf-filled.png"
+                          alt="PDF Icon"
+                        />
+                      </span>
+                    </span>
+                  </button>
+                </a>
               </div>
+
+              {/* <div className="pl-8 py-5">
+                <DownloadPDFButton />
+              </div> */}
             </div>
           </div>
         </div>
