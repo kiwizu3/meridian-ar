@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import DownloadPDF from '../../public/images/download-pdf-icon.svg';
+import DownloadPDF from '../../public/images/download-pdf-icon-yellow.svg';
 import SpeechText from '../SpeechText';
 
 export default function AssuranceReport({ dictionary }: any) {

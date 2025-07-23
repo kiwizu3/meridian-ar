@@ -7,9 +7,9 @@ import ReportingFrameworks from '@/components/sustainability/reportingFrameworks
 import ValueCreationModel from '@/components/sustainability/valueCreationModel';
 import { getDictionary } from '@/get-dictionary';
 import { Locale } from '@/i18n-config';
-import BottomComma from '@/public/images/bottom-comma.png';
+import BottomComma from '@/public/images/bottom-comma-green.png';
 import bgImage from '@/public/images/Clippath.png';
-import TopComma from '@/public/images/top-comma.png';
+import TopComma from '@/public/images/top-comma-green.png';
 import ProfileImage from '@/public/images/yanika_amarasekera.png';
 import ProfileImage2 from '@/public/images/niroshan_udage.png';
 import Image from 'next/image';
