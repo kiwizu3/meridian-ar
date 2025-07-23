@@ -1,9 +1,10 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function SustainabilityStrategy() {
   return (
     <div className="sustainability-strategy p-6 max-h-[70vh] overflow-y-auto pr-2 bg-themeGreen">
-      <h2 className="text-2xl font-bold mb-6">3. SUSTAINABILITY STRATEGY</h2>
+      <h2 className="text-2xl font-bold mb-6">SUSTAINABILITY STRATEGY</h2>
 
       <p className="mb-8 text-lg ">
         Sustainability is a core strategic focus at LB Finance, underpinning our
@@ -33,6 +34,14 @@ export default function SustainabilityStrategy() {
           <div className="uncg-tag bg-gray-100 text-[#467643] p-2 rounded inline-block text-sm">
             UNCG - Principle 8, 10
           </div>
+          <div className="my-3">
+            <Image
+              src="/images/report/content/picture1.png"
+              alt="UNCG - Principle 8, 10"
+              width={300}
+              height={100}
+            />
+          </div>
         </div>
 
         {/* Strategy 2 */}
@@ -51,6 +60,14 @@ export default function SustainabilityStrategy() {
           <div className="uncg-tag bg-gray-100 text-[#467643] p-2 rounded inline-block text-sm">
             UNCG - Principle 7, 8, 9
           </div>
+          <div className="my-3">
+            <Image
+              src="/images/report/content/picture2.png"
+              alt="UNCG - Principle 7, 8, 10"
+              width={300}
+              height={150}
+            />
+          </div>
         </div>
 
         {/* Strategy 3 */}
@@ -67,7 +84,15 @@ export default function SustainabilityStrategy() {
             contributing to a low-carbon, sustainable future.
           </p>
           <div className="uncg-tag bg-gray-100 text-[#467643] p-2 rounded inline-block text-sm">
-            UNCG - Principle 7, 8, 9
+            UNCG - Principle 1, 2, 3, 4, 5, 6
+          </div>
+          <div className="my-3">
+            <Image
+              src="/images/report/content/picture3.png"
+              alt="UNCG - Principle 1, 2, 3, 4, 5, 6"
+              width={450}
+              height={150}
+            />
           </div>
         </div>
 
@@ -86,6 +111,14 @@ export default function SustainabilityStrategy() {
           </p>
           <div className="uncg-tag bg-gray-100 p-2 rounded inline-block text-sm text-[#467643]">
             UNCG - Principle 6, 10
+          </div>
+          <div className="my-3">
+            <Image
+              src="/images/report/content/picture4.png"
+              alt="UNCG - Principle 6, 10"
+              width={450}
+              height={150}
+            />
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@ import AwardsAccolades from './content/section1/AwardsAccolades';
 import FinancialHighlights from './content/section1/FinancialHighlights';
 import SustainableCompetitiveAdvantage from './content/section1/SustainableCompetitiveAdvantage';
 import NonFinancialHighlights from './content/section1/NonFinancialHighlights';
-import StrategicJourney from './content/section1/StrategicJourney';
+import StrategicJourney from './content/section2/StrategicJourney';
 
 export default function ConqueringSection() {
   const [isOpen, setIsOpen] = useState(false);

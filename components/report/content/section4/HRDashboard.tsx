@@ -85,9 +85,12 @@ export default function HRDashboard() {
               Employee Composition by Gender
             </h2>
             <div className="bg-gray-200 p-4 rounded-lg h-64 flex items-center justify-center">
-              <p className="text-center">
-                Gender composition chart placeholder
-              </p>
+              <Image
+                src="/images/report/content/Employee Composition by Gender.png"
+                alt="Employee Composition by Gender"
+                width={260}
+                height={270}
+              />
             </div>
             <p className="text-center mt-2 text-sm">Female 47% | Male 53%</p>
           </div>
@@ -101,8 +104,9 @@ export default function HRDashboard() {
               <table className="min-w-full bg-white text-sm text-black">
                 <thead>
                   <tr className="bg-[#0A3D5F] text-white">
-                    <th className="py-2 px-4 text-left">Category</th>
-                    <th className="py-2 px-4 text-left">Promotions</th>
+                    <th></th>
+                    <th className="py-2 px-4 text-left">Male</th>
+                    <th className="py-2 px-4 text-left">Female</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -111,24 +115,28 @@ export default function HRDashboard() {
                       Senior Management
                     </td>
                     <td className="py-2 px-4 border-b border-gray-200">12</td>
+                    <td className="py-2 px-4 border-b border-gray-200"></td>
                   </tr>
                   <tr className="bg-white">
                     <td className="py-2 px-4 border-b border-gray-200">
                       Middle Management
                     </td>
                     <td className="py-2 px-4 border-b border-gray-200">154</td>
+                    <td className="py-2 px-4 border-b border-gray-200">21</td>
                   </tr>
                   <tr className="bg-[#f7f7f7]">
                     <td className="py-2 px-4 border-b border-gray-200">
                       Executive
                     </td>
                     <td className="py-2 px-4 border-b border-gray-200">380</td>
+                    <td className="py-2 px-4 border-b border-gray-200">573</td>
                   </tr>
                   <tr className="bg-white">
                     <td className="py-2 px-4 border-b border-gray-200">
                       Other
                     </td>
                     <td className="py-2 px-4 border-b border-gray-200">5</td>
+                    <td className="py-2 px-4 border-b border-gray-200"></td>
                   </tr>
                 </tbody>
               </table>
@@ -160,6 +168,42 @@ export default function HRDashboard() {
                   <td className="py-2 px-4 border-b border-gray-200">158</td>
                   <td className="py-2 px-4 border-b border-gray-200">4</td>
                 </tr>
+                <tr className="bg-[#f7f7f7]">
+                  <td className="py-2 px-4 border-b border-gray-200">
+                    Middle Management
+                  </td>
+                  <td className="py-2 px-4 border-b border-gray-200">
+                    6,579.0
+                  </td>
+                  <td className="py-2 px-4 border-b border-gray-200">1,118</td>
+                  <td className="py-2 px-4 border-b border-gray-200">6</td>
+                </tr>
+                <tr className="bg-[#f7f7f7]">
+                  <td className="py-2 px-4 border-b border-gray-200">
+                    Executive
+                  </td>
+                  <td className="py-2 px-4 border-b border-gray-200">
+                    12,780.00
+                  </td>
+                  <td className="py-2 px-4 border-b border-gray-200">2,681 </td>
+                  <td className="py-2 px-4 border-b border-gray-200">5</td>
+                </tr>
+                <tr className="bg-[#f7f7f7]">
+                  <td className="py-2 px-4 border-b border-gray-200">
+                    Clerical
+                  </td>
+                  <td className="py-2 px-4 border-b border-gray-200">
+                    33,848.0
+                  </td>
+                  <td className="py-2 px-4 border-b border-gray-200">5,398</td>
+                  <td className="py-2 px-4 border-b border-gray-200">6</td>
+                </tr>
+                <tr className="bg-[#f7f7f7]">
+                  <td className="py-2 px-4 border-b border-gray-200">Minor</td>
+                  <td className="py-2 px-4 border-b border-gray-200">21.0</td>
+                  <td className="py-2 px-4 border-b border-gray-200">7</td>
+                  <td className="py-2 px-4 border-b border-gray-200">3</td>
+                </tr>
                 {/* Additional rows would go here */}
                 <tr className="bg-white">
                   <td className="py-2 px-4 border-b border-gray-200">Total</td>
@@ -184,9 +228,9 @@ export default function HRDashboard() {
             <table className="min-w-full bg-white text-sm text-black">
               <thead>
                 <tr className="bg-[#0A3D5F] text-white">
-                  <th className="py-2 px-4 text-left">Category</th>
-                  <th className="py-2 px-4 text-left">Programmes</th>
-                  <th className="py-2 px-4 text-left">Participants</th>
+                  <th className="py-2 px-4 text-left"></th>
+                  <th className="py-2 px-4 text-left">Male</th>
+                  <th className="py-2 px-4 text-left">Female</th>
                   <th className="py-2 px-4 text-left">Total Hours</th>
                 </tr>
               </thead>
@@ -198,6 +242,36 @@ export default function HRDashboard() {
                   <td className="py-2 px-4 border-b border-gray-200">144</td>
                   <td className="py-2 px-4 border-b border-gray-200">14</td>
                   <td className="py-2 px-4 border-b border-gray-200">617</td>
+                </tr>
+                <tr className="bg-[#f7f7f7]">
+                  <td className="py-2 px-4 border-b border-gray-200">
+                    Middle Management
+                  </td>
+                  <td className="py-2 px-4 border-b border-gray-200">909</td>
+                  <td className="py-2 px-4 border-b border-gray-200">209</td>
+                  <td className="py-2 px-4 border-b border-gray-200">6,579</td>
+                </tr>
+                <tr className="bg-[#f7f7f7]">
+                  <td className="py-2 px-4 border-b border-gray-200">
+                    Executive
+                  </td>
+                  <td className="py-2 px-4 border-b border-gray-200">1,187</td>
+                  <td className="py-2 px-4 border-b border-gray-200">1,494</td>
+                  <td className="py-2 px-4 border-b border-gray-200">2,614</td>
+                </tr>
+                <tr className="bg-[#f7f7f7]">
+                  <td className="py-2 px-4 border-b border-gray-200">
+                    Clerical
+                  </td>
+                  <td className="py-2 px-4 border-b border-gray-200">2,784</td>
+                  <td className="py-2 px-4 border-b border-gray-200">2,614</td>
+                  <td className="py-2 px-4 border-b border-gray-200">33,848</td>
+                </tr>
+                <tr className="bg-[#f7f7f7]">
+                  <td className="py-2 px-4 border-b border-gray-200">Minor</td>
+                  <td className="py-2 px-4 border-b border-gray-200">7</td>
+                  <td className="py-2 px-4 border-b border-gray-200">0</td>
+                  <td className="py-2 px-4 border-b border-gray-200">21</td>
                 </tr>
                 {/* Additional rows would go here */}
               </tbody>
@@ -213,11 +287,16 @@ export default function HRDashboard() {
               Service analysis of employees by category
             </h2>
             <div className="bg-gray-200 p-4 rounded-lg h-64 flex items-center justify-center">
-              <p className="text-center">Service analysis chart placeholder</p>
+              <Image
+                src="/images/report/content/Service analysis of employees by category.png"
+                alt="Service analysis of employees by category"
+                width={260}
+                height={270}
+              />
             </div>
             <p className="text-center mt-2 text-sm">
               5 years and below 78% | 6-10 years 12% | 11-15 years 7% | 16-20
-              years 1% | Above 20 years 2%
+              years 2% | Above 20 years 1%
             </p>
           </div>
 
@@ -228,9 +307,17 @@ export default function HRDashboard() {
               age group
             </h2>
             <div className="bg-gray-200 p-4 rounded-lg h-64 flex items-center justify-center">
-              <p className="text-center">Age composition chart placeholder</p>
+              <Image
+                src="/images/report/content/Composition of the Board and employees by.png"
+                alt="Composition of the Board and employees by"
+                width={260}
+                height={270}
+              />
             </div>
-            <p className="text-center mt-2 text-sm">Over 50 years: 83 total</p>
+            <p className="text-center mt-2 text-sm">
+              Over 50 years: 83 total | 30 - 50 years:1,190 | Below 30
+              years:3,134
+            </p>
           </div>
         </div>
       </div>

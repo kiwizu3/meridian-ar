@@ -124,10 +124,6 @@ export default function FinancialCalendar() {
               </div>
             </div>
           </div>
-          <p className="mt-4 text-sm italic">
-            * Subject to confirmation by Shareholders at the Annual General
-            Meeting.
-          </p>
         </div>
 
         {/* CSE Submission Schedule */}
@@ -243,11 +239,6 @@ export default function FinancialCalendar() {
               </tbody>
             </table>
           </div>
-        </div>
-
-        {/* Page Reference */}
-        <div className="bg-cardGreen p-4 rounded-lg text-center">
-          <p>350 LB Finance PLC Integrated Annual Report 2024/25</p>
         </div>
       </div>
     </div>

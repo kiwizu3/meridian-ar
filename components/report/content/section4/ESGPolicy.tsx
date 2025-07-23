@@ -9,8 +9,8 @@ export default function ESGPolicy() {
         {/* Image 1 */}
         <div className="rounded-lg py-9">
           <Image
-            src="/images/report/content/greenhouse-gas-assurance-report-01.png"
-            alt="Greenhouse gas assurance report page 1"
+            src="/images/report/content/ESG-policy.png"
+            alt="ESG-policy"
             width={600}
             height={400}
             className="w-full h-auto object-cover"

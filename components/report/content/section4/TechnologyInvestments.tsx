@@ -4,7 +4,7 @@ export default function TechnologyInvestments() {
   return (
     <div className="technology-strategy p-6 bg-themeGreen max-h-[70vh] overflow-y-auto">
       {/* Technology Investments Section */}
-      <h1 className="text-4xl font-bold">Our Brand Performance - 2024</h1>
+      <h1 className="text-4xl font-bold">OUR BRAND PERFORMANCE - 2024</h1>
       <div>
         <h2 className="text-xl font-semibold mb-4">
           LEVERAGING OUR TECHNOLOGY INVESTMENTS
@@ -12,7 +12,7 @@ export default function TechnologyInvestments() {
         <div className="overflow-x-auto">
           <table className="min-w-full border border-gray-300">
             <thead>
-              <tr className="bg-gray-100">
+              <tr>
                 <th className="border border-gray-300 p-3 text-left">
                   Asset Name/Initiative
                 </th>
@@ -34,7 +34,7 @@ export default function TechnologyInvestments() {
                   In-house software
                 </td>
               </tr>
-              <tr className="bg-gray-50">
+              <tr>
                 <td className="border border-gray-300 p-3">
                   LB CIM Business Loan top-up
                 </td>
@@ -56,7 +56,7 @@ export default function TechnologyInvestments() {
                   In-house software
                 </td>
               </tr>
-              <tr className="bg-gray-50">
+              <tr>
                 <td className="border border-gray-300 p-3">
                   Eclipse RMV module
                 </td>
@@ -79,7 +79,7 @@ export default function TechnologyInvestments() {
                   In-house software
                 </td>
               </tr>
-              <tr className="bg-gray-50">
+              <tr>
                 <td className="border border-gray-300 p-3">
                   Money exchange solution
                 </td>
@@ -103,7 +103,7 @@ export default function TechnologyInvestments() {
                   In-house software
                 </td>
               </tr>
-              <tr className="bg-gray-50">
+              <tr>
                 <td className="border border-gray-300 p-3">
                   Snowflake cloud-based solution
                 </td>
@@ -127,7 +127,7 @@ export default function TechnologyInvestments() {
                   Licensed Software
                 </td>
               </tr>
-              <tr className="bg-gray-50">
+              <tr>
                 <td className="border border-gray-300 p-3">
                   Development of customer onboarding solution
                 </td>

@@ -10,7 +10,7 @@ export default function MaterialityDetermination() {
         {/* Integrated Dynamic and Double Materiality Section */}
         <div>
           <h2 className="text-2xl font-semibold mb-4 border-b border-[#F3A847] pb-1">
-            1. INTEGRATED DYNAMIC AND DOUBLE MATERIALITY
+            INTEGRATED DYNAMIC AND DOUBLE MATERIALITY
           </h2>
           <p className="mb-4">
             Our process for determining Material Matters adheres to a double
@@ -30,7 +30,7 @@ export default function MaterialityDetermination() {
         {/* Materiality Determination Process Section */}
         <div>
           <h2 className="text-2xl font-semibold mb-4 border-b border-[#F3A847] pb-1">
-            1.1 Materiality Determination Process
+            Materiality Determination Process
           </h2>
 
           {/* Process Steps - First Row */}
@@ -88,47 +88,6 @@ export default function MaterialityDetermination() {
               <h3 className="font-bold mb-2">Reporting</h3>
               <div className="text-sm whitespace-pre-line">
                 • Report material matters subject to annual evaluation
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Double Materiality Section */}
-        <div>
-          <h2 className="text-2xl font-semibold mb-4 border-b border-[#F3A847] pb-1">
-            1.2 We Recognise a Matter as Double Material If:
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-cardGreen p-4 rounded-lg">
-              <h3 className="font-bold mb-2">Double Materiality</h3>
-              <div className="text-sm whitespace-pre-line">
-                We assess double materiality through: • Aspects material to
-                investors or other financial capital providers (financial
-                materiality) • Matters affecting the environment, society, and
-                the economy (impact materiality)
-              </div>
-            </div>
-
-            <div className="bg-cardGreen p-4 rounded-lg">
-              <h3 className="font-bold mb-2">Purpose</h3>
-              <div className="text-sm whitespace-pre-line">
-                Our material matters: • Serve as key drivers of value that shape
-                our strategic decision-making • Impact the evaluation of our
-                capacity to generate enduring enterprise value by our financial
-                capital providers • Underline our commitment to generate
-                sustained shared value for all stakeholders
-              </div>
-            </div>
-
-            <div className="bg-cardGreen p-4 rounded-lg">
-              <h3 className="font-bold mb-2">Process</h3>
-              <div className="text-sm whitespace-pre-line">
-                Our material matters: • Serve as key drivers of value that shape
-                our strategic decision-making • Impact the evaluation of our
-                capacity to generate enduring enterprise value by our financial
-                capital providers • Underline our commitment to generate
-                sustained shared value for all stakeholders
               </div>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function BusinessReview() {
   return (
@@ -46,7 +47,7 @@ export default function BusinessReview() {
                 our long-term, medium-term, and short-term objectives.
               </p>
               <div className="overflow-x-auto">
-                <table className="min-w-full bg-white text-sm">
+                <table className="min-w-full text-sm">
                   <thead>
                     <tr className="bg-[#0A3D5F] text-white">
                       <th className="py-2 px-4 text-left">Category</th>
@@ -69,10 +70,7 @@ export default function BusinessReview() {
                       ['Mortgage Loans', '2,178', '2%', '647', '2%'],
                       ['Term Loans', '11,777', '6%', '1,776', '4%'],
                     ].map((row, i) => (
-                      <tr
-                        key={i}
-                        className={i % 2 === 0 ? 'bg-[#f7f7f7]' : 'bg-white'}
-                      >
+                      <tr key={i}>
                         {row.map((cell, j) => (
                           <td
                             key={j}
@@ -98,7 +96,7 @@ export default function BusinessReview() {
                 relationships through personalised services.
               </p>
               <div className="overflow-x-auto">
-                <table className="min-w-full bg-white text-sm">
+                <table className="min-w-full text-sm">
                   <thead>
                     <tr className="bg-[#0A3D5F] text-white">
                       <th className="py-2 px-4 text-left">Category</th>
@@ -118,10 +116,7 @@ export default function BusinessReview() {
                       ['Bank Borrowings', '42,417', '18%', '3,148', '19%'],
                       ['Equity', '51,266', '22%', '-', '-'],
                     ].map((row, i) => (
-                      <tr
-                        key={i}
-                        className={i % 2 === 0 ? 'bg-[#f7f7f7]' : 'bg-white'}
-                      >
+                      <tr key={i}>
                         {row.map((cell, j) => (
                           <td
                             key={j}
@@ -149,7 +144,7 @@ export default function BusinessReview() {
                 (Western Union) to meet our customers' needs comprehensively.
               </p>
               <div className="overflow-x-auto">
-                <table className="min-w-full bg-white text-sm">
+                <table className="min-w-full text-sm">
                   <thead>
                     <tr className="bg-[#0A3D5F] text-white">
                       <th className="py-2 px-4 text-left">Category</th>
@@ -177,10 +172,7 @@ export default function BusinessReview() {
                       ],
                       ['Bill Payments', '928,979', '1,330', '22%', '13'],
                     ].map((row, i) => (
-                      <tr
-                        key={i}
-                        className={i % 2 === 0 ? 'bg-[#f7f7f7]' : 'bg-white'}
-                      >
+                      <tr key={i}>
                         {row.map((cell, j) => (
                           <td
                             key={j}
@@ -246,13 +238,17 @@ export default function BusinessReview() {
 
         {/* Digital Support and Future Focus Section */}
         <div>
-          <h2 className="text-2xl font-semibold mb-4 border-b border-[#F3A847] pb-1">
-            DIGITAL TRANSFORMATION
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 bg-cardGreen mb-4">
+            <div className="flex items-center justify-center">
+              <Image
+                src="/images/report/content/Loans and Receivables.png"
+                alt="Loans and Receivables"
+                width={260}
+                height={270}
+              />
+            </div>
             {/* Digital Support */}
-            <div className="bg-cardGreen p-4 rounded-lg">
+            <div className=" p-4 rounded-lg">
               <h3 className="font-bold mb-2">DIGITAL SUPPORT</h3>
               <p className="text-sm">
                 The Company improved process efficiency and customer experience
@@ -266,13 +262,75 @@ export default function BusinessReview() {
             </div>
 
             {/* Future Focus */}
-            <div className="bg-cardGreen p-4 rounded-lg">
+            <div className=" p-4 rounded-lg">
               <h3 className="font-bold mb-2">FUTURE FOCUS</h3>
               <p className="text-sm">
                 We are shaping the future of lending through smart, secure, and
                 seamless solutions. By harnessing technology and data-driven
                 insights, we're making borrowing faster, more transparent, and
                 tailored to the evolving needs of individuals and businesses.
+              </p>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 bg-cardGreen mb-4 p-4">
+            <div className="flex items-center justify-center">
+              <Image
+                src="/images/report/content/Customer Deposits.png"
+                alt="Customer Deposits"
+                width={260}
+                height={270}
+              />
+            </div>
+            {/* Digital Support */}
+            <div className=" p-4 rounded-lg">
+              <h3 className="font-bold mb-2">DIGITAL SUPPORT</h3>
+              <p className="text-sm">
+                AI-powered credit facilities: Leveraging artificial intelligence
+                to assess customer profiles and deliver personalised credit
+                solutions.
+              </p>
+            </div>
+
+            {/* Future Focus */}
+            <div className=" p-4 rounded-lg">
+              <h3 className="font-bold mb-2">FUTURE FOCUS</h3>
+              <p className="text-sm">
+                We are committed to revolutionising access to capital by
+                delivering fast, flexible, and tech-driven funding solutions.
+                Our focus is on empowering businesses of tomorrow— leveraging
+                data, automation, and personalised financial products to support
+                growth in an ever-evolving economy.
+              </p>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 bg-cardGreen mb-4 p-4">
+            <div className="flex items-center justify-center">
+              <Image
+                src="/images/report/content/Foreign Exchange Transactions.png"
+                alt="Foreign Exchange Transactions"
+                width={260}
+                height={270}
+              />
+            </div>
+            {/* Digital Support */}
+            <div className=" p-4 rounded-lg">
+              <h3 className="font-bold mb-2">DIGITAL SUPPORT</h3>
+              <p className="text-sm">
+                Partnership with leading telco providers enables us to offer
+                exclusive customer benefits. With a user-friendly UI/UX
+                developed for bill payment options, a significant portion of
+                total bill payments are now processed through our digital
+                platforms.
+              </p>
+            </div>
+
+            {/* Future Focus */}
+            <div className=" p-4 rounded-lg">
+              <h3 className="font-bold mb-2">FUTURE FOCUS</h3>
+              <p className="text-sm">
+                We aim to enhance customer convenience by digitising and
+                streamlining bill payments, Western Union, and money exchange
+                services for faster, secure, and accessible financial solutions.
               </p>
             </div>
           </div>

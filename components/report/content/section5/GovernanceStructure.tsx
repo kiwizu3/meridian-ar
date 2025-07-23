@@ -9,8 +9,8 @@ export default function GreenhouseGasVerification() {
         {/* Image 1 */}
         <div className="rounded-lg py-9">
           <Image
-            src="/images/report/content/greenhouse-gas-assurance-report-01.png"
-            alt="Greenhouse gas assurance report page 1"
+            src="/images/report/content/governance-structure.png"
+            alt="Governance Structure"
             width={600}
             height={400}
             className="w-full h-auto object-cover"
