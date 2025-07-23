@@ -1,9 +1,9 @@
 'use client';
 
 import Image from 'next/image';
-import Icon2 from '../../public/images/annual-results-html-icon.svg';
-import Icon1 from '../../public/images/annual-results-pdf-icon.svg';
-import Icon3 from '../../public/images/annual-results-search-icon.svg';
+import Icon2 from '../../public/images/annual-results-html-icon-new.svg';
+import Icon1 from '../../public/images/annual-results-pdf-icon-new.svg';
+import Icon3 from '../../public/images/annual-results-search-icon-new.svg';
 import SpeechText from '../SpeechText';
 
 export default function AnnualResults({ dictionary }: any) {
