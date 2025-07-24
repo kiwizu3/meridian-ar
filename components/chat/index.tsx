@@ -38,6 +38,7 @@ export default function Chat() {
   const [openModalId, setOpenModalId] = useState<string | null>(null); // Track which modal is open
 
 
+
   // Toggle play state
   const togglePlay = useCallback((id: string) => {
     setPlayingId((prev) => (prev === id ? null : id));
@@ -72,7 +73,7 @@ export default function Chat() {
 
     const startSession = async () => {
       try {
-        const response = await fetch("http://75.119.134.134:3008/start_session", {
+        const response = await fetch(`${process.env.BASE_URL}/start_session`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -106,8 +107,8 @@ export default function Chat() {
         chatType: selectedOption,
         voice:
         selectedOption === 'Info'
-            ? `http://75.119.134.134:3008/chat/generate_audio/${sessionId}`
-            : `http://75.119.134.134:3008/chart/generate_audio/${sessionId}`,
+            ? `${process.env.BASE_URL}/chat/generate_audio/${sessionId}`
+            : `${process.env.BASE_URL}/chart/generate_audio/${sessionId}`,
 
       }, // Add chatType
     ]);
@@ -123,7 +124,7 @@ export default function Chat() {
   ) => {
     try {
       if (selectedOption === 'Info') {
-        const response = await fetch("http://75.119.134.134:3008/chat", {
+        const response = await fetch(`${process.env.BASE_URL}/chat`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -146,7 +147,7 @@ export default function Chat() {
           ),
         );
       } else {
-        const response = await fetch("http://75.119.134.134:3008/chart", {
+        const response = await fetch(`${process.env.BASE_URL}/chart`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -425,7 +426,7 @@ export default function Chat() {
                         <div>
                           {index === messages?.length - 1 && (
                             <CustomAudioPlayer
-                              src={`http://75.119.134.134:3008/chart/generate_audio/${sessionId}`}
+                              src={`${process.env.BASE_URL}/chart/generate_audio/${sessionId}`}
                               isPlaying={playingId === item.id} // Check if this audio is playing
                               togglePlay={() => togglePlay(item.id)} // Toggle this audio's play state
                             />
