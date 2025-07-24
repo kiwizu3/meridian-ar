@@ -10,7 +10,7 @@ def CONFIG = [
 				GITLAB_CONTAINER_REGISTRY:"registry-gitlab.arimaclanka.com", 
 				DOCKER_IMAGE:"arimac/arimac-devops-mate:v5.0",
 				DEFAULT_VERSION:'0.1.0',
-				TARGET_ENVIRONMENT:'development',
+				TARGET_ENVIRONMENT:'',
 				DEPLOY_ON_DEMAND:'no'
 			]
 buildPipeline(CONFIG)
