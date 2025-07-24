@@ -18,11 +18,16 @@ import ChatBubble from './chatBubble';
 import CustomAudioPlayer from './customAudioPlayer';
 import { speechRecognition } from './speechRecognition';
 
+// Use NEXT_PUBLIC_BASE_URL for client-side env variable
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
+
 export interface ChatMessageType {
   id: string;
   question: string;
   answer: string;
   htmlCode?: string; // HTML code for iframe rendering
+  chatType?: string;
+  voice?: string;
 }
 
 export default function Chat() {
@@ -73,7 +78,7 @@ export default function Chat() {
 
     const startSession = async () => {
       try {
-        const response = await fetch(`${process.env.BASE_URL}/start_session`, {
+        const response = await fetch(`${BASE_URL}/start_session`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -106,11 +111,10 @@ export default function Chat() {
         answer: '',
         chatType: selectedOption,
         voice:
-        selectedOption === 'Info'
-            ? `${process.env.BASE_URL}/chat/generate_audio/${sessionId}`
-            : `${process.env.BASE_URL}/chart/generate_audio/${sessionId}`,
-
-      }, // Add chatType
+          selectedOption === 'Info'
+            ? `${BASE_URL}/chat/generate_audio/${sessionId}`
+            : `${BASE_URL}/chart/generate_audio/${sessionId}`,
+      },
     ]);
 
     getChatResponse(sessionId, message, messageId);
@@ -124,7 +128,7 @@ export default function Chat() {
   ) => {
     try {
       if (selectedOption === 'Info') {
-        const response = await fetch(`${process.env.BASE_URL}/chat`, {
+        const response = await fetch(`${BASE_URL}/chat`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -147,7 +151,7 @@ export default function Chat() {
           ),
         );
       } else {
-        const response = await fetch(`${process.env.BASE_URL}/chart`, {
+        const response = await fetch(`${BASE_URL}/chart`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -426,7 +430,7 @@ export default function Chat() {
                         <div>
                           {index === messages?.length - 1 && (
                             <CustomAudioPlayer
-                              src={`${process.env.BASE_URL}/chart/generate_audio/${sessionId}`}
+                              src={`${BASE_URL}/chart/generate_audio/${sessionId}`}
                               isPlaying={playingId === item.id} // Check if this audio is playing
                               togglePlay={() => togglePlay(item.id)} // Toggle this audio's play state
                             />
@@ -512,3 +516,4 @@ export default function Chat() {
     </div>
   );
 }
+
