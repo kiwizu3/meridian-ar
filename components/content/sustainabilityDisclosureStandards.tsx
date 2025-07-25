@@ -1,69 +1,69 @@
 'use client';
-import { ApexOptions } from 'apexcharts';
-import dynamic from 'next/dynamic';
+// import { ApexOptions } from 'apexcharts';
+// import dynamic from 'next/dynamic';
 
-const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
+// const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
 
-const chartOptions: ApexOptions = {
-  chart: {
-    type: 'bar',
-  },
-  plotOptions: {
-    bar: {
-      horizontal: false,
-      columnWidth: '55%',
-    },
-  },
-  colors: ['#28A745', '#007BFF', '#DC3545'], // Green, Blue, Red
-  dataLabels: {
-    enabled: false,
-  },
-  xaxis: {
-    categories: [
-      'Governance',
-      'Strategy',
-      'Risk Management',
-      'Metrics & Targets',
-      'GHG Emissions',
-      'Scenario Analysis',
-    ],
-    labels: {
-      rotate: -45,
-    },
-  },
-  yaxis: {
-    title: {
-      text: 'Implementation Level (%)',
-    },
-  },
-  grid: {
-    borderColor: '#eee',
-  },
-  tooltip: {
-    y: {
-      formatter: (val: number) => `${val}%`,
-    },
-  },
-  legend: {
-    position: 'bottom',
-    itemMargin: {
-      horizontal: 5,
-      vertical: 5,
-    },
-    height: 70,
-  },
-};
+// const chartOptions: ApexOptions = {
+//   chart: {
+//     type: 'bar',
+//   },
+//   plotOptions: {
+//     bar: {
+//       horizontal: false,
+//       columnWidth: '55%',
+//     },
+//   },
+//   colors: ['#28A745', '#007BFF', '#DC3545'], // Green, Blue, Red
+//   dataLabels: {
+//     enabled: false,
+//   },
+//   xaxis: {
+//     categories: [
+//       'Governance',
+//       'Strategy',
+//       'Risk Management',
+//       'Metrics & Targets',
+//       'GHG Emissions',
+//       'Scenario Analysis',
+//     ],
+//     labels: {
+//       rotate: -45,
+//     },
+//   },
+//   yaxis: {
+//     title: {
+//       text: 'Implementation Level (%)',
+//     },
+//   },
+//   grid: {
+//     borderColor: '#eee',
+//   },
+//   tooltip: {
+//     y: {
+//       formatter: (val: number) => `${val}%`,
+//     },
+//   },
+//   legend: {
+//     position: 'bottom',
+//     itemMargin: {
+//       horizontal: 5,
+//       vertical: 5,
+//     },
+//     height: 70,
+//   },
+// };
 
-const chartSeries = [
-  {
-    name: 'Current Implementation',
-    data: [85, 75, 80, 65, 70, 60],
-  },
-  {
-    name: 'Target',
-    data: [100, 100, 100, 100, 100, 100],
-  },
-];
+// const chartSeries = [
+//   {
+//     name: 'Current Implementation',
+//     data: [85, 75, 80, 65, 70, 60],
+//   },
+//   {
+//     name: 'Target',
+//     data: [100, 100, 100, 100, 100, 100],
+//   },
+// ];
 
 export default function SLFRSDisclosuresContentIndex() {
   return (
@@ -73,7 +73,7 @@ export default function SLFRSDisclosuresContentIndex() {
           SLFRS S1 AND S2 DISCLOSURES CONTENT INDEX
         </h1>
 
-        <div className="mb-8">
+        {/* <div className="mb-8">
           <h2 className="text-xl font-semibold mb-4">
             Implementation Progress
           </h2>
@@ -85,7 +85,7 @@ export default function SLFRSDisclosuresContentIndex() {
               height={400}
             />
           </div>
-        </div>
+        </div> */}
 
         <div className="overflow-x-auto">
           <table className="w-full border-collapse">
