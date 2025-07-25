@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import videoThumbnail from '@/public/images/video-frame-home.png';
 
@@ -8,54 +9,58 @@ const HomePageVideo = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isClient, setIsClient] = useState(false);
 
-  useEffect(() => {
-    const video: any = videoRef.current;
-    const playButton = document.querySelector('.snap-motion-item.smi-play');
+  // useEffect(() => {
+  //   const video: any = videoRef.current;
+  //   const playButton = document.querySelector('.snap-motion-item.smi-play');
 
-    if (video && playButton) {
-      const handlePlay = () => {
-        setIsPlaying(true);
-      };
+  //   if (video && playButton) {
+  //     const handlePlay = () => {
+  //       setIsPlaying(true);
+  //     };
 
-      const handlePauseOrEnded = () => {
-        setIsPlaying(false);
-      };
+  //     const handlePauseOrEnded = () => {
+  //       setIsPlaying(false);
+  //     };
 
-      video.addEventListener('play', handlePlay);
-      video.addEventListener('pause', handlePauseOrEnded);
-      video.addEventListener('ended', handlePauseOrEnded);
+  //     video.addEventListener('play', handlePlay);
+  //     video.addEventListener('pause', handlePauseOrEnded);
+  //     video.addEventListener('ended', handlePauseOrEnded);
 
-      return () => {
-        video.removeEventListener('play', handlePlay);
-        video.removeEventListener('pause', handlePauseOrEnded);
-        video.removeEventListener('ended', handlePauseOrEnded);
-      };
-    }
-  }, []);
+  //     return () => {
+  //       video.removeEventListener('play', handlePlay);
+  //       video.removeEventListener('pause', handlePauseOrEnded);
+  //       video.removeEventListener('ended', handlePauseOrEnded);
+  //     };
+  //   }
+  // }, []);
 
-  useEffect(() => {
-    const playButton = document.querySelector('.snap-motion-item.smi-play');
-    if (playButton) {
-      if (isPlaying) {
-        playButton.classList.add('hidden');
-      } else {
-        playButton.classList.remove('hidden');
-      }
-    }
+  // useEffect(() => {
+  //   const playButton = document.querySelector('.snap-motion-item.smi-play');
+  //   if (playButton) {
+  //     if (isPlaying) {
+  //       playButton.classList.add('hidden');
+  //     } else {
+  //       playButton.classList.remove('hidden');
+  //     }
+  //   }
 
-    const handleAudioPlay = (event: Event) => {
-      const video = videoRef.current;
-      if (video && event.target !== video && isPlaying) {
-        video.pause();
-      }
-    };
+  //   const handleAudioPlay = (event: Event) => {
+  //     const video = videoRef.current;
+  //     if (video && event.target !== video && isPlaying) {
+  //       video.pause();
+  //     }
+  //   };
 
-    document.addEventListener('play', handleAudioPlay, true);
+  //   document.addEventListener('play', handleAudioPlay, true);
 
-    return () => {
-      document.removeEventListener('play', handleAudioPlay, true);
-    };
-  }, [isPlaying]);
+  //   return () => {
+  //     document.removeEventListener('play', handleAudioPlay, true);
+  //   };
+  // }, [isPlaying]);
+
+  const handlePlayClick = () => {
+    setIsPlaying(true);
+  };
 
   useEffect(() => {
     setIsClient(true);
@@ -63,32 +68,36 @@ const HomePageVideo = () => {
 
   return (
     <div>
-      <video
+      <div
         id="videoPlayer"
-        ref={videoRef}
-        className="max-h-[70vh] w-full object-cover appl1-hdvd-xx"
-        controls
-        poster={videoThumbnail?.src}
+        className="max-h-[100vh] w-full object-cover appl1-hdvd-xx"
       >
         {isClient &&
           typeof window !== 'undefined' &&
-          window?.innerWidth > 700 && (
-            <>
-              <source
-                src="https://firebasestorage.googleapis.com/v0/b/todo-app-b057b.appspot.com/o/LB%20Finance%20Annual%20Report%20-%202024-new.mp4?alt=media&token=c9428274-cd10-4c9c-aa73-5ff2df926449"
-                type="video/mp4"
+          window?.innerWidth > 700 &&
+          (isPlaying ? (
+            <div className="relative w-full aspect-video">
+              <iframe
+                className="absolute top-0 left-0 w-full h-full border-0"
+                src="https://www.youtube-nocookie.com/embed/jXD2ZRcqBOg?si=dfiX5p3i2L7dKxxp&amp;controls=0"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+            </div>
+          ) : (
+            // Show thumbnail with play overlay
+            <div className="relative cursor-pointer" onClick={handlePlayClick}>
+              <Image
+                src={videoThumbnail}
+                alt="Video thumbnail"
+                width={670}
+                height={363}
               />
-              <track
-                kind="captions"
-                src="https://firebasestorage.googleapis.com/v0/b/todo-app-b057b.appspot.com/o/LB%20Finance%20Annual%20Report%20-%202024-new.mp4?alt=media&token=c9428274-cd10-4c9c-aa73-5ff2df926449"
-                srcLang="en"
-                label="English captions"
-                default
-              />
-            </>
-          )}
-        Your browser does not support the video tag.
-      </video>
+            </div>
+          ))}
+      </div>
     </div>
   );
 };
