@@ -8,7 +8,7 @@ import provincialdistributionLoans from '@/public/images/sustainability-goals/Pr
 export default function NoPovertyPart1() {
   return (
     <div>
-      <div className="bg-themeGreen text-black p-8">
+      <div className="bg-themeGreen text-black p-8 mb-8">
         <div className="w-full">
           <div className="flex items-center mb-8">
             <h1 className="text-4xl font-bold text-white">
@@ -42,7 +42,7 @@ export default function NoPovertyPart1() {
             </div>
             <div className="flex rounded-lg p-6">
               <div className="border-r-1 border-gray-300 pr-6 mr-6">
-                <h2 className="text-2xl font-semibold mb-2 text-cardBlue]">
+                <h2 className="text-2xl font-semibold mb-2">
                   1. EXPANDING ECONOMIC HORIZONS
                 </h2>
                 <p>
@@ -54,7 +54,7 @@ export default function NoPovertyPart1() {
                 </p>
               </div>
               <div>
-                <h3 className=" font-semibold">
+                <h3 className="text-2xl font-semibold mb-2">
                   Financial Inclusiveness Through Branch Expansion
                 </h3>
                 <p>
