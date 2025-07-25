@@ -99,7 +99,7 @@ export default function Contact({
           <SpeechText>
             <h1 className="connect-heading">{dictionary?.connect}</h1>
           </SpeechText>
-          <div className="grid grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-3">
             <div className="connect-news-wrap">
               <div className="connect-news-inner">
                 <div className="heading">
@@ -113,7 +113,7 @@ export default function Contact({
             </div>
 
             <div
-              className="flex flex-col col-span-2 contact-wrap"
+              className="flex flex-col col-span-2 contact-wrap p-5"
               id="contact-wrap"
             >
               <div className="detail-wrap pr-0 md:pr-0 lg:pr-6 xl:pr-7">
