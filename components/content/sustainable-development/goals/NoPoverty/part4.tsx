@@ -9,10 +9,10 @@ import CSRProjectsInvestments from '@/public/images/sustainability-goals/Investm
 export default function NoPovertyPart4() {
   return (
     <div>
-      <div className="bg-cardGreen text-black p-8">
+      <div className="bg-cardGreen rounded-lg text-black p-8 mb-8">
         <div className="w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            <div className="bg-themeGreen text-white rounded-lg p-6">
+            <div className="bg-yellow rounded-lg p-6">
               <h2 className="text-2xl font-semibold mb-4">
                 5 FOREIGN CURRENCY EXCHANGE
               </h2>
@@ -51,7 +51,7 @@ export default function NoPovertyPart4() {
               </div>
             </div>
 
-            <div className="bg-themeGreen text-white rounded-lg p-6">
+            <div className="bg-cardGreen rounded-lg p-6">
               <h2 className="text-2xl font-semibold mb-4">
                 6 RURAL DEVELOPMENT
               </h2>
@@ -65,7 +65,7 @@ export default function NoPovertyPart4() {
             </div>
           </div>
 
-          <div className="bg-themeGreen text-white rounded-lg p-6 mb-8">
+          <div className="bg-cardGreen rounded-lg p-6 mb-8">
             <h2 className="text-2xl font-semibold mb-4">
               7 SUPPORTING COMMUNITIES
             </h2>

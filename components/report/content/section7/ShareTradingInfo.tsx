@@ -13,7 +13,7 @@ export default function ShareTradingInformation() {
         <div className="overflow-x-auto">
           <table className="w-full border-collapse">
             <thead>
-              <tr className="bg-gray-100">
+              <tr>
                 <th className="p-2 border text-left" rowSpan={2}>
                   Performance
                 </th>
@@ -24,7 +24,7 @@ export default function ShareTradingInformation() {
                   Annual Performance
                 </th>
               </tr>
-              <tr className="bg-gray-50">
+              <tr>
                 <th className="p-2 border">Quarter 1</th>
                 <th className="p-2 border">Quarter 2</th>
                 <th className="p-2 border">Quarter 3</th>
@@ -36,7 +36,7 @@ export default function ShareTradingInformation() {
             </thead>
             <tbody>
               {/* Share Price Section */}
-              <tr className="bg-gray-100">
+              <tr>
                 <td className="p-2 border font-bold" colSpan={8}>
                   Share Price
                 </td>
@@ -86,7 +86,7 @@ export default function ShareTradingInformation() {
               ))}
 
               {/* Share Trading Details Section */}
-              <tr className="bg-gray-100">
+              <tr>
                 <td className="p-2 border font-bold" colSpan={8}>
                   Share Trading Details
                 </td>

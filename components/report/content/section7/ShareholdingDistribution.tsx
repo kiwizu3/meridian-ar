@@ -15,7 +15,7 @@ export default function ShareholdingDistribution() {
           <div className="overflow-x-auto">
             <table className="w-full border-collapse">
               <thead>
-                <tr className="bg-gray-100">
+                <tr>
                   <th className="p-2 border text-left">Name</th>
                   <th className="p-2 border text-center" colSpan={2}>
                     As at 31 March 2025
@@ -24,7 +24,7 @@ export default function ShareholdingDistribution() {
                     As at 31 March 2024
                   </th>
                 </tr>
-                <tr className="bg-gray-50">
+                <tr>
                   <th className="p-2 border"></th>
                   <th className="p-2 border">No. of Shares</th>
                   <th className="p-2 border">%</th>
@@ -247,7 +247,7 @@ export default function ShareholdingDistribution() {
           <div className="overflow-x-auto">
             <table className="w-full border-collapse">
               <thead>
-                <tr className="bg-gray-100">
+                <tr>
                   <th className="p-2 border text-center" colSpan={2}>
                     Range
                   </th>
@@ -258,7 +258,7 @@ export default function ShareholdingDistribution() {
                     As at 31 March 2024
                   </th>
                 </tr>
-                <tr className="bg-gray-50">
+                <tr>
                   <th className="p-2 border">From</th>
                   <th className="p-2 border">To</th>
                   <th className="p-2 border">No. of Shareholders</th>
@@ -351,11 +351,6 @@ export default function ShareholdingDistribution() {
               </tbody>
             </table>
           </div>
-        </div>
-
-        {/* Footer */}
-        <div className="text-xs text-gray-500 mt-4">
-          482 LB Finance PLC Integrated Annual Report 2024/25
         </div>
       </div>
     </div>

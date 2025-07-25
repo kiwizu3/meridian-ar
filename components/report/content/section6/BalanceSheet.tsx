@@ -13,14 +13,14 @@ export default function BalanceSheet() {
         <div className="overflow-x-auto">
           <table className="w-full border-collapse">
             <thead>
-              <tr className="bg-gray-100">
+              <tr>
                 <th className="p-2 border text-left">As at 31 March</th>
                 <th className="p-2 border text-left">Note</th>
                 <th className="p-2 border text-left">Page No.</th>
                 <th className="p-2 border text-left">Company</th>
                 <th className="p-2 border text-left">Group</th>
               </tr>
-              <tr className="bg-gray-50">
+              <tr>
                 <th className="p-2 border"></th>
                 <th className="p-2 border"></th>
                 <th className="p-2 border"></th>
@@ -34,7 +34,7 @@ export default function BalanceSheet() {
             </thead>
             <tbody>
               {/* Assets Section */}
-              <tr className="bg-gray-100">
+              <tr className="bg-yellow">
                 <td className="p-2 border font-bold" colSpan={9}>
                   Assets
                 </td>
@@ -187,7 +187,7 @@ export default function BalanceSheet() {
               </tr>
 
               {/* Liabilities Section */}
-              <tr className="bg-gray-100">
+              <tr className="bg-yellow">
                 <td className="p-2 border font-bold" colSpan={9}>
                   Liabilities
                 </td>
@@ -296,7 +296,7 @@ export default function BalanceSheet() {
               </tr>
 
               {/* Equity Section */}
-              <tr className="bg-gray-100">
+              <tr className="bg-yellow">
                 <td className="p-2 border font-bold" colSpan={9}>
                   Equity
                 </td>
@@ -400,7 +400,7 @@ export default function BalanceSheet() {
 
         {/* Additional Information */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-gray-50 p-4 rounded-lg">
+          <div className="bg-yellow p-4 rounded-lg">
             <h3 className="font-bold mb-2">Commitments and Contingencies</h3>
             <div className="flex justify-between">
               <div>
@@ -420,7 +420,7 @@ export default function BalanceSheet() {
             </div>
           </div>
 
-          <div className="bg-gray-50 p-4 rounded-lg">
+          <div className="bg-yellow p-4 rounded-lg">
             <h3 className="font-bold mb-2">Net Asset Value per Share (Rs.)</h3>
             <div className="flex justify-between">
               <div>

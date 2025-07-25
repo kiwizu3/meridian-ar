@@ -115,8 +115,8 @@ const Calendar: React.FC<CalendarProps> = ({ years, setDateRange }) => {
               onClick={() => handleYearClick(item)}
               key={item}
               className={`text-white border-1 border-grayAsh text-center ${
-                isInRange(item) ? 'bg-blue text-white' : 'text-white'
-              } ${startYear === item || endYear === item ? 'bg-blue' : 'text-white'}`}
+                isInRange(item) ? 'bg-cardGreen text-white' : 'text-white'
+              } ${startYear === item || endYear === item ? 'bg-themeGreen' : 'text-white'}`}
             >
               {item}
             </DropdownItem>

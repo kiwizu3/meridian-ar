@@ -59,7 +59,7 @@ const DropdownWithCheckbox: React.FC<DropdownWithCheckboxProps> = ({
             'transition-opacity',
             'data-[hover=true]:text-white',
             'data-[hover=true]:!bg-cardGreen',
-            'data-[selectable=true]:focus:bg-blue',
+            'data-[selectable=true]:focus:bg-cardGreen',
             'data-[selectable=true]:focus:text-white',
             'data-[pressed=true]:opacity-70',
             'data-[focus-visible=true]:ring-default-500',
@@ -77,11 +77,11 @@ const DropdownWithCheckbox: React.FC<DropdownWithCheckboxProps> = ({
             isSelected={selectedValues.includes(item.key)}
             key={`${item.key}-checkbox`}
             radius="none"
-            className="border-r-0 text-white hover:!bg-transparent data-[hover=true]:bg-blue"
+            className="border-r-0 text-white hover:!bg-transparent data-[hover=true]:bg-cardGreen"
             classNames={{
               label: 'text-white data-[hover=true]:bg-blue w-[365px] py-2',
               wrapper:
-                'after:bg-transparent text-white hover:!bg-transparent data-[hover=true]:bg-blue data-[selectable=true]:focus:text-white',
+                'after:bg-transparent text-white hover:!bg-transparent data-[hover=true]:bg-cardGreen data-[selectable=true]:focus:text-white',
             }}
           >
             {item.label}

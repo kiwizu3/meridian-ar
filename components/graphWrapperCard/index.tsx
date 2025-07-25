@@ -231,7 +231,7 @@ function GraphWrapperCard(props: Readonly<GraphWrapperCardProps>) {
                     'transition-opacity',
                     'data-[hover=true]:text-white',
                     'data-[hover=true]:!bg-cardGreen',
-                    'data-[selectable=true]:focus:bg-blue',
+                    'data-[selectable=true]:focus:bg-cardGreen',
                     'data-[selectable=true]:focus:text-white',
                     'data-[pressed=true]:opacity-70',
                     'data-[focus-visible=true]:ring-default-500',
