@@ -146,39 +146,6 @@ export default async function Home({
           />
         </div>
 
-        {/* <section
-          className="relative"
-          style={{
-            backgroundImage: `url(${secTwoImage.src})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'sticky',
-            backgroundAttachment: 'fixed',
-            backgroundRepeat: 'no-repeat',
-          }}
-        >
-          <a
-            aria-label="video"
-            href="#video"
-            snap-motion-type="object"
-            snap-motion-id="video"
-            className="left-[50%] bottom-[45%] hidden md:block"
-          />
-          <div className="flex flex-col items-center gap-14 container z-10 relative">
-          
-            <a
-              aria-label="video-obj"
-              href="#video-obj"
-              snap-motion-type="scroll"
-              snap-motion-id="video"
-              className={`hidden md:block absolute ${getHomeVideoPosition(lang)}`}
-            />
-            <div className="max-h-[70vh] px-4">
-              <HomePageVideo />
-            </div>
-          </div>
-          
-        </section> */}
-
         <section
           style={{
             backgroundImage: `url(${secTwoImage.src})`,
@@ -236,7 +203,7 @@ export default async function Home({
                     <div>
                       <HTMLVersion
                         svg={<Html5con />}
-                        link={`/${lang}/annual-report/the-company`}
+                        link={`/${lang}/report`}
                         description={dictionary?.the_annual_report_html}
                         title={dictionary?.html_version}
                         viewTitle={dictionary?.view_html}
