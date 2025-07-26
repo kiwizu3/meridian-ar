@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 import videoThumbnail from '@/public/images/video-frame-home.png';
 
 const HomePageVideo = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
+  // const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isClient, setIsClient] = useState(false);
 
@@ -71,12 +71,13 @@ const HomePageVideo = () => {
       <div>
         {isClient &&
           typeof window !== 'undefined' &&
-          window?.innerWidth > 700 &&
+          window?.innerWidth > 1280 &&
           (isPlaying ? (
             <div>
               <iframe
-                width={670}
-                height={363}
+                width={1280}
+                height={720}
+                className="rounded-2xl"
                 src="https://www.youtube-nocookie.com/embed/jXD2ZRcqBOg?si=dfiX5p3i2L7dKxxp&amp;controls=0"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -85,7 +86,7 @@ const HomePageVideo = () => {
               ></iframe>
             </div>
           ) : (
-            window?.innerWidth > 700 && (
+            window?.innerWidth > 1280 && (
               // Show thumbnail with play overlay
               <div
                 className="relative cursor-pointer"
@@ -94,8 +95,9 @@ const HomePageVideo = () => {
                 <Image
                   src={videoThumbnail}
                   alt="Video thumbnail"
-                  width={670}
-                  height={363}
+                  width={1280}
+                  height={720}
+                  className="rounded-2xl"
                 />
               </div>
             )

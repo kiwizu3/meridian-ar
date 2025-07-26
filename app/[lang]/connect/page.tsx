@@ -158,8 +158,16 @@ export default function Contact({
                     </div>
                     <div className="text font-secondary">
                       <SpeechText>
-                        <p>011 2155 473</p>
-                        <p>011 2155 504</p>
+                        <p>
+                          <a href="tel:0112155473" className="hover:underline">
+                            011 2155 473
+                          </a>
+                        </p>
+                        <p>
+                          <a href="tel:0112155504" className="hover:underline">
+                            011 2155 504
+                          </a>
+                        </p>
                       </SpeechText>
                     </div>
                   </div>
@@ -171,7 +179,12 @@ export default function Contact({
                     </div>
                     <div className="text font-secondary">
                       <SpeechText>
-                        <p>thusithaw@lbfinance.lk</p>
+                        <a
+                          href="mailto:thusithaw@lbfinance.lk"
+                          className="hover:underline"
+                        >
+                          thusithaw@lbfinance.lk
+                        </a>
                       </SpeechText>
                     </div>
                   </div>
