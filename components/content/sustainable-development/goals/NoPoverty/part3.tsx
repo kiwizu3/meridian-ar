@@ -78,7 +78,7 @@ export default function NoPovertyPart3() {
               </div>
             </div>
 
-            <div className="bg-yellow md:col-span-1 auto-rows-auto bg-cardGreen rounded-lg p-6">
+            <div className="bg-yellow md:col-span-1 auto-rows-auto rounded-lg p-6">
               <h2 className="text-2xl font-semibold mb-4">
                 3. ECONOMIC VALUE CREATION
               </h2>

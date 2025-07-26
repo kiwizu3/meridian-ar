@@ -68,17 +68,15 @@ const HomePageVideo = () => {
 
   return (
     <div>
-      <div
-        id="videoPlayer"
-        className="max-h-[100vh] w-full object-cover appl1-hdvd-xx"
-      >
+      <div>
         {isClient &&
           typeof window !== 'undefined' &&
           window?.innerWidth > 700 &&
           (isPlaying ? (
-            <div className="relative w-full aspect-video">
+            <div>
               <iframe
-                className="absolute top-0 left-0 w-full h-full border-0"
+                width={670}
+                height={363}
                 src="https://www.youtube-nocookie.com/embed/jXD2ZRcqBOg?si=dfiX5p3i2L7dKxxp&amp;controls=0"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -87,15 +85,20 @@ const HomePageVideo = () => {
               ></iframe>
             </div>
           ) : (
-            // Show thumbnail with play overlay
-            <div className="relative cursor-pointer" onClick={handlePlayClick}>
-              <Image
-                src={videoThumbnail}
-                alt="Video thumbnail"
-                width={670}
-                height={363}
-              />
-            </div>
+            window?.innerWidth > 700 && (
+              // Show thumbnail with play overlay
+              <div
+                className="relative cursor-pointer"
+                onClick={handlePlayClick}
+              >
+                <Image
+                  src={videoThumbnail}
+                  alt="Video thumbnail"
+                  width={670}
+                  height={363}
+                />
+              </div>
+            )
           ))}
       </div>
     </div>
