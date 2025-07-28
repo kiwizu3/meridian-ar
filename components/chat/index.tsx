@@ -122,76 +122,94 @@ export default function Chat() {
   };
 
   const getChatResponse = async (
-    sessionId: string,
-    question: string,
-    id: string,
+  sessionId: string,
+  question: string,
+  id: string,
   ) => {
-    try {
-      if (selectedOption === 'Info') {
-        const response = await fetch(`${BASE_URL}/chat`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            Authorization: `Basic ${credentials}`,
-          },
-          body: JSON.stringify({
-            session_id: sessionId,
-            question: question,
-          }),
-        });
+  try {
+    if (selectedOption === 'Info') {
+      
+      const response = await fetch(`${BASE_URL}/chat`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Basic ${credentials}`,
+        },
+        body: JSON.stringify({
+          session_id: sessionId,
+          question: question,
+        }),
+      });
 
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
 
-        const data = await response.json();
+      const data = await response.json();
+
+      setMessages((prevMessages) =>
+        prevMessages.map((msg) =>
+          msg.id === id ? { ...msg, answer: data.answer } : msg,
+        ),
+      );
+    } else {
+      
+      const dummyInit = await fetch(`${BASE_URL}/chat`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Basic ${credentials}`,
+        },
+        body: JSON.stringify({
+          session_id: sessionId,
+          question: '[INIT]',
+        }),
+      });
+
+      if (!dummyInit.ok) {
+        throw new Error('Failed to initialize chat session');
+      }
+
+      
+      const response = await fetch(`${BASE_URL}/chart`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Basic ${credentials}`,
+        },
+        body: JSON.stringify({
+          session_id: sessionId,
+          question: question,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const data = await response.json();
+
+      if (data.html_code !== '') {
+        const blob = new Blob([data.html_code], { type: 'text/html' });
+        const url = URL.createObjectURL(blob);
         setMessages((prevMessages) =>
           prevMessages.map((msg) =>
-            msg.id === id ? { ...msg, answer: data.answer } : msg,
+            msg.id === id ? { ...msg, answer: data.details, htmlCode: url } : msg,
           ),
         );
       } else {
-        const response = await fetch(`${BASE_URL}/chart`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            Authorization: `Basic ${credentials}`,
-          },
-          body: JSON.stringify({
-            session_id: sessionId,
-            question: question,
-          }),
-        });
-
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-
-        const data = await response.json();
-
-        // Create a Blob URL for the plot HTML
-        if (data.html_code !== '') {
-          const blob = new Blob([data.html_code], { type: 'text/html' });
-          const url = URL.createObjectURL(blob);
-          setMessages((prevMessages) =>
-            prevMessages.map((msg) =>
-              msg.id === id
-                ? { ...msg, answer: data.details, htmlCode: url }
-                : msg,
-            ),
-          );
-        } else {
-          setMessages((prevMessages) =>
-            prevMessages.map((msg) =>
-              msg.id === id ? { ...msg, answer: data.details } : msg,
-            ),
-          );
-        }
+        setMessages((prevMessages) =>
+          prevMessages.map((msg) =>
+            msg.id === id ? { ...msg, answer: data.details } : msg,
+          ),
+        );
       }
-    } catch (error) {
-      console.error('Error fetching session:', error);
     }
+  } catch (error) {
+    console.error('Error fetching session:', error);
+  }
   };
+
 
   const handleSpeechToText = async () => {
     const response = await speechRecognition();
@@ -313,9 +331,7 @@ export default function Chat() {
                               ),
                             }}
                           >
-                            {isExpanded === item?.id
-                              ? item.answer
-                              : `${item.answer.slice(0, 250)}...`}
+                            {item.answer.replace(/\n/g, '  \n')}
                           </ReactMarkdown>
                         </p>
                         <div
@@ -406,9 +422,7 @@ export default function Chat() {
                               ),
                             }}
                           >
-                            {isExpanded === item?.id
-                              ? item.answer
-                              : `${item.answer.slice(0, 250)}...`}
+                            {item.answer.replace(/\n/g, '  \n')}
                           </ReactMarkdown>
                         </p>
                         <div
