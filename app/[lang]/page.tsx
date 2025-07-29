@@ -229,7 +229,6 @@ export default async function Home({
                     aria-label="animate"
                     href="#animate"
                     snap-motion-type="scroll"
-                  
                     className="hidden md:block"
                   />
                 </div>
@@ -325,7 +324,8 @@ export default async function Home({
               snap-motion-id="video"
               className={`hidden md:block absolute ${getHomeVideoPosition(lang)}`}
             />
-            <div className="max-h-[70vh] px-4">
+            <div>
+              {/* <div className="max-h-[70vh] px-4"> */}
               <HomePageVideo />
             </div>
           </div>
@@ -343,16 +343,15 @@ export default async function Home({
           aria-label="staff-a"
           href="#staff-a"
           snap-motion-type="scroll"
-       
           className="hidden md:block"
         />
         <section className="relative overflow-hidden">
-        {/* <FadeInRight> */}
-            <img
-              src="/images/lion-pow.png"
-              className="absolute w-[500px] right-[0] top-[10vw]"
-              alt="lion img"
-            />
+          {/* <FadeInRight> */}
+          <img
+            src="/images/lion-pow.png"
+            className="absolute w-[500px] right-[0] top-[10vw]"
+            alt="lion img"
+          />
           {/* </FadeInRight> */}
           <div className="relative z-10 flex flex-col gap-14 container px-5 lg:px-0 items-center xl:items-start lg:pb-[100px] pt-8 lg:pt-[173px]">
             <DetailCard
@@ -374,18 +373,16 @@ export default async function Home({
           aria-label="staff-b"
           href="#staff-b"
           snap-motion-type="scroll"
-         
           className="hidden md:block"
         />
         <section className="relative pb-8 md:pb-0 md:pt-[100px]">
-         
           <div className="relative overflow-hidden">
-          {/* <FadeInLeft> */}
-              <img
-                src="/images/lion-pow.png"
-                className="absolute w-[500px] left-[0] top-[2vw]"
-                alt="lion img"
-              />
+            {/* <FadeInLeft> */}
+            <img
+              src="/images/lion-pow.png"
+              className="absolute w-[500px] left-[0] top-[2vw]"
+              alt="lion img"
+            />
             {/* </FadeInLeft> */}
             <div className="relative z-10 flex flex-col items-center xl:items-end gap-14 container px-5 lg:px-0 py-8 lg:py-0">
               <DetailCard
@@ -415,7 +412,6 @@ export default async function Home({
             aria-label="footer-b-obj"
             href="#footer-b-obj"
             snap-motion-type="object"
-          
             className="left-[50%] top-[0%] hidden md:block"
           />
         </section>
@@ -423,7 +419,6 @@ export default async function Home({
           aria-label="footer-obj"
           href="#footer-obj"
           snap-motion-type="scroll"
-         
           className="hidden md:block"
         />
       </div>

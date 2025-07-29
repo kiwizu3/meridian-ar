@@ -85,6 +85,21 @@ export default function AnnualResults({ dictionary }: any) {
                 </SpeechText>
               </div>
             </div>
+            <div className="annual-results-box md:min-h-[276px] h-auto">
+              <div className="icon">
+                <Image src={Icon3} alt="icon" />
+              </div>
+              <div className="heading mb-1">
+                <SpeechText>
+                  <p>{dictionary?.Create_Your_Own_Report}</p>
+                </SpeechText>
+              </div>
+              <div className="para font-secondary">
+                <SpeechText>
+                  <p>{dictionary?.Create_Your_Own_Report_description}</p>
+                </SpeechText>
+              </div>
+            </div>
           </div>
         </div>
       </div>
