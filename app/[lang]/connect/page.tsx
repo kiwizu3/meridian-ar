@@ -24,6 +24,8 @@ export default function Contact({
   const [email, setEmail] = useState<string>('');
   const [contact, setContact] = useState<string>('');
   const [message, setMessage] = useState<string>('');
+  const [showFacebookPlugin, setShowFacebookPlugin] = useState(false);
+
 
   const handleSubmit = async () => {
     try {
@@ -77,8 +79,16 @@ export default function Contact({
     }
   }, [section]);
 
+  useEffect(() => {
+    setShowFacebookPlugin(true);
+  }, []);
+
+
+
   return (
     <div className="relative">
+
+
       <ToastContainer
         position="top-center"
         autoClose={5000}
@@ -100,20 +110,26 @@ export default function Contact({
             <h1 className="connect-heading">{dictionary?.connect}</h1>
           </SpeechText>
           <div className="grid grid-cols-1 md:grid-cols-3">
-            <div className="connect-news-wrap">
+            <div className="connect-news-wrap md:order-1 order-2">
               <div className="connect-news-inner">
-                <div className="heading">
+                {showFacebookPlugin && (
                   <iframe
-                    title="LB Finance Facebook Page"
-                    className="w-full h-[1283px]"
-                    src="https://embedsocial.com/api/pro_hashtag/2607080a6706e9f67a8480050e2e0797dca8f77f"
+                    title="LB Finance PLC Facebook Page"
+                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fweb.facebook.com%2FLBFinancePLC&tabs=timeline&width=340&height=1100&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                    width="100%"
+                    height="1100"
+                    style={{ border: 'none', overflow: 'hidden', maxWidth: '100%' }}
+                    scrolling="no"
+                    frameBorder="0"
+                    allowFullScreen
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                   />
-                </div>
+                )}
               </div>
             </div>
 
             <div
-              className="flex flex-col col-span-2 contact-wrap p-5"
+              className="flex flex-col col-span-2 contact-wrap p-5 md:order-2 order-1"
               id="contact-wrap"
             >
               <div className="detail-wrap pr-0 md:pr-0 lg:pr-6 xl:pr-7">
