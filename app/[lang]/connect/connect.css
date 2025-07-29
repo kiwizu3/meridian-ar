@@ -29,8 +29,6 @@
 }
 .connect-news-inner {
   padding: 0 24px;
-  height: 1296px;
-  overflow-y: auto;
 }
 .connect-news-wrap .heading {
   display: flex;
@@ -247,6 +245,9 @@
   .connect-heading {
     font-size: 2rem;
     line-height: 50px;
+  }
+  .connect-news-wrap {
+    margin-top: 20px;
   }
   .contact-wrap {
     margin-top: 20px;
