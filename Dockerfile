@@ -19,7 +19,8 @@ COPY . .
 
 
 # Build the application if needed
-RUN npm run build #npm build removed due to next build time variable dependancies. 
+RUN npm run build 
+# npm build removed due to next build time variable dependancies. 
 
 # Expose the port the app runs on
 EXPOSE 3000
