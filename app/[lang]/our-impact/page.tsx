@@ -8,8 +8,8 @@ import { Locale } from '@/i18n-config';
 import bgImage from '@/public/images/Clippath.png';
 import bgSec2 from '@/public/images/our-impact/our-impact-new-bg1.png';
 // import bgSec2 from '@/public/images/our-impact-s2-bg.png';
-import bgSec3 from '@/public/images/our-impact/our-impact-new-bg2.png'; 
-import bgSec4 from '@/public/images/our-impact/our-impact-new-bg3.png'; 
+import bgSec3 from '@/public/images/our-impact/our-impact-new-bg2.png';
+import bgSec4 from '@/public/images/our-impact/our-impact-new-bg3.png';
 import bgSec5 from '@/public/images/our-impact/our-impact-new-bg4.png';
 // import bgSec6 from '@/public/images/our-impact-s6-bg.png';
 import bgSec7 from '@/public/images/our-impact/our-impact-new-bg6.png';
@@ -24,8 +24,8 @@ export default async function OurImpact({
 
   const dummyData = [
     {
-      title: dictionary?.education,
-      gradientTitle: dictionary?.for_development,
+      title: dictionary?.for_development,
+      gradientTitle: dictionary?.education,
       bgImage: bgSec2,
       bgImagePosition: 'right',
       cards: [
@@ -89,7 +89,7 @@ export default async function OurImpact({
         {
           title: dictionary?.smile_programme,
           content: dictionary?.smile_programme_content,
-          subtitle: dictionary?.beneficiaries_3,
+          subtitle: dictionary?.beneficiaries3,
           counterText: dictionary?.employee_hours,
           value: 8,
         },

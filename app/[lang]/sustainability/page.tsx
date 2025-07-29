@@ -178,7 +178,7 @@ export default async function sustainability({
           </div>
           <div className="text-[1rem] leading-[24px] sm:text-[1.125rem] sm:leading-[32px] xl:text-[1.625rem] xl:leading-[46.8px] font-light text-white font-secondary">
             <SpeechText>
-              <p> {dictionary?.chairperson}</p>
+              <p> {dictionary?.chairman}</p>
             </SpeechText>
           </div>
           <div className="text-[1rem] leading-[24px] sm:text-[1.125rem] sm:leading-[32px] xl:text-[1.375rem] xl:leading-[39.6px] font-light text-white font-secondary">
