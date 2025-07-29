@@ -16,7 +16,7 @@ export default function ValueCreationModel({ dictionary }: any) {
               {dictionary?.sustainability}
             </p>
             <p className="sus-heading gradient-text md:!leading-[6rem] !leading-[3rem]">
-              {dictionary?.value_creation_model}
+              {dictionary?.strategy}
             </p>
           </SpeechText>
         </div>
