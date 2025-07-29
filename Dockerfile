@@ -13,9 +13,9 @@ RUN npm install
 # Copy the rest of the application code
 COPY . .
 
-#ENV NEXT_PUBLIC_BASE_URL=http://75.119.134.134:3008
-#ENV API_USERNAME=indika
-#ENV API_PASSWORD=7FJkN8Y_D
+ENV NEXT_PUBLIC_BASE_URL=http://75.119.134.134:3008
+ENV API_USERNAME=indika
+ENV API_PASSWORD=7FJkN8Y_D
 
 
 # Build the application if needed
