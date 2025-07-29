@@ -278,7 +278,7 @@ export default function SustainabilityGRI() {
 
   const sections: Section[] = [
     {
-      title: 'Indirect Economic Impacts',
+      title: 'INDIRECT ECONOMIC IMPACTS',
       standard: 'GRI 203 Indirect Economic Impacts 2016',
       items: [
         {
@@ -290,7 +290,7 @@ export default function SustainabilityGRI() {
       ],
     },
     {
-      title: 'Anti-corruption',
+      title: 'ANTI-CORRUPTION ',
       standard: 'GRI 205 Anti-Corruption 2016',
       items: [
         {
@@ -316,7 +316,7 @@ export default function SustainabilityGRI() {
       ],
     },
     {
-      title: 'Anti-competitive behavior',
+      title: 'ANTI-COMPETITIVE BEHAVIOR',
       standard: 'GRI 206 Anti-competitive Behavior 2016',
       items: [
         {
@@ -330,7 +330,7 @@ export default function SustainabilityGRI() {
       ],
     },
     {
-      title: 'Tax',
+      title: 'TAX',
       standard: 'GRI 207 Tax 2019',
       items: [
         {
@@ -405,7 +405,7 @@ export default function SustainabilityGRI() {
       ],
     },
     {
-      title: 'Social',
+      title: 'SOCIAL',
       standard: 'GRI 401 Employment 2016',
       items: [
         {
@@ -430,7 +430,7 @@ export default function SustainabilityGRI() {
       ],
     },
     {
-      title: 'Occupational Health and Safety',
+      title: 'OCCUPATIONAL HEALTH AND SAFETY',
       standard: 'GRI 403 Occupational Health and Safety 2018',
       items: [
         {
@@ -442,7 +442,7 @@ export default function SustainabilityGRI() {
       ],
     },
     {
-      title: 'Training and Education',
+      title: 'TRAINING AND EDUCATION',
       standard: 'GRI 404 Training and Education 2016',
       items: [
         {
@@ -468,7 +468,7 @@ export default function SustainabilityGRI() {
       ],
     },
     {
-      title: 'Diversity and Equal Opportunity',
+      title: 'DIVERSITY AND EQUAL OPPORTUNITY',
       standard: 'GRI 405 Diversity and Equal Opportunity 2016',
       items: [
         {
@@ -486,7 +486,7 @@ export default function SustainabilityGRI() {
       ],
     },
     {
-      title: 'Non-discrimination',
+      title: 'NON-DISCRIMINATION',
       standard: 'GRI 406 Non-discrimination 2016',
       items: [
         {
@@ -500,7 +500,7 @@ export default function SustainabilityGRI() {
       ],
     },
     {
-      title: 'Local Communities',
+      title: 'LOCAL COMMUNITIES',
       standard: 'GRI 413 Local Communities 2016',
       items: [
         {
@@ -521,7 +521,7 @@ export default function SustainabilityGRI() {
       ],
     },
     {
-      title: 'Customer Privacy',
+      title: 'CUSTOMER PRIVACY',
       standard: 'GRI 418 Customer Privacy 2016',
       items: [
         {
@@ -542,8 +542,8 @@ export default function SustainabilityGRI() {
         <h1 className="text-3xl font-bold mb-6">GRI CONTENT INDEX</h1>
 
         <p className="mb-4">
-          Statement of use - LB Finance PLC has reported in accordance with the
-          GRI Standards for the period 01st of April 2023 to 31st of March 2024.
+          Statement of use - LBF PLC has reported in accordance with the GRI
+          Standards for the period 01st of April 2024 to 31st of March 2025.
         </p>
         <p className="mb-6">GRI 1 used - GRI 1: Foundation 2021</p>
 
@@ -551,12 +551,10 @@ export default function SustainabilityGRI() {
           <table className="w-full border-collapse">
             <thead>
               <tr className="bg-blue-600">
-                <th className="border border-white p-2">
-                  GRI STANDARD/OTHER SOURCE
-                </th>
-                <th className="border border-white p-2">DISCLOSURE</th>
-                <th className="border border-white p-2">LOCATION (PAGE)</th>
-                <th className="border border-white p-2">EXPLANATION</th>
+                <th className="border border-white p-2">GRI Standard</th>
+                <th className="border border-white p-2">Disclosure</th>
+                <th className="border border-white p-2">Page</th>
+                <th className="border border-white p-2">Explanation</th>
               </tr>
             </thead>
             <tbody>
@@ -682,12 +680,10 @@ export default function SustainabilityGRI() {
           <table className="w-full border-collapse">
             <thead>
               <tr className="bg-blue-600">
-                <th className="border border-white p-2">
-                  GRI STANDARD/OTHER SOURCE
-                </th>
-                <th className="border border-white p-2">DISCLOSURE</th>
-                <th className="border border-white p-2">LOCATION (PAGE)</th>
-                <th className="border border-white p-2">EXPLANATION</th>
+                <th className="border border-white p-2">GRI Standard</th>
+                <th className="border border-white p-2">Disclosure</th>
+                <th className="border border-white p-2">Page</th>
+                <th className="border border-white p-2">Explanation</th>
               </tr>
             </thead>
             <tbody>
