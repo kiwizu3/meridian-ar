@@ -13,8 +13,13 @@ RUN npm install
 # Copy the rest of the application code
 COPY . .
 
+#ENV NEXT_PUBLIC_BASE_URL=http://75.119.134.134:3008
+#ENV API_USERNAME=indika
+#ENV API_PASSWORD=7FJkN8Y_D
+
+
 # Build the application if needed
-#RUN npm run build //npm build removed due to next build time variable dependancies. 
+RUN npm run build //npm build removed due to next build time variable dependancies. 
 
 # Expose the port the app runs on
 EXPOSE 3000
