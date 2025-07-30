@@ -127,7 +127,7 @@ export default function Contact({
             </div>
 
             <div
-              className="flex flex-col contact-wrap p-5 md:order-2 order-1 md:col-span-2 lg:col-span-2"
+              className="flex flex-col contact-wrap p-10 md:p-5 md:order-2 order-1 md:col-span-2 lg:col-span-2"
               id="contact-wrap"
             >
               <div className="detail-wrap pr-0 md:pr-0 lg:pr-6 xl:pr-7">

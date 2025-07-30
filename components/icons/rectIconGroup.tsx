@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function RectIconGroup() {
   return (
@@ -64,6 +64,19 @@ function RectIconGroup() {
         ></path>
       </g>
       <defs>
+        {/* <linearGradient
+          id="paint0_linear_8184_5762"
+          x1="3.01135e-07"
+          y1="2.91929"
+          x2="49.9415"
+          y2="45.2872"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0.557692" stop-color="#DBB226" />
+          <stop offset="0.932692" stop-color="#5B7537" />
+          <stop offset="1" stop-color="#268B71" />
+        </linearGradient> */}
+
         <linearGradient
           id="paint0_linear_5001_1212"
           x1="0"
@@ -72,8 +85,9 @@ function RectIconGroup() {
           y2="46.018"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#D92028"></stop>
-          <stop offset="1" stopColor="#0D456E"></stop>
+          <stop offset="0.557692" stop-color="#DBB226" />
+          <stop offset="0.932692" stop-color="#5B7537" />
+          <stop offset="1" stop-color="#268B71" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_5001_1212"
@@ -83,8 +97,9 @@ function RectIconGroup() {
           y2="68.304"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#D92028"></stop>
-          <stop offset="1" stopColor="#F26722"></stop>
+          <stop offset="0.557692" stop-color="#DBB226" />
+          <stop offset="0.932692" stop-color="#5B7537" />
+          <stop offset="1" stop-color="#268B71" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_5001_1212"
@@ -94,8 +109,9 @@ function RectIconGroup() {
           y2="7.129"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#D92028"></stop>
-          <stop offset="1" stopColor="#F26722"></stop>
+          <stop offset="0.557692" stop-color="#DBB226" />
+          <stop offset="0.932692" stop-color="#5B7537" />
+          <stop offset="1" stop-color="#268B71" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_5001_1212"
@@ -105,9 +121,11 @@ function RectIconGroup() {
           y2="41.661"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#D92028"></stop>
-          <stop offset="1" stopColor="#F26722"></stop>
+          <stop offset="0.557692" stop-color="#DBB226" />
+          <stop offset="0.932692" stop-color="#5B7537" />
+          <stop offset="1" stop-color="#268B71" />
         </linearGradient>
+
         <linearGradient
           id="paint4_linear_5001_1212"
           x1="232.565"
@@ -116,8 +134,9 @@ function RectIconGroup() {
           y2="45.971"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#D92028"></stop>
-          <stop offset="1" stopColor="#0D456E"></stop>
+          <stop offset="0.557692" stop-color="#DBB226" />
+          <stop offset="0.932692" stop-color="#5B7537" />
+          <stop offset="1" stop-color="#268B71" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_5001_1212"
@@ -127,8 +146,9 @@ function RectIconGroup() {
           y2="68.256"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#D92028"></stop>
-          <stop offset="1" stopColor="#F26722"></stop>
+          <stop offset="0.557692" stop-color="#DBB226" />
+          <stop offset="0.932692" stop-color="#5B7537" />
+          <stop offset="1" stop-color="#268B71" />
         </linearGradient>
         <linearGradient
           id="paint6_linear_5001_1212"
@@ -138,8 +158,9 @@ function RectIconGroup() {
           y2="7.082"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#D92028"></stop>
-          <stop offset="1" stopColor="#F26722"></stop>
+          <stop offset="0.557692" stop-color="#DBB226" />
+          <stop offset="0.932692" stop-color="#5B7537" />
+          <stop offset="1" stop-color="#268B71" />
         </linearGradient>
         <linearGradient
           id="paint7_linear_5001_1212"
@@ -149,8 +170,9 @@ function RectIconGroup() {
           y2="41.615"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#D92028"></stop>
-          <stop offset="1" stopColor="#F26722"></stop>
+          <stop offset="0.557692" stop-color="#DBB226" />
+          <stop offset="0.932692" stop-color="#5B7537" />
+          <stop offset="1" stop-color="#268B71" />
         </linearGradient>
         <linearGradient
           id="paint8_linear_5001_1212"
@@ -160,8 +182,9 @@ function RectIconGroup() {
           y2="46.498"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#D92028"></stop>
-          <stop offset="1" stopColor="#0D456E"></stop>
+          <stop offset="0.557692" stop-color="#DBB226" />
+          <stop offset="0.932692" stop-color="#5B7537" />
+          <stop offset="1" stop-color="#268B71" />
         </linearGradient>
         <linearGradient
           id="paint9_linear_5001_1212"
@@ -171,8 +194,9 @@ function RectIconGroup() {
           y2="68.785"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#D92028"></stop>
-          <stop offset="1" stopColor="#F26722"></stop>
+          <stop offset="0.557692" stop-color="#DBB226" />
+          <stop offset="0.932692" stop-color="#5B7537" />
+          <stop offset="1" stop-color="#268B71" />
         </linearGradient>
         <linearGradient
           id="paint10_linear_5001_1212"
@@ -182,8 +206,9 @@ function RectIconGroup() {
           y2="7.609"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#D92028"></stop>
-          <stop offset="1" stopColor="#F26722"></stop>
+          <stop offset="0.557692" stop-color="#DBB226" />
+          <stop offset="0.932692" stop-color="#5B7537" />
+          <stop offset="1" stop-color="#268B71" />
         </linearGradient>
         <linearGradient
           id="paint11_linear_5001_1212"
@@ -193,8 +218,9 @@ function RectIconGroup() {
           y2="42.141"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#D92028"></stop>
-          <stop offset="1" stopColor="#F26722"></stop>
+          <stop offset="0.557692" stop-color="#DBB226" />
+          <stop offset="0.932692" stop-color="#5B7537" />
+          <stop offset="1" stop-color="#268B71" />
         </linearGradient>
       </defs>
     </svg>
