@@ -803,6 +803,11 @@ export const employeeWellbeingFilters = [
         label: '2024',
         isChecked: true,
       },
+      {
+        key: '2025',
+        label: '2025',
+        isChecked: false,
+      },
     ],
   },
 ];
@@ -1139,6 +1144,11 @@ export const environmentLandscapeFilters = [
         label: '2024',
         isChecked: false,
       },
+      {
+        key: '2025',
+        label: '2025',
+        isChecked: false,
+      },
     ],
   },
 ];
@@ -1216,6 +1226,11 @@ export const reputationFilters = [
       {
         key: '2024',
         label: '2024',
+        isChecked: false,
+      },
+      {
+        key: '2025',
+        label: '2025',
         isChecked: false,
       },
     ],

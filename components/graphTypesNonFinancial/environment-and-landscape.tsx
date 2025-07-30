@@ -143,7 +143,7 @@ function EnvironmentAndLandscape({ dictionary }: any) {
     getSeriesData: [
       {
         name: 'Projects',
-        data: [5, 15, 4, 3, 3],
+        data: [15, 4, 3, 3, 9],
       },
     ],
   };
@@ -172,7 +172,7 @@ function EnvironmentAndLandscape({ dictionary }: any) {
     getSeriesData: [
       {
         name: 'Total carbon footprint per Rs. million of profit (tCo2e)',
-        data: [0.11, 0.1, 0.37, 0.41, 2.4],
+        data: [0.1, 0.37, 0.41, 2.4, 3.41],
       },
     ],
   };
