@@ -12,4 +12,4 @@ export const graphYears = [
   '2025',
 ];
 
-export const nonFinancialGraphYears = ['2020', '2021', '2022', '2023', '2024'];
+export const nonFinancialGraphYears = ['2021', '2022', '2023', '2024', '2025'];

@@ -13,11 +13,11 @@ const customerFilters = [
     title: 'Year',
     selectionType: 'single',
     items: [
-      {
-        key: '2020',
-        label: '2020',
-        isChecked: false,
-      },
+      // {
+      //   key: '2020',
+      //   label: '2020',
+      //   isChecked: false,
+      // },
       {
         key: '2021',
         label: '2021',
@@ -36,6 +36,11 @@ const customerFilters = [
       {
         key: '2024',
         label: '2024',
+        isChecked: true,
+      },
+      {
+        key: '2025',
+        label: '2025',
         isChecked: true,
       },
     ],
@@ -62,7 +67,7 @@ function CustomersPage({ dictionary }: any) {
       ...lineChartOptions,
       xaxis: {
         ...lineChartOptions.xaxis,
-        categories: ['2020', '2021', '2022', '2023', '2024'],
+        categories: ['2021', '2022', '2023', '2024', '2025'],
       },
       yaxis: [
         {
@@ -127,11 +132,11 @@ function CustomersPage({ dictionary }: any) {
     getSeriesData: [
       {
         name: 'Total customer base',
-        data: [600000, 600000, 650000, 750000, 800000],
+        data: [600000, 650000, 750000, 800000, 850000],
       },
       {
         name: 'Customer financial solutions',
-        data: [30, 31, 32, 32, 33],
+        data: [31, 32, 32, 33, 34],
       },
     ],
   };

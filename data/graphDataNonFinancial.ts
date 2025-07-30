@@ -23,25 +23,25 @@ export const graphCategories: GraphDataCategories[] = [
   {
     key: 'infrastructureQualityService',
     label: 'Infrastructure and quality of services',
-    isShow: true
+    isShow: true,
   },
 ];
 
 export const environmentAndLandscape = [
-  {
-    year: '2020',
-    environmentRelatedProjects: 5,
-    waterConsumption: 39793,
-    waterConsumptionPerMillionProfit: 7.67,
-    treesPlanted: 34853,
-    treesSavedFromRecycling: 94,
-    investmentGreenInitiatives: 9.54,
-    paperRecycled: 5501,
-    energyConsumption: 20538,
-    energyPerProfit: 3.96,
-    totalCarbonFootprint: 4484,
-    totalCarbonFootprintPerProfit: 0.11,
-  },
+  // {
+  //   year: '2020',
+  //   environmentRelatedProjects: 5,
+  //   waterConsumption: 39793,
+  //   waterConsumptionPerMillionProfit: 7.67,
+  //   treesPlanted: 34853,
+  //   treesSavedFromRecycling: 94,
+  //   investmentGreenInitiatives: 9.54,
+  //   paperRecycled: 5501,
+  //   energyConsumption: 20538,
+  //   energyPerProfit: 3.96,
+  //   totalCarbonFootprint: 4484,
+  //   totalCarbonFootprintPerProfit: 0.11,
+  // },
   {
     year: '2021',
     environmentRelatedProjects: 15,
@@ -88,7 +88,7 @@ export const environmentAndLandscape = [
     year: '2024',
     environmentRelatedProjects: 3,
     waterConsumption: 44908,
-    waterConsumptionPerMillionProfit: 0.21,
+    waterConsumptionPerMillionProfit: 4.69,
     treesPlanted: 8200,
     treesSavedFromRecycling: 342,
     investmentGreenInitiatives: 0,
@@ -96,21 +96,35 @@ export const environmentAndLandscape = [
     energyConsumption: 16852.95,
     energyPerProfit: 1.76,
     totalCarbonFootprint: 3982.9,
-    totalCarbonFootprintPerProfit: 2.4,
+    totalCarbonFootprintPerProfit: 0.41,
+  },
+  {
+    year: '2025',
+    environmentRelatedProjects: 9,
+    waterConsumption: 48514,
+    waterConsumptionPerMillionProfit: 4.49,
+    treesPlanted: 375,
+    treesSavedFromRecycling: 894,
+    investmentGreenInitiatives: 19.78,
+    paperRecycled: 52604,
+    energyConsumption: 55714.08,
+    energyPerProfit: 5.16,
+    totalCarbonFootprint: 36934.07,
+    totalCarbonFootprintPerProfit: 3.41,
   },
 ];
 
 export const economicWellbeing = [
-  {
-    year: '2020',
-    economicValueCreated: 4330.14,
-    economicValueDistributed: {
-      depositorsAndLenders: 13218.85,
-      employees: 2986.63,
-      government: 5014.32,
-      shareholders: 0,
-    },
-  },
+  // {
+  //   year: '2020',
+  //   economicValueCreated: 4330.14,
+  //   economicValueDistributed: {
+  //     depositorsAndLenders: 13218.85,
+  //     employees: 2986.63,
+  //     government: 5014.32,
+  //     shareholders: 0,
+  //   },
+  // },
   {
     year: '2021',
     economicValueCreated: '6148.39',
@@ -151,21 +165,31 @@ export const economicWellbeing = [
       shareholders: '3185.83',
     },
   },
+  {
+    year: '2025',
+    economicValueCreated: '4258.38',
+    economicValueDistributed: {
+      depositorsAndLenders: '16432.58',
+      employees: '5124.55',
+      government: '10145.77',
+      shareholders: '3601.37',
+    },
+  },
 ];
 
 export const employeeWellbeing = [
-  {
-    year: '2020',
-    totalWorkforce: 3606,
-    employeesHired: 1291,
-    trainingPrograms: 137,
-    investmentOnTraining: 18.56,
-    totalTrainingHours: 52788,
-    averageTrainingHours: 14.73,
-    staffRemuneration: 3005.18,
-    totalMaleWorkForce: 61,
-    totalFemaleWorkForce: 39,
-  },
+  // {
+  //   year: '2020',
+  //   totalWorkforce: 3606,
+  //   employeesHired: 1291,
+  //   trainingPrograms: 137,
+  //   investmentOnTraining: 18.56,
+  //   totalTrainingHours: 52788,
+  //   averageTrainingHours: 14.73,
+  //   staffRemuneration: 3005.18,
+  //   totalMaleWorkForce: 61,
+  //   totalFemaleWorkForce: 39,
+  // },
   {
     year: '2021',
     totalWorkforce: 3536,
@@ -208,20 +232,32 @@ export const employeeWellbeing = [
     employeesHired: 2194,
     trainingPrograms: 68,
     investmentOnTraining: 23.22,
-    totalTrainingHours: 43127,
-    averageTrainingHours: 10.44,
+    totalTrainingHours: 43677,
+    averageTrainingHours: 5.67,
     staffRemuneration: 4095.95,
+    totalMaleWorkForce: 54,
+    totalFemaleWorkForce: 46,
+  },
+  {
+    year: '2025',
+    totalWorkforce: 4407,
+    employeesHired: 2207,
+    trainingPrograms: 130,
+    investmentOnTraining: 21.7,
+    totalTrainingHours: 53845,
+    averageTrainingHours: 5.75,
+    staffRemuneration: 4902.96,
     totalMaleWorkForce: 54,
     totalFemaleWorkForce: 46,
   },
 ];
 
 export const socialWellbeing = [
-  {
-    year: '2020',
-    programmes: 12,
-    hours: 20131,
-  },
+  // {
+  //   year: '2020',
+  //   programmes: 12,
+  //   hours: 20131,
+  // },
   {
     year: '2021',
     programmes: 22,
@@ -242,16 +278,21 @@ export const socialWellbeing = [
     programmes: 18,
     hours: 7132,
   },
+  {
+    year: '2025',
+    programmes: 18,
+    hours: 7552,
+  },
 ];
 
 export const businessSophistication = [
-  {
-    year: '2020',
-    totalBranches: '165',
-    cdmMachines: '23',
-    outsideBranches: '84',
-    newOutlets: '2',
-  },
+  // {
+  //   year: '2020',
+  //   totalBranches: '165',
+  //   cdmMachines: '23',
+  //   outsideBranches: '84',
+  //   newOutlets: '2',
+  // },
   {
     year: '2021',
     totalBranches: '169',
@@ -280,14 +321,21 @@ export const businessSophistication = [
     outsideBranches: '117',
     newOutlets: '8',
   },
+  {
+    year: '2025',
+    totalBranches: '216',
+    cdmMachines: '24',
+    outsideBranches: '128',
+    newOutlets: '10',
+  },
 ];
 
 export const customerData = [
-  {
-    year: '2020',
-    totalCustomerBase: 600000,
-    financialSolutions: 30,
-  },
+  // {
+  //   year: '2020',
+  //   totalCustomerBase: 600000,
+  //   financialSolutions: 30,
+  // },
   {
     year: '2021',
     totalCustomerBase: 600000,
@@ -308,15 +356,20 @@ export const customerData = [
     totalCustomerBase: 800000,
     financialSolutions: 33,
   },
+  {
+    year: '2025',
+    totalCustomerBase: 850000,
+    financialSolutions: 34,
+  },
 ];
 
 export const reputationData = [
-  {
-    year: '2020',
-    brandValue: 5133,
-    brandRanking: 29,
-    creditRating: 'A- (lka)',
-  },
+  // {
+  //   year: '2020',
+  //   brandValue: 5133,
+  //   brandRanking: 29,
+  //   creditRating: 'A- (lka)',
+  // },
   {
     year: '2021',
     brandValue: 6237,
@@ -338,17 +391,23 @@ export const reputationData = [
   {
     year: '2024',
     brandValue: 3597,
-    brandRanking: 25,
+    brandRanking: 28,
     creditRating: 'BBB+(lka) (Stable Outlook)',
+  },
+  {
+    year: '2025',
+    brandValue: 'Not Available',
+    brandRanking: 20,
+    creditRating: 'A- (lka) (Stable Outlook)',
   },
 ];
 
 export const infrastructureData = [
-  {
-    year: '2020',
-    investmentICT: '115.65',
-    investmentFreeholdLandBuilding: '230.13',
-  },
+  // {
+  //   year: '2020',
+  //   investmentICT: '115.65',
+  //   investmentFreeholdLandBuilding: '230.13',
+  // },
   {
     year: '2021',
     investmentICT: '46.4',
@@ -369,6 +428,9 @@ export const infrastructureData = [
     investmentICT: '279.25',
     investmentFreeholdLandBuilding: '88.09',
   },
+  {
+    year: '2025',
+    investmentICT: '273.44',
+    investmentFreeholdLandBuilding: '81.39',
+  },
 ];
-
-
