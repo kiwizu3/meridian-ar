@@ -1,6 +1,6 @@
 import BackgroundMusic from '@/components/backgroundMusic';
 import FadeInText from '@/components/FadeInText';
-import { Html5con, MidFileSearch, Pdf, PolygonChip } from '@/components/icons';
+import { Html5con, MidFileSearch, Pdf } from '@/components/icons';
 import ScrollingText from '@/components/sccrollText';
 import SnapMotionComponent from '@/components/SnapMotion/SnapMotion';
 import SpeechText from '@/components/SpeechText';
@@ -8,6 +8,7 @@ import SpeechText from '@/components/SpeechText';
 import { getDictionary } from '@/get-dictionary';
 import { Locale } from '@/i18n-config';
 // import gifImage from '@/public/gif/pyramid.gif';
+import PolygonChipNew from '@/public/images/PolygonChipNew.png';
 import secTwoImage from '@/public/images/Clippath.png';
 import avatar from '@/public/images/gard_prasanna.png';
 import avatar2 from '@/public/images/sumith_Avatar.png';
@@ -268,7 +269,8 @@ export default async function Home({
           <div className="flex move-center items-center pb-14 pt-0 lg:pt-28 lg:pb-56">
             <div className="absolute">
               <div className="max-w-[90vw] lg:max-w-none flex">
-                <PolygonChip />
+                {/* <PolygonChip /> */}
+                <Image src={PolygonChipNew} alt="background-image" className="" />
               </div>
             </div>
             <div className="lg:max-w-[252px] max-w-sm h-auto mt-56" />
@@ -278,7 +280,7 @@ export default async function Home({
               alt="Polygon GIF"
             /> */}
             <img
-              className="max-w-[350px] h-auto relative top-[36px]"
+              className="max-w-[500px] h-auto relative top-[36px]"
               src="/images/lion-pow.gif"
               alt="Polygon GIF"
             />
@@ -349,7 +351,7 @@ export default async function Home({
           {/* <FadeInRight> */}
           <img
             src="/images/lion-pow.png"
-            className="absolute w-[500px] right-[0] top-[10vw]"
+            className="absolute w-[500px] right-[0] top-[10vw] -rotate-90"
             alt="lion img"
           />
           {/* </FadeInRight> */}
@@ -380,7 +382,7 @@ export default async function Home({
             {/* <FadeInLeft> */}
             <img
               src="/images/lion-pow.png"
-              className="absolute w-[500px] left-[0] top-[2vw]"
+              className="absolute w-[500px] left-[0] top-[2vw] rotate-90"
               alt="lion img"
             />
             {/* </FadeInLeft> */}
