@@ -68,6 +68,7 @@ body {
 .feature-circle .text-box .para {
   color: #e5e5e5;
   font-size: 1rem;
+
   font-weight: 200;
   line-height: 24px;
 }
@@ -348,7 +349,7 @@ body {
 
 .sus-modal .modal-body button.tab-item[aria-selected='true'] .text-default-500 {
   color: #eaeaea;
-  border-bottom: 3px solid #009D73;
+  border-bottom: 3px solid #009d73;
 }
 
 @media (max-width: 1279.98px) {

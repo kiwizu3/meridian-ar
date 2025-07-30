@@ -64,7 +64,7 @@ export default function EstablishingSection() {
                     <LionPawCircle />
                   </div>
                   <div
-                    className="cursor-pointer content-center labal-gradient w-full p-3 rounded-lg hover:opacity-90 transition"
+                    className="cursor-pointer content-center labal-gradient w-full p-3 rounded-lg hover:bg-reportGreen"
                     onClick={() => handleOpenModal(item.label, item.content)}
                   >
                     <span>{item.label}</span>
