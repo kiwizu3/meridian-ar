@@ -89,7 +89,7 @@ export default function EnvisioningSection() {
                 <div>
                   <LionPawCircle />
                 </div>
-                <div className="cursor-pointer content-center labal-gradient w-full p-3 rounded-lg hover:opacity-90 transition">
+                <div className="cursor-pointer content-center labal-gradient w-full p-3 rounded-lg hover:bg-reportGreen">
                   <span>{item.label}</span>
                 </div>
               </div>

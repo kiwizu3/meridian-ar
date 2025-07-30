@@ -38,12 +38,12 @@ export default function ValueCreationModel({ dictionary }: any) {
             <div>
               <div className="text-lg font-medium my-5">
                 <SpeechText>
-                  <p className="whitespace-pre-line">
+                  <p className="whitespace-pre-line font-secondary">
                     {dictionary?.financial_stability}
                   </p>
                 </SpeechText>
               </div>
-              <div className="para">
+              <div className="para font-secondary">
                 <SpeechText>
                   <p>{dictionary?.financial_stability_is_crucial}</p>
                 </SpeechText>
@@ -133,12 +133,12 @@ export default function ValueCreationModel({ dictionary }: any) {
             <div>
               <div className="text-lg font-medium my-5">
                 <SpeechText>
-                  <p className="whitespace-pre-line">
+                  <p className="whitespace-pre-line pl-5 font-secondary">
                     {dictionary?.positive_environmental_impact}
                   </p>
                 </SpeechText>
               </div>
-              <div className="para">
+              <div className="para pl-5 font-secondary">
                 <SpeechText>
                   <p>{dictionary?.reducing_direct_and_indirect_impacts}</p>
                 </SpeechText>

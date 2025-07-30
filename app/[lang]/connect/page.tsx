@@ -26,7 +26,6 @@ export default function Contact({
   const [message, setMessage] = useState<string>('');
   const [showFacebookPlugin, setShowFacebookPlugin] = useState(false);
 
-
   const handleSubmit = async () => {
     try {
       if (firstName && lastName && message && contact && email) {
@@ -83,12 +82,8 @@ export default function Contact({
     setShowFacebookPlugin(true);
   }, []);
 
-
-
   return (
     <div className="relative">
-
-
       <ToastContainer
         position="top-center"
         autoClose={5000}
@@ -109,16 +104,19 @@ export default function Contact({
           <SpeechText>
             <h1 className="connect-heading">{dictionary?.connect}</h1>
           </SpeechText>
-          <div className="grid grid-cols-1 md:grid-cols-3">
-            <div className="connect-news-wrap md:order-1 order-2">
+          <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-3">
+            <div className="md:col-span-2 lg:col-span-1 connect-news-wrap md:order-1 order-2">
               <div className="connect-news-inner">
                 {showFacebookPlugin && (
                   <iframe
                     title="LB Finance PLC Facebook Page"
-                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fweb.facebook.com%2FLBFinancePLC&tabs=timeline&width=340&height=1100&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-                    width="100%"
+                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fweb.facebook.com%2FLBFinancePLC&tabs=timeline&width=300&height=1100&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                    width="300px"
                     height="1100"
-                    style={{ border: 'none', overflow: 'hidden', maxWidth: '100%' }}
+                    style={{
+                      border: 'none',
+                      overflow: 'auto',
+                    }}
                     scrolling="no"
                     frameBorder="0"
                     allowFullScreen
@@ -129,7 +127,7 @@ export default function Contact({
             </div>
 
             <div
-              className="flex flex-col col-span-2 contact-wrap p-5 md:order-2 order-1"
+              className="flex flex-col contact-wrap p-5 md:order-2 order-1 md:col-span-2 lg:col-span-2"
               id="contact-wrap"
             >
               <div className="detail-wrap pr-0 md:pr-0 lg:pr-6 xl:pr-7">
