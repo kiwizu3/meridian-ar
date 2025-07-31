@@ -280,8 +280,8 @@ export default async function Home({
               alt="Polygon GIF"
             /> */}
             <img
-              className="max-w-[500px] h-auto relative top-[36px]"
-              src="/images/lion-pow.gif"
+              className="max-w-[250px] h-auto relative top-[96px]"
+              src="/gif/Lion_pow4.gif"
               alt="Polygon GIF"
             />
           </div>

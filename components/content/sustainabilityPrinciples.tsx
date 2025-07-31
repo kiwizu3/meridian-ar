@@ -5,7 +5,7 @@ import React from 'react';
 export default function UNGlobalCompactPrinciples() {
   const principles = [
     {
-      category: 'HUMAN RIGHTS',
+      category: 'Human Rights',
       items: [
         {
           principle: 'Principle 1 :',
@@ -24,7 +24,7 @@ export default function UNGlobalCompactPrinciples() {
       ],
     },
     {
-      category: 'LABOUR',
+      category: 'Labour',
       items: [
         {
           principle: 'Principle 3 :',
@@ -61,7 +61,7 @@ export default function UNGlobalCompactPrinciples() {
       ],
     },
     {
-      category: 'ENVIRONMENT',
+      category: 'Environment',
       items: [
         {
           principle: 'Principle 7 :',
@@ -89,7 +89,7 @@ export default function UNGlobalCompactPrinciples() {
       ],
     },
     {
-      category: 'ANTI-CORRUPTION',
+      category: 'Anti-Corruption',
       items: [
         {
           principle: 'Principle 10 :',
@@ -112,9 +112,9 @@ export default function UNGlobalCompactPrinciples() {
         <table className="w-full border-collapse">
           <thead>
             <tr className="bg-blue-600">
-              <th className="border border-white p-2">PRINCIPLE</th>
-              <th className="border border-white p-2">DESCRIPTION</th>
-              <th className="border border-white p-2">PAGE NO</th>
+              <th className="border border-white p-2 w-40">Principle</th>
+              <th className="border border-white p-2">Description</th>
+              <th className="border border-white p-2">Page</th>
             </tr>
           </thead>
           <tbody>

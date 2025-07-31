@@ -98,7 +98,7 @@ export default function SLFRSDisclosuresContentIndex() {
                 <th className="border border-white p-2">
                   Summary of Requirements
                 </th>
-                <th className="border border-white p-2">Page Reference</th>
+                <th className="border border-white p-2">Page</th>
               </tr>
             </thead>
             <tbody>

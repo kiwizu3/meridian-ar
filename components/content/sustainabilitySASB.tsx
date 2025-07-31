@@ -122,14 +122,12 @@ export default function SustainabilitySASB() {
           <table className="w-full border-collapse">
             <thead>
               <tr className="bg-blue-600">
-                <th className="border border-white p-2">TOPIC</th>
-                <th className="border border-white p-2">METRIC</th>
-                <th className="border border-white p-2">CATEGORY</th>
-                <th className="border border-white p-2">UNIT OF MEASURE</th>
-                <th className="border border-white p-2">CODE</th>
-                <th className="border border-white p-2">
-                  DISCLOSURE/ PAGE REFERENCE
-                </th>
+                <th className="border border-white p-2">Topic</th>
+                <th className="border border-white p-2">Metric</th>
+                <th className="border border-white p-2">Category</th>
+                <th className="border border-white p-2">Unit of Measure</th>
+                <th className="border border-white p-2">Code</th>
+                <th className="border border-white p-2">Page</th>
               </tr>
             </thead>
             <tbody>
