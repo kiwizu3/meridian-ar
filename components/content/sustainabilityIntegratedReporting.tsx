@@ -169,7 +169,7 @@ export default function IntegratedReportingIndex() {
             <tr className="bg-blue-600">
               <th className="border border-white p-2">IR Reference</th>
               <th className="border border-white p-2">Description</th>
-              <th className="border border-white p-2">Location (Page No.)</th>
+              <th className="border border-white p-2">Page</th>
             </tr>
           </thead>
           <tbody>

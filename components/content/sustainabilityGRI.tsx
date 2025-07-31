@@ -278,7 +278,7 @@ export default function SustainabilityGRI() {
 
   const sections: Section[] = [
     {
-      title: 'INDIRECT ECONOMIC IMPACTS',
+      title: 'Indirect Economic Impacts',
       standard: 'GRI 203 Indirect Economic Impacts 2016',
       items: [
         {
@@ -290,7 +290,7 @@ export default function SustainabilityGRI() {
       ],
     },
     {
-      title: 'ANTI-CORRUPTION ',
+      title: 'Anti-Corruption',
       standard: 'GRI 205 Anti-Corruption 2016',
       items: [
         {
@@ -316,7 +316,7 @@ export default function SustainabilityGRI() {
       ],
     },
     {
-      title: 'ANTI-COMPETITIVE BEHAVIOR',
+      title: 'Anti-Competitive Behavior',
       standard: 'GRI 206 Anti-competitive Behavior 2016',
       items: [
         {
@@ -361,7 +361,7 @@ export default function SustainabilityGRI() {
       ],
     },
     {
-      title: 'ENVIRONMENT',
+      title: 'Environment',
       standard: 'GRI 305 Emissions 2016',
       items: [
         {
@@ -405,7 +405,7 @@ export default function SustainabilityGRI() {
       ],
     },
     {
-      title: 'SOCIAL',
+      title: 'Social',
       standard: 'GRI 401 Employment 2016',
       items: [
         {
@@ -430,7 +430,7 @@ export default function SustainabilityGRI() {
       ],
     },
     {
-      title: 'OCCUPATIONAL HEALTH AND SAFETY',
+      title: 'Occupational Health and Safety',
       standard: 'GRI 403 Occupational Health and Safety 2018',
       items: [
         {
@@ -442,7 +442,7 @@ export default function SustainabilityGRI() {
       ],
     },
     {
-      title: 'TRAINING AND EDUCATION',
+      title: 'Training and Education',
       standard: 'GRI 404 Training and Education 2016',
       items: [
         {
@@ -468,7 +468,7 @@ export default function SustainabilityGRI() {
       ],
     },
     {
-      title: 'DIVERSITY AND EQUAL OPPORTUNITY',
+      title: 'Diversity and Equal Opportunity',
       standard: 'GRI 405 Diversity and Equal Opportunity 2016',
       items: [
         {
@@ -486,7 +486,7 @@ export default function SustainabilityGRI() {
       ],
     },
     {
-      title: 'NON-DISCRIMINATION',
+      title: 'Non-discrimination',
       standard: 'GRI 406 Non-discrimination 2016',
       items: [
         {
@@ -500,7 +500,7 @@ export default function SustainabilityGRI() {
       ],
     },
     {
-      title: 'LOCAL COMMUNITIES',
+      title: 'Local Communities',
       standard: 'GRI 413 Local Communities 2016',
       items: [
         {
@@ -521,7 +521,7 @@ export default function SustainabilityGRI() {
       ],
     },
     {
-      title: 'CUSTOMER PRIVACY',
+      title: 'Customer Privacy',
       standard: 'GRI 418 Customer Privacy 2016',
       items: [
         {
@@ -559,8 +559,8 @@ export default function SustainabilityGRI() {
             </thead>
             <tbody>
               <tr className="bg-blue-800">
-                <td colSpan={4} className="border border-white p-2 font-bold">
-                  GENERAL DISCLOSURES
+                <td colSpan={4} className="border border-white p-2 font-bold capitalize">
+                General Disclosures
                 </td>
               </tr>
               <tr className="bg-blue-700">
@@ -588,7 +588,7 @@ export default function SustainabilityGRI() {
               ))}
               <tr className="bg-blue-800">
                 <td colSpan={4} className="border border-white p-2 font-bold">
-                  MATERIAL TOPICS
+                Material Topics
                 </td>
               </tr>
               <tr className="bg-blue-700">
@@ -613,7 +613,7 @@ export default function SustainabilityGRI() {
               ))}
               <tr className="bg-blue-800">
                 <td colSpan={4} className="border border-white p-2 font-bold">
-                  ECONOMIC PERFORMANCE
+                Economic Performance
                 </td>
               </tr>
               <tr className="bg-blue-700">
@@ -641,7 +641,7 @@ export default function SustainabilityGRI() {
               ))}
               <tr className="bg-blue-800">
                 <td colSpan={4} className="border border-white p-2 font-bold">
-                  MARKET PRESENCE
+                Market Presence
                 </td>
               </tr>
               <tr className="bg-blue-700">
