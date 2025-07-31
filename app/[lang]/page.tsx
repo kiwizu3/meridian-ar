@@ -18,6 +18,7 @@ import {
 } from '@/utility/langClassName';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
+import PdfDownload from '@/components/icons/pdfDownload';
 
 const HomePageVideo = dynamic(() => import('@/components/HomePageVideo'), {
   ssr: false,
@@ -31,12 +32,15 @@ const HomePageMainVideo = dynamic(
 const DocumentCard = dynamic(() => import('@/components/cards/documentCard'), {
   ssr: false,
 });
+const HtmlCard = dynamic(() => import('@/components/cards/htmlCard'), {
+  ssr: false,
+});
 const DetailCard = dynamic(() => import('@/components/cards/detailCard'), {
   ssr: false,
 });
-const HTMLVersion = dynamic(() => import('@/components/HTMLVersion'), {
-  ssr: false,
-});
+// const HTMLVersion = dynamic(() => import('@/components/HTMLVersion'), {
+//   ssr: false,
+// });
 // const FadeInRight = dynamic(() => import('@/components/FadeInRight'), {
 //   ssr: false,
 // });
@@ -51,6 +55,32 @@ export default async function Home({
 }>) {
   const { lang } = params;
   const dictionary = await getDictionary(lang);
+
+  const htmlCard = [
+    // {
+    //   svg: <Html5con/>,
+    //   title: dictionary?.pdf_version,
+    //   description: dictionary?.the_annual_report_html,
+    //   viewTitle: dictionary?.html_version,
+    //   link: `/${lang}/report`,
+    // },
+    {
+      svg: <Html5con/>,
+      title: dictionary?.html_version,
+      description: dictionary?.the_annual_report_html,
+      viewTitle: dictionary?.view_html,
+      link: `/${lang}/report`,
+    },
+    {
+      svg: <PdfDownload className="fill-[#06253A]" />,
+      title: dictionary?.generate_report,
+      description: dictionary?.the_generate_report_Pdf,
+      viewTitle: dictionary?.generate_report,
+      link: '/report/generate-report',
+    },
+  ];
+
+
   const documentCard = [
     {
       svg: <Pdf className="fill-[#06253A]" />,
@@ -201,7 +231,7 @@ export default async function Home({
                     </p>
                   </SpeechText>
                   <div className="pt-[22px] grid lg:grid-cols-2 grid-cols-1 gap-4">
-                    <div>
+                    {/* <div>
                       <HTMLVersion
                         svg={<Html5con />}
                         link={`/${lang}/report`}
@@ -210,7 +240,23 @@ export default async function Home({
                         viewTitle={dictionary?.view_html}
                         dictionary={dictionary}
                       />
+                      
+                    </div> */}
+                    <div className="grid grid-rows-2 gap-4">
+                      {htmlCard.map((item, index) => (
+                        <div key={`${index.toString()}`}>
+                          <HtmlCard
+                            svg={item.svg}
+                            link={item.link}
+                            description={item.description}
+                            title={item.title}
+                            viewTitle={item?.viewTitle}
+                            dictionary={dictionary}
+                          />
+                        </div>
+                      ))}
                     </div>
+
                     <div className="grid grid-rows-2 gap-4">
                       {documentCard.map((item, index) => (
                         <div key={`${index.toString()}`}>
