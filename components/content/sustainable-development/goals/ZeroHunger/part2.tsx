@@ -3,9 +3,9 @@
 export default function ZeroHungerPart2() {
   return (
     <div>
-      <div className="bg-themeGreen text-black p-8">
+      <div className="bg-themeGreen text-black mb-8">
         <div className="w-full">
-          <div className="bg-cardGreen rounded-lg p-6 mb-8">
+          <div className="bg-cardGreen rounded-lg p-8">
             <div className="flex items-center mb-8">
               <h1 className="text-4xl font-bold text-white">
                 CULTIVATING SOCIAL AND RELATIONSHIP CAPITAL
@@ -17,7 +17,7 @@ export default function ZeroHungerPart2() {
               </h2>
             </div>
 
-            <div className="overflow-x-auto">
+            <div className="overflow-x-auto mb-8">
               <table className="w-full bg-[#4DA28C]">
                 <thead>
                   <tr>
@@ -59,9 +59,7 @@ export default function ZeroHungerPart2() {
                 </tbody>
               </table>
             </div>
-          </div>
 
-          <div className="bg-cardGreen rounded-lg p-6 mb-8">
             <h2 className="text-2xl font-semibold mb-6">BUILD PARTNERSHIPS</h2>
 
             <div className="overflow-x-auto">
@@ -98,9 +96,7 @@ export default function ZeroHungerPart2() {
                 </tbody>
               </table>
             </div>
-          </div>
 
-          <div className="bg-[#3C8D79] rounded-lg p-6 mb-8">
             <h2 className="text-2xl font-semibold mb-6">TRANSFORMATIVE CSR</h2>
 
             <div className="overflow-x-auto">
@@ -141,9 +137,7 @@ export default function ZeroHungerPart2() {
                 </tbody>
               </table>
             </div>
-          </div>
 
-          <div className="bg-[#3C8D79] rounded-lg p-6">
             <h2 className="text-2xl font-semibold mb-4">FOSTERING CULTURE</h2>
             <p>
               We develop video contents focused on sharing positive perspectives

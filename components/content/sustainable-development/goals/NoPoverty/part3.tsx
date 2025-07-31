@@ -17,7 +17,7 @@ export default function NoPovertyPart3() {
                 <h3 className="text-xl font-semibold my-4">
                   From Employment to Empowerment
                 </h3>
-                <p className="text-white">
+                <p>
                   We empower entrepreneurs to build businesses and create jobs.
                   Our commitment to economic growth extends far beyond our own
                   Company, impacting communities across Sri Lanka.
@@ -40,7 +40,7 @@ export default function NoPovertyPart3() {
                 <h2 className="text-2xl font-semibold mb-4">
                   4. EMPOWERING WOMEN
                 </h2>
-                <p className="text-white">
+                <p>
                   Financial independence is a key driver of social progress, and
                   we are leading the charge in empowering women entrepreneurs
                   and professionals. Our targeted programmes provide customised
@@ -51,26 +51,22 @@ export default function NoPovertyPart3() {
                 <div className="grid grid-cols-2 gap-4 mt-4 text-center">
                   <div>
                     <h3 className="text-2xl font-bold">Rs. 84 Bn</h3>
-                    <p className="text-white">
-                      Gold Loans to women entrepreneurs
-                    </p>
+                    <p>Gold Loans to women entrepreneurs</p>
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold">2,090</h3>
-                    <p className="text-white">
-                      Woman Representational workforce
-                    </p>
+                    <p>Woman Representational workforce</p>
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold">Rs. 374 Mn</h3>
-                    <p className="text-white">
+                    <p>
                       LB CIM Business and Personal Loans disbursed to women
                       entrepreneurs
                     </p>
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold">10,289</h3>
-                    <p className="text-white">
+                    <p>
                       Number of vehicle financing facilities granted to women
                     </p>
                   </div>
@@ -85,16 +81,16 @@ export default function NoPovertyPart3() {
               <h3 className="text-xl font-semibold mb-2">
                 Economic Value Creation
               </h3>
-              <p className="text-white">
+              <p>
                 At LBF, we measure success by more than profit. We measure it by
                 the real economic value we create.
               </p>
-              <p className="text-white">
+              <p>
                 Our Economic Value Added (EVA) and Market Value Added (MVA)
                 reflect our commitment to sustainable wealth creation for all
                 stakeholders
               </p>
-              <p className="text-white">
+              <p>
                 Our EVA and MVA demonstrate our commitment to generating wealth
                 beyond financial transactions, ensuring long-term prosperity for
                 shareholders, employees, and customers.
@@ -242,7 +238,7 @@ export default function NoPovertyPart3() {
                 </div>
               </div>
               <div>
-                <p className="text-white">
+                <p>
                   By expanding financial access and providing crucial skills
                   development, we are empowering women to become economic
                   powerhouses, creating a ripple effect of job creation,

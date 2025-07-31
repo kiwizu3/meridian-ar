@@ -75,18 +75,18 @@ const StatutoryRatiosChart = ({ dictionary }: any) => {
   const chartOptions = {
     verticalBarChartData: {
       ...verticalBarChartOptions,
-      xaxis: { ...verticalBarChartOptions.xaxis, categories: categories },
+      xaxis: { ...verticalBarChartOptions.xaxis, categories: dateRange },
     },
     horizontalBarChartData: {
       ...horizontalBarChartOptions,
       xaxis: {
         ...horizontalBarChartOptions.xaxis,
-        categories: categories?.toReversed(),
+        categories: dateRange?.toReversed(),
       },
     },
     lineGraphData: {
       ...lineChartOptions,
-      xaxis: { ...lineChartOptions.xaxis, categories: categories },
+      xaxis: { ...lineChartOptions.xaxis, categories: dateRange },
     },
     radialBarChartData: {
       ...radialBarChartOptions,

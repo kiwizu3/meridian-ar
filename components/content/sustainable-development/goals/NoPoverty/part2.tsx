@@ -12,7 +12,7 @@ export default function NoPovertyPart2() {
         <div className="w-full">
           <div className="grid grid-cols-1 gap-6">
             <div>
-              <h2 className="text-black text-2xl font-semibold py-5">
+              <h2 className="text-2xl font-semibold py-5">
                 DIGITAL ACCESS: Breaking Barriers with Innovation
               </h2>
               <p>
@@ -43,7 +43,7 @@ export default function NoPovertyPart2() {
           <div className="w-full">
             <div className="bg-cardGreen rounded-lg p-6 mb-8">
               <div className="flex items-center mb-4">
-                <h2 className="text-black text-2xl font-semibold py-5">
+                <h2 className="text-2xl font-semibold py-5">
                   STRENGTHENING THE ECONOMY
                 </h2>
               </div>
@@ -68,7 +68,7 @@ export default function NoPovertyPart2() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 mb-8">
               <div className="bg-cardGreen rounded-l-lg p-6">
-                <h3 className="text-black text-xl font-semibold mb-4">
+                <h3 className="text-xl font-semibold mb-4">
                   Tax Paid to the Government
                 </h3>
                 <div>

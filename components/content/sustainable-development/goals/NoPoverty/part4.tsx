@@ -51,7 +51,7 @@ export default function NoPovertyPart4() {
               </div>
             </div>
 
-            <div className="bg-cardGreen rounded-lg p-6">
+            <div className="bg-yellow rounded-lg p-6">
               <h2 className="text-2xl font-semibold mb-4">
                 6 RURAL DEVELOPMENT
               </h2>
@@ -65,7 +65,7 @@ export default function NoPovertyPart4() {
             </div>
           </div>
 
-          <div className="bg-cardGreen rounded-lg p-6 mb-8">
+          <div className="bg-yellow rounded-lg p-6">
             <h2 className="text-2xl font-semibold mb-4">
               7 SUPPORTING COMMUNITIES
             </h2>
