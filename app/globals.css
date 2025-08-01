@@ -444,7 +444,7 @@ body {
   font-family: 'nexa' !important;
 }
 
-@keyframes fadeInOut {
+@keyframes fadeInOutLeft {
   0% {
     opacity: 0;
     transform: translateY(30px) scale(0.9) rotate(0deg);
@@ -452,5 +452,15 @@ body {
   100% {
     opacity: 1;
     transform: translateY(0px) scale(1) rotate(-90deg);
+  }
+}
+@keyframes fadeInOutRight {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9) rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1) rotate(90deg);
   }
 }
