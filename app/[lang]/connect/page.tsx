@@ -25,10 +25,11 @@ export default function Contact({
   const [contact, setContact] = useState<string>('');
   const [message, setMessage] = useState<string>('');
   const [showFacebookPlugin, setShowFacebookPlugin] = useState(false);
+  const [agreedToPrivacy, setAgreedToPrivacy] = useState<boolean>(false);
 
   const handleSubmit = async () => {
     try {
-      if (firstName && lastName && message && contact && email) {
+      if (firstName && lastName && message && contact && email && agreedToPrivacy) {
         const response = await fetch(`${process.env.BASE_URL}/send-email`, {
           method: 'POST',
           headers: {
@@ -84,6 +85,8 @@ export default function Contact({
 
   return (
     <div className="relative">
+
+
       <ToastContainer
         position="top-center"
         autoClose={5000}
@@ -319,10 +322,26 @@ export default function Contact({
                         }}
                       />
                     </div>
+                    <div className="mb-6 flex items-center space-x-3">
+                      <input
+                        type="checkbox"
+                        id="privacy-checkbox"
+                        checked={agreedToPrivacy}
+                        onChange={(e) => setAgreedToPrivacy(e.target.checked)}
+                        className="w-4 h-4"
+                      />
+                      <label htmlFor="privacy-checkbox" className="text-sm font-secondary text-white">
+                        I have read and agree to the{' '}
+                        <a href={`/${lang}/privacy-policy`} className="text-blue-400 hover:underline" target="_blank">
+                          Privacy Policy
+                        </a>
+                      </label>
+                    </div>
                     <button
                       type="button"
                       className="submit-btn font-secondary"
                       onClick={() => handleSubmit()}
+                      disabled={!agreedToPrivacy}
                     >
                       {dictionary?.submit}
                     </button>
