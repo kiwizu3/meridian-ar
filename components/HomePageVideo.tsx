@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import videoThumbnail from '@/public/images/video-frame-home.png';
+// import videoThumbnail from '@/public/images/video-frame-home.png';
 
 const HomePageVideo = () => {
   const [isPlaying, setIsPlaying] = useState(false);

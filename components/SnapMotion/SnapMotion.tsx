@@ -428,7 +428,7 @@ function SnapMotion(props: any) {
         <div className="snap-motion-item smi-right" />
         <div className="snap-motion-item smi-bottom" />
       </div>
-      <div className="snap-motion-item smi-play" />
+      {/* <div className="snap-motion-item smi-play" /> */}
     </div>
   );
 }
