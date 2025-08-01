@@ -336,16 +336,7 @@ export default async function Home({
           </div>
         </section>
 
-        <section
-          className="relative"
-          style={{
-            backgroundImage: `url(${secTwoImage.src})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'sticky',
-            backgroundAttachment: 'fixed',
-            backgroundRepeat: 'no-repeat',
-          }}
-        >
+        <section>
           <a
             aria-label="video"
             href="#video"
@@ -400,10 +391,10 @@ export default async function Home({
           {/* <FadeInRight> */}
           <img
             src="/images/lion-pow.png"
-            className="absolute w-[500px] right-[0] top-[10vw] -rotate-90"
+            className="absolute w-[500px] right-[0] top-[10vw]"
             alt="lion img"
             style={{
-              animation: 'fadeInOut 4s ',
+              animation: 'fadeInOutLeft 20s ease-out forwards',
             }}
           />
           {/* </FadeInRight> */}
@@ -436,6 +427,9 @@ export default async function Home({
               src="/images/lion-pow.png"
               className="absolute w-[500px] left-[0] top-[2vw] rotate-90"
               alt="lion img"
+              style={{
+                animation: 'fadeInOutRight 20s ease-out forwards',
+              }}
             />
             {/* </FadeInLeft> */}
             <div className="relative z-10 flex flex-col items-center xl:items-end gap-14 container px-5 lg:px-0 py-8 lg:py-0">
