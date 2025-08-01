@@ -283,7 +283,7 @@ export default async function Home({
           </div>
         </section>
         <section className="lg:pt-10 relative" id="polygonSection">
-          <a
+          {/* <a
             aria-label="cover-obj"
             href="#cover-obj"
             snap-motion-type="object"
@@ -310,7 +310,7 @@ export default async function Home({
             snap-motion-type="object"
             snap-motion-id="animate"
             className="left-[50%] bottom-[38%] hidden md:block"
-          />
+          /> */}
           <div className="flex move-center items-center pb-14 pt-0 lg:pt-28 lg:pb-56">
             <div className="absolute">
               <div className="max-w-[90vw] lg:max-w-none flex">
@@ -363,7 +363,7 @@ export default async function Home({
               aria-label="video-obj"
               href="#video-obj"
               snap-motion-type="scroll"
-              snap-motion-id="video"
+              // snap-motion-id="video"
               className={`hidden md:block absolute ${getHomeVideoPosition(lang)}`}
             />
             <div>
