@@ -277,7 +277,7 @@ body {
     line-height: 4rem !important;
   }
 
-  .para{
+  .para {
     line-height: 3rem !important;
   }
 
@@ -356,13 +356,13 @@ body {
 
 /* Handle */
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #009D73;
+  background: #009d73;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #009D73;
+  background: #009d73;
 }
 
 .speaker-icon-center,
@@ -414,7 +414,6 @@ body {
   }
 }
 
-
 .leading-\[5rem\] {
   line-height: 5rem;
 }
@@ -443,4 +442,15 @@ body {
 }
 .font-primary {
   font-family: 'nexa' !important;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9) rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1) rotate(-90deg);
+  }
 }

@@ -65,7 +65,7 @@ export default async function Home({
     //   link: `/${lang}/report`,
     // },
     {
-      svg: <Html5con/>,
+      svg: <Html5con />,
       title: dictionary?.html_version,
       description: dictionary?.the_annual_report_html,
       viewTitle: dictionary?.view_html,
@@ -79,7 +79,6 @@ export default async function Home({
       link: '/report/generate-report',
     },
   ];
-
 
   const documentCard = [
     {
@@ -316,7 +315,11 @@ export default async function Home({
             <div className="absolute">
               <div className="max-w-[90vw] lg:max-w-none flex">
                 {/* <PolygonChip /> */}
-                <Image src={PolygonChipNew} alt="background-image" className="" />
+                <Image
+                  src={PolygonChipNew}
+                  alt="background-image"
+                  className=""
+                />
               </div>
             </div>
             <div className="lg:max-w-[252px] max-w-sm h-auto mt-56" />
@@ -399,6 +402,9 @@ export default async function Home({
             src="/images/lion-pow.png"
             className="absolute w-[500px] right-[0] top-[10vw] -rotate-90"
             alt="lion img"
+            style={{
+              animation: 'fadeInOut 4s ',
+            }}
           />
           {/* </FadeInRight> */}
           <div className="relative z-10 flex flex-col gap-14 container px-5 lg:px-0 items-center xl:items-start lg:pb-[100px] pt-8 lg:pt-[173px]">

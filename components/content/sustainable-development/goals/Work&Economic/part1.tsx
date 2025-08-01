@@ -4,8 +4,8 @@ import Image from 'next/image';
 
 export default function IntellectualCapitalPart1() {
   return (
-    <div>
-      <div className="bg-themeGreen text-black p-8 mb-10">
+    <div className="bg-themeGreen">
+      <div className="w-full">
         <h1 className="text-4xl text-white mb-4">
           MINDSCAPING INTELLECTUAL CAPITAL
         </h1>
