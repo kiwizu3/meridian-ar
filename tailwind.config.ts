@@ -38,11 +38,10 @@ module.exports = {
         themeGreen: '#0E3A2F',
         cardGreen: '#17634F',
         reportGreen: '#467643',
-        greeen2 : '#124C3D',
+        greeen2: '#124C3D',
         themeYellow: '#EDB143',
-        yellow : '#DBB226 ',
+        yellow: '#DBB226 ',
         gold: '#D9CA95',
-        
       },
     },
     fontFamily: {

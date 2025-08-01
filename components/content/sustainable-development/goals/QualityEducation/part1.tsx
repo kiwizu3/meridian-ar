@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function QualityEducationPart1() {
   return (
-    <div className="bg-[#4DA28C] max-w-4xl mx-auto py-8 px-4 mb-5">
+    <div className="bg-[#4DA28C] w-full p-8 mb-8 rounded-lg">
       <div className="flex items-center mb-4">
         <h2 className="text-2xl font-semibold text-black">
           Stationery Donation to Pre-School

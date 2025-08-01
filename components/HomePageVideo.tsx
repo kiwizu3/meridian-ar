@@ -19,34 +19,20 @@ const HomePageVideo = () => {
   return (
     <div>
       <div className="grid grid-cols-4">
-        {isClient &&
-          (isPlaying ? (
-            <div className="col-span-full p-4 flex justify-center">
-              <iframe
-                width={1280}
-                height={720}
-                className="rounded-2xl responsive-iframe"
-                src="https://www.youtube-nocookie.com/embed/jXD2ZRcqBOg?si=dfiX5p3i2L7dKxxp&amp;controls=0"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              />
-            </div>
-          ) : (
-            <div
-              className="col-span-full p-4 cursor-pointer"
-              onClick={handlePlayClick}
-            >
-              <Image
-                src={videoThumbnail}
-                alt="Video thumbnail"
-                width={1280}
-                height={720}
-                className="rounded-2xl"
-              />
-            </div>
-          ))}
+        {isClient && (
+          <div className="col-span-full p-4 flex justify-center">
+            <iframe
+              width={1280}
+              height={720}
+              className="rounded-2xl responsive-iframe"
+              src="https://www.youtube-nocookie.com/embed/jXD2ZRcqBOg?si=dfiX5p3i2L7dKxxp&amp;controls=0"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          </div>
+        )}
       </div>
 
       {/* Media query for responsive iframe */}

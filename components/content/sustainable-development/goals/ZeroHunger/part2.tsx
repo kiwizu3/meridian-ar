@@ -12,13 +12,13 @@ export default function ZeroHungerPart2() {
               </h1>
             </div>
             <div className="flex items-center mb-4">
-              <h2 className="text-2xl font-semibold">
+              <h2 className="text-2xl font-semibold text-white">
                 Education for development
               </h2>
             </div>
 
             <div className="overflow-x-auto mb-8">
-              <table className="w-full bg-[#4DA28C]">
+              <table className="w-full bg-[#4DA28C] text-white">
                 <thead>
                   <tr>
                     <th className="p-3 text-left">Project</th>
@@ -60,10 +60,12 @@ export default function ZeroHungerPart2() {
               </table>
             </div>
 
-            <h2 className="text-2xl font-semibold mb-6">BUILD PARTNERSHIPS</h2>
+            <h2 className="text-2xl font-semibold text-white mb-6">
+              BUILD PARTNERSHIPS
+            </h2>
 
             <div className="overflow-x-auto">
-              <table className="w-full bg-[#4DA28C]">
+              <table className="w-full bg-[#4DA28C] text-white">
                 <thead>
                   <tr className="">
                     <th className="p-3 text-left">Project</th>
@@ -97,12 +99,14 @@ export default function ZeroHungerPart2() {
               </table>
             </div>
 
-            <h2 className="text-2xl font-semibold mb-6">TRANSFORMATIVE CSR</h2>
+            <h2 className="text-2xl font-semibold text-white my-6">
+              TRANSFORMATIVE CSR
+            </h2>
 
             <div className="overflow-x-auto">
-              <table className="w-full">
+              <table className="w-full text-white bg-[#4DA28C]">
                 <thead>
-                  <tr className="bg-[#4DA28C]">
+                  <tr className="border-b border-[#4DA28C]">
                     <th className="p-3 text-left">Project</th>
                     <th className="p-3 text-left">Description</th>
                     <th className="p-3 text-left">Beneficiaries</th>
@@ -138,8 +142,10 @@ export default function ZeroHungerPart2() {
               </table>
             </div>
 
-            <h2 className="text-2xl font-semibold mb-4">FOSTERING CULTURE</h2>
-            <p>
+            <h2 className="text-2xl font-semibold text-white my-4">
+              FOSTERING CULTURE
+            </h2>
+            <p className="text-white">
               We develop video contents focused on sharing positive perspectives
               and insights throughout society, thereby helping to build a
               positive culture. Though not always directly tied to our
