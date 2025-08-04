@@ -218,9 +218,7 @@ export default function FinancialHighlights() {
                   Market Capitalisation
                 </td>
                 <td className="border border-white p-2">Rs. Million</td>
-                <td className="border border-white p-2">
-                  Rs. Million 47,925.94
-                </td>
+                <td className="border border-white p-2">47,925.94</td>
                 <td className="border border-white p-2">34,794.79</td>
                 <td className="border border-white p-2">37.74</td>
                 <td className="border border-white p-2">N/A</td>
@@ -333,7 +331,7 @@ export default function FinancialHighlights() {
                   10%)
                 </td>
                 <td className="border border-white p-2">%</td>
-                <td className="border border-white p-2">% 30.45</td>
+                <td className="border border-white p-2">30.45</td>
                 <td className="border border-white p-2">31.45</td>
                 <td className="border border-white p-2">(3.18)</td>
                 <td className="border border-white p-2">30.37</td>
@@ -346,7 +344,7 @@ export default function FinancialHighlights() {
                   (Minimum 14%)
                 </td>
                 <td className="border border-white p-2">%</td>
-                <td className="border border-white p-2">% 31.31</td>
+                <td className="border border-white p-2">31.31</td>
                 <td className="border border-white p-2">32.19</td>
                 <td className="border border-white p-2">(2.73)</td>
                 <td className="border border-white p-2">31.38</td>
@@ -358,7 +356,7 @@ export default function FinancialHighlights() {
                   Equity to Deposits (Minimum 10%)
                 </td>
                 <td className="border border-white p-2">%</td>
-                <td className="border border-white p-2">% 37.02</td>
+                <td className="border border-white p-2">37.02</td>
                 <td className="border border-white p-2">35.52</td>
                 <td className="border border-white p-2">4.21</td>
                 <td className="border border-white p-2">37.16</td>
@@ -368,7 +366,7 @@ export default function FinancialHighlights() {
               <tr className="bg-cardGreen">
                 <td className="border border-white p-2">Liquidity Ratio</td>
                 <td className="border border-white p-2">%</td>
-                <td className="border border-white p-2">% 20.01</td>
+                <td className="border border-white p-2">20.01</td>
                 <td className="border border-white p-2">21.02</td>
                 <td className="border border-white p-2">(4.80)</td>
                 <td className="border border-white p-2">19.98</td>
@@ -410,7 +408,7 @@ export default function FinancialHighlights() {
                   Return on Assets (ROA)
                 </td>
                 <td className="border border-white p-2">%</td>
-                <td className="border border-white p-2">% 4.88</td>
+                <td className="border border-white p-2">4.88</td>
                 <td className="border border-white p-2">4.97</td>
                 <td className="border border-white p-2">(1.81)</td>
                 <td className="border border-white p-2">4.88</td>
@@ -422,7 +420,7 @@ export default function FinancialHighlights() {
                   Return on Equity (ROE)
                 </td>
                 <td className="border border-white p-2">%</td>
-                <td className="border border-white p-2">% 22.77</td>
+                <td className="border border-white p-2">22.77</td>
                 <td className="border border-white p-2">23.40</td>
                 <td className="border border-white p-2">(2.69)</td>
                 <td className="border border-white p-2">22.72</td>
@@ -434,7 +432,7 @@ export default function FinancialHighlights() {
                   Net Interest Margin (NIM)
                 </td>
                 <td className="border border-white p-2">%</td>
-                <td className="border border-white p-2">% 12.22</td>
+                <td className="border border-white p-2">12.22</td>
                 <td className="border border-white p-2">13.72</td>
                 <td className="border border-white p-2">(10.93)</td>
                 <td className="border border-white p-2">12.16</td>
@@ -444,7 +442,7 @@ export default function FinancialHighlights() {
               <tr className="bg-cardGreen">
                 <td className="border border-white p-2">Cost to Income</td>
                 <td className="border border-white p-2">%</td>
-                <td className="border border-white p-2">% 32.58</td>
+                <td className="border border-white p-2">32.58</td>
                 <td className="border border-white p-2">31.13</td>
                 <td className="border border-white p-2">4.66</td>
                 <td className="border border-white p-2">33.05</td>
@@ -454,7 +452,7 @@ export default function FinancialHighlights() {
               <tr>
                 <td className="border border-white p-2">Loan to Deposits</td>
                 <td className="border border-white p-2">Times</td>
-                <td className="border border-white p-2">Times 1.43</td>
+                <td className="border border-white p-2">1.43</td>
                 <td className="border border-white p-2">1.31</td>
                 <td className="border border-white p-2">8.72</td>
                 <td className="border border-white p-2">1.44</td>
@@ -466,7 +464,7 @@ export default function FinancialHighlights() {
                   Gross Non-Performing Loans Ratio (Gross NPL)
                 </td>
                 <td className="border border-white p-2">%</td>
-                <td className="border border-white p-2">% 2.25</td>
+                <td className="border border-white p-2">2.25</td>
                 <td className="border border-white p-2">3.54</td>
                 <td className="border border-white p-2">(36.44)</td>
                 <td className="border border-white p-2">2.29</td>
@@ -478,7 +476,7 @@ export default function FinancialHighlights() {
                   Net Non-Performing Loans Ratio (Net NPL)
                 </td>
                 <td className="border border-white p-2">%</td>
-                <td className="border border-white p-2">% (1.22)</td>
+                <td className="border border-white p-2">(1.22)</td>
                 <td className="border border-white p-2">(0.79)</td>
                 <td className="border border-white p-2">54.43</td>
                 <td className="border border-white p-2">(1.19)</td>
@@ -490,7 +488,7 @@ export default function FinancialHighlights() {
                   Provision Coverage Ratio
                 </td>
                 <td className="border border-white p-2">%</td>
-                <td className="border border-white p-2">% 154.02</td>
+                <td className="border border-white p-2">154.02</td>
                 <td className="border border-white p-2">122.42</td>
                 <td className="border border-white p-2">25.81</td>
                 <td className="border border-white p-2">151.84</td>
@@ -503,7 +501,7 @@ export default function FinancialHighlights() {
                   Receivables
                 </td>
                 <td className="border border-white p-2">%</td>
-                <td className="border border-white p-2">% 3.47</td>
+                <td className="border border-white p-2">3.47</td>
                 <td className="border border-white p-2">4.34</td>
                 <td className="border border-white p-2">(20.05)</td>
                 <td className="border border-white p-2">3.48</td>

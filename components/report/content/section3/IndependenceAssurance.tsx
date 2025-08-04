@@ -9,7 +9,7 @@ export default function IndependenceAssurance() {
         {/* Image 1 */}
         <div className="rounded-lg py-9">
           <Image
-            src="/images/report/content/INDEPENDENCE ASSURANCE.svg"
+            src="/images/report/content/INDEPENDENCE_ASSURANCE.svg"
             alt="Governance Structure"
             width={600}
             height={400}
