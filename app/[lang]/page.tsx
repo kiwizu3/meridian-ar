@@ -2,7 +2,7 @@ import BackgroundMusic from '@/components/backgroundMusic';
 import FadeInText from '@/components/FadeInText';
 import { Html5con, MidFileSearch, Pdf } from '@/components/icons';
 import ScrollingText from '@/components/sccrollText';
-import SnapMotionComponent from '@/components/SnapMotion/SnapMotion';
+// import SnapMotionComponent from '@/components/SnapMotion/SnapMotion';
 import SpeechText from '@/components/SpeechText';
 // import VideoSection from '@/components/VideoSection/VideoSection';
 import { getDictionary } from '@/get-dictionary';
@@ -136,7 +136,7 @@ export default async function Home({
   return (
     <main>
       <div className="hidden md:block">
-        <SnapMotionComponent duration={1500} easing="in-out-quad" />
+        {/* <SnapMotionComponent duration={1500} easing="in-out-quad" /> */}
       </div>
       <a
         aria-label="cover"
