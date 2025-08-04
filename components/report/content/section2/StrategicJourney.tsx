@@ -162,6 +162,122 @@ export default function StrategicJourney() {
             </div>
           </div>
 
+          {/* 2016-2017 */}
+          <div>
+            <h2 className="text-2xl font-semibold mb-4 border-b border-[#F3A847] pb-1">
+              2016-2017
+            </h2>
+            <div className="grid grid-cols-1 ">
+              <div className="bg-cardGreen p-4 rounded-lg">
+                <h3 className="font-bold mb-2">
+                  Sustainability Meets Technology
+                </h3>
+                <ul className="list-disc pl-5 space-y-2">
+                  <li>
+                    Successfully completed 45 years in the finance industry with
+                    a profit after tax growth of 70% (Rs. 3.7 Billion)
+                  </li>
+                  <li>
+                    Launched LB e-connect online platform to Savings customers
+                  </li>
+                  <li>
+                    Obtained MoneyGram agentship for international money
+                    transfer
+                  </li>
+                  <li>
+                    Integrated with Common Electronic Fund Transfer Switch
+                    (CEFTS)
+                  </li>
+                  <li>Exceeded Rs. 100 Billion asset base</li>
+                  <li>Launched LB Gift Store</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* 2018-2019 */}
+          <div>
+            <h2 className="text-2xl font-semibold mb-4 border-b border-[#F3A847] pb-1">
+              2018-2019
+            </h2>
+            <div className="grid grid-cols-1">
+              <div className="bg-cardGreen p-4 rounded-lg">
+                <h3 className="font-bold mb-2">Bold as a Brand</h3>
+                <ul className="list-disc pl-5 space-y-2">
+                  <li>
+                    Upgraded the ratings from BBB+/P2 to A-/ P2 by RAM Ratings
+                    (Lanka) Limited
+                  </li>
+                  <li>
+                    Mortgage Loan product was re-branded and re-launched as
+                    ‘Mulgala’
+                  </li>
+                  <li>
+                    Launched of ‘Krutha Hastha’ senior citizens loan scheme
+                  </li>
+                  <li>First overseas expansion to Myanmar</li>
+                  <li>Moved to cloud-based IT platform</li>
+                  <li>Ranked among top 20 brands in Sri Lanka by Interbrand</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* 2020-2021 */}
+          <div>
+            <h2 className="text-2xl font-semibold mb-4 border-b border-[#F3A847] pb-1">
+              2020-2021
+            </h2>
+            <div className="grid grid-cols-1">
+              <div className="bg-cardGreen p-4 rounded-lg">
+                <h3 className="font-bold mb-2">Smarter, Faster, Automated</h3>
+                <ul className="list-disc pl-5 space-y-2">
+                  <li>
+                    Chatbot was introduced to the corporate website and social
+                    media platforms
+                  </li>
+                  <li>Automation of the credit verification process</li>
+                  <li>Automated insurance renewal process</li>
+                  <li>
+                    Fully automated risk assessment scorecard for branches and
+                    Gold Loan centres
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* 2022-2024 */}
+          <div>
+            <h2 className="text-2xl font-semibold mb-4 border-b border-[#F3A847] pb-1">
+              2022-2024
+            </h2>
+            <div className="grid grid-cols-1">
+              <div className="bg-cardGreen p-4 rounded-lg">
+                <h3 className="font-bold mb-2">The Digital Era</h3>
+                <ul className="list-disc pl-5 space-y-2">
+                  <li>Tied up with DRP for digital financial services</li>
+                  <li>
+                    Partnered with WEBXPAY for 'CIM' business loans to MSMEs
+                  </li>
+                  <li>Installed data visualisation and modelling software</li>
+                  <li>Strengthened ISO 27001 information security standard</li>
+                  <li>
+                    Tied up with FinCSIRT (Computer Security Incident Response
+                    Team for Sri Lanka’s financial sector)
+                  </li>
+                  <li>First NBFI to launch Annual Report micro-site</li>
+                  <li>Amalgamation of Multi Finance PLC</li>
+                  <li>Introduced cookie policy to corporate website</li>
+                  <li>Integration with CRIB backend</li>
+                  <li>Updated website with AI-based digital imagery</li>
+                  <li>Opened 200th branch in Pallai</li>
+                  <li>Ranked 16 among top 40 corporates by Business Today</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
           {/* 2025 */}
           <div>
             <h2 className="text-2xl font-semibold mb-4 border-b border-[#F3A847] pb-1">
@@ -197,120 +313,6 @@ export default function StrategicJourney() {
               </div>
             </div>
           </div>
-
-          {/* 2016-2017 */}
-          <div>
-            <h2 className="text-2xl font-semibold mb-4 border-b border-[#F3A847] pb-1">
-              2016-2017
-            </h2>
-            <div className="grid grid-cols-1 ">
-              <div className="bg-cardGreen p-4 rounded-lg">
-                <h3 className="font-bold mb-2">
-                  Sustainability Meets Technology
-                </h3>
-                <ul className="list-disc pl-5 space-y-2">
-                  <li>
-                    Successfully completed 45 years in the finance industry with
-                    a profit after tax growth of 70% (Rs. 3.7 Billion)
-                  </li>
-                  <li>
-                    Launched LB e-connect online platform to Savings customers
-                  </li>
-                  <li>
-                    Obtained MoneyGram agentship for international money
-                    transfer
-                  </li>
-                  <li>
-                    Integrated with Common Electronic Fund Transfer Switch
-                    (CEFTS)
-                  </li>
-                  <li>Exceeded Rs. 100 Billion asset base</li>
-                  <li>Launched LB Gift Store</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          {/* 2018-2019 */}
-          <div>
-            <h2 className="text-2xl font-semibold mb-4 border-b border-[#F3A847] pb-1">
-              2018-2019
-            </h2>
-            <div className="grid grid-cols-1">
-              <div className="bg-cardGreen p-4 rounded-lg">
-                <h3 className="font-bold mb-2">Bold as a Brand</h3>
-                <ul className="list-disc pl-5 space-y-2">
-                  <li>
-                    Upgraded the ratings from BBB+/P2 to A-/ P2 by RAM Ratings
-                    (Lanka) Limited
-                  </li>
-                  <li>
-                    Mortgage Loan product was re-branded and re-launched as
-                    ‘Mulgala’
-                  </li>
-                  <li>
-                    Launched of ‘Krutha Hastha’ senior citizens loan scheme
-                  </li>
-                  <li>First overseas expansion to Myanmar</li>
-                  <li>Moved to cloud-based IT platform</li>
-                  <li>Ranked among top 20 brands in Sri Lanka by Interbrand</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          {/* 2020-2021 */}
-          <div>
-            <h2 className="text-2xl font-semibold mb-4 border-b border-[#F3A847] pb-1">
-              2020-2021
-            </h2>
-            <div className="grid grid-cols-1">
-              <div className="bg-cardGreen p-4 rounded-lg">
-                <h3 className="font-bold mb-2">Smarter, Faster, Automated</h3>
-                <ul className="list-disc pl-5 space-y-2">
-                  <li>
-                    Chatbot was introduced to the corporate website and social
-                    media platforms
-                  </li>
-                  <li>Automation of the credit verification process</li>
-                  <li>Automated insurance renewal process</li>
-                  <li>
-                    Fully automated risk assessment scorecard for branches and
-                    Gold Loan centres
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          {/* 2022-2024 */}
-          <div>
-            <h2 className="text-2xl font-semibold mb-4 border-b border-[#F3A847] pb-1">
-              2022-2024
-            </h2>
-            <div className="grid grid-cols-1">
-              <div className="bg-cardGreen p-4 rounded-lg">
-                <h3 className="font-bold mb-2">The Digital Era</h3>
-                <ul className="list-disc pl-5 space-y-2">
-                  <li>Tied up with DRP for digital financial services</li>
-                  <li>
-                    Partnered with WEBXPAY for 'CIM' business loans to MSMEs
-                  </li>
-                  <li>Installed data visualisation and modelling software</li>
-                  <li>Strengthened ISO 27001 information security standard</li>
-                  <li>
-                    Tied up with FinCSIRT (Computer Security Incident Response
-                    Team for Sri Lanka’s financial sector)
-                  </li>
-                  <li>First NBFI to launch Annual Report micro-site</li>
-                  <li>Amalgamation of Multi Finance PLC</li>
-                  <li>Introduced cookie policy to corporate website</li>
-                  <li>Integration with CRIB backend</li>
-                  <li>Updated website with AI-based digital imagery</li>
-                  <li>Opened 200th branch in Pallai</li>
-                  <li>Ranked 16 among top 40 corporates by Business Today</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          {/* 2025 */}
         </div>
       </div>
     </div>

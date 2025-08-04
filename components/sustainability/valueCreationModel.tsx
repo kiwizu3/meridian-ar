@@ -13,7 +13,7 @@ export default function ValueCreationModel({ dictionary }: any) {
         <div className="text-center mb-3 md:mb-1">
           <SpeechText>
             <p className="sus-heading md:md:!leading-[6rem]">
-              {dictionary?.sustainability}
+              {dictionary?.sustainability_heading_section}
             </p>
             <p className="sus-heading gradient-text md:!leading-[6rem] !leading-[3rem]">
               {dictionary?.strategy}

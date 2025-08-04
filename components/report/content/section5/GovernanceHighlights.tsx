@@ -17,7 +17,6 @@ export default function GovernanceHighlights() {
 
           {/* First Row of Directors */}
           <div className="mb-8">
-            <h3 className="text-lg font-semibold mb-4">Left to right</h3>
             <div className="grid grid-cols-2 md:grid-cols-2 gap-4 mb-6">
               {/* Director 1 */}
               <div className="bg-cardGreen p-4 rounded-lg">

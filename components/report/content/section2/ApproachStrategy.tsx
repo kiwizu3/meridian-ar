@@ -46,7 +46,7 @@ export default function ApproachStrategy() {
                 <tbody>
                   <tr className="bg-gray-700 text-white">
                     <td className="border border-white p-3">
-                      <ul className="list-disc list-inside space-y-2">
+                      <ul className="list-disc list-outside pl-6 space-y-2">
                         <li>Vision/mission</li>
                         <li>Situation analysis</li>
                         <li>Setting objectives</li>
@@ -54,35 +54,35 @@ export default function ApproachStrategy() {
                       </ul>
                     </td>
                     <td className="border border-white p-3">
-                      <ul className="list-disc list-inside space-y-2">
+                      <ul className="list-disc list-outside pl-6 space-y-2">
                         <li>Embrace fintech</li>
                         <li>Digital platforms</li>
                         <li>Cyber security</li>
                       </ul>
                     </td>
                     <td className="border border-white p-3">
-                      <ul className="list-disc list-inside space-y-2">
+                      <ul className="list-disc list-outside pl-6 space-y-2">
                         <li>Personalisation</li>
                         <li>Feedback mechanism</li>
                         <li>Diverse offerings</li>
                       </ul>
                     </td>
                     <td className="border border-white p-3">
-                      <ul className="list-disc list-inside space-y-2">
+                      <ul className="list-disc list-outside pl-6 space-y-2">
                         <li>Local and regional markets</li>
                         <li>Partnership and merges</li>
                         <li>Regulatory compliance</li>
                       </ul>
                     </td>
                     <td className="border border-white p-3">
-                      <ul className="list-disc list-inside space-y-2">
+                      <ul className="list-disc list-outside pl-6 space-y-2">
                         <li>Green business</li>
                         <li>Community development</li>
                         <li>Ethical operation</li>
                       </ul>
                     </td>
                     <td className="border border-white p-3">
-                      <ul className="list-disc list-inside space-y-2">
+                      <ul className="list-disc list-outside pl-6 space-y-2">
                         <li>Rules and regulations</li>
                         <li>Risk management</li>
                         <li>Corporate governance</li>
