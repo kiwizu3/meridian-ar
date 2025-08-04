@@ -29,7 +29,14 @@ export default function Contact({
 
   const handleSubmit = async () => {
     try {
-      if (firstName && lastName && message && contact && email && agreedToPrivacy) {
+      if (
+        firstName &&
+        lastName &&
+        message &&
+        contact &&
+        email &&
+        agreedToPrivacy
+      ) {
         const response = await fetch(`${process.env.BASE_URL}/send-email`, {
           method: 'POST',
           headers: {
@@ -85,8 +92,6 @@ export default function Contact({
 
   return (
     <div className="relative">
-
-
       <ToastContainer
         position="top-center"
         autoClose={5000}
@@ -330,9 +335,16 @@ export default function Contact({
                         onChange={(e) => setAgreedToPrivacy(e.target.checked)}
                         className="w-4 h-4"
                       />
-                      <label htmlFor="privacy-checkbox" className="text-sm font-secondary text-white">
+                      <label
+                        htmlFor="privacy-checkbox"
+                        className="text-sm font-secondary text-white"
+                      >
                         I have read and agree to the{' '}
-                        <a href={`/${lang}/privacy-policy`} className="text-blue-400 hover:underline" target="_blank">
+                        <a
+                          href={`/${lang}/privacy-policy`}
+                          className="text-blue-400 hover:underline"
+                          target="_blank"
+                        >
                           Privacy Policy
                         </a>
                       </label>
