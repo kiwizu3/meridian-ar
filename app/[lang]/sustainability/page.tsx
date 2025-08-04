@@ -21,20 +21,37 @@ export default async function sustainability({
 }>) {
   const { lang } = params;
   const dictionary = await getDictionary(lang);
-  const sustainabilityFiles = [
+  const sustainabilityFilesYanika = [
     {
       key: 'en',
-      file: '/pdf/messages/sustainability-chair-message.pdf',
+      file: '/pdf/messages/sustainabilityPage/Sustainability_Messages_Ms_Yanika_English.pdf',
       lang: 'English',
     },
     {
       key: 'si',
-      file: '/pdf/messages/yanikas-message-sinhala.pdf',
+      file: '/pdf/messages/sustainabilityPage/Sustainability_Messages_Ms_Yanika_Sinhala.pdf',
       lang: 'සිංහල',
     },
     {
       key: 'tn',
-      file: '/pdf/messages/yanikas-message-tamil.pdf',
+      file: '/pdf/messages/sustainabilityPage/Sustainability_Messages_Ms_Yanika_Tamil.pdf',
+      lang: 'தமிழ்',
+    },
+  ];
+  const sustainabilityFilesNiroshan = [
+    {
+      key: 'en',
+      file: '/pdf/messages/sustainabilityPage/Sustainability_Messages_Mr_Niroshan_English.pdf',
+      lang: 'English',
+    },
+    {
+      key: 'si',
+      file: '/pdf/messages/sustainabilityPage/Sustainability_Messages_Mr_Niroshan_Sinhala.pdf',
+      lang: 'සිංහල',
+    },
+    {
+      key: 'tn',
+      file: '/pdf/messages/sustainabilityPage/Sustainability_Messages_Mr_Niroshan_Tamil.pdf',
       lang: 'தமிழ்',
     },
   ];
@@ -105,7 +122,7 @@ export default async function sustainability({
               </SpeechText>
             </div>
             <div className="flex md:gap-6 gap-2 font-primary">
-              {sustainabilityFiles?.map((items: any) => (
+              {sustainabilityFilesYanika?.map((items: any) => (
                 <a
                   key={items?.key}
                   href={items?.file}
@@ -148,7 +165,7 @@ export default async function sustainability({
               </SpeechText>
             </div>
             <div className="flex md:gap-6 gap-2 font-primary">
-              {sustainabilityFiles?.map((items: any) => (
+              {sustainabilityFilesNiroshan?.map((items: any) => (
                 <a
                   key={items?.key}
                   href={items?.file}

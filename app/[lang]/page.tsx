@@ -100,17 +100,17 @@ export default async function Home({
   const mdFiles = [
     {
       key: 'en',
-      file: '/pdf/messages/md-message-eng.pdf',
+      file: '/pdf/messages/homePage/md-message-eng.pdf',
       lang: 'English',
     },
     {
       key: 'si',
-      file: '/pdf/messages/mds-message-sinhala.pdf',
+      file: '/pdf/messages/homePage/mds-message-sinhala.pdf',
       lang: 'සිංහල',
     },
     {
       key: 'ta',
-      file: '/pdf/messages/mds-message-tamil.pdf',
+      file: '/pdf/messages/homePage/mds-message-tamil.pdf',
       lang: 'தமிழ்',
     },
   ];
@@ -118,17 +118,17 @@ export default async function Home({
   const coFiles = [
     {
       key: 'en',
-      file: '/pdf/messages/message-from-the-chairman.pdf',
+      file: '/pdf/messages/homePage/message-from-the-chairman.pdf',
       lang: 'English',
     },
     {
       key: 'si',
-      file: '/pdf/messages/chairmans-message-sinhala.pdf',
+      file: '/pdf/messages/homePage/chairmans-message-sinhala.pdf',
       lang: 'සිංහල',
     },
     {
       key: 'ta',
-      file: '/pdf/messages/chairmans-message-tamil.pdf',
+      file: '/pdf/messages/homePage/chairmans-message-tamil.pdf',
       lang: 'தமிழ்',
     },
   ];
