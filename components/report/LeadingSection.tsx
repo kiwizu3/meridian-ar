@@ -28,15 +28,16 @@ export default function LeadingSection() {
 
   const items = [
     {
+      label: 'Finance Statement Highlights',
+      content: <FinanceStatementHighlights />,
+    },
+    { label: 'Financial Calendar', content: <FinancialCalendar /> },
+    {
       label: 'Independent Auditors Report',
       content: <IndependentAuditorsReport />,
     },
     { label: 'Income Statement', content: <IncomeStatement /> },
-    { label: 'Financial Calendar', content: <FinancialCalendar /> },
-    {
-      label: 'Finance Statement Highlights',
-      content: <FinanceStatementHighlights />,
-    },
+
     { label: 'Balance Sheet', content: <BalanceSheet /> },
   ];
 

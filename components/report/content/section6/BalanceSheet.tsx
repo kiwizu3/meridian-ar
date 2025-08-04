@@ -17,8 +17,12 @@ export default function BalanceSheet() {
                 <th className="p-2 border text-left">As at 31 March</th>
                 <th className="p-2 border text-left">Note</th>
                 <th className="p-2 border text-left">Page No.</th>
-                <th className="p-2 border text-left">Company</th>
-                <th className="p-2 border text-left">Group</th>
+                <th className="p-2 border text-center" colSpan={3}>
+                  Company
+                </th>
+                <th className="p-2 border text-center" colSpan={3}>
+                  Group
+                </th>
               </tr>
               <tr>
                 <th className="p-2 border"></th>

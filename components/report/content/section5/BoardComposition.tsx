@@ -9,35 +9,18 @@ export default function BoardComposition() {
         {/* Image 1 */}
         <div className="rounded-lg py-9">
           <Image
-            src="/images/report/content/greenhouse-gas-assurance-report-01.png"
+            src="/images/report/content/BOARD OF DIRECTORS1.svg"
             alt="Greenhouse gas assurance report page 1"
             width={600}
             height={400}
             className="w-full h-auto object-cover"
           />
         </div>
-        <div>
-          <h3>Left to Right</h3>
-          <ul>
-            <li>
-              Ms. Ashwini Natesan - Independent Non-Executive Director, Mr.
-              Dharmadasa Rangalle - Non-Executive Director
-            </li>
-            <li>
-              Mr. Ashane Jayasekara - Independent Non-Executive Director/Senior
-              Independent Director, Mr. Sumith Adhihetty - Managing Director,
-            </li>
-            <li>
-              Mr. Piyal Hennayake - Independent Non-Executive Director, Ms.
-              Yogadinusha Bhaskaran - Non-Executive Director
-            </li>
-          </ul>
-        </div>
 
         {/* Image 2 */}
         <div className="rounded-lg py-9">
           <Image
-            src="/images/report/content/greenhouse-gas-assurance-report-02.png"
+            src="/images/report/content/BOARD OF DIRECTORS2.svg"
             alt="Greenhouse gas assurance report page 2"
             width={600}
             height={400}

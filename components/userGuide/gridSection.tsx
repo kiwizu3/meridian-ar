@@ -57,6 +57,109 @@ export default function GridSection({ dictionary }: any) {
                     </p>
                   </SpeechText>
                 </div>
+                {[
+                  dictionary?.accessibility_tools_description_list1,
+                  dictionary?.accessibility_tools_description_list2,
+                  dictionary?.accessibility_tools_description_list3,
+                  dictionary?.accessibility_tools_description_list4,
+                  dictionary?.accessibility_tools_description_list5,
+                  dictionary?.accessibility_tools_description_list6,
+                  dictionary?.accessibility_tools_description_list7,
+                  dictionary?.accessibility_tools_description_list8,
+                  dictionary?.accessibility_tools_description_list9,
+                  dictionary?.accessibility_tools_description_list10,
+                  dictionary?.accessibility_tools_description_list11,
+                  dictionary?.accessibility_tools_description_list12,
+                ].some((item) => !!item?.trim()) && (
+                  <div className="text-[0.875rem] text-gary font-normal leading-[21px] pt-2 font-secondary">
+                    <ul className="list-disc list-outside pl-10 space-y-5">
+                      {dictionary?.accessibility_tools_description_list1 && (
+                        <SpeechText>
+                          <li>
+                            {dictionary.accessibility_tools_description_list1}
+                          </li>
+                        </SpeechText>
+                      )}
+                      {dictionary?.accessibility_tools_description_list2 && (
+                        <SpeechText>
+                          <li>
+                            {dictionary.accessibility_tools_description_list2}
+                          </li>
+                        </SpeechText>
+                      )}
+                      {dictionary?.accessibility_tools_description_list3 && (
+                        <SpeechText>
+                          <li>
+                            {dictionary.accessibility_tools_description_list3}
+                          </li>
+                        </SpeechText>
+                      )}
+                      {dictionary?.accessibility_tools_description_list4 && (
+                        <SpeechText>
+                          <li>
+                            {dictionary.accessibility_tools_description_list4}
+                          </li>
+                        </SpeechText>
+                      )}
+                      {dictionary?.accessibility_tools_description_list5 && (
+                        <SpeechText>
+                          <li>
+                            {dictionary.accessibility_tools_description_list5}
+                          </li>
+                        </SpeechText>
+                      )}
+                      {dictionary?.accessibility_tools_description_list6 && (
+                        <SpeechText>
+                          <li>
+                            {dictionary.accessibility_tools_description_list6}
+                          </li>
+                        </SpeechText>
+                      )}
+                      {dictionary?.accessibility_tools_description_list7 && (
+                        <SpeechText>
+                          <li>
+                            {dictionary.accessibility_tools_description_list7}
+                          </li>
+                        </SpeechText>
+                      )}
+                      {dictionary?.accessibility_tools_description_list8 && (
+                        <SpeechText>
+                          <li>
+                            {dictionary.accessibility_tools_description_list8}
+                          </li>
+                        </SpeechText>
+                      )}
+                      {dictionary?.accessibility_tools_description_list9 && (
+                        <SpeechText>
+                          <li>
+                            {dictionary.accessibility_tools_description_list9}
+                          </li>
+                        </SpeechText>
+                      )}
+                      {dictionary?.accessibility_tools_description_list10 && (
+                        <SpeechText>
+                          <li>
+                            {dictionary.accessibility_tools_description_list10}
+                          </li>
+                        </SpeechText>
+                      )}
+                      {dictionary?.accessibility_tools_description_list11 && (
+                        <SpeechText>
+                          <li>
+                            {dictionary.accessibility_tools_description_list11}
+                          </li>
+                        </SpeechText>
+                      )}
+                      {dictionary?.accessibility_tools_description_list12 && (
+                        <SpeechText>
+                          <li>
+                            {dictionary.accessibility_tools_description_list12}
+                          </li>
+                        </SpeechText>
+                      )}
+                    </ul>
+                  </div>
+                )}
               </div>
               <div className="md:col-span-2 col-span-5">
                 <Image src={Accessibility} alt="Accessibility Tools" />

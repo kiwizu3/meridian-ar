@@ -19,41 +19,21 @@ export default function SustainableCompetitiveAdvantage() {
               <h3>A HIGHLY ENGAGED AND MOTIVATED WORKFORCE</h3>
             </div>
             <div className="flex flex-col">
-              <h3>Total Assets</h3>
               <Image
                 src="/images/report/content/total-assets (2).png"
                 alt="total assets pie chart"
-                width={200}
-                height={300}
+                width={500}
+                height={400}
               />
-              <div className="flex justify-between p-2 mt-5 bg-white text-black">
-                <div>
-                  <div className="w-5 h-5 bg-yellow rounded-full"></div>
-                  <p className="text-sm mt-1 text-yellow-700">LBF</p>
-                </div>
-                <div>
-                  <div className="w-5 h-5 bg-greeen2 rounded-full"></div>
-                  <p className="text-sm mt-1 text-yellow-700">NBFI Sector</p>
-                </div>
-              </div>
             </div>
-            <div className="flex flex-col justify-center">
-              <h3>Total Assets Growth</h3>
-              <Image
-                src="/images/report/content/total-assets-growth.png"
-                alt="total assets growth bar chart"
-                width={200}
-                height={300}
-              />
-              <div className="flex justify-between p-2 mt-5 bg-white text-black">
-                <div>
-                  <div className="w-5 h-5 bg-yellow rounded-full"></div>
-                  <p className="text-sm mt-1 text-yellow-700">LBF</p>
-                </div>
-                <div>
-                  <div className="w-5 h-5 bg-greeen2 rounded-full"></div>
-                  <p className="text-sm mt-1 text-yellow-700">NBFI Sector</p>
-                </div>
+            <div className="flex justify-between p-1 mt-5 bg-white text-black">
+              <div className="pr-5">
+                <div className="w-5 h-5 bg-yellow rounded-full"></div>
+                <p className="text-sm mt-1 text-yellow-700">LBF</p>
+              </div>
+              <div>
+                <div className="w-5 h-5 bg-greeen2 rounded-full"></div>
+                <p className="text-sm mt-1 text-yellow-700">NBFI Sector</p>
               </div>
             </div>
           </div>
@@ -63,42 +43,22 @@ export default function SustainableCompetitiveAdvantage() {
 
               <h3>OUR OPERATING EFFICIENCY AND PROFITABILITY RATIOS</h3>
             </div>
-            <div>
-              <h3>Loans & Receivables</h3>
+            <div className="flex flex-col">
               <Image
-                src="/images/report/content/loans-receviables.png"
+                src="/images/report/content/Loans & Receivables.png"
                 alt="total assets pie chart"
-                width={200}
-                height={300}
+                width={500}
+                height={400}
               />
-              <div className="flex justify-between p-2 mt-5 bg-white text-black">
-                <div>
-                  <div className="w-5 h-5 bg-yellow rounded-full"></div>
-                  <p className="text-sm mt-1 text-yellow-700">LBF</p>
-                </div>
-                <div>
-                  <div className="w-5 h-5 bg-greeen2 rounded-full"></div>
-                  <p className="text-sm mt-1 text-yellow-700">NBFI Sector</p>
-                </div>
-              </div>
             </div>
-            <div>
-              <h3>Loans & Advances Growth %</h3>
-              <Image
-                src="/images/report/content/loans-and-advances-growth.png"
-                alt="total assets growth bar chart"
-                width={200}
-                height={300}
-              />
-              <div className="flex justify-between p-2 mt-5 bg-white text-black">
-                <div>
-                  <div className="w-5 h-5 bg-yellow rounded-full"></div>
-                  <p className="text-sm mt-1 text-yellow-700">LBF</p>
-                </div>
-                <div>
-                  <div className="w-5 h-5 bg-greeen2 rounded-full"></div>
-                  <p className="text-sm mt-1 text-yellow-700">NBFI Sector</p>
-                </div>
+            <div className="flex justify-between p-1 mt-5 bg-white text-black">
+              <div className="pr-5">
+                <div className="w-5 h-5 bg-yellow rounded-full"></div>
+                <p className="text-sm mt-1 text-yellow-700">LBF</p>
+              </div>
+              <div>
+                <div className="w-5 h-5 bg-greeen2 rounded-full"></div>
+                <p className="text-sm mt-1 text-yellow-700">NBFI Sector</p>
               </div>
             </div>
           </div>
@@ -108,42 +68,22 @@ export default function SustainableCompetitiveAdvantage() {
 
               <h3>STEADY AND SUSTAINABLE REVENUE EXPANSION</h3>
             </div>
-            <div>
-              <h3>Customer Deposits</h3>
+            <div className="flex flex-col">
               <Image
-                src="/images/report/content/customer-deposits-pie-chart.png"
+                src="/images/report/content/Customer Deposits.png"
                 alt="total assets pie chart"
-                width={200}
-                height={300}
+                width={500}
+                height={400}
               />
-              <div className="flex justify-between p-2 mt-5 bg-white text-black">
-                <div>
-                  <div className="w-5 h-5 bg-yellow rounded-full"></div>
-                  <p className="text-sm mt-1 text-yellow-700">LBF</p>
-                </div>
-                <div>
-                  <div className="w-5 h-5 bg-greeen2 rounded-full"></div>
-                  <p className="text-sm mt-1 text-yellow-700">NBFI Sector</p>
-                </div>
-              </div>
             </div>
-            <div>
-              <h3>Customer Deposits Growth %</h3>
-              <Image
-                src="/images/report/content/customer-deposits-growth.png"
-                alt="total assets growth bar chart"
-                width={200}
-                height={300}
-              />
-              <div className="flex justify-between p-2 mt-5 bg-white text-black">
-                <div>
-                  <div className="w-5 h-5 bg-yellow rounded-full"></div>
-                  <p className="text-sm mt-1 text-yellow-700">LBF</p>
-                </div>
-                <div>
-                  <div className="w-5 h-5 bg-greeen2 rounded-full"></div>
-                  <p className="text-sm mt-1 text-yellow-700">NBFI Sector</p>
-                </div>
+            <div className="flex justify-between p-1 mt-5 bg-white text-black">
+              <div className="pr-5">
+                <div className="w-5 h-5 bg-yellow rounded-full"></div>
+                <p className="text-sm mt-1 text-yellow-700">LBF</p>
+              </div>
+              <div>
+                <div className="w-5 h-5 bg-greeen2 rounded-full"></div>
+                <p className="text-sm mt-1 text-yellow-700">NBFI Sector</p>
               </div>
             </div>
           </div>
@@ -153,42 +93,22 @@ export default function SustainableCompetitiveAdvantage() {
 
               <h3>DRIVING STRATEGIC GROWTH AND INDUSTRY EXCELLENCE</h3>
             </div>
-            <div>
-              <h3>No. of Branches</h3>
+            <div className="flex flex-col">
               <Image
                 src="/images/report/content/No. of Branches.png"
                 alt="total assets pie chart"
-                width={200}
-                height={300}
+                width={500}
+                height={400}
               />
-              <div className="flex justify-between p-2 mt-5 bg-white text-black">
-                <div>
-                  <div className="w-5 h-5 bg-yellow rounded-full"></div>
-                  <p className="text-sm mt-1 text-yellow-700">LBF</p>
-                </div>
-                <div>
-                  <div className="w-5 h-5 bg-greeen2 rounded-full"></div>
-                  <p className="text-sm mt-1 text-yellow-700">NBFI Sector</p>
-                </div>
-              </div>
             </div>
-            <div>
-              <h3>No. of Branches Growth %</h3>
-              <Image
-                src="/images/report/content/No. of Branches Growth.png"
-                alt="total assets growth bar chart"
-                width={200}
-                height={300}
-              />
-              <div className="flex justify-between p-2 mt-5 bg-white text-black">
-                <div>
-                  <div className="w-5 h-5 bg-yellow rounded-full"></div>
-                  <p className="text-sm mt-1 text-yellow-700">LBF</p>
-                </div>
-                <div>
-                  <div className="w-5 h-5 bg-greeen2 rounded-full"></div>
-                  <p className="text-sm mt-1 text-yellow-700">NBFI Sector</p>
-                </div>
+            <div className="flex justify-between p-1 mt-5 bg-white text-black">
+              <div className="pr-5">
+                <div className="w-5 h-5 bg-yellow rounded-full"></div>
+                <p className="text-sm mt-1 text-yellow-700">LBF</p>
+              </div>
+              <div>
+                <div className="w-5 h-5 bg-greeen2 rounded-full"></div>
+                <p className="text-sm mt-1 text-yellow-700">NBFI Sector</p>
               </div>
             </div>
           </div>
