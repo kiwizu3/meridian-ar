@@ -4,7 +4,7 @@ export default function TechnologyInvestments() {
   return (
     <div className="technology-strategy p-6 bg-themeGreen max-h-[70vh] overflow-y-auto">
       {/* Technology Investments Section */}
-      <h1 className="text-4xl font-bold">OUR BRAND PERFORMANCE - 2024</h1>
+      <h1 className="text-4xl font-bold">OUR BRAND PERFORMANCE-2024</h1>
       <div>
         <h2 className="text-xl font-semibold mb-4">
           LEVERAGING OUR TECHNOLOGY INVESTMENTS
@@ -14,7 +14,7 @@ export default function TechnologyInvestments() {
             <thead>
               <tr>
                 <th className="border border-gray-300 p-3 text-left">
-                  Asset Name/Initiative
+                  Asset Name / Initiative
                 </th>
                 <th className="border border-gray-300 p-3 text-left">
                   Objective
