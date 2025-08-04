@@ -11,7 +11,7 @@ export default function IndependenceAssurance() {
         {/* Image 1 */}
         <div className="rounded-lg py-9">
           <Image
-            src="/images/report/content/Independent Auditors’ Report1.svg"
+            src="/images/report/content/Independent_Auditors_Report1.svg"
             alt="Governance Structure"
             width={600}
             height={400}
@@ -20,7 +20,7 @@ export default function IndependenceAssurance() {
         </div>
         <div className="rounded-lg py-9">
           <Image
-            src="/images/report/content/Independent Auditors’ Report2.svg"
+            src="/images/report/content/Independent_Auditors_Report2.svg"
             alt="Governance Structure"
             width={600}
             height={400}
@@ -29,7 +29,7 @@ export default function IndependenceAssurance() {
         </div>
         <div className="rounded-lg py-9">
           <Image
-            src="/images/report/content/Independent Auditors’ Report3.svg"
+            src="/images/report/content/Independent_Auditors_Report3.svg"
             alt="Governance Structure"
             width={600}
             height={400}
@@ -38,7 +38,7 @@ export default function IndependenceAssurance() {
         </div>
         <div className="rounded-lg py-9">
           <Image
-            src="/images/report/content/Independent Auditors’ Report4.svg"
+            src="/images/report/content/Independent_Auditors_Report4.svg"
             alt="Governance Structure"
             width={600}
             height={400}
