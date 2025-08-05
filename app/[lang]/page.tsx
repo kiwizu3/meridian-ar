@@ -5,6 +5,7 @@ import ScrollingText from '@/components/sccrollText';
 // import SnapMotionComponent from '@/components/SnapMotion/SnapMotion';
 import SpeechText from '@/components/SpeechText';
 // import VideoSection from '@/components/VideoSection/VideoSection';
+import ScrollToTop from '@/components/ScrollToTop';
 import { getDictionary } from '@/get-dictionary';
 import { Locale } from '@/i18n-config';
 // import gifImage from '@/public/gif/pyramid.gif';
@@ -135,6 +136,7 @@ export default async function Home({
 
   return (
     <main>
+      <ScrollToTop />
       <div className="hidden md:block">
         {/* <SnapMotionComponent duration={1500} easing="in-out-quad" /> */}
       </div>
