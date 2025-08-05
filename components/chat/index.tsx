@@ -78,7 +78,7 @@ export default function Chat() {
 
     const startSession = async () => {
       try {
-        const response = await fetch(`${BASE_URL}/start_session`, {
+        const response = await fetch(`${BASE_URL}/api/start_session`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -112,8 +112,8 @@ export default function Chat() {
         chatType: selectedOption,
         voice:
           selectedOption === 'Info'
-            ? `${BASE_URL}/chat/generate_audio/${sessionId}`
-            : `${BASE_URL}/chart/generate_audio/${sessionId}`,
+            ? `${BASE_URL}/api/chat/generate_audio/${sessionId}`
+            : `${BASE_URL}/api/chart/generate_audio/${sessionId}`,
       },
     ]);
 
@@ -129,7 +129,7 @@ export default function Chat() {
   try {
     if (selectedOption === 'Info') {
       
-      const response = await fetch(`${BASE_URL}/chat`, {
+      const response = await fetch(`${BASE_URL}/api/chat`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -154,7 +154,7 @@ export default function Chat() {
       );
     } else {
       
-      const dummyInit = await fetch(`${BASE_URL}/chat`, {
+      const dummyInit = await fetch(`${BASE_URL}/api/chat`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -171,7 +171,7 @@ export default function Chat() {
       }
 
       
-      const response = await fetch(`${BASE_URL}/chart`, {
+      const response = await fetch(`${BASE_URL}/api/chart`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -444,7 +444,7 @@ export default function Chat() {
                         <div>
                           {index === messages?.length - 1 && (
                             <CustomAudioPlayer
-                              src={`${BASE_URL}/chart/generate_audio/${sessionId}`}
+                              src={`${BASE_URL}/api/chart/generate_audio/${sessionId}`}
                               isPlaying={playingId === item.id} // Check if this audio is playing
                               togglePlay={() => togglePlay(item.id)} // Toggle this audio's play state
                             />
