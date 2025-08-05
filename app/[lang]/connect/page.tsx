@@ -12,6 +12,7 @@ import bottomImage from '@/public/images/connect-bottom.png';
 import Image from 'next/image';
 import { credentials } from '@/utility/chatBotEmailUtils';
 import SpeechText from '@/components/SpeechText';
+import FacebookPageEmbed from '@/components/FacebookPageEmbed';
 import { validateEmail, validateName, validatePhone } from './connectUtils';
 
 export default function Contact({
@@ -114,7 +115,7 @@ export default function Contact({
           </SpeechText>
           <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-3">
             <div className="md:col-span-2 lg:col-span-1 connect-news-wrap md:order-1 order-2">
-              <div className="connect-news-inner">
+              {/* <div className="connect-news-inner">
                 {showFacebookPlugin && (
                   <iframe
                     title="LB Finance PLC Facebook Page"
@@ -131,6 +132,9 @@ export default function Contact({
                     allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                   />
                 )}
+              </div> */}
+              <div className="w-full max-w-[350px] mx-auto my-10 px-4">
+                {showFacebookPlugin && <FacebookPageEmbed />}
               </div>
             </div>
 
