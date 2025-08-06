@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function CreatingBusinessModel() {
   return (
-    <div className="annual-report p-6 bg-themeGreen max-h-[70vh] overflow-y-auto">
+    <div className="annual-report p-6 bg-themeGreen max-h-[70vh] overflow-y-auto custom-scrollbar">
       <h1 className="text-4xl font-bold mb-4">
         OUR VALUE CREATING - BUSINESS MODEL
       </h1>

@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function StrategicJourney() {
   return (
-    <div className="strategic-journey p-6 bg-themeGreen max-h-[70vh] overflow-y-auto">
+    <div className="strategic-journey p-6 bg-themeGreen max-h-[70vh] overflow-y-auto custom-scrollbar">
       <h1 className="text-4xl font-bold mb-4">STRATEGIC JOURNEY</h1>
 
       <div className="space-y-8">

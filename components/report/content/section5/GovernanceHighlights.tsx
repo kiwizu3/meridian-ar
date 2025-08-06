@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function GovernanceHighlights() {
   return (
-    <div className="corporate-governance p-6 bg-themeGreen max-h-[70vh] overflow-y-auto">
+    <div className="governance-highlights p-6 bg-themeGreen max-h-[70vh] overflow-y-auto custom-scrollbar">
       <h1 className="text-4xl font-bold mb-4">
         CORPORATE GOVERNANCE HIGHLIGHTS 2024/25
       </h1>

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function ApproachStrategy() {
   return (
-    <div className="approach-strategy p-6 bg-themeGreen max-h-[70vh] overflow-y-auto">
+    <div className="approach-strategy p-6 bg-themeGreen max-h-[70vh] overflow-y-auto custom-scrollbar">
       <header className="mb-8">
         <h1 className="text-4xl font-bold mb-2">APPROACH TO STRATEGY </h1>
       </header>

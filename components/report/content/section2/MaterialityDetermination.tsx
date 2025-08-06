@@ -3,13 +3,13 @@ import Image from 'next/image';
 
 export default function MaterialityDetermination() {
   return (
-    <div className="materiality-determination p-6 bg-themeGreen max-h-[70vh] overflow-y-auto">
+    <div className="materiality-determination p-6 bg-themeGreen max-h-[70vh] overflow-y-auto custom-scrollbar">
       <h1 className="text-4xl font-bold mb-4">MATERIALITY</h1>
 
       <div className="space-y-8">
         {/* Integrated Dynamic and Double Materiality Section */}
         <div>
-          <h2 className="text-2xl font-semibold mb-4 border-b border-[#F3A847] pb-1">
+          <h2 className="text-2xl font-semibold mb-4 border-b border-[#F3A847] pb-1 ">
             INTEGRATED DYNAMIC AND DOUBLE MATERIALITY
           </h2>
           <p className="mb-4">

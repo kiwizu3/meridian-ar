@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function BranchNetwork() {
   return (
-    <div className="annual-report p-6 bg-themeGreen max-h-[70vh] overflow-y-auto">
+    <div className="annual-report p-6 bg-themeGreen max-h-[70vh] overflow-y-auto custom-scrollbar">
       <h1 className="text-4xl font-bold">BRANCH NETWORK</h1>
       <div className="bg-greeen2 p-3 rounded-lg mb-8">
         <div>

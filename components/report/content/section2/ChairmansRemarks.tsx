@@ -39,7 +39,7 @@ const chartData = [
 
 export default function ChairmansRemarks() {
   return (
-    <div className="chairmans-remarks p-6 bg-themeGreen max-h-[70vh] overflow-y-auto">
+    <div className="chairmans-remarks p-6 bg-themeGreen max-h-[70vh] overflow-y-auto custom-scrollbar">
       <h1 className="text-4xl font-bold mb-4">CHAIRMAN'S REMARKS</h1>
       <div className="space-y-8">
         {/* Introduction Section */}

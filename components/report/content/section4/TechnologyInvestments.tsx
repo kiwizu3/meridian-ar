@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function TechnologyInvestments() {
   return (
-    <div className="technology-strategy p-6 bg-themeGreen max-h-[70vh] overflow-y-auto">
+    <div className="technology-strategy p-6 bg-themeGreen max-h-[70vh] overflow-y-auto custom-scrollbar">
       {/* Technology Investments Section */}
       <h1 className="text-4xl font-bold">OUR BRAND PERFORMANCE-2024</h1>
       <div>
