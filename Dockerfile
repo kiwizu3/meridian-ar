@@ -17,6 +17,8 @@ COPY . .
 ENV NEXT_PUBLIC_BASE_URL=https://lb.finance.prod.arimac.xyz
 ENV API_USERNAME=indika
 ENV API_PASSWORD=7FJkN8Y_D
+ENV NEXT_PUBLIC_SPEECH_KEY=2ki7R3X0ZMXjii1EZwRXrt6Srj8Pb8X4MzupZFO1Hf9yxi1R4BqZJQQJ99BHACqBBLyXJ3w3AAAYACOGVKDm
+ENV NEXT_PUBLIC_SPEECH_REGION=southeastasia
 
 # Build the application if needed
 RUN npm run build 
