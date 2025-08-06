@@ -13,7 +13,10 @@ RUN npm install
 # Copy the rest of the application code
 COPY . .
 
-#updated the dockerfile
+#Base url values
+ENV NEXT_PUBLIC_BASE_URL= https://lb.finance.prod.arimac.xyz
+ENV API_USERNAME=indika
+ENV API_PASSWORD=7FJkN8Y_D
 
 # Build the application if needed
 RUN npm run build 
