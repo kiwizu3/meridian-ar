@@ -102,7 +102,7 @@ export default async function Stakeholders({
 
   return (
     <main>
-      <section className="lg:px-0 px-5">
+      <section className="md:px-5 lg:px-5 px-5">
         <div className="container relative z-10 lg:mt-[66px] mt-10 mb-[42px]">
           <SpeechText>
             <h1 className="font-primary font-black text-4xl md:text-5xl lg:text-[3.5rem] lg:leading-[83.2px]">
@@ -115,7 +115,7 @@ export default async function Stakeholders({
             </p>
           </SpeechText>
         </div>
-        <div className="container pb-10 md:pb-20 lg:pb-40 xl:pb-[244px] relative z-10">
+        <div className="container pb-10 md:pb-20 lg:pb-40 relative z-10">
           <CustomAccordion accordionItems={accordionItems} />
         </div>
         <div className="lg:-mt-[426px] absolute top-0 z-0 left-0 right-0">

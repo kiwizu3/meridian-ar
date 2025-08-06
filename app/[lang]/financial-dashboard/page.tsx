@@ -38,7 +38,7 @@ function FinancialDashboard({
   ];
 
   return (
-    <div className="container lg:pb-20 pb-10 px-4 lg:px-0">
+    <div className="container lg:pb-20 pb-10 px-5">
       <header className="pt-11">
         <div className="flex flex-col lg:flex-row justify-between lg:items-center gap-3 lg:gap-1">
           <SpeechText>

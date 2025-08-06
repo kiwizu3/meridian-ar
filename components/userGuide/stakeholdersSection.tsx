@@ -47,6 +47,7 @@ export default function StakeholdersSection({ dictionary }: any) {
                   <p className="whitespace-pre-line">
                     {dictionary?.our_impact_description}
                     {'\n'}
+                    {'\n'}
                     {dictionary?.our_impact_description_sub}
                   </p>
                 </SpeechText>
@@ -60,12 +61,12 @@ export default function StakeholdersSection({ dictionary }: any) {
             <div className="text-wrap-inner">
               <div className="user-guide-heading mb-1 sm:md-4">
                 <SpeechText>
-                <p>{dictionary?.connect_heading}</p>
+                  <p>{dictionary?.connect_heading}</p>
                 </SpeechText>
               </div>
               <div className="font-secondary para">
                 <SpeechText>
-                <p className="whitespace-pre-line">
+                  <p className="whitespace-pre-line">
                     {dictionary?.connect_description}
                     {'\n'}
                     {dictionary?.connect_description_sub}
@@ -75,7 +76,7 @@ export default function StakeholdersSection({ dictionary }: any) {
             </div>
           </div>
           <div className="img-wrap right-align">
-          <Image src={ConnectImg} alt="Connect" className="w-full" />
+            <Image src={ConnectImg} alt="Connect" className="w-full" />
           </div>
         </div>
 

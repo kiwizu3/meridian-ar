@@ -8,7 +8,7 @@ import SpeechText from '../SpeechText';
 export default function GridSection({ dictionary }: any) {
   return (
     <div className="user-guild-grid-section">
-      <div className="container mx-auto px-4 lg:px-0">
+      <div className="container mx-auto px-5">
         <div className="grid grid-cols-7 gap-6">
           <div className="grid-box-inner md:col-span-3 col-span-7">
             <div className="text-wrap">
@@ -44,7 +44,7 @@ export default function GridSection({ dictionary }: any) {
               <Image src={Speaker} alt="Language Preference" />
             </div>
           </div>
-          <div className="grid-box-inner col-span-7  md:!pr-0 mb-7 md:mb-[348px]">
+          <div className="grid-box-inner col-span-7  md:!pr-0 mb-7 md:mb-[148px]">
             <div className="lg:text-[2rem] text-[1.75rem] font-black leading-[48px] font-primary pr-6">
               <SpeechText>{dictionary?.accessibility_tools_title}</SpeechText>
             </div>
@@ -72,90 +72,90 @@ export default function GridSection({ dictionary }: any) {
                   dictionary?.accessibility_tools_description_list12,
                 ].some((item) => !!item?.trim()) && (
                   <div className="text-[0.875rem] text-gary font-normal leading-[21px] pt-2 font-secondary">
-                    <ul className="list-disc list-outside pl-10 space-y-5">
+                    <ul className="list-disc list-outside pl-10 space-y-2">
                       {dictionary?.accessibility_tools_description_list1 && (
-                        <SpeechText>
-                          <li>
+                        <li>
+                          <SpeechText>
                             {dictionary.accessibility_tools_description_list1}
-                          </li>
-                        </SpeechText>
+                          </SpeechText>
+                        </li>
                       )}
                       {dictionary?.accessibility_tools_description_list2 && (
-                        <SpeechText>
-                          <li>
+                        <li>
+                          <SpeechText>
                             {dictionary.accessibility_tools_description_list2}
-                          </li>
-                        </SpeechText>
+                          </SpeechText>
+                        </li>
                       )}
                       {dictionary?.accessibility_tools_description_list3 && (
-                        <SpeechText>
-                          <li>
+                        <li>
+                          <SpeechText>
                             {dictionary.accessibility_tools_description_list3}
-                          </li>
-                        </SpeechText>
+                          </SpeechText>
+                        </li>
                       )}
                       {dictionary?.accessibility_tools_description_list4 && (
-                        <SpeechText>
-                          <li>
+                        <li>
+                          <SpeechText>
                             {dictionary.accessibility_tools_description_list4}
-                          </li>
-                        </SpeechText>
+                          </SpeechText>
+                        </li>
                       )}
                       {dictionary?.accessibility_tools_description_list5 && (
-                        <SpeechText>
-                          <li>
+                        <li>
+                          <SpeechText>
                             {dictionary.accessibility_tools_description_list5}
-                          </li>
-                        </SpeechText>
+                          </SpeechText>
+                        </li>
                       )}
                       {dictionary?.accessibility_tools_description_list6 && (
-                        <SpeechText>
-                          <li>
+                        <li>
+                          <SpeechText>
                             {dictionary.accessibility_tools_description_list6}
-                          </li>
-                        </SpeechText>
+                          </SpeechText>
+                        </li>
                       )}
                       {dictionary?.accessibility_tools_description_list7 && (
-                        <SpeechText>
-                          <li>
+                        <li>
+                          <SpeechText>
                             {dictionary.accessibility_tools_description_list7}
-                          </li>
-                        </SpeechText>
+                          </SpeechText>
+                        </li>
                       )}
                       {dictionary?.accessibility_tools_description_list8 && (
-                        <SpeechText>
-                          <li>
+                        <li>
+                          <SpeechText>
                             {dictionary.accessibility_tools_description_list8}
-                          </li>
-                        </SpeechText>
+                          </SpeechText>
+                        </li>
                       )}
                       {dictionary?.accessibility_tools_description_list9 && (
-                        <SpeechText>
-                          <li>
+                        <li>
+                          <SpeechText>
                             {dictionary.accessibility_tools_description_list9}
-                          </li>
-                        </SpeechText>
+                          </SpeechText>
+                        </li>
                       )}
                       {dictionary?.accessibility_tools_description_list10 && (
-                        <SpeechText>
-                          <li>
+                        <li>
+                          <SpeechText>
                             {dictionary.accessibility_tools_description_list10}
-                          </li>
-                        </SpeechText>
+                          </SpeechText>
+                        </li>
                       )}
                       {dictionary?.accessibility_tools_description_list11 && (
-                        <SpeechText>
-                          <li>
+                        <li>
+                          <SpeechText>
                             {dictionary.accessibility_tools_description_list11}
-                          </li>
-                        </SpeechText>
+                          </SpeechText>
+                        </li>
                       )}
                       {dictionary?.accessibility_tools_description_list12 && (
-                        <SpeechText>
-                          <li>
+                        <li>
+                          <SpeechText>
                             {dictionary.accessibility_tools_description_list12}
-                          </li>
-                        </SpeechText>
+                          </SpeechText>
+                        </li>
                       )}
                     </ul>
                   </div>

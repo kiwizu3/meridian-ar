@@ -13,7 +13,7 @@ import Link from 'next/link';
 export default async function Footer({ lang }: Readonly<LangTypes>) {
   const dictionary = await getDictionary(lang);
   return (
-    <div className="bg-cardGreen relative z-10">
+    <div className="bg-cardGreen relative z-10 px-5">
       <div className="py-10 container px-5 lg:px-0">
         <div className="flex flex-col gap-8">
           <div className="flex flex-col md:flex-row md:py-[28px] justify-center md:gap-14 gap-6">
