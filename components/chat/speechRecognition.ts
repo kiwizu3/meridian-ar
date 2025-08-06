@@ -6,8 +6,8 @@ import {
 } from 'microsoft-cognitiveservices-speech-sdk';
 
 const speechConfig = SpeechConfig.fromSubscription(
-  process.env.SPEECH_KEY as string,
-  process.env.SPEECH_REGION as string,
+  process.env.NEXT_PUBLIC_SPEECH_KEY as string,
+  process.env.NEXT_PUBLIC_SPEECH_REGION as string,
 );
 speechConfig.speechRecognitionLanguage = 'en-US';
 
