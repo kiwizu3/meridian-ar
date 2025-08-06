@@ -20,6 +20,7 @@ import {
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import PdfDownload from '@/components/icons/pdfDownload';
+import LionPawAnimate from '@/components/LionPawAnimate';
 
 const HomePageVideo = dynamic(() => import('@/components/HomePageVideo'), {
   ssr: false,
@@ -162,11 +163,9 @@ export default async function Home({
           />
         </div> */}
 
-        <div className="h-[calc(100vh-43rem)] md:h-[calc(100vh-30rem)] lg:h-[calc(100vh-23rem)] xl:h-[calc(100vh-6rem)] 2xl:h-[calc(100vh-3rem)]  flex w-full lg:-mt-[95px] -mt-20 justify-center relative rounded-2xl">
-          <div className="absolute">
-            <div className="mt-[130px] px-4">
-              <HomePageMainVideo />
-            </div>
+        <div className="min-h-[330px] md:min-h-[500px] lg:h-[calc(100vh-23rem)] xl:h-[calc(100vh-6rem)] 2xl:h-[calc(100vh-3rem)] flex w-full justify-center relative rounded-2xl -mt-20 lg:-mt-[95px]">
+          <div className="mt-[130px] px-4">
+            <HomePageMainVideo />
           </div>
         </div>
         <div className="absolute lg:top-[28rem] top-[50rem] hidden md:block">
@@ -187,7 +186,7 @@ export default async function Home({
           className="relative pb-10 lg:pb-[93px] pt-6 md:pt-10 lg:pt-24"
         >
           <div className="items-center gap-14 lg:px-0">
-            <div className="pt-4 flex mb-14 flex-col gap-4 lg:-mt-12 -mt-8 relative w-full from-[#0D1019] to-transparent">
+            <div className="pt-10 flex mb-14 flex-col gap-4 lg:-mt-12 -mt-8 relative w-full from-[#0D1019] to-transparent">
               <div className="flex-shrink-0 w-full">
                 <div className="container max-w-[1100px] relative z-20">
                   <FadeInText>
@@ -389,16 +388,22 @@ export default async function Home({
           snap-motion-type="scroll"
           className="hidden md:block"
         />
-        <section className="relative overflow-hidden">
+        <section className="relative overflow-hidden p-10">
+          <LionPawAnimate
+            rotateDeg={-90}
+            horizontalPosition="right"
+            verticalPosition="top-[14vw]"
+          />
           {/* <FadeInRight> */}
-          <img
+          {/* <img
             src="/images/lion-pow.png"
             className="absolute w-[500px] right-[0] top-[10vw]"
             alt="lion img"
             style={{
               animation: 'fadeInOutLeft 20s ease-out forwards',
             }}
-          />
+          /> */}
+
           {/* </FadeInRight> */}
           <div className="relative z-10 flex flex-col gap-14 container px-5 lg:px-0 items-center xl:items-start lg:pb-[100px] pt-8 lg:pt-[173px]">
             <DetailCard
@@ -423,18 +428,24 @@ export default async function Home({
           className="hidden md:block"
         />
         <section className="relative pb-8 md:pb-0 md:pt-[100px]">
-          <div className="relative overflow-hidden">
+          <div className="relative overflow-hidden p-10">
             {/* <FadeInLeft> */}
-            <img
+            {/* <img
               src="/images/lion-pow.png"
-              className="absolute w-[500px] left-[0] top-[2vw] rotate-90"
+              className="absolute w-[500px] right-[0] top-[10vw]"
               alt="lion img"
               style={{
-                animation: 'fadeInOutRight 20s ease-out forwards',
+                animation: 'fadeInOutLeft 20s ease-out forwards',
               }}
+            /> */}
+            <LionPawAnimate
+              rotateDeg={90}
+              horizontalPosition="left"
+              verticalPosition="top-[2vw]"
             />
+
             {/* </FadeInLeft> */}
-            <div className="relative z-10 flex flex-col items-center xl:items-end gap-14 container px-5 lg:px-0 py-8 lg:py-0">
+            <div className="relative z-10 flex flex-col items-center mb-12 xl:items-end gap-14 container px-5 lg:px-0 py-8 lg:py-0">
               <DetailCard
                 image={avatar2}
                 title={dictionary?.managing_director_name}

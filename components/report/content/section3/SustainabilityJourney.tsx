@@ -17,21 +17,6 @@ export default function SustainabilityJourney() {
 
         {/* Timeline */}
         <div className="space-y-8">
-          {/* 2026/27 */}
-          <div className="bg-cardGreen p-4 rounded-lg">
-            <h3 className="text-xl font-semibold mb-2 border-b border-[#F3A847] pb-1">
-              2026/27
-            </h3>
-            <ul className="list-disc pl-5 space-y-1">
-              <li>
-                Transition of all branch operations to solar energy where
-                feasible
-              </li>
-              <li>Innovate sustainable loan products</li>
-              <li>Develop sustainable saving products</li>
-            </ul>
-          </div>
-
           {/* 2030/31 */}
           <div className="bg-cardGreen p-4 rounded-lg">
             <h3 className="text-xl font-semibold mb-2 border-b border-[#F3A847] pb-1">
@@ -44,6 +29,20 @@ export default function SustainabilityJourney() {
                 Allocate a portion of savings or funding to investment of
                 sustainable bonds
               </li>
+            </ul>
+          </div>
+          {/* 2026/27 */}
+          <div className="bg-cardGreen p-4 rounded-lg">
+            <h3 className="text-xl font-semibold mb-2 border-b border-[#F3A847] pb-1">
+              2026/27
+            </h3>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>
+                Transition of all branch operations to solar energy where
+                feasible
+              </li>
+              <li>Innovate sustainable loan products</li>
+              <li>Develop sustainable saving products</li>
             </ul>
           </div>
 

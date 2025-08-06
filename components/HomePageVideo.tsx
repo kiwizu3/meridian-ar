@@ -20,9 +20,9 @@ const HomePageVideo = () => {
     <div>
       <div className="grid grid-cols-4">
         {isClient && (
-          <div className="col-span-full p-4 flex justify-center">
+          <div className="col-span-full p-10 flex justify-center">
             <iframe
-              width={1280}
+              width={1180}
               height={720}
               className="rounded-2xl responsive-iframe"
               src="https://www.youtube-nocookie.com/embed/jXD2ZRcqBOg?si=dfiX5p3i2L7dKxxp&amp;controls=0"
@@ -39,14 +39,14 @@ const HomePageVideo = () => {
       <style>{`
         @media (max-width: 1024px) {
           .responsive-iframe {
-            width: 620px;
+            width: 700px;
             height: 650px;
           }
         }
-          @media (max-width: 700px) {
+          @media (max-width: 600px) {
           .responsive-iframe {
-            width: 100% !important;
-            height: auto !important;
+            width: 100% ;
+            height: auto ;
             aspect-ratio: 16 / 9;
           }
         }
