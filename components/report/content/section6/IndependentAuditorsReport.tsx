@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function IndependenceAssurance() {
   return (
-    <div className="approach-strategy p-6 bg-themeGreen max-h-[70vh] overflow-y-auto">
+    <div className="independence-assurance p-6 bg-themeGreen max-h-[70vh] overflow-y-auto custom-scrollbar">
       <div className="grid grid-cols-1">
         <h1 className="text-4xl font-bold mb-2">
           Independent Auditors’ Report

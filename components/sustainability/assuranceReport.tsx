@@ -21,7 +21,7 @@ export default function AssuranceReport({ dictionary }: any) {
           <div className="flex flex-wrap download-pdf-section">
             <div className="text-wrap">
               <SpeechText>
-                <p className="text-center text font-secondary whitespace-pre-line">
+                <p className="p-5 text-center text font-secondary whitespace-pre-line">
                   {dictionary?.independent_practitioners_assurance_report}
                   {'\n'}
                   {dictionary?.fy_2025}
@@ -38,7 +38,7 @@ export default function AssuranceReport({ dictionary }: any) {
             </div>
             <div className="text-wrap">
               <SpeechText>
-                <p className="text-center text font-secondary whitespace-pre-line">
+                <p className="p-5 text-center text font-secondary whitespace-pre-line">
                   {
                     dictionary?.independent_practitioners_assurance_report_to_the_board
                   }

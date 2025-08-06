@@ -24,8 +24,8 @@ export default async function OurImpact({
 
   const dummyData = [
     {
-      title: dictionary?.for_development,
-      gradientTitle: dictionary?.education,
+      title: dictionary?.education,
+      gradientTitle: dictionary?.for_development,
       bgImage: bgSec2,
       bgImagePosition: 'right',
       cards: [

@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function SustainabilityStrategy() {
   return (
-    <div className="sustainability-strategy p-6 max-h-[70vh] overflow-y-auto pr-2 bg-themeGreen">
+    <div className="sustainability-strategy p-6 max-h-[70vh] overflow-y-auto custom-scrollbar pr-2 bg-themeGreen">
       <h2 className="text-2xl font-bold mb-6">SUSTAINABILITY STRATEGY</h2>
 
       <p className="mb-8 text-lg ">

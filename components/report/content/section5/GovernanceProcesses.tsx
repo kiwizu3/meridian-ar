@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function GovernanceProcesses() {
   return (
-    <div className="corporate-governance p-6 bg-themeGreen max-h-[70vh] overflow-y-auto">
+    <div className="corporate-governance p-6 bg-themeGreen max-h-[70vh] overflow-y-auto custom-scrollbar">
       <header className="mb-8">
         <h1 className="text-3xl font-bold mb-2">CORPORATE GOVERNANCE</h1>
       </header>

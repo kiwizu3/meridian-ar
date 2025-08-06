@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function SustainableCompetitiveAdvantage() {
   return (
-    <div className="approach-strategy p-6 bg-themeGreen max-h-[70vh] overflow-y-auto">
+    <div className="approach-strategy p-6 bg-themeGreen max-h-[70vh] overflow-y-auto custom-scrollbar">
       <header className="mb-8">
         <h1 className="text-3xl font-bold mb-2">
           KEY ATTRIBUTES THAT GAVE LBF ITS SUSTAINABLE COMPETITIVE ADVANTAGE IN

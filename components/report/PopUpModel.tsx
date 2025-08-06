@@ -60,7 +60,7 @@ export default function PopUpModel({
                 ></button>
               </div>
             </ModalHeader>
-            <ModalBody className="bg-themeGreen tab-item-body custom-scrollbar">
+            <ModalBody className="bg-themeGreen">
               {tabs.length > 0 ? (
                 tabs[0].content
               ) : (

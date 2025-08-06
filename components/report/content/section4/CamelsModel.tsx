@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function CamelsModel() {
   return (
-    <div className="annual-report p-6 bg-themeGreen max-h-[70vh] overflow-y-auto">
+    <div className="camels-model p-6 bg-themeGreen max-h-[70vh] overflow-y-auto custom-scrollbar">
       <div className="bg-greeen2 p-3 rounded-lg mb-8">
         {/* CAMELS Introduction */}
         <div className="bg-cardGreen p-4 rounded-lg mb-6">
