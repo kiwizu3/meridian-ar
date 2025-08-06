@@ -6,7 +6,7 @@ import SpeechText from '../SpeechText';
 
 export default function TopBanner({ dictionary }: any) {
   return (
-    <div className="bg-[url('/images/user-guide-background.png')] md:mb-52 pm-20">
+    <div className="bg-[url('/images/user-guide-background.png')] md:mb-52 pm-20 px-5">
       <div className="user-guide-container container mx-auto user-guide-banner">
         <div className="user-guide-container-inner lg:px-0 px-4">
           <div className="flex flex-wrap justify-between items-center">

@@ -144,7 +144,7 @@ export default function Contact({
             >
               <div className="detail-wrap pr-0 md:pr-0 lg:pr-6 xl:pr-7">
                 <SpeechText>
-                  <p className="heading mb-2">{dictionary?.contact_us}</p>
+                  <p className="heading my-3">{dictionary?.contact_us}</p>
                 </SpeechText>
 
                 <div className="para font-secondary">

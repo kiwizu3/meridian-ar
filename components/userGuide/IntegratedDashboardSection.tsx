@@ -10,7 +10,7 @@ export default function IntegratedDashboardSection({ dictionary }: any) {
   return (
     <div className="integrated-dashboard-section">
       <div className="user-guide-container">
-        <div className="user-guide-container-inner container mx-auto px-4 lg:px-0">
+        <div className="user-guide-container-inner container mx-auto px-5">
           <div className="user-guide-heading text-center mb-4">
             <SpeechText>
               <p>{dictionary?.integrated_dashboard_heading}</p>

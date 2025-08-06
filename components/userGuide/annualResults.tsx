@@ -10,7 +10,7 @@ export default function AnnualResults({ dictionary }: any) {
   return (
     <div className="annual-results-section">
       <div className="user-guide-container">
-        <div className="user-guide-container-inner container mx-auto px-4 lg:px-0">
+        <div className="user-guide-container-inner container mx-auto px-5">
           <div className="user-guide-heading text-center mb-4 sm:mb-6">
             <SpeechText>
               <h1>{dictionary?.annual_results_heading}</h1>
