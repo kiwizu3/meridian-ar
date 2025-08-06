@@ -358,7 +358,9 @@ export default function FinancialStatementHighlights() {
 
             {/* Total Liquidity Reserves */}
             <div className="bg-gray-50 p-4 rounded-lg">
-              <h3 className="font-bold mb-2">Total Liquidity Reserves</h3>
+              <h3 className="font-bold mb-2 text-black">
+                Total Liquidity Reserves
+              </h3>
               <div className="flex items-center justify-center">
                 <Image
                   src="/images/report/content/total-liquidity-reserves.png"
