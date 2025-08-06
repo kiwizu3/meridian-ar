@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 #Base url values
-ENV NEXT_PUBLIC_BASE_URL= https://lb.finance.prod.arimac.xyz
+ENV NEXT_PUBLIC_BASE_URL=https://lb.finance.prod.arimac.xyz
 ENV API_USERNAME=indika
 ENV API_PASSWORD=7FJkN8Y_D
 
