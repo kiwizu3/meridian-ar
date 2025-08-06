@@ -13,8 +13,7 @@ RUN npm install
 # Copy the rest of the application code
 COPY . .
 
-
-
+#updated the dockerfile
 
 # Build the application if needed
 RUN npm run build 
