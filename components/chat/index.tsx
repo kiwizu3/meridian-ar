@@ -100,6 +100,7 @@ export default function Chat() {
   }, [open, selectedOption]);
 
   const handleSend = (message: string) => {
+    console.log('[User Asked]:', message);
     const messageId = generateUniqueId();
 
     // Include the selectedOption in the message object as chatType
