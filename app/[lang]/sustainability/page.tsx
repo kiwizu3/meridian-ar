@@ -140,7 +140,7 @@ export default async function sustainability({
 
       {/* 2nd person  */}
       <div className="!container relative z-10 flex flex-wrap justify-between pt-[98px] px-5 sm:px-10">
-        <div className="w-full lg:w-[60%] xl:w-[723px] xl:pr-6">
+        <div className="order-last lg:order-first w-full lg:w-[60%] xl:w-[723px] xl:pr-6">
           <div>
             <Image
               src={TopComma}
