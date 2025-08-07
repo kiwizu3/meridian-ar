@@ -51,7 +51,7 @@ export default function ConqueringSection() {
               financial strength and stability.
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-2 lg:gap-5 lg:flex-row">
+          <div className="flex flex-col gap-2 xl:gap-5 xl:flex-row">
             <div className="flex flex-col gap-2">
               {items.slice(0, 3).map((item, idx) => (
                 <div className="flex" key={idx}>

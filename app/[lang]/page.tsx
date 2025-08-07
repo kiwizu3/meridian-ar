@@ -388,12 +388,10 @@ export default async function Home({
           snap-motion-type="scroll"
           className="hidden md:block"
         />
-        <section className="relative overflow-hidden p-10">
-          <LionPawAnimate
-            rotateDeg={-90}
-            horizontalPosition="right"
-            verticalPosition="top-[14vw]"
-          />
+        <section className="grid grid-cols-1 m-5 p-5 justify-items-center lg:grid-cols-7 ">
+          <div className="hidden lg:order-last lg:block lg:col-span-2 lg:content-center ">
+            <LionPawAnimate rotateDeg={-90} />
+          </div>
           {/* <FadeInRight> */}
           {/* <img
             src="/images/lion-pow.png"
@@ -405,7 +403,7 @@ export default async function Home({
           /> */}
 
           {/* </FadeInRight> */}
-          <div className="relative z-10 flex flex-col gap-14 container px-5 lg:px-0 items-center xl:items-start lg:pb-[100px] pt-8 lg:pt-[173px]">
+          <div className="col-span-1 lg:col-span-5 order-first">
             <DetailCard
               image={avatar}
               title={dictionary?.chairman_name}
@@ -427,10 +425,9 @@ export default async function Home({
           snap-motion-type="scroll"
           className="hidden md:block"
         />
-        <section className="relative pb-8 md:pb-0 md:pt-[100px]">
-          <div className="relative overflow-hidden p-10">
-            {/* <FadeInLeft> */}
-            {/* <img
+        <section className="grid grid-cols-1 m-5 p-5 justify-items-center lg:grid-cols-7 ">
+          {/* <FadeInLeft> */}
+          {/* <img
               src="/images/lion-pow.png"
               className="absolute w-[500px] right-[0] top-[10vw]"
               alt="lion img"
@@ -438,35 +435,32 @@ export default async function Home({
                 animation: 'fadeInOutLeft 20s ease-out forwards',
               }}
             /> */}
-            <LionPawAnimate
-              rotateDeg={90}
-              horizontalPosition="left"
-              verticalPosition="top-[2vw]"
-            />
-
-            {/* </FadeInLeft> */}
-            <div className="relative z-10 flex flex-col items-center mb-12 xl:items-end gap-14 container px-5 lg:px-0 py-8 lg:py-0">
-              <DetailCard
-                image={avatar2}
-                title={dictionary?.managing_director_name}
-                description={dictionary?.managing_director}
-                audioTrack={{
-                  en: '/voice/md-voice.mp3',
-                  ta: '/voice/md-tamil.mp3',
-                  si: '/voice/md-voice-sinhala.mp3',
-                }}
-                dictionary={dictionary}
-                files={mdFiles}
-              />
-            </div>
+          <div className="hidden lg:block lg:col-span-2 lg:content-center lg:justify-self-center">
+            <LionPawAnimate rotateDeg={90} />
           </div>
-          <div>
+
+          {/* </FadeInLeft> */}
+          <div className="col-span-1 lg:col-span-5">
+            <DetailCard
+              image={avatar2}
+              title={dictionary?.managing_director_name}
+              description={dictionary?.managing_director}
+              audioTrack={{
+                en: '/voice/md-voice.mp3',
+                ta: '/voice/md-tamil.mp3',
+                si: '/voice/md-voice-sinhala.mp3',
+              }}
+              dictionary={dictionary}
+              files={mdFiles}
+            />
+          </div>
+          {/* <div>
             <Image
               src={secTwoImage}
               alt={''}
               className="-mt-[18rem] lg:-mt-[15rem] xl:-mt-96 2xl:-mt-[40rem] w-full h-full lg:-mb-64"
             />
-          </div>
+          </div> */}
         </section>
         <section className="relative">
           <a

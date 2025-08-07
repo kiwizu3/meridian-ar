@@ -559,15 +559,18 @@ export default function SustainabilityGRI() {
             </thead>
             <tbody>
               <tr className="bg-blue-800">
-                <td colSpan={4} className="border border-white p-2 font-bold capitalize">
-                General Disclosures
+                <td
+                  colSpan={4}
+                  className="border border-white p-2 font-bold capitalize"
+                >
+                  General Disclosures
                 </td>
               </tr>
               <tr className="bg-blue-700">
                 <td rowSpan={31} className="border border-white p-2">
                   GRI 2: General Disclosures 2021
                 </td>
-                <td colSpan={3} className="border border-white p-2"></td>
+                {/* <td colSpan={3} className="border border-white p-2"></td> */}
               </tr>
               {disclosures.map((item) => (
                 <tr key={item.id} className="bg-blue-700">
@@ -588,7 +591,7 @@ export default function SustainabilityGRI() {
               ))}
               <tr className="bg-blue-800">
                 <td colSpan={4} className="border border-white p-2 font-bold">
-                Material Topics
+                  Material Topics
                 </td>
               </tr>
               <tr className="bg-blue-700">
@@ -613,14 +616,14 @@ export default function SustainabilityGRI() {
               ))}
               <tr className="bg-blue-800">
                 <td colSpan={4} className="border border-white p-2 font-bold">
-                Economic Performance
+                  Economic Performance
                 </td>
               </tr>
               <tr className="bg-blue-700">
                 <td rowSpan={5} className="border border-white p-2">
                   GRI 201 Economic Performance 2016
                 </td>
-                <td colSpan={3} className="border border-white p-2"></td>
+                {/* <td colSpan={3} className="border border-white p-2"></td> */}
               </tr>
               {economicPerformance.map((item) => (
                 <tr key={item.id} className="bg-blue-700">
@@ -641,14 +644,14 @@ export default function SustainabilityGRI() {
               ))}
               <tr className="bg-blue-800">
                 <td colSpan={4} className="border border-white p-2 font-bold">
-                Market Presence
+                  Market Presence
                 </td>
               </tr>
               <tr className="bg-blue-700">
                 <td rowSpan={3} className="border border-white p-2">
                   GRI 202 Market Presence 2016
                 </td>
-                <td colSpan={3} className="border border-white p-2"></td>
+                {/* <td colSpan={3} className="border border-white p-2"></td> */}
               </tr>
               {marketPresence.map((item) => (
                 <tr key={item.id} className="bg-blue-700">
@@ -704,7 +707,7 @@ export default function SustainabilityGRI() {
                     >
                       {section.standard}
                     </td>
-                    <td colSpan={3} className="border border-white p-2"></td>
+                    {/* <td colSpan={3} className="border border-white p-2"></td> */}
                   </tr>
                   {section.items.map((item: SectionItem, itemIndex: number) => (
                     <tr key={itemIndex} className="bg-blue-700">
