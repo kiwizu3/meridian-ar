@@ -32,7 +32,7 @@ export default function EstablishingSection() {
       label: 'Corporate Governance Highlights',
       content: <GovernanceHighlights />,
     },
-    { label: 'Governance Processes', content: <GovernanceProcesses /> },
+    { label: 'Board Sub Committees', content: <GovernanceProcesses /> },
   ];
 
   return (

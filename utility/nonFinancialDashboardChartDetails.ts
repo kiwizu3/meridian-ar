@@ -801,12 +801,12 @@ export const employeeWellbeingFilters = [
       {
         key: '2024',
         label: '2024',
-        isChecked: true,
+        isChecked: false,
       },
       {
         key: '2025',
         label: '2025',
-        isChecked: false,
+        isChecked: true,
       },
     ],
   },
@@ -1160,13 +1160,13 @@ export const reputationFilters = [
     selectionType: 'single',
     items: [
       {
-        key: 'brandValue',
-        label: 'Brand value (Brand Finance) (Rs. Mn)',
+        key: 'brandRanking',
+        label: 'Brand ranking (Brand Finance) (Position)',
         isChecked: true,
       },
       {
-        key: 'brandRanking',
-        label: 'Brand ranking (Brand Finance) (Position)',
+        key: 'brandValue',
+        label: 'Brand value (Brand Finance) (Rs. Mn)',
         isChecked: false,
       },
       {

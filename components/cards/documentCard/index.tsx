@@ -29,7 +29,7 @@ export default function DocumentCard(props: Readonly<DocCardProps>) {
           </a>
         </div>
       </div>
-      <div className="flex justify-end w-full">
+      <div className="flex justify-end w-full py-3">
         <CheckCircle />
       </div>
     </div>

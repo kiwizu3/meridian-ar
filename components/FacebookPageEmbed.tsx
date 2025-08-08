@@ -47,7 +47,7 @@ const FacebookPageEmbed = () => {
       <div ref={containerRef}>
         <div
           className="fb-page"
-          data-href="https://www.facebook.com/LBFinancePLC"
+          data-href="https://web.facebook.com/LBSustainability1st"
           data-tabs="timeline"
           data-height="1300"
           data-small-header="true"
@@ -57,10 +57,12 @@ const FacebookPageEmbed = () => {
           data-show-posts="true"
         >
           <blockquote
-            cite="https://www.facebook.com/LBFinancePLC"
+            cite="https://web.facebook.com/LBSustainability1st"
             className="fb-xfbml-parse-ignore"
           >
-            <a href="https://www.facebook.com/LBFinancePLC">LB Finance PLC</a>
+            <a href="https://web.facebook.com/LBSustainability1st">
+              LB Finance PLC
+            </a>
           </blockquote>
         </div>
       </div>

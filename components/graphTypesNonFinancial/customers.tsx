@@ -36,7 +36,7 @@ const customerFilters = [
       {
         key: '2024',
         label: '2024',
-        isChecked: true,
+        isChecked: false,
       },
       {
         key: '2025',

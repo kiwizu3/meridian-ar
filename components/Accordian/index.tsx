@@ -10,7 +10,7 @@ export default function CustomAccordion(props: AccordionProps) {
     titleWrapper: '',
     title: 'font-secondary font-normal text-base leading-8 text-gray50 ',
     trigger:
-      'px-6 py-3 data-[hover=true]:bg-greeen2 capitalize data-[open=true]:bg-greeen2 rounded-none h-fit flex items-center bg-white1/10',
+      'px-6 py-3 data-[hover=true]:bg-greeen2 capitalize data-[open=true]:bg-greeen2 rounded-xl h-fit flex items-center bg-white1/10',
     indicator: 'text-medium ',
     content: 'py-4 md:py-6 lg:pt-10 lg:pb-14 px-4',
   };
