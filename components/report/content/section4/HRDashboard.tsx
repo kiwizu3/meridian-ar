@@ -86,7 +86,7 @@ export default function HRDashboard() {
             </h2>
             <div className="bg-gray-200 p-4 rounded-lg h-64 flex items-center justify-center">
               <Image
-                src="/images/report/content/Employee Composition by Gender.png"
+                src="/images/report/content/Employee_Composition_by_Gender.png"
                 alt="Employee Composition by Gender"
                 width={260}
                 height={270}
@@ -288,7 +288,7 @@ export default function HRDashboard() {
             </h2>
             <div className="bg-gray-200 p-4 rounded-lg h-64 flex items-center justify-center">
               <Image
-                src="/images/report/content/Service analysis of employees by category.png"
+                src="/images/report/content/Service_analysis_of_employees_by_category.png"
                 alt="Service analysis of employees by category"
                 width={260}
                 height={270}
@@ -308,7 +308,7 @@ export default function HRDashboard() {
             </h2>
             <div className="bg-gray-200 p-4 rounded-lg h-64 flex items-center justify-center">
               <Image
-                src="/images/report/content/Composition of the Board and employees by.png"
+                src="/images/report/content/Composition_of_the_Board_and_employees_by.png"
                 alt="Composition of the Board and employees by"
                 width={260}
                 height={270}

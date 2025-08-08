@@ -138,7 +138,7 @@
   margin: 63px -12px;
 }
 .contact-wrap .detail-wrap .address-wrap .address-block {
-  width: 33%;
+  /* width: 33%; */
   padding: 0 10px 24px;
 }
 .contact-wrap .detail-wrap .address-wrap .address-block .title {

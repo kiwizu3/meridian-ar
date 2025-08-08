@@ -77,19 +77,12 @@ export default function ValueCreationModel({ dictionary }: any) {
               </div>
             </motion.div>
           </div>
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+          <div className="absolute left-[40%] top-[45%] -translate-x-1/2 -translate-y-1/2 z-10 sm:left-1/2 sm:top-1/2">
             <motion.div
               initial={{ opacity: 0, scale: 0.5 }}
               viewport={{ once: true }}
-              whileInView={{
-                opacity: 1,
-                scale: 1,
-              }}
-              transition={{
-                duration: 1,
-                repeat: 0,
-                ease: 'easeInOut',
-              }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1, repeat: 0, ease: 'easeInOut' }}
             >
               <Image src={SustainabilityImage} alt="sustainability-circle" />
             </motion.div>

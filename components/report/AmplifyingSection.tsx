@@ -35,7 +35,7 @@ export default function AmplifyingSection() {
       label: 'Materiality Determination Process',
       content: <MaterialityDetermination />,
     },
-    { label: 'Strategic Journey', content: <StrategicJourney /> },
+    { label: 'MD Statement.', content: <StrategicJourney /> },
     {
       label: 'Our value creating business model',
       content: <CreatingBusinessModel />,

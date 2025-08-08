@@ -14,10 +14,8 @@ export default function NonFinancialHighlights() {
           <table className="w-full border-collapse mb-8">
             <thead>
               <tr className="bg-cardGreen">
-                <th className="border border-white p-2 text-left">
-                  Measurement
-                </th>
-                <th className="border border-white p-2"></th>
+                <th className="border border-white p-2 text-left"></th>
+                <th className="border border-white p-2">Indicator</th>
                 <th className="border border-white p-2">2024/25</th>
                 <th className="border border-white p-2">2023/24</th>
                 <th className="border border-white p-2">Related Capital</th>
@@ -34,13 +32,12 @@ export default function NonFinancialHighlights() {
                 <td className="border border-white p-2">FC</td>
               </tr>
               <tr className="bg-cardGreen">
-                <td className="border border-white p-2 font-semibold">
+                <td
+                  className="border border-white p-2 font-semibold"
+                  colSpan={5}
+                >
                   Economic value distributed to:
                 </td>
-                <td className="border border-white p-2"></td>
-                <td className="border border-white p-2"></td>
-                <td className="border border-white p-2"></td>
-                <td className="border border-white p-2"></td>
               </tr>
               <tr>
                 <td className="border border-white p-2 pl-6">

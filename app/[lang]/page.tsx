@@ -230,7 +230,7 @@ export default async function Home({
                       {dictionary?.annual_result}
                     </p>
                   </SpeechText>
-                  <div className="pt-[22px] grid lg:grid-cols-2 grid-cols-1 gap-4">
+                  <div className="pt-[22px] grid grid-cols-1 lg:grid-cols-2 gap-4">
                     {/* <div>
                       <HTMLVersion
                         svg={<Html5con />}

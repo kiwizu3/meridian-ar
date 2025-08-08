@@ -125,7 +125,7 @@ export default function DetailCard(props: Readonly<DetailCardProps>) {
               {dictionary?.download_transcript}
             </p>
           </SpeechText>
-          <div className="flex md:gap-6 gap-1 flex-row">
+          <div className="flex flex-col mx-auto md:gap-6 gap-1 md:flex-row">
             {fileDownload.map((items: any) => (
               <a
                 key={items.key}

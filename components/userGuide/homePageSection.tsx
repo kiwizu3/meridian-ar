@@ -21,7 +21,7 @@ export default function HomePageSection({ dictionary }: any) {
             </SpeechText>
           </div>
 
-          <div className="font-secondary para text-center py-1 sm:py-4 !container mx-auto">
+          <div className="font-secondary para text-center py-1 px-5 sm:py-4 !container mx-auto">
             <SpeechText>
               <p>{dictionary?.home_page_description}</p>
             </SpeechText>
