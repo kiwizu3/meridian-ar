@@ -1,8 +1,8 @@
 'use client';
 
 import Image from 'next/image';
-import Dashboard1 from '../../public/images/dashboard-1.png';
-import Dashboard2 from '../../public/images/dashboard-2.png';
+import Dashboard1 from '../../public/images/user-guide/finance.png';
+import Dashboard2 from '../../public/images/user-guide/non-finance.png';
 import InformationIcon from '../icons/information';
 import SpeechText from '../SpeechText';
 

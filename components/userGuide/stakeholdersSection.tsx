@@ -1,10 +1,10 @@
 'use client';
 
 import Image from 'next/image';
-import SmartAIImg from '../../public/images/user-guide-stakeholders-chat-img.png';
-import StakeholdersImg from '../../public/images/user-guide-stakeholders-img.png';
-import ConnectImg from '@/public/images/connect-user-guide.png';
-import OurImpactImg from '../../public/images/user-guide-stakeholders-our-impact-img.png';
+import SmartAIImg from '../../public/images/user-guide/smart box.png';
+import StakeholdersImg from '../../public/images/user-guide/stakeholder.png';
+import ConnectImg from '@/public/images/user-guide/connect.png';
+import OurImpactImg from '../../public/images/user-guide/our_impact.png';
 import SpeechText from '../SpeechText';
 
 export default function StakeholdersSection({ dictionary }: any) {

@@ -974,7 +974,7 @@ export const socialWellbeingFilters = [
       {
         key: '2021',
         label: '2021',
-        isChecked: true,
+        isChecked: false,
       },
       {
         key: '2022',
@@ -994,7 +994,7 @@ export const socialWellbeingFilters = [
       {
         key: '2025',
         label: '2025',
-        isChecked: false,
+        isChecked: true,
       },
     ],
   },
@@ -1206,7 +1206,7 @@ export const reputationFilters = [
       {
         key: '2021',
         label: '2021',
-        isChecked: true,
+        isChecked: false,
       },
       {
         key: '2022',
@@ -1226,7 +1226,7 @@ export const reputationFilters = [
       {
         key: '2025',
         label: '2025',
-        isChecked: false,
+        isChecked: true,
       },
     ],
   },

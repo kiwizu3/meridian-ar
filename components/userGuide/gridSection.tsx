@@ -1,8 +1,8 @@
 'use client';
 
 import Image from 'next/image';
-import Accessibility from '../../public/images/accessibility-tools-screen.png';
-import Speaker from '../../public/images/speaker-screen-img.png';
+import Accessibility from '../../public/images/user-guide/accessibility_tool.png';
+import Speaker from '../../public/images/user-guide/home_page.png';
 import SpeechText from '../SpeechText';
 
 export default function GridSection({ dictionary }: any) {
