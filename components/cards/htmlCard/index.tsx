@@ -6,7 +6,7 @@ export default function HtmlCard(props: Readonly<DocCardProps>) {
   return (
     <div className="flex border-1 border-white/20 bg-themeYellow h-full rounded-[9px] p-2">
       <div className="py-3 pr-8 pl-4">{props.svg}</div>
-      <div className="py-3">
+      <div className="py-3 w-full">
         <SpeechText>
           <p className="font-primary font-black text-darkBlue text-lg leading-[21.8px] opacity-80">
             {props.title}
