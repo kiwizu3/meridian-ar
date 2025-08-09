@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import BackImage from '../../public/images/user-guide-sustainability-back-img-.png';
-import Image1 from '../../public/images/user-guide-sustainability-img-1.png';
+import Image1 from '../../public/images/user-guide/sustanability.png';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -78,7 +78,12 @@ export default function SustainabilitySection({ dictionary }: any) {
               <div className="img-wrap">
                 <div className="img-inner">
                   <div className="side-img">
-                    <Image src={item.img} alt="Sustainability" />
+                    <Image
+                      src={item.img}
+                      alt="Sustainability"
+                      width={350}
+                      height={200}
+                    />
                   </div>
                 </div>
               </div>

@@ -45,7 +45,7 @@
   font-size: 2rem;
   font-weight: 900;
   line-height: 44.8px;
-  color: #0E3A2F;
+  color: #0e3a2f;
 }
 .user-guide-para {
   font-size: 1.125rem;
@@ -77,7 +77,7 @@
 
 /*annual results section*/
 .annual-results-section {
-  background-color: #0E3A2F;
+  background-color: #0e3a2f;
   margin-top: -22%;
   padding-top: 22%;
   padding-bottom: 15%;
@@ -91,14 +91,14 @@
   width: calc(50% - 24px);
   padding: 24px 16px;
   margin: 12px;
-  background: #17634F;
+  background: #17634f;
   border-radius: 8px;
 }
 .annual-results-section .annual-results-box .icon {
   width: 68px;
   height: 68px;
   border-radius: 50%;
-  background: #BADBD2;
+  background: #badbd2;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -167,7 +167,7 @@
   width: calc(50% - 24px);
   margin: 12px;
   padding: 24px 16px;
-  background: #17634F;
+  background: #17634f;
   border-radius: 8px;
 }
 .integrated-dashboard-section .dashboard-box-wrap .box-item .title {
@@ -258,12 +258,12 @@
 }
 .sustainability-section .content-wrap .img-wrap {
   position: absolute;
-  right: 0;
-  width: 66.806%;
+  right: 100px;
+  /* width: 66.806%; */
   height: 50vw;
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-end;
+  align-items: center;
 }
 .sustainability-section .slider-bg-img {
   position: absolute;
@@ -331,7 +331,7 @@
   padding: 80px 0 120px;
 }
 .user-guild-grid-section .grid-box-inner {
-  background-color: #17634F;
+  background-color: #17634f;
   padding: 24px;
   /* margin: 12px; */
   border-radius: 8px;
