@@ -296,11 +296,11 @@ const averageTrainingHoursChartOptions: ApexOptions = {
   series: [
     {
       name: 'Average Hours of Training per Employee',
-      data: [14.64, 2.19, 4.65, 3.1, 10.87],
+      data: [2.17, 4.65, 6.5, 5.67, 5.75],
     },
   ],
   xaxis: {
-    categories: ['2020', '2021', '2022', '2023', '2024'],
+    categories: ['2021', '2022', '2023', '2024', '2025'],
   },
 };
 
@@ -581,22 +581,27 @@ export default function HumanCapita() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             <div className="bg-[#d1dff2] rounded-t-lg text-center">
               <h4 className="font-bold bg-[#0989ca] p-2 rounded-t-lg">FC</h4>
-              <p className='p-2 text-black'> Investments in training and development </p>
+              <p className="p-2 text-black">
+                {' '}
+                Investments in training and development{' '}
+              </p>
             </div>
             <div className="bg-[#fadde9] rounded-t-lg text-center">
-            <h4 className="font-bold bg-[#ef56a0] p-2 rounded-t-lg">IC</h4>
-              <p className='p-2 text-black'>Improves productivity and tacit knowledge </p>
+              <h4 className="font-bold bg-[#ef56a0] p-2 rounded-t-lg">IC</h4>
+              <p className="p-2 text-black">
+                Improves productivity and tacit knowledge{' '}
+              </p>
             </div>
             <div className="bg-[#e7f0d4] rounded-t-lg text-center">
-            <h4 className="font-bold bg-[#97c839] p-2 rounded-t-lg">NC</h4>
-              <p className='p-2 text-black'>
+              <h4 className="font-bold bg-[#97c839] p-2 rounded-t-lg">NC</h4>
+              <p className="p-2 text-black">
                 Productive employees improve efficiency contributing to less
                 consumption of resources
               </p>
             </div>
             <div className="bg-[#e7f0d4] rounded-t-lg text-center">
-            <h4 className="font-bold bg-[#a67e35] p-2 rounded-t-lg">MC</h4>
-              <p className='p-2 text-black'>
+              <h4 className="font-bold bg-[#a67e35] p-2 rounded-t-lg">MC</h4>
+              <p className="p-2 text-black">
                 Exceptional customer service through trained and skilled staff
               </p>
             </div>
@@ -606,23 +611,30 @@ export default function HumanCapita() {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             <div className="bg-[#d1dff2] rounded-t-lg text-center">
-            <h4 className="font-bold bg-[#0989ca] p-2 rounded-t-lg">FC</h4>
-              <p className='p-2 text-black'>Financial resources to enhance employee engagement </p>
+              <h4 className="font-bold bg-[#0989ca] p-2 rounded-t-lg">FC</h4>
+              <p className="p-2 text-black">
+                Financial resources to enhance employee engagement{' '}
+              </p>
             </div>
             <div className="bg-[#fadde9] rounded-t-lg text-center">
-            <h4 className="font-bold bg-[#ef56a0] p-2 rounded-t-lg">IC</h4>
-              <p className='p-2 text-black'>Nurtures a productive and motivated team </p>
+              <h4 className="font-bold bg-[#ef56a0] p-2 rounded-t-lg">IC</h4>
+              <p className="p-2 text-black">
+                Nurtures a productive and motivated team{' '}
+              </p>
             </div>
             <div className="bg-[#e7f0d4] rounded-t-lg text-center">
-            <h4 className="font-bold bg-[#97c839] p-2 rounded-t-lg">NC</h4>
-              <p className='p-2 text-black'>
+              <h4 className="font-bold bg-[#97c839] p-2 rounded-t-lg">NC</h4>
+              <p className="p-2 text-black">
                 Employees volunteering to engage in environmental conservation
                 initiatives
               </p>
             </div>
             <div className="bg-[#e3e1e0] rounded-t-lg text-center">
-            <h4 className="font-bold bg-[#8c8e90] p-2 rounded-t-lg">MC</h4>
-              <p className='p-2 text-black'> Employees volunteering to engage in CSR initiatives </p>
+              <h4 className="font-bold bg-[#8c8e90] p-2 rounded-t-lg">MC</h4>
+              <p className="p-2 text-black">
+                {' '}
+                Employees volunteering to engage in CSR initiatives{' '}
+              </p>
             </div>
           </div>
         </div>
@@ -931,13 +943,24 @@ export default function HumanCapita() {
             Circle fostering healthy competition within the organisation while
             motivating employees to strive for excellence.
           </p>
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-6 rounded-lg bg-[#e6e3f1] p-6'>
-            <div className='flex justify-center'>
-              <div className='w-1/2'><img src="/images/charts/capitalReport/HumanCapitalReports/awards.png" alt="award" className='w-full' /></div>
-              
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 rounded-lg bg-[#e6e3f1] p-6">
+            <div className="flex justify-center">
+              <div className="w-1/2">
+                <img
+                  src="/images/charts/capitalReport/HumanCapitalReports/awards.png"
+                  alt="award"
+                  className="w-full"
+                />
+              </div>
             </div>
-            <div className='flex justify-center'>
-              <div className='w-1/2'><img src="/images/charts/capitalReport/HumanCapitalReports/award2.png" alt="award" className='w-full' /></div>
+            <div className="flex justify-center">
+              <div className="w-1/2">
+                <img
+                  src="/images/charts/capitalReport/HumanCapitalReports/award2.png"
+                  alt="award"
+                  className="w-full"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -1861,7 +1884,7 @@ export default function HumanCapita() {
         {/* Training and Development */}
         <div className="bg-white text-blue rounded-lg p-6">
           <h2 className="text-xl font-semibold mb-4">
-           Training on Anti-corruption
+            Training on Anti-corruption
           </h2>
           <p>
             We strive to create a culture of awareness and accountability
