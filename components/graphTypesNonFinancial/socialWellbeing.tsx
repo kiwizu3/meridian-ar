@@ -124,7 +124,7 @@ function SocialWellbeing({ dictionary }: any) {
     getSeriesData: [
       {
         name: 'Community Development Programmes (Number)',
-        data: [12, 22, 20, 25, 18],
+        data: [22, 20, 25, 18, 18],
       },
     ],
   };

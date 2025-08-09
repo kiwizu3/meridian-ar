@@ -972,14 +972,9 @@ export const socialWellbeingFilters = [
     selectionType: 'single',
     items: [
       {
-        key: '2020',
-        label: '2020',
-        isChecked: true,
-      },
-      {
         key: '2021',
         label: '2021',
-        isChecked: false,
+        isChecked: true,
       },
       {
         key: '2022',
@@ -994,6 +989,11 @@ export const socialWellbeingFilters = [
       {
         key: '2024',
         label: '2024',
+        isChecked: false,
+      },
+      {
+        key: '2025',
+        label: '2025',
         isChecked: false,
       },
     ],
@@ -1204,14 +1204,9 @@ export const reputationFilters = [
     selectionType: 'single',
     items: [
       {
-        key: '2020',
-        label: '2020',
-        isChecked: true,
-      },
-      {
         key: '2021',
         label: '2021',
-        isChecked: false,
+        isChecked: true,
       },
       {
         key: '2022',

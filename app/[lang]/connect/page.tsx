@@ -142,7 +142,7 @@ export default function Contact({
               className="flex flex-col contact-wrap p-10 md:p-5 md:order-2 order-1 md:col-span-2 lg:col-span-2"
               id="contact-wrap"
             >
-              <div className="detail-wrap pr-0 md:pr-0 lg:pr-6 xl:pr-7">
+              <div className="detail-wrap pr-0 pl-3 md:pr-0 lg:pr-6 xl:pr-7">
                 <SpeechText>
                   <p className="heading my-3">{dictionary?.contact_us}</p>
                 </SpeechText>
@@ -343,13 +343,13 @@ export default function Contact({
                         htmlFor="privacy-checkbox"
                         className="text-sm font-secondary text-white"
                       >
-                        I have read and agree to the{' '}
+                        {dictionary?.i_agree_to}
                         <a
                           href={`/${lang}/privacy-policy`}
                           className="text-blue-400 hover:underline"
                           target="_blank"
                         >
-                          Privacy Policy
+                          {dictionary?.privacy_policy}
                         </a>
                       </label>
                     </div>
