@@ -1,0 +1,59 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".ts", ".tsx"]
+      }
+    }
+  },
+  "extends": [
+    "airbnb",
+    "prettier",
+    "next/core-web-vitals",
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended"
+  ],
+  "plugins": ["prettier"],
+  "rules": {
+    "import/extensions": "off",
+    "import/named": "off",
+    "import/no-unresolved": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+    "no-undef": "off",
+    "no-console": "warn",
+    "react/jsx-props-no-spreading": "off",
+    "react/react-in-jsx-scope": "off",
+    "import/no-extraneous-dependencies": "off",
+    "no-param-reassign": "off",
+    "implicit-arrow-linebreak": "off",
+    "object-curly-newline": "off",
+    "no-use-before-define": "off",
+    "linebreak-style": "off",
+    "react/require-default-props": "off",
+    "@next/next/no-img-element": "off",
+    "import/prefer-default-export": "off",
+    "consistent-return": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "react/no-array-index-key": "off",
+    "no-underscore-dangle": "off",
+    "react/jsx-curly-brace-presence": "off",
+    "react/no-unstable-nested-components": [
+      "off",
+      {
+        "allowAsProps": true,
+        "customValidators": []
+      }
+    ],
+    "no-unused-vars": [2, { "args": "none" }],
+    "no-plusplus": "off"
+  }
+}

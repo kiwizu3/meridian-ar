@@ -1,0 +1,22 @@
+import { IconProps } from '@/types';
+import React from 'react';
+
+function TextIncrease(props: IconProps) {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M1 19L6.25 5H8.75L14 19H11.6L10.325 15.425H4.675L3.4 19H1ZM5.4 13.4H9.6L7.55 7.6H7.45L5.4 13.4ZM18 16V13H15V11H18V8H20V11H23V13H20V16H18Z"
+        fill="#F0F0F0"
+      />
+    </svg>
+  );
+}
+
+export default TextIncrease;

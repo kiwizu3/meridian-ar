@@ -1,0 +1,466 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'NotoSansSinhala';
+  src: url('/fonts/sinhala/NotoSansSinhala_Condensed-Regular.ttf')
+    format('truetype');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'NotoSansTamil';
+  src: url('/fonts/tamil/NotoSansTamil_Condensed-Regular.ttf')
+    format('truetype');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'nexa';
+  src: url('/fonts/nexa/Nexa-Thin.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'nexa';
+  src: url('/fonts/nexa/Nexa-Light.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'nexa';
+  src: url('/fonts/nexa/Nexa-Book.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'nexa';
+  src: url('/fonts/nexa/Nexa-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'nexa';
+  src: url('/fonts/nexa/Nexa-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'nexa';
+  src: url('/fonts/nexa/Nexa-Heavy.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'helvetica';
+  src: url('/fonts/helvetica/HelveticaNeue-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'helvetica';
+  src: url('/fonts/helvetica/HelveticaNeue-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'helvetica';
+  src: url('/fonts/helvetica/HelveticaNeue-Heavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'helvetica';
+  src: url('/fonts/helvetica/HelveticaNeue-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'helvetica';
+  src: url('/fonts/helvetica/HelveticaNeue-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'helvetica';
+  src: url('/fonts/helvetica/HelveticaNeue-Roman.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'helvetica';
+  src: url('/fonts/helvetica/HelveticaNeue-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('/fonts/helvetica/HelveticaNeue-UltraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+/* body {
+  @apply cursor-custom-icon
+} */
+
+body {
+  height: 100%;
+  cursor: url('../public/cursorSvg.svg'), auto;
+}
+
+.custom-radio {
+  span {
+    @apply !border-themeYellow hover:bg-transparent;
+  }
+}
+.custom-radio-yellow {
+  span {
+    @apply !border-themeYellow hover:bg-themeYellow;
+  }
+}
+.custom-radio-white {
+  span {
+    @apply !border-white hover:bg-white;
+  }
+}
+.apexcharts-tooltip {
+  background-color: #fff;
+  color: #000;
+}
+
+.apexcharts-tooltip-title {
+  background-color: #e5dcfb !important;
+  color: #000;
+}
+
+.apexcharts-toolbar {
+  display: none !important;
+}
+
+.group[data-hover='true']
+  .group-data-\[hover\=true\]\:before\:bg-default-100::before {
+  background-color: #0b466e !important;
+}
+
+.financial-dashboard .text-inherit.w-3.h-3.flex-shrink-0 {
+  display: none;
+}
+
+.text-move-to-left {
+  .text-center {
+    text-align: left;
+    justify-content: left;
+    width: unset !important;
+  }
+
+  .apexcharts-legend {
+    justify-content: left !important;
+  }
+
+  .justify-center,
+  .heading,
+  .para.font-primary,
+  .font-secondary,
+  .connect-heading {
+    text-align: left;
+    justify-content: left;
+    max-width: 100%;
+  }
+
+  .tap-highlight-transparent {
+    justify-content: center !important;
+    text-align: center;
+  }
+
+  .our-impact-img {
+    text-align: center !important;
+    justify-content: center !important;
+  }
+
+  .data-\[justify\=center\]\:justify-center[data-justify='center'] {
+    justify-content: left;
+  }
+}
+
+.text-move-to-right {
+  .text-center {
+    text-align: right;
+    justify-content: right;
+    width: unset !important;
+  }
+
+  .apexcharts-legend {
+    justify-content: right !important;
+  }
+
+  .justify-center,
+  .text-wrap,
+  .heading,
+  .para,
+  .font-primary,
+  .font-secondary,
+  .connect-heading {
+    text-align: right;
+    justify-content: right;
+    max-width: 100%;
+    align-items: end;
+  }
+
+  .tap-highlight-transparent {
+    justify-content: center !important;
+    text-align: center;
+  }
+
+  .our-impact-img {
+    text-align: center !important;
+    justify-content: center !important;
+  }
+
+  .bottom-comma {
+    margin-top: 4px !important;
+  }
+
+  .radio-sustainability {
+    align-items: end !important;
+
+    .tap-highlight-transparent {
+      margin-right: 0 !important;
+    }
+  }
+
+  .data-\[justify\=center\]\:justify-center[data-justify='center'] {
+    justify-content: right;
+  }
+}
+
+.increase-line-height {
+  .lg\:text-2xl {
+    line-height: 3rem;
+  }
+  .font-secondary,
+  .text-base,
+  .font-primary,
+  .title,
+  h1,
+  .text-2xl {
+    line-height: 4rem !important;
+  }
+
+  .para {
+    line-height: 3rem !important;
+  }
+
+  .lg\:leading-\[111px\] {
+    line-height: 140px !important;
+  }
+  .min-h-\[216px\] {
+    min-height: 300px;
+  }
+
+  .\!leading-\[1\.5\] {
+    line-height: 2 !important;
+  }
+
+  @media (min-width: 1024px) {
+    .lg\:leading-\[76\.8px\] {
+      line-height: 7rem !important;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .md\:leading-\[6rem\] {
+      line-height: 9rem !important;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .md\:leading-\[10rem\] {
+      line-height: 14rem !important;
+    }
+  }
+
+  @media (min-width: 768px) {
+    @media (min-width: 768px) {
+      .md\:md\:\!leading-\[6rem\] {
+        line-height: 9rem !important;
+      }
+    }
+  }
+
+  .\!leading-\[3rem\] {
+    line-height: 9rem !important;
+  }
+
+  .line-track {
+    line-height: 300px !important;
+  }
+  .connect-heading {
+    line-height: 150px !important;
+  }
+  .h-\[78px\] {
+    height: 100px;
+  }
+}
+
+.hover\:text-shadow:hover {
+  text-shadow: 0.5px 0.5px #fff;
+}
+
+.tracking-widest {
+  .tracking-\[1px\] {
+    letter-spacing: 0.1em;
+  }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  margin: 8px;
+}
+
+/* Track */
+.custom-scrollbar::-webkit-scrollbar-track {
+  border-radius: 10px;
+  @apply bg-white/15 px-4;
+}
+
+/* Handle */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #009d73;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #009d73;
+}
+
+.speaker-icon-center,
+.move-center {
+  justify-content: center;
+}
+
+.custom-radio {
+  .justify-center {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.top-\[25rem\] {
+  top: 25rem;
+}
+.top-\[22rem\] {
+  top: 22rem;
+}
+.top-\[30rem\] {
+  top: 30rem;
+}
+.top-\[15rem\] {
+  top: 15rem;
+}
+.top-\[24rem\] {
+  top: 24rem;
+}
+
+.top-\[36rem\] {
+  top: 36rem;
+}
+.top-\[7rem\] {
+  top: 7rem;
+}
+.top-\[14rem\] {
+  top: 14rem;
+}
+
+@media (min-width: 1024px) {
+  .lg\:top-\[15rem\] {
+    top: 15rem;
+  }
+}
+@media (min-width: 1024px) {
+  .lg\:top-\[24rem\] {
+    top: 24rem;
+  }
+}
+
+.leading-\[5rem\] {
+  line-height: 5rem;
+}
+
+.leading-\[6rem\] {
+  line-height: 6rem;
+}
+.leading-\[10rem\] {
+  line-height: 10rem;
+}
+
+.font-notoSinhala {
+  font-family: 'NotoSansSinhala' !important;
+
+  .font-primary,
+  .font-secondary {
+    font-family: 'NotoSansSinhala' !important;
+  }
+}
+.font-notoTamil {
+  font-family: 'NotoSansTamil' !important;
+  .font-primary,
+  .font-secondary {
+    font-family: 'NotoSansTamil' !important;
+  }
+}
+.font-primary {
+  font-family: 'nexa' !important;
+}
+
+@keyframes fadeInOutLeft {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9) rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1) rotate(-90deg);
+  }
+}
+@keyframes fadeInOutRight {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9) rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1) rotate(90deg);
+  }
+}

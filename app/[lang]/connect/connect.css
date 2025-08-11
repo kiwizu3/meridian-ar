@@ -1,0 +1,295 @@
+.connect-page-wrap {
+  display: block;
+  margin: 66px auto 0;
+  max-width: 1360px;
+  padding-bottom: 150px;
+}
+.connect-page-inner {
+  padding: 0 40px;
+}
+.connect-bg {
+  background-image: url('/images/sustainability-bottom-bg.png');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-attachment: fixed;
+  background-position-y: 10vw;
+}
+.connect-heading {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 83.2px;
+}
+.connect-news-wrap {
+  /* padding: 24px 8px; */
+  background: #17634f;
+  border-radius: 16px;
+  margin-top: 28px;
+}
+.connect-news-inner {
+  padding-top: 20px;
+  padding-left: 4.8rem;
+}
+
+@media (max-width: 1160px) {
+  .connect-news-inner {
+    padding-left: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .connect-news-inner {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .connect-news-inner {
+    padding-left: 3.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .connect-news-inner {
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .connect-news-inner {
+    padding-left: 0.3rem;
+  }
+}
+
+.connect-news-wrap .heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.connect-news-wrap .heading .profile {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.connect-news-wrap .heading .profile img {
+  width: 45.56px;
+  height: 45.56px;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+}
+.connect-news-wrap .heading .profile .text {
+  font-size: 1.375rem;
+  font-weight: 900;
+  line-height: 22px;
+  color: #f7f7f7;
+}
+.connect-news-wrap .heading .profile .followers {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 24px;
+  color: #ececec;
+}
+.connect-news-wrap .heading .follow-btn .btn {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 21.98px;
+  background: #f26722;
+  color: #ffffff;
+  border: 1px solid #f26722;
+  border-radius: 8px;
+  padding: 12px 16px;
+  min-height: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-width: 112px;
+}
+.contact-wrap {
+  padding-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+/* .contact-wrap .detail-wrap {
+  width: 56.094%;
+} */
+/* .contact-wrap .form-wrap {
+  width: 41.719%;
+} */
+.contact-wrap .detail-wrap .heading {
+  font-size: 1.625rem;
+  font-weight: 900;
+  line-height: 39px;
+}
+.contact-wrap .detail-wrap .para {
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 27px;
+  color: #e5e5e5;
+}
+.contact-wrap .detail-wrap .address-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 63px -12px;
+}
+.contact-wrap .detail-wrap .address-wrap .address-block {
+  /* width: 33%; */
+  padding: 0 10px 24px;
+}
+.contact-wrap .detail-wrap .address-wrap .address-block .title {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 8px;
+  color: #eaeaea;
+}
+.contact-wrap .detail-wrap .address-wrap .address-block .text {
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 24px;
+  color: #e5e5e5;
+}
+
+.contact-wrap .form-wrap .form-inner {
+  background-color: #124f3f;
+  border: 1px solid #0a3d5f;
+  padding: 24px;
+  border-radius: 8px;
+}
+.contact-wrap .form-wrap .form-inner .heading {
+  font-size: 1.375rem;
+  font-weight: 900;
+  line-height: 33px;
+}
+.contact-input [data-slot='input-wrapper'] {
+  border: 1px solid #0a3d5f;
+  background: #badbd2;
+}
+.contact-input label {
+  color: #2f2f20;
+  font-size: 1rem;
+}
+.contact-input input {
+  font-size: 1rem;
+}
+.contact-wrap .form-wrap .form-inner .submit-btn {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #edb143;
+  color: #ffffff;
+  border: 1px solid #edb143;
+  padding: 6px 16px;
+  min-width: 92px;
+  border-radius: 8px;
+  outline: none;
+  box-shadow: none;
+  transition: 0.4s;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 21.98px;
+  height: 46px;
+  margin-left: auto;
+}
+.contact-wrap .form-wrap .form-inner .submit-btn:hover {
+  background-color: transparent;
+  color: #edb143;
+}
+
+@media (max-width: 1279.98px) {
+  .connect-heading {
+    font-size: 2.625rem;
+    line-height: 60px;
+  }
+  .contact-wrap {
+    margin-top: 10px;
+    padding-bottom: 120px;
+  }
+  .contact-wrap .detail-wrap .address-wrap {
+    margin: 45px -12px;
+  }
+  .contact-wrap .detail-wrap .address-wrap .address-block {
+    width: 50%;
+  }
+  .contact-wrap .detail-wrap .heading {
+    font-size: 1.5rem;
+    line-height: 36px;
+  }
+  .contact-wrap .detail-wrap .para {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  .contact-wrap .detail-wrap .address-wrap .address-block .title {
+    font-size: 1rem;
+    line-height: 24px;
+    margin-bottom: 6px;
+  }
+  .contact-wrap .detail-wrap .address-wrap .address-block .text {
+    font-size: 0.875rem;
+    line-height: 22px;
+  }
+  .contact-wrap .form-wrap .form-inner .heading {
+    font-size: 1.125rem;
+    line-height: 27px;
+  }
+  .contact-input label {
+    font-size: 0.938rem;
+  }
+  .contact-input input {
+    font-size: 0.938rem;
+  }
+  .contact-wrap .form-wrap .form-inner .submit-btn {
+    font-size: 1rem;
+    line-height: 18.98px;
+    height: 40px;
+  }
+  .contact-wrap .form-wrap .form-inner {
+    padding: 16px;
+  }
+}
+@media (max-width: 991.98px) {
+  .contact-wrap .detail-wrap {
+    width: 100%;
+  }
+  .contact-wrap .form-wrap {
+    width: 100%;
+  }
+  .contact-wrap .detail-wrap .address-wrap .address-block {
+    width: 33.33%;
+  }
+  .contact-wrap .form-wrap .form-inner {
+    padding: 16px 12px;
+  }
+}
+@media (max-width: 767.98px) {
+  .connect-page-wrap {
+    margin: 40px auto 0;
+  }
+  .connect-page-inner {
+    padding: 0 20px;
+  }
+  .connect-heading {
+    font-size: 2rem;
+    line-height: 50px;
+  }
+  .connect-news-wrap {
+    margin-top: 20px;
+    /* padding: 24px 1px; */
+  }
+  .contact-wrap {
+    margin-top: 20px;
+    padding-bottom: 80px;
+  }
+  .contact-wrap .detail-wrap .address-wrap {
+    margin: 35px -12px 24px;
+  }
+  .contact-wrap .detail-wrap .address-wrap .address-block {
+    width: 100%;
+  }
+}
