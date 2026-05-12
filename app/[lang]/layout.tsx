@@ -73,7 +73,7 @@ export default async function RootLayout({
             <Footer lang={params.lang} />
           </div>
           <div className="container relative">
-            <Chat />
+            {/* <Chat /> */}
           </div>
         </NextUIProvider>
       </body>
