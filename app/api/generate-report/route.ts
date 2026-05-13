@@ -17,12 +17,21 @@ export async function POST(req: Request) {
       selectedSections.map(async (sectionId) => {
         const mapping = PDF_MAPPING[sectionId];
         if (!mapping || !mapping.pdfPath) return null;
-        const absPath = join(process.cwd(), 'public', mapping.pdfPath);
         try {
-          const pdfBytes = await fs.readFile(absPath);
+          let pdfBytes;
+          if (mapping.pdfPath.startsWith('http')) {
+            const res = await fetch(mapping.pdfPath);
+            if (!res.ok) throw new Error(`Failed to fetch PDF: ${res.statusText}`);
+            const arrayBuffer = await res.arrayBuffer();
+            pdfBytes = new Uint8Array(arrayBuffer);
+          } else {
+            const absPath = join(process.cwd(), 'public', mapping.pdfPath);
+            pdfBytes = await fs.readFile(absPath);
+          }
           const pdfDoc = await PDFDocument.load(pdfBytes);
           return { pdfDoc };
         } catch (e) {
+          console.error(`Error loading PDF for section ${sectionId}:`, e);
           return null;
         }
       })
