@@ -2,8 +2,11 @@
 
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import BackImage from '../../public/images/user-guide-sustainability-back-img-.png';
-import Image1 from '../../public/images/user-guide/sustanability.png';
+import { assetUrl } from '@/lib/assets';
+// import BackImage from '../../public/images/user-guide-sustainability-back-img-.png';
+// import Image1 from '../../public/images/user-guide/sustanability.png';
+const BackImage = assetUrl('/images/user-guide-sustainability-back-img-.png');
+const Image1 = assetUrl('/images/user-guide/sustanability.png');
 
 import 'swiper/css';
 import 'swiper/css/pagination';

@@ -1,7 +1,10 @@
 'use client';
 
 import Image from 'next/image';
-import HomeImg from '../../public/images/user-guide/home_page.png';
+import { assetUrl } from '@/lib/assets';
+
+// import HomeImg from '../../public/images/user-guide/home_page.png';
+const HomeImg = assetUrl('/images/user-guide/home_page.png');
 import SpeechText from '../SpeechText';
 
 export default function HomePageSection({ dictionary }: any) {

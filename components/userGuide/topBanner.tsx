@@ -1,7 +1,9 @@
 'use client';
 
 import Image from 'next/image';
-import BannerImg from '../../public/images/user-guide-banner-img.png';
+import { assetUrl } from '@/lib/assets';
+const BannerImg = assetUrl('/images/user-guide-banner-img.png');
+// import BannerImg from '../../public/images/user-guide-banner-img.png';
 import SpeechText from '../SpeechText';
 
 export default function TopBanner({ dictionary }: any) {

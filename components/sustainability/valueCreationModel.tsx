@@ -2,9 +2,12 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import SustainabilityImage from '../../public/images/Susta Tree 1.svg';
+import { assetUrl } from '@/lib/assets';
+// import SustainabilityImage from '../../public/images/Susta Tree 1.svg';
 import './style.css';
 import SpeechText from '../SpeechText';
+
+const SustainabilityImage = assetUrl('/images/Susta Tree 1.svg');
 
 export default function ValueCreationModel({ dictionary }: any) {
   return (

@@ -1,10 +1,18 @@
 'use client';
 
 import Image from 'next/image';
-import Icon2 from '../../public/images/annual-results-html-icon-new.svg';
-import Icon1 from '../../public/images/annual-results-pdf-icon-new.svg';
-import Icon3 from '../../public/images/annual-results-search-icon-new.svg';
+
+import { assetUrl } from '@/lib/assets';
+
+// import Icon2 from '../../public/images/annual-results-html-icon-new.svg';
+// import Icon1 from '../../public/images/annual-results-pdf-icon-new.svg';
+// import Icon3 from '../../public/images/annual-results-search-icon-new.svg';
 import SpeechText from '../SpeechText';
+
+const Icon2 = assetUrl('/images/annual-results-html-icon-new.svg');
+const Icon1 = assetUrl('/images/annual-results-pdf-icon-new.svg');
+const Icon3 = assetUrl('/images/annual-results-search-icon-new.svg');
+
 
 export default function AnnualResults({ dictionary }: any) {
   return (

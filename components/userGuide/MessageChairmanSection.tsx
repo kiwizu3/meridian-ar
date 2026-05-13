@@ -1,7 +1,10 @@
 'use client';
 
 import Image from 'next/image';
-import BackImg from '../../public/images/message-chairman-back-img.png';
+import { assetUrl } from '@/lib/assets';
+// import BackImg from '../../public/images/message-chairman-back-img.png';
+const BackImg = assetUrl('/images/message-chairman-back-img.png');
+
 import SpeechText from '../SpeechText';
 
 export default function MessageChairman({ dictionary }: any) {
