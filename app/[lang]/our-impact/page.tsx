@@ -6,7 +6,7 @@ import SpeechText from '@/components/SpeechText';
 import { getDictionary } from '@/get-dictionary';
 import { Locale } from '@/i18n-config';
 import { assetUrl } from '@/lib/assets';
-
+import Image from 'next/image';
 // import bgImage from '@/public/images/Clippath.png';
 // import bgSec2 from '@/public/images/our-impact/our-impact-new-bg1.png';
 // import bgSec2 from '@/public/images/our-impact-s2-bg.png';
@@ -22,7 +22,7 @@ const bgSec4 = assetUrl('/images/our-impact/our-impact-new-bg3.png');
 const bgSec5 = assetUrl('/images/our-impact/our-impact-new-bg4.png');
 const bgSec7 = assetUrl('/images/our-impact/our-impact-new-bg6.png');
 
-import Image from 'next/image';
+
 
 export default async function OurImpact({
   params: { lang },

@@ -6,9 +6,9 @@ import type { Metadata } from 'next';
 import dynamic from 'next/dynamic';
 import '../globals.css';
 
-const Chat = dynamic(() => import('@/components/chat'), {
-  ssr: false,
-});
+// const Chat = dynamic(() => import('@/components/chat'), {
+//   ssr: false,
+// });
 
 const Footer = dynamic(() => import('@/components/footer'), {
   ssr: false,

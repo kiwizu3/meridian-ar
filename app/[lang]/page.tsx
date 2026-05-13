@@ -21,7 +21,7 @@ import {
   getHomeVideoPosition,
 } from '@/utility/langClassName';
 import dynamic from 'next/dynamic';
-import Image from 'next/image';
+// import Image from 'next/image';
 import PdfDownload from '@/components/icons/pdfDownload';
 import LionPawAnimate from '@/components/LionPawAnimate';
 
