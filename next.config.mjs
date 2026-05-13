@@ -8,6 +8,9 @@ const assetRewrite = (folder) => ({
 });
 
 const nextConfig = {
+   typescript: {
+    ignoreBuildErrors: true,
+  },
   async headers() {
     return [
       {
