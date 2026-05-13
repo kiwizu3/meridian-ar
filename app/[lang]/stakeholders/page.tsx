@@ -136,14 +136,16 @@ function AccordionContent({
   return (
     <div className="flex flex-col lg:gap-y-10 gap-y-6">
       <div className="grid md:grid-cols-3 gap-6">
-        {accordionContent?.map((item, index) => (
+        {/* {accordionContent?.map((item, index) => (
           <VideoCard
             key={`${index.toString()}`}
             title={item?.title}
             videoUrl={item?.video}
             thumbnailUrl={item?.thumbnail}
           />
-        ))}
+        ))} */}
+
+        <span>This video was removed.</span>
       </div>
     </div>
   );
