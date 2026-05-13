@@ -28,7 +28,7 @@ export default function HomePageMainVideo() {
       {!playSecond ? (
         <video
           ref={firstVideoRef}
-          src="/videos/LB_lion_animation_v4_intro_SFX.mp4"
+          src="https://kiwizu3.github.io/meridian-ar-data/public/videos/LB_lion_animation_v4_intro_SFX.mp4"
           autoPlay
           muted
           playsInline
@@ -38,7 +38,7 @@ export default function HomePageMainVideo() {
       ) : (
         <video
           ref={secondVideoRef}
-          src="/videos/lion_animation_Loop.mp4"
+          src="https://kiwizu3.github.io/meridian-ar-data/public/videos/lion_animation_Loop.mp4"
           autoPlay
           muted
           loop
