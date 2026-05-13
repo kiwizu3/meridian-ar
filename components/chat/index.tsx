@@ -1,22 +1,30 @@
 'use client';
 
-import BlurChart from '@/public/images/blur-chart.png';
-import LionBlink from '@/public/images/lb_lion_blink.gif';
-import LionTalk from '@/public/images/lb_lion_talk.gif';
+import { assetUrl } from '@/lib/assets';
+// import BlurChart from '@/public/images/blur-chart.png';
+// import LionBlink from '@/public/images/lb_lion_blink.gif';
+// import LionTalk from '@/public/images/lb_lion_talk.gif';
 import { credentials, generateUniqueId } from '@/utility/chatBotEmailUtils';
 import { Modal, ModalContent, Tooltip } from '@nextui-org/react';
 import clsx from 'clsx';
 import Image from 'next/image';
 import { ChangeEvent, useCallback, useEffect, useRef, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
-import ChatMessageIcon from '../../public/images/chat-message-icon.png';
-import SendIcon from '../../public/images/chat-send-icon.svg';
-import VoiceIcon from '../../public/images/chat-voice-icon.svg';
+// import ChatMessageIcon from '../../public/images/chat-message-icon.png';
+// import SendIcon from '../../public/images/chat-send-icon.svg';
+// import VoiceIcon from '../../public/images/chat-voice-icon.svg';
 import { ChatCloseIcon, ChatInfoIcon, CloseIcon } from '../icons';
 import './chat.css';
 import ChatBubble from './chatBubble';
 import CustomAudioPlayer from './customAudioPlayer';
 import { speechRecognition } from './speechRecognition';
+
+const BlurChart = assetUrl('/images/blur-chart.png');
+const LionBlink = assetUrl('/images/lb_lion_blink.gif');
+const LionTalk = assetUrl('/images/lb_lion_talk.gif');
+const ChatMessageIcon = assetUrl('/images/chat-message-icon.png');
+const SendIcon = assetUrl('/images/chat-send-icon.svg');
+const VoiceIcon = assetUrl('/images/chat-voice-icon.svg');
 
 // Use NEXT_PUBLIC_BASE_URL for client-side env variable
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;

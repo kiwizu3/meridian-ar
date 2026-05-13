@@ -1,7 +1,10 @@
 'use client';
 
 import Image from 'next/image';
-import CoreCompetencies from '@/public/images/sustainability-goals/Core-Competencies-of-LB-MICROFINANCE.jpg';
+import { assetUrl } from '@/lib/assets';
+// import CoreCompetencies from '@/public/images/sustainability-goals/Core-Competencies-of-LB-MICROFINANCE.jpg';  
+
+const CoreCompetencies = assetUrl('/images/sustainability-goals/Core-Competencies-of-LB-MICROFINANCE.jpg');
 
 export default function NoPovertyPart5() {
   return (

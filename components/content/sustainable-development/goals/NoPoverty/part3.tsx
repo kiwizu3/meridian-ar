@@ -1,7 +1,10 @@
 'use client';
 
 import Image from 'next/image';
-import EmploymentOppurnuties from '@/public/images/sustainability-goals/employment-oppurnuties.jpg';
+import { assetUrl } from '@/lib/assets';
+// import EmploymentOppurnuties from '@/public/images/sustainability-goals/employment-oppurnuties.jpg';
+
+const EmploymentOppurnuties = assetUrl('/images/sustainability-goals/employment-oppurnuties.jpg');
 
 export default function NoPovertyPart3() {
   return (

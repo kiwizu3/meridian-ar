@@ -1,9 +1,14 @@
 'use client';
 
 import Image from 'next/image';
-import DigitalAccessImage from '@/public/images/sustainability-goals/lb-cim-app-transaction-value.jpg';
-import TaxPaidImage from '@/public/images/sustainability-goals/tax-paid-to-goverment.jpg';
-import TaxIcon from '@/public/images/sustainability-goals/tax-icon.jpg';
+import { assetUrl } from '@/lib/assets';
+// import DigitalAccessImage from '@/public/images/sustainability-goals/lb-cim-app-transaction-value.jpg';
+// import TaxPaidImage from '@/public/images/sustainability-goals/tax-paid-to-goverment.jpg';
+// import TaxIcon from '@/public/images/sustainability-goals/tax-icon.jpg';
+
+const DigitalAccessImage = assetUrl('/images/sustainability-goals/lb-cim-app-transaction-value.jpg');
+const TaxPaidImage = assetUrl('/images/sustainability-goals/tax-paid-to-goverment.jpg');
+const TaxIcon = assetUrl('/images/sustainability-goals/tax-icon.jpg');  
 
 export default function NoPovertyPart2() {
   return (

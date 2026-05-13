@@ -6,7 +6,9 @@ import Strategy from '@/components/content/strategy';
 import ValueCreatingBusinessModel from '@/components/content/valueCreatingBusinessModel';
 import DownloadButton from '@/components/downloadButton';
 import Image from 'next/image';
-import theCompany from '@/public/images/annual-report/strategic-report.png';
+import { assetUrl } from '@/lib/assets';
+// import theCompany from '@/public/images/annual-report/strategic-report.png';
+const theCompany = assetUrl('/images/annual-report/strategic-report.png');
 
 const page = () => {
   const accordionItems = [

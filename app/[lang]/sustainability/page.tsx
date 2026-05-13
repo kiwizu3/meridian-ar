@@ -7,12 +7,20 @@ import ReportingFrameworks from '@/components/sustainability/reportingFrameworks
 import ValueCreationModel from '@/components/sustainability/valueCreationModel';
 import { getDictionary } from '@/get-dictionary';
 import { Locale } from '@/i18n-config';
-import BottomComma from '@/public/images/bottom-comma-green.png';
-import bgImage from '@/public/images/Clippath.png';
-import TopComma from '@/public/images/top-comma-green.png';
-import ProfileImage from '@/public/images/yanika_amarasekera.png';
-import ProfileImage2 from '@/public/images/niroshan_udage.png';
+import { assetUrl } from '@/lib/assets';
+
+// import BottomComma from '@/public/images/bottom-comma-green.png';
+// import bgImage from '@/public/images/Clippath.png';
+// import TopComma from '@/public/images/top-comma-green.png';
+// import ProfileImage from '@/public/images/yanika_amarasekera.png';
+// import ProfileImage2 from '@/public/images/niroshan_udage.png';
 import Image from 'next/image';
+
+const BottomComma = assetUrl('/images/bottom-comma-green.png');
+const bgImage = assetUrl('/images/Clippath.png');
+const TopComma = assetUrl('/images/top-comma-green.png');
+const ProfileImage = assetUrl('/images/yanika_amarasekera.png');
+const ProfileImage2 = assetUrl('/images/niroshan_udage.png');
 
 export default async function sustainability({
   params = { lang: 'en' },

@@ -9,7 +9,10 @@ import LBFinanceSocioEconomicImpact from '@/components/content/ourSocioEconomicI
 import StrategicJourney from '@/components/content/strategicJourney';
 import DownloadButton from '@/components/downloadButton';
 import Image from 'next/image';
-import theCompany from '@/public/images/annual-report/the-company.png';
+
+import { assetUrl } from '@/lib/assets';
+// import theCompany from '@/public/images/annual-report/the-company.png';
+const theCompany = assetUrl('/images/annual-report/the-company.png');
 
 const page = () => {
   const accordionItems = [

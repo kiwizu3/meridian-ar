@@ -3,8 +3,10 @@ import BusinessOperationInMyanmar from '@/components/content/businessOperationIn
 import MultiFinanceBusinessOperation from '@/components/content/multiFinanceBusinessOperation';
 import DownloadButton from '@/components/downloadButton';
 import Image from 'next/image';
-import businessReview from '@/public/images/annual-report/business-review.png';
+import { assetUrl } from '@/lib/assets';
 
+// import businessReview from '@/public/images/annual-report/business-review.png';
+const businessReview = assetUrl('/images/annual-report/business-review.png');
 const page = () => {
   const accordionItems = [
     {

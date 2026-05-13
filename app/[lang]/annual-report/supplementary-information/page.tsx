@@ -18,7 +18,10 @@ import NoticesAGM from '@/components/content/noticesAGM';
 import ProxyForm from '@/components/content/proxyForm';
 import FeedbackForm from '@/components/content/feedbackForm';
 import Image from 'next/image';
-import suplimentoryInfo from '@/public/images/annual-report/suplimentary-information.png';
+import { assetUrl } from '@/lib/assets';
+
+// import suplimentoryInfo from '@/public/images/annual-report/suplimentary-information.png';
+const suplimentoryInfo = assetUrl('/images/annual-report/suplimentary-information.png');
 
 const page = () => {
   const accordionItems = [

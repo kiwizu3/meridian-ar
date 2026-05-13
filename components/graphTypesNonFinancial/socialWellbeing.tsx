@@ -5,7 +5,7 @@ import { socialWellbeing } from '@/data/graphDataNonFinancial';
 import { memo, useCallback, useState } from 'react';
 import GraphCard from '../cards/graphCard';
 import { Community } from '@/components/icons';
-import areaSingle from '@/public/images/area-single.png';
+// import areaSingle from '@/public/images/area-single.png';
 import { SeriesDataType } from '@/types';
 import { getInitialSelectedValues } from '@/utility/getInitialSelectedValues';
 import { nonFinancialGraphYears } from '@/data/graphYears';

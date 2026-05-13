@@ -1,7 +1,11 @@
 'use client';
 
 import Image from 'next/image';
-import GoldLoanpPortfolio from '@/public/images/sustainability-goals/gold-loan-portfolio.png';
+import { assetUrl } from '@/lib/assets';
+
+// import GoldLoanpPortfolio from '@/public/images/sustainability-goals/gold-loan-portfolio.png';
+
+const GoldLoanpPortfolio = assetUrl('/images/sustainability-goals/gold-loan-portfolio.png');
 
 export default function GenderQualityPart4() {
   return (

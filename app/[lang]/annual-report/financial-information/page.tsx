@@ -11,7 +11,10 @@ import StatementOfComprehensiveIncome from '@/components/content/statementOfComp
 import StatementOfFinancialPosition from '@/components/content/statementOfFinancialPosition';
 import DownloadButton from '@/components/downloadButton';
 import Image from 'next/image';
-import financialInfo from '@/public/images/annual-report/financial-information.png';
+import { assetUrl } from '@/lib/assets';
+
+// import financialInfo from '@/public/images/annual-report/financial-information.png';
+const financialInfo = assetUrl('/images/annual-report/financial-information.png');
 
 const page = () => {
   const accordionItems = [

@@ -1,3 +1,12 @@
+const ASSETS_BASE_URL =
+  process.env.NEXT_PUBLIC_ASSETS_SERVER_URL ||
+  'https://kiwizu3.github.io/meridian-ar-data/public';
+
+const assetRewrite = (folder) => ({
+  source: `/${folder}/:path*`,
+  destination: `${ASSETS_BASE_URL}/${folder}/:path*`,
+});
+
 const nextConfig = {
   async headers() {
     return [
@@ -69,6 +78,26 @@ const nextConfig = {
       },
     ];
   },
+
+    async rewrites() {
+    return {
+      beforeFiles: [
+        assetRewrite('images'),
+        assetRewrite('videos'),
+        assetRewrite('gif'),
+        assetRewrite('music'),
+        assetRewrite('voice'),
+        assetRewrite('voices'),
+        assetRewrite('pdf'),
+        assetRewrite('fonts'),
+        {
+          source: '/cursorSvg.svg',
+          destination: `${ASSETS_BASE_URL}/cursorSvg.svg`,
+        },
+      ],
+    };
+  },
+  
   images: {
     domains: ['lbannualreports.lk'],
     dangerouslyAllowSVG: false,

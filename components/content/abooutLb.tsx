@@ -3,10 +3,16 @@ import React from 'react';
 import dynamic from 'next/dynamic';
 import { ApexOptions } from 'apexcharts';
 import Image from 'next/image';
-import building from '@/public/images/annual-report/LB-Building.jpg';
-import aboutlbqr from '@/public/images/annual-report/aboutlbqr.png';
-import ownershipImage from '@/public/images/annual-report/ownership.png';
+import { assetUrl } from '@/lib/assets';
+// import building from '@/public/images/annual-report/LB-Building.jpg';
+// import aboutlbqr from '@/public/images/annual-report/aboutlbqr.png';
+// import ownershipImage from '@/public/images/annual-report/ownership.png';
 import clsx from 'clsx';
+
+
+const building = assetUrl('/images/annual-report/LB-Building.jpg');
+const aboutlbqr = assetUrl('/images/annual-report/aboutlbqr.png');
+const ownershipImage = assetUrl('/images/annual-report/ownership.png');
 
 const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
 const chartOptions: ApexOptions = {

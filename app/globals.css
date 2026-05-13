@@ -136,7 +136,8 @@
 
 body {
   height: 100%;
-  cursor: url('../public/cursorSvg.svg'), auto;
+  /* cursor: url('../public/cursorSvg.svg'), auto; */
+  cursor: url('/cursorSvg.svg'), auto;
 }
 
 .custom-radio {

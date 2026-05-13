@@ -1,11 +1,21 @@
 'use client';
 
 import Image from 'next/image';
-import NoOfCustomers from '@/public/images/sustainability-goals/no-of-customers.png';
-import RegionCustomers from '@/public/images/sustainability-goals/region-wise-customers.png';
-import TotalGrantingSector from '@/public/images/sustainability-goals/total-granting-sector-wise.png';
-import EmployeeBasedOnGender from '@/public/images/sustainability-goals/employee-based-on-gender.png';
-import EmployeesGenderComposition from '@/public/images/sustainability-goals/employees-gender-composition.png';
+
+import { assetUrl } from '@/lib/assets';
+
+// import NoOfCustomers from '@/public/images/sustainability-goals/no-of-customers.png';
+// import RegionCustomers from '@/public/images/sustainability-goals/region-wise-customers.png';
+// import TotalGrantingSector from '@/public/images/sustainability-goals/total-granting-sector-wise.png';
+// import EmployeeBasedOnGender from '@/public/images/sustainability-goals/employee-based-on-gender.png';
+// import EmployeesGenderComposition from '@/public/images/sustainability-goals/employees-gender-composition.png';
+
+const NoOfCustomers = assetUrl('/images/sustainability-goals/no-of-customers.png');
+const RegionCustomers = assetUrl('/images/sustainability-goals/region-wise-customers.png');
+const TotalGrantingSector = assetUrl('/images/sustainability-goals/total-granting-sector-wise.png');
+const EmployeeBasedOnGender = assetUrl('/images/sustainability-goals/employee-based-on-gender.png');
+const EmployeesGenderComposition = assetUrl('/images/sustainability-goals/employees-gender-composition.png');
+
 
 export default function NoPovertyPart8() {
   return (

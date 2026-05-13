@@ -3,10 +3,14 @@ import VideoCard from '@/components/cards/videoCard';
 import SpeechText from '@/components/SpeechText';
 import { getDictionary } from '@/get-dictionary';
 import { Locale } from '@/i18n-config';
-import bgImage from '@/public/images/Clippath.png';
-import videoThumbnail from '@/public/images/video-thumbnail.png';
+import { assetUrl } from '@/lib/assets';
+// import bgImage from '@/public/images/Clippath.png';
+// import videoThumbnail from '@/public/images/video-thumbnail.png';
 import { AccordionContentProps } from '@/types';
 import Image from 'next/image';
+
+const bgImage = assetUrl('/images/Clippath.png');
+const videoThumbnail = assetUrl('/images/video-thumbnail.png');
 
 export default async function Stakeholders({
   params = { lang: 'en' },

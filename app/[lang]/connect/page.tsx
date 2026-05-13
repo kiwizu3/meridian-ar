@@ -7,13 +7,17 @@ import { ContactUsProps } from '@/types';
 import { useDictionary } from '@/hooks/useDictionary';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import bgImage from '@/public/images/Clippath.png';
-import bottomImage from '@/public/images/connect-bottom.png';
+import { assetUrl } from '@/lib/assets';
+// import bgImage from '@/public/images/Clippath.png';
+// import bottomImage from '@/public/images/connect-bottom.png';
 import Image from 'next/image';
 import { credentials } from '@/utility/chatBotEmailUtils';
 import SpeechText from '@/components/SpeechText';
 import FacebookPageEmbed from '@/components/FacebookPageEmbed';
 import { validateEmail, validateName, validatePhone } from './connectUtils';
+
+const bgImage = assetUrl('/images/Clippath.png');
+const bottomImage = assetUrl('/images/connect-bottom.png');
 
 export default function Contact({
   params: { lang },

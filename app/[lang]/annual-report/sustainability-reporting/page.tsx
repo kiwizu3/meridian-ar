@@ -7,7 +7,10 @@ import SustainabilityRelatedOpportunities from '@/components/content/sustainabil
 import SustainabilityStrategyMeasurableTargets from '@/components/content/sustainabilityStrategyMesasurableTargets';
 import DownloadButton from '@/components/downloadButton';
 import Image from 'next/image';
-import sustainabilityReport from '@/public/images/annual-report/sustainability-reporting.png';
+import { assetUrl } from '@/lib/assets';
+
+// import sustainabilityReport from '@/public/images/annual-report/sustainability-reporting.png'; 
+const sustainabilityReport = assetUrl('/images/annual-report/sustainability-reporting.png');
 
 const page = () => {
   const accordionItems = [

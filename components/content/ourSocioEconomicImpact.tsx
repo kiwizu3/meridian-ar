@@ -3,10 +3,18 @@ import React from 'react';
 import dynamic from 'next/dynamic';
 import { ApexOptions } from 'apexcharts';
 import Image from 'next/image';
-import csr1 from '@/public/images/annual-report/AboutCSR1.png';
-import csr2 from '@/public/images/annual-report/AboutCSR2.png';
-import csr3 from '@/public/images/annual-report/AboutCSR3.png';
-import csr4 from '@/public/images/annual-report/AboutCSR5.png';
+import { assetUrl } from '@/lib/assets';
+
+// import csr1 from '@/public/images/annual-report/AboutCSR1.png';
+// import csr2 from '@/public/images/annual-report/AboutCSR2.png';
+// import csr3 from '@/public/images/annual-report/AboutCSR3.png';
+// import csr4 from '@/public/images/annual-report/AboutCSR5.png';
+
+
+const csr1 = assetUrl('/images/annual-report/AboutCSR1.png');
+const csr2 = assetUrl('/images/annual-report/AboutCSR2.png');
+const csr3 = assetUrl('/images/annual-report/AboutCSR3.png');
+const csr4 = assetUrl('/images/annual-report/AboutCSR5.png');
 
 const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
 

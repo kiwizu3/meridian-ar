@@ -16,8 +16,12 @@ import SustainabilityCommitteeReport from '@/components/content/sustainabilityCo
 import TransactionReviewCommitteeReport from '@/components/content/transactionReviewCommityReport';
 import DownloadButton from '@/components/downloadButton';
 import Image from 'next/image';
-import corporateStewardship from '@/public/images/annual-report/corporate-stewardship.png';
+
+import { assetUrl } from '@/lib/assets';
+// import corporateStewardship from '@/public/images/annual-report/corporate-stewardship.png';
 import IntegratedRiskManagement from '@/components/content/integratedRiskManagement';
+
+const corporateStewardship = assetUrl('/images/annual-report/corporate-stewardship.png');
 
 const page = () => {
   const accordionItems = [

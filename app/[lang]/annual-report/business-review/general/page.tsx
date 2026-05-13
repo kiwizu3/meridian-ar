@@ -3,8 +3,13 @@ import Deposits from '@/components/content/deposits';
 import LoansAndReceivables from '@/components/content/loansAndReceivables';
 import ValueAddedService from '@/components/content/valueAddedService';
 import DownloadButton from '@/components/downloadButton';
-import businessReview from '@/public/images/annual-report/business-review.png';
+
+import { assetUrl } from '@/lib/assets';
+// import businessReview from '@/public/images/annual-report/business-review.png';
+
 import Image from 'next/image';
+
+const businessReview = assetUrl('/images/annual-report/business-review.png');
 
 const page = () => {
   const accordionItems = [

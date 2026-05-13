@@ -1,6 +1,9 @@
 import React from 'react'
-import CorporateSig from '@/public/images/annual-report/corporateSig.png'
+import { assetUrl } from '@/lib/assets';
+// import CorporateSig from '@/public/images/annual-report/corporateSig.png'
 import Image from 'next/image';
+
+const CorporateSig = assetUrl('/images/annual-report/corporateSig.png');
 
 function NoticesAGM() {
   return (

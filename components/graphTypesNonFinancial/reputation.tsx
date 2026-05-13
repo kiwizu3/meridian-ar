@@ -15,7 +15,10 @@ import {
 import NonFinancialChartSelector from './nonFinancialChartSelector';
 import GraphCard from '../cards/graphCard';
 import { AwardIcon } from '../icons';
-import areaSingle from '@/public/images/area-single.png';
+import { assetUrl } from '@/lib/assets';
+// import areaSingle from '@/public/images/area-single.png';
+
+const areaSingle = assetUrl('/images/area-single.png');
 
 function Reputation({ dictionary }: any) {
   const [selectedValues, setSelectedValues] = useState(

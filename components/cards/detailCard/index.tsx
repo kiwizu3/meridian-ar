@@ -4,7 +4,7 @@ import { Download } from '@/components/icons';
 import SpeechText from '@/components/SpeechText';
 import { DetailCardProps } from '@/types';
 import { Radio, RadioGroup } from '@nextui-org/react';
-import Image from 'next/image';
+// import Image from 'next/image';
 import { useState, useRef, useEffect } from 'react';
 
 let currentAudio: HTMLAudioElement | null = null; // Track globally to handle multiple instances
@@ -60,8 +60,8 @@ export default function DetailCard(props: Readonly<DetailCardProps>) {
   return (
     <div className="bg-cardGreen rounded-[21px] py-6 md:pl-10 md:pr-6 px-6 flex flex-col md:flex-row gap-7 max-w-[896px] w-full md:fit-content shadow-[0_15px_10px_15px_rgba(0, 0, 0, 0.07)]">
       <div className="flex md:items-center justify-center">
-        <Image
-          src={props?.image}
+        <img
+          src={typeof props?.image === 'string' ? props.image : props.image.src}
           alt={'avatar'}
           className="w-[80%] h-[80%] object-cover md:w-[357px] md:h-auto"
         />

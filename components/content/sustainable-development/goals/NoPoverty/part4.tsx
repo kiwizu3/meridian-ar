@@ -1,10 +1,19 @@
 'use client';
 
 import Image from 'next/image';
-import ForeignTransactionChart from '@/public/images/sustainability-goals/foreign-exchange-transactions.jpg';
-import WesternUnionTransactionChart from '@/public/images/sustainability-goals/western-union-transactions.jpg';
-import CSRProjects from '@/public/images/sustainability-goals/No.-of-CSR-projects.jpg';
-import CSRProjectsInvestments from '@/public/images/sustainability-goals/Investment-in-CSR-projects.jpg';
+
+import { assetUrl } from '@/lib/assets';
+
+// import ForeignTransactionChart from '@/public/images/sustainability-goals/foreign-exchange-transactions.jpg';
+// import WesternUnionTransactionChart from '@/public/images/sustainability-goals/western-union-transactions.jpg';
+// import CSRProjects from '@/public/images/sustainability-goals/No.-of-CSR-projects.jpg';
+// import CSRProjectsInvestments from '@/public/images/sustainability-goals/Investment-in-CSR-projects.jpg';
+
+const ForeignTransactionChart = assetUrl('/images/sustainability-goals/foreign-exchange-transactions.jpg');
+const WesternUnionTransactionChart = assetUrl('/images/sustainability-goals/western-union-transactions.jpg');
+const CSRProjects = assetUrl('/images/sustainability-goals/No.-of-CSR-projects.jpg');
+const CSRProjectsInvestments = assetUrl('/images/sustainability-goals/Investment-in-CSR-projects.jpg'); 
+
 
 export default function NoPovertyPart4() {
   return (

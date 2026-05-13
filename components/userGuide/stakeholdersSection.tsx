@@ -1,11 +1,19 @@
 'use client';
 
 import Image from 'next/image';
-import SmartAIImg from '../../public/images/user-guide/smart box.png';
-import StakeholdersImg from '../../public/images/user-guide/stakeholder.png';
-import ConnectImg from '@/public/images/user-guide/connect.png';
-import OurImpactImg from '../../public/images/user-guide/our_impact.png';
+import { assetUrl } from '@/lib/assets';
+
+// import SmartAIImg from '../../public/images/user-guide/smart box.png';
+// import StakeholdersImg from '../../public/images/user-guide/stakeholder.png';
+// import ConnectImg from '@/public/images/user-guide/connect.png';
+// import OurImpactImg from '../../public/images/user-guide/our_impact.png';
 import SpeechText from '../SpeechText';
+
+const SmartAIImg = assetUrl('/images/user-guide/smart box.png');
+const StakeholdersImg = assetUrl('/images/user-guide/stakeholder.png');
+const ConnectImg = assetUrl('/images/user-guide/connect.png');
+const OurImpactImg = assetUrl('/images/user-guide/our_impact.png');
+
 
 export default function StakeholdersSection({ dictionary }: any) {
   return (

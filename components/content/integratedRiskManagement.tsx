@@ -3,11 +3,17 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 import { ApexOptions } from 'apexcharts';
-import riskGovernance from '@/public/images/risk-governance.png';
-import riskCulture from '@/public/images/risk-culture.png';
-import riskPrincipleOverview from '@/public/images/risk-principle-overview.png';
-import riskCreditProcess from '@/public/images/risk-credit-process.png';
+import { assetUrl } from '@/lib/assets';
+// import riskGovernance from '@/public/images/risk-governance.png';
+// import riskCulture from '@/public/images/risk-culture.png';
+// import riskPrincipleOverview from '@/public/images/risk-principle-overview.png';
+// import riskCreditProcess from '@/public/images/risk-credit-process.png';
 import Image from 'next/image';
+
+const riskGovernance = assetUrl('/images/risk-governance.png');
+const riskCulture = assetUrl('/images/risk-culture.png');
+const riskPrincipleOverview = assetUrl('/images/risk-principle-overview.png');
+const riskCreditProcess = assetUrl('/images/risk-credit-process.png');
 
 const ApexChart = dynamic(() => import('react-apexcharts'), { ssr: false });
 

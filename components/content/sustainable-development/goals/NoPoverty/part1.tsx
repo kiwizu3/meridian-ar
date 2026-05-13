@@ -1,9 +1,16 @@
 'use client';
 
 import Image from 'next/image';
-import provincialdistribution from '@/public/images/sustainability-goals/provincial-distribution.jpg';
-import provincialdistributionDeposits from '@/public/images/sustainability-goals/Provincial-Distribution-Deposits.jpg';
-import provincialdistributionLoans from '@/public/images/sustainability-goals/Provincial-Distribution-Loans.jpg';
+import { assetUrl } from '@/lib/assets';
+
+// import provincialdistribution from '@/public/images/sustainability-goals/provincial-distribution.jpg';
+// import provincialdistributionDeposits from '@/public/images/sustainability-goals/Provincial-Distribution-Deposits.jpg';
+// import provincialdistributionLoans from '@/public/images/sustainability-goals/Provincial-Distribution-Loans.jpg';
+
+const provincialdistribution = assetUrl('/images/sustainability-goals/provincial-distribution.jpg');
+const provincialdistributionDeposits = assetUrl('/images/sustainability-goals/Provincial-Distribution-Deposits.jpg');
+const provincialdistributionLoans = assetUrl('/images/sustainability-goals/Provincial-Distribution-Loans.jpg'); 
+
 
 export default function NoPovertyPart1() {
   return (

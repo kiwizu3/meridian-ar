@@ -9,10 +9,13 @@ import ScrollToTop from '@/components/ScrollToTop';
 import { getDictionary } from '@/get-dictionary';
 import { Locale } from '@/i18n-config';
 // import gifImage from '@/public/gif/pyramid.gif';
-import PolygonChipNew from '@/public/images/PolygonChipNew.png';
-import secTwoImage from '@/public/images/Clippath.png';
-import avatar from '@/public/images/gard_prasanna.png';
-import avatar2 from '@/public/images/sumith_Avatar.png';
+
+import { assetUrl } from '@/lib/assets';
+
+// import PolygonChipNew from '@/public/images/PolygonChipNew.png';
+// import secTwoImage from '@/public/images/Clippath.png';
+// import avatar from '@/public/images/gard_prasanna.png';
+// import avatar2 from '@/public/images/sumith_Avatar.png';
 import {
   getAnnualResultTopPotion,
   getHomeVideoPosition,
@@ -21,6 +24,12 @@ import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import PdfDownload from '@/components/icons/pdfDownload';
 import LionPawAnimate from '@/components/LionPawAnimate';
+
+
+const PolygonChipNew = assetUrl('/images/PolygonChipNew.png');
+const secTwoImage = assetUrl('/images/Clippath.png');
+const avatar = assetUrl('/images/gard_prasanna.png');
+const avatar2 = assetUrl('/images/sumith_Avatar.png');  
 
 const HomePageVideo = dynamic(() => import('@/components/HomePageVideo'), {
   ssr: false,
@@ -179,7 +188,7 @@ export default async function Home({
 
         <section
           style={{
-            backgroundImage: `url(${secTwoImage.src})`,
+            backgroundImage: `url(${secTwoImage})`,
             backgroundSize: 'cover',
             backgroundPosition: 'bottom',
           }}
@@ -316,7 +325,7 @@ export default async function Home({
             <div className="absolute">
               <div className="max-w-[90vw] lg:max-w-none flex">
                 {/* <PolygonChip /> */}
-                <Image
+                <img
                   src={PolygonChipNew}
                   alt="background-image"
                   className=""
